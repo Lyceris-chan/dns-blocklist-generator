@@ -90,7 +90,7 @@ function Analyze-AdGuardListsCI {
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
 
-    Write-Host "Running CI Compiler (Polyglot v14.0 - Wildcard Safe)" -ForegroundColor Cyan
+    Write-Host "Running CI Compiler (v17.0 - Final Guard Rails)" -ForegroundColor Cyan
     
     # Setup temp dirs
     $TempDir = Join-Path $pwd "temp_downloads"
@@ -117,7 +117,7 @@ function Analyze-AdGuardListsCI {
         Add-Content -Path $InputFile -Value "$Url`n  out=$FileName`n  dir=$ListsDir"
     }
 
-    # --- DOWNLOAD (Uses system aria2c) ---
+    # --- DOWNLOAD ---
     Write-Host "Starting Aria2 Download..."
     try {
         $Aria2Args = @("-i", $InputFile, "--max-concurrent-downloads=16", "--quiet=true")
@@ -156,13 +156,12 @@ function Analyze-AdGuardListsCI {
                         $Rule = $Clean; $IsExplicit = $true 
                     }
                     elseif ($Clean.StartsWith("||")) { 
-                        $Rule = $Clean.Substring(2).Split('^$')[0]; $IsExplicit = $true 
+                        # NORMALIZE: Strip '||' and '^' for deduplication against hosts.
+                        $Rule = $Clean.Substring(2).Split('^$')[0]; 
+                        if ($Rule.Contains("*")) { $IsExplicit = $true }
                     }
                     elseif ($Clean -match '^(https?://|www\.)') { 
-                         try { 
-                            if ($Clean -notmatch '^http') { $Clean="http://$Clean" }
-                            $Rule = ([uri]$Clean).Host 
-                         } catch {} 
+                         try { if($Clean -notmatch '^http') { $Clean="http://$Clean" }; $Rule = ([uri]$Clean).Host } catch {} 
                     }
                     elseif ($Clean -match '^(0\.0\.0\.0|127\.0\.0\.1)\s+(.+)') { 
                         $Rule = $matches[2].Split('#')[0].Trim() 
@@ -173,10 +172,7 @@ function Analyze-AdGuardListsCI {
                     
                     if ($Rule) {
                         $Rule = $Rule.TrimEnd('.')
-                        
-                        # --- FIX: ALLOW WILDCARDS (*) ---
-                        # Previously, we rejected rules with '*', which deleted valid AdGuard rules.
-                        # Now, we simply check length, dots, and no spaces.
+                        # If explicit (regex/wildcard) OR looks like a valid domain
                         if ($IsExplicit -or ($Rule.Length -gt 3 -and $Rule.Contains(".") -and -not $Rule.Contains(" "))) {
                             [void]$DomainSet.Add($Rule.ToLowerInvariant())
                         }
@@ -209,13 +205,7 @@ function Analyze-AdGuardListsCI {
     $AnchorName = "HaGeZi's Pro++ Blocklist"
     if (-not $ParsedLists.ContainsKey($AnchorName)) { Write-Error "Anchor missing"; return }
 
-    $MegaList = [System.Collections.Generic.List[string]]::new()
-    $MegaList.Add("! ADGUARD MEGA STACK - GENERATED: $(Get-Date)")
-    $MegaList.Add("! BASE: $AnchorName")
-    
-    $AccumulatedSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$AnchorName])
-    $MegaList.Add("! --- SOURCE: $AnchorName ---"); $MegaList.AddRange($AccumulatedSet)
-
+    $StackSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$AnchorName])
     $CandidateArray = @($ParsedLists.Keys | Where { $_ -ne $AnchorName -and $Global:CategoryMap[$_] -ne 'Regional' })
     $Candidates = [System.Collections.Generic.List[string]]::new([string[]]$CandidateArray)
     
@@ -230,22 +220,80 @@ function Analyze-AdGuardListsCI {
         $BestName = $null; $MaxUnique = 0
         foreach ($Name in $Candidates) {
             $TestSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$Name])
-            $TestSet.ExceptWith($AccumulatedSet)
+            $TestSet.ExceptWith($StackSet)
             if ($TestSet.Count -gt $MaxUnique) { $MaxUnique = $TestSet.Count; $BestName = $Name }
         }
 
         if ($null -eq $BestName -or $MaxUnique -eq 0) { break }
         
         $WinnerSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$BestName])
-        $WinnerSet.ExceptWith($AccumulatedSet)
+        $WinnerSet.ExceptWith($StackSet)
         
-        $MegaList.Add(""); $MegaList.Add("! --- SOURCE: $BestName (+$($WinnerSet.Count)) ---")
-        $MegaList.AddRange($WinnerSet)
-        
-        $AccumulatedSet.UnionWith($WinnerSet)
+        $StackSet.UnionWith($WinnerSet)
         $Candidates.Remove($BestName)
         Write-Host "Added $BestName (+$MaxUnique)"
     } Until ($Candidates.Count -eq 0)
+
+    # --- OPTIMIZATION ---
+    Write-Host "Optimizing & Formatting Rules..."
+    
+    $ComplexRules = [System.Collections.Generic.List[string]]::new()
+    $StandardDomains = [System.Collections.Generic.List[string]]::new()
+    
+    foreach ($Rule in $StackSet) {
+        # Check for Regex (/) OR Wildcard (*)
+        if ($Rule.StartsWith("/") -or $Rule.Contains("*")) {
+            $ComplexRules.Add($Rule)
+        } else {
+            $StandardDomains.Add($Rule)
+        }
+    }
+    
+    # Sort for Tree Shaking
+    $StandardDomains.Sort({ $args[0].Length.CompareTo($args[1].Length) })
+    
+    # Tree Shaking
+    $KeepDomains = [System.Collections.Generic.HashSet[string]]::new()
+    
+    foreach ($Domain in $StandardDomains) {
+        $IsRedundant = $false
+        $Parts = $Domain.Split('.')
+        if ($Parts.Count -gt 2) {
+            for ($i = 1; $i -lt $Parts.Count - 1; $i++) {
+                $Parent = [string]::Join(".", $Parts, $i, ($Parts.Count - $i))
+                if ($KeepDomains.Contains($Parent)) {
+                    $IsRedundant = $true
+                    break
+                }
+            }
+        }
+        if (-not $IsRedundant) { [void]$KeepDomains.Add($Domain) }
+    }
+    
+    # --- FINAL OUTPUT GENERATION (With Safety Valve) ---
+    $MegaList = [System.Collections.Generic.List[string]]::new()
+    $MegaList.Add("! ADGUARD MEGA STACK - GENERATED: $(Get-Date)")
+    $MegaList.Add("! BASE: $AnchorName")
+    
+    # 1. Add Complex Rules (ALWAYS RAW)
+    $MegaList.AddRange($ComplexRules)
+    
+    # 2. Add Domains (Alphabetized and Safely Wrapped)
+    $SortedDomains = [System.Collections.Generic.List[string]]::new($KeepDomains)
+    $SortedDomains.Sort()
+    
+    foreach ($Dom in $SortedDomains) {
+        # FINAL SAFETY CHECK:
+        # If a Regex or Wildcard somehow slipped into this list, DO NOT wrap it.
+        # This prevents breaking rules like /^10\....$/
+        
+        if ($Dom.StartsWith("/") -or $Dom.Contains("*") -or $Dom.StartsWith("@@") -or $Dom.StartsWith("!")) {
+            $MegaList.Add($Dom)
+        } else {
+            # Only wrap clean domains
+            $MegaList.Add("||$Dom^")
+        }
+    }
 
     # --- SAVE ---
     $OutFile = Join-Path $pwd "blocklist.txt"
