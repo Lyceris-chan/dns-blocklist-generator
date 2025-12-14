@@ -828,4 +828,30 @@ function Analyze-AdGuardListsCI {
     Write-Host "FINAL OUTPUT:" -ForegroundColor Yellow
     Write-Host "  Total unique rules: $($Global:Stats.FinalRuleCount)" -ForegroundColor Cyan
     Write-Host "    - Standard domains: $($Global:Stats.StandardDomains)" -ForegroundColor White
-    Write-Host "    - Wildcard rules: $($Global:
+    Write-Host "    - Wildcard rules: $($Global:Stats.WildcardRules)" -ForegroundColor White
+    Write-Host "    - Regex patterns: $($Global:Stats.RegexRules)" -ForegroundColor White
+    Write-Host "    - IP ranges: $($Global:Stats.IPRanges)" -ForegroundColor White
+    Write-Host "    - Complex rules: $($Global:Stats.ComplexRules)" -ForegroundColor White
+    Write-Host ""
+    
+    Write-Host "TOP 10 CONTRIBUTORS:" -ForegroundColor Yellow
+    $ListContributions | Sort-Object -Property Unique -Descending | Select-Object -First 10 | ForEach-Object {
+        Write-Host "  $($_.Name): +$($_.Unique) rules [$($_.Category)]" -ForegroundColor White
+    }
+    Write-Host ""
+    
+    $ReductionPercent = [math]::Round((($PostStackCount - $Global:Stats.FinalRuleCount) / $PostStackCount) * 100, 2)
+    Write-Host "EFFICIENCY GAIN: $ReductionPercent% reduction through optimization" -ForegroundColor Green
+    Write-Host ""
+    
+    # Cleanup
+    Write-Host "Cleaning up temporary files..." -ForegroundColor Gray
+    if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
+    
+    Write-Host "`n✓ All done! Your optimized blocklist with source tracking is ready.`n" -ForegroundColor Green
+}
+
+# =============================================================================
+# EXECUTE
+# =============================================================================
+Analyze-AdGuardListsCI
