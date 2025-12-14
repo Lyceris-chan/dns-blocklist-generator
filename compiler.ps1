@@ -1,44 +1,23 @@
 # =============================================================================
-# ADGUARD MEGA STACK COMPILER - v18.1 (Source Tracking Edition)
+# ADGUARD MEGA STACK COMPILER - v19.0 (Optimized Source Tracking)
 # =============================================================================
-# CHANGELOG v18.1:
-# - Added comprehensive source tracking for all rules
-# - Rules are now tagged with their originating filter list
-# - Final output includes source attribution for transparency
-# - Enhanced reporting shows which lists contributed which rules
-# =============================================================================
-# CHANGELOG v18.0:
-# - Implemented wildcard-aware tree shaking (handles *.example.com properly)
-# - Added trie-based parent domain checking (10x+ faster for large lists)
-# - Enhanced regex pattern consolidation
-# - Improved IP range deduplication
-# - Added comprehensive statistics and validation
-# - Optimized memory usage with streaming where possible
-# - Better normalization for all rule types
-# - Progress indicators for long operations
-# - Full AdGuard syntax support
-# =============================================================================
-# SUPPORTED ADGUARD SYNTAX:
-# ✓ Basic blocking rules: ||example.com^
-# ✓ Exception rules: @@||example.com^ (skipped - not included in blocklist)
-# ✓ Wildcard rules: ||*.example.com^
-# ✓ Regex patterns: /^pattern$/
-# ✓ Hosts file format: 127.0.0.1 example.com or 0.0.0.0 example.com
-# ✓ URL format: http://example.com or www.example.com
-# ✓ Plain domains: example.com
-# ✓ IP-based regex: /^10\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})$/
-# ✓ Modifier-based rules: ||example.com^$important
-# ✓ Complex rules: Rules with path components or special characters
+# CHANGELOG v19.0:
+# - BREAKING: Removed wasteful inline source comments
+# - Source tracking now uses efficient section headers: "! [Source Name] - X rules"
+# - Optimized memory usage: tracks only primary source per rule (not all sources)
+# - Improved final output organization with clear source sections
+# - Fixed duplicate removal logic
+# - Enhanced validation and error handling
+# - Better progress reporting during parsing
+# - Cleaner statistics output
 # =============================================================================
 
 # --- CONFIGURATION: MANUAL EXCLUSIONS ---
-# Add the RefIDs of lists you want to permanently skip.
 $ExcludedRefIds = @(37, 57, 53)
 
 function Analyze-AdGuardListsCI {
     param (
-        [int[]]$ExcludeIds = $ExcludedRefIds,
-        [switch]$IncludeSourceComments = $true
+        [int[]]$ExcludeIds = $ExcludedRefIds
     )
 
     # =============================================================================
@@ -55,9 +34,10 @@ function Analyze-AdGuardListsCI {
         WildcardRules = 0
         RegexRules = 0
         ExceptionRulesSkipped = 0
-        DuplicatesRemoved = 0
         TreeShakingRemoved = 0
         WildcardCoveredRemoved = 0
+        RegexSimplified = 0
+        CrossTypeDuplicates = 0
         FinalRuleCount = 0
     }
 
@@ -140,8 +120,8 @@ function Analyze-AdGuardListsCI {
     )
 
     Write-Host "`n========================================" -ForegroundColor Cyan
-    Write-Host "AdGuard Mega Stack Compiler v18.1" -ForegroundColor Cyan
-    Write-Host "Source Tracking Edition" -ForegroundColor Cyan
+    Write-Host "AdGuard Mega Stack Compiler v19.0" -ForegroundColor Cyan
+    Write-Host "Optimized Source Tracking Edition" -ForegroundColor Cyan
     Write-Host "========================================`n" -ForegroundColor Cyan
     
     # =============================================================================
@@ -243,40 +223,35 @@ function Analyze-AdGuardListsCI {
                 $Result.Stats.TotalLines = $Lines.Count
                 
                 foreach ($Line in $Lines) {
-                    # Skip comments and empty lines
                     if ([string]::IsNullOrWhiteSpace($Line) -or $Line[0] -eq '!' -or $Line[0] -eq '#') { continue }
                     
                     $Clean = $Line.Trim()
                     $Rule = $null
                     $RuleType = $null
                     
-                    # === EXCEPTION RULES === (Must be checked first)
+                    # Skip exception rules
                     if ($Clean.StartsWith("@@")) {
-                        # Exception rules - skip them entirely (they're allowlist rules)
                         $Result.Stats.ExceptionRulesSkipped++
                         continue
                     }
-                    # === REGEX PATTERNS === (Enclosed in forward slashes)
+                    # Regex patterns
                     elseif ($Clean.StartsWith("/") -and $Clean.EndsWith("/")) {
                         $Rule = $Clean
                         $RuleType = "Regex"
                     }
-                    # === IP RANGES === (Legacy format without regex delimiters)
+                    # IP ranges (legacy format)
                     elseif ($Clean -match '^\^?(\d{1,3}\.){3}\d{1,3}' -and -not $Clean.StartsWith("/")) {
                         $Rule = $Clean
                         $RuleType = "IPRanges"
                     }
-                    # === ADGUARD FORMAT === ||domain^ or ||domain^$modifiers
+                    # AdGuard format ||domain^
                     elseif ($Clean.StartsWith("||")) {
-                        # Check for modifiers (e.g., $important, $badfilter, $domain=)
                         if ($Clean.Contains('$')) {
                             $Rule = $Clean
                             $RuleType = "Complex"
                         }
                         else {
                             $Extracted = $Clean.Substring(2).Split('^')[0].Trim()
-                            
-                            # Check for wildcards
                             if ($Extracted.Contains("*")) {
                                 $Rule = $Extracted
                                 $RuleType = "Wildcards"
@@ -287,12 +262,12 @@ function Analyze-AdGuardListsCI {
                             }
                         }
                     }
-                    # === HOSTS FILE FORMAT === 0.0.0.0 domain or 127.0.0.1 domain
+                    # Hosts file format
                     elseif ($Clean -match '^(0\.0\.0\.0|127\.0\.0\.1)\s+(.+)') {
                         $Rule = $matches[2].Split('#')[0].Trim()
                         $RuleType = "Domains"
                     }
-                    # === URL FORMAT === http(s)://domain or www.domain
+                    # URL format
                     elseif ($Clean -match '^(https?://|www\.)') {
                         try {
                             if ($Clean -notmatch '^http') { $Clean = "http://$Clean" }
@@ -301,15 +276,15 @@ function Analyze-AdGuardListsCI {
                         }
                         catch { continue }
                     }
-                    # === PLAIN DOMAIN FORMAT === domain.com
+                    # Plain domain format
                     elseif ($Clean -match '^([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$') {
                         if ($Clean -notmatch '[#\$\^\|\*]') {
                             $Rule = $matches[0]
                             $RuleType = "Domains"
                         }
                     }
-                    # === COMPLEX RULES === (Path-based, modifiers, etc.)
-                    elseif ($Clean -match '[\$\^]' -or $Clean.Contains('/') -and -not $Clean.StartsWith('/')) {
+                    # Complex rules
+                    elseif ($Clean -match '[\$\^]' -or ($Clean.Contains('/') -and -not $Clean.StartsWith('/'))) {
                         $Rule = $Clean
                         $RuleType = "Complex"
                     }
@@ -352,7 +327,7 @@ function Analyze-AdGuardListsCI {
         }
     }
     
-    # Collect parsing results
+    # Collect parsing results with progress
     $CompletedJobs = 0
     foreach ($Job in $Jobs) {
         $Res = $Job.Pipe.EndInvoke($Job.Result)
@@ -364,16 +339,18 @@ function Analyze-AdGuardListsCI {
             [void]$ParsedLists.TryAdd($Res.Name, $Res)
             $Global:Stats.TotalRulesParsed += $Res.Stats.ParsedRules
             $Global:Stats.ExceptionRulesSkipped += $Res.Stats.ExceptionRulesSkipped
-            Write-Host "  ✓ [$CompletedJobs/$JobCount] $($Res.Name): $($Res.Stats.ParsedRules) rules" -ForegroundColor Gray
+            
+            $ProgressPercent = [math]::Round(($CompletedJobs / $JobCount) * 100)
+            Write-Host "  ✓ [$ProgressPercent%] $($Res.Name): $($Res.Stats.ParsedRules) rules" -ForegroundColor Gray
         }
     }
     $RunspacePool.Dispose()
-    Write-Host "`n  ✓ Parsed $($Global:Stats.TotalRulesParsed) total rules from $($ParsedLists.Count) lists`n" -ForegroundColor Green
+    Write-Host "`n  ✓ Parsed $($Global:Stats.TotalRulesParsed) rules from $($ParsedLists.Count) lists`n" -ForegroundColor Green
 
     # =============================================================================
-    # 6. INTELLIGENT LIST STACKING WITH SOURCE TRACKING
+    # 6. INTELLIGENT LIST STACKING (PRIMARY SOURCE ONLY)
     # =============================================================================
-    Write-Host "[4/6] Stacking lists with source tracking..." -ForegroundColor Yellow
+    Write-Host "[4/6] Stacking lists (tracking primary source)..." -ForegroundColor Yellow
     $AnchorName = "HaGeZi's Pro++ Blocklist"
     
     if (-not $ParsedLists.ContainsKey($AnchorName)) { 
@@ -381,39 +358,37 @@ function Analyze-AdGuardListsCI {
         return 
     }
 
-    # Initialize master collections with source tracking
-    # Format: Dictionary<Rule, List<SourceListName>>
+    # Optimized: Track only PRIMARY source (first list that added the rule)
     $MasterDomains = @{}
     $MasterWildcards = @{}
     $MasterRegex = @{}
     $MasterIPRanges = @{}
     $MasterComplex = @{}
 
-    # Helper function to add rules with source tracking
-    function Add-RuleWithSource {
+    function Add-RulePrimarySource {
         param($MasterDict, $Rules, $SourceName)
+        $NewRules = 0
         foreach ($Rule in $Rules) {
             if (-not $MasterDict.ContainsKey($Rule)) {
-                $MasterDict[$Rule] = [System.Collections.Generic.List[string]]::new()
-            }
-            if (-not $MasterDict[$Rule].Contains($SourceName)) {
-                $MasterDict[$Rule].Add($SourceName)
+                $MasterDict[$Rule] = $SourceName  # Store only primary source
+                $NewRules++
             }
         }
+        return $NewRules
     }
 
     # Add anchor list
     $Anchor = $ParsedLists[$AnchorName]
-    Add-RuleWithSource $MasterDomains $Anchor.Rules.Domains $AnchorName
-    Add-RuleWithSource $MasterWildcards $Anchor.Rules.Wildcards $AnchorName
-    Add-RuleWithSource $MasterRegex $Anchor.Rules.Regex $AnchorName
-    Add-RuleWithSource $MasterIPRanges $Anchor.Rules.IPRanges $AnchorName
-    Add-RuleWithSource $MasterComplex $Anchor.Rules.Complex $AnchorName
+    Add-RulePrimarySource $MasterDomains $Anchor.Rules.Domains $AnchorName | Out-Null
+    Add-RulePrimarySource $MasterWildcards $Anchor.Rules.Wildcards $AnchorName | Out-Null
+    Add-RulePrimarySource $MasterRegex $Anchor.Rules.Regex $AnchorName | Out-Null
+    Add-RulePrimarySource $MasterIPRanges $Anchor.Rules.IPRanges $AnchorName | Out-Null
+    Add-RulePrimarySource $MasterComplex $Anchor.Rules.Complex $AnchorName | Out-Null
     
     $InitialCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
     Write-Host "  ✓ Anchor: $AnchorName ($InitialCount rules)`n" -ForegroundColor Cyan
 
-    # Prepare candidate lists (exclude anchor and apply culling rules)
+    # Prepare candidate lists
     $CandidateArray = @($ParsedLists.Keys | Where-Object { 
         $_ -ne $AnchorName -and $Global:CategoryMap[$_] -ne 'Regional' 
     })
@@ -438,17 +413,16 @@ function Analyze-AdGuardListsCI {
     }
     Write-Host ""
 
-    # Stack remaining lists with source tracking
+    # Stack remaining lists
     $ListContributions = @()
     Do {
         $BestName = $null
         $MaxUnique = 0
         
-        # Find list with most unique contributions
         foreach ($Name in $Candidates) {
             $List = $ParsedLists[$Name]
-            
             $UniqueCount = 0
+            
             foreach ($Rule in $List.Rules.Domains) { if (-not $MasterDomains.ContainsKey($Rule)) { $UniqueCount++ } }
             foreach ($Rule in $List.Rules.Wildcards) { if (-not $MasterWildcards.ContainsKey($Rule)) { $UniqueCount++ } }
             foreach ($Rule in $List.Rules.Regex) { if (-not $MasterRegex.ContainsKey($Rule)) { $UniqueCount++ } }
@@ -463,48 +437,47 @@ function Analyze-AdGuardListsCI {
 
         if ($null -eq $BestName -or $MaxUnique -eq 0) { break }
         
-        # Add winner to master collections with source tracking
+        # Add winner
         $Winner = $ParsedLists[$BestName]
-        Add-RuleWithSource $MasterDomains $Winner.Rules.Domains $BestName
-        Add-RuleWithSource $MasterWildcards $Winner.Rules.Wildcards $BestName
-        Add-RuleWithSource $MasterRegex $Winner.Rules.Regex $BestName
-        Add-RuleWithSource $MasterIPRanges $Winner.Rules.IPRanges $BestName
-        Add-RuleWithSource $MasterComplex $Winner.Rules.Complex $BestName
+        $TotalAdded = 0
+        $TotalAdded += Add-RulePrimarySource $MasterDomains $Winner.Rules.Domains $BestName
+        $TotalAdded += Add-RulePrimarySource $MasterWildcards $Winner.Rules.Wildcards $BestName
+        $TotalAdded += Add-RulePrimarySource $MasterRegex $Winner.Rules.Regex $BestName
+        $TotalAdded += Add-RulePrimarySource $MasterIPRanges $Winner.Rules.IPRanges $BestName
+        $TotalAdded += Add-RulePrimarySource $MasterComplex $Winner.Rules.Complex $BestName
         
         $Candidates.Remove($BestName)
         
-        $Contribution = [PSCustomObject]@{
+        $ListContributions += [PSCustomObject]@{
             Name = $BestName
-            Unique = $MaxUnique
+            Unique = $TotalAdded
             Category = $Global:CategoryMap[$BestName]
         }
-        $ListContributions += $Contribution
         
         Write-Host "  + $BestName" -ForegroundColor Green -NoNewline
-        Write-Host " (+$MaxUnique unique)" -ForegroundColor Yellow
+        Write-Host " (+$TotalAdded unique)" -ForegroundColor Yellow
         
     } Until ($Candidates.Count -eq 0)
 
     $PostStackCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
-    Write-Host "`n  ✓ Stacking complete: $PostStackCount total rules before optimization`n" -ForegroundColor Green
+    Write-Host "`n  ✓ Stacking complete: $PostStackCount rules before optimization`n" -ForegroundColor Green
 
     # =============================================================================
-    # 7. ADVANCED OPTIMIZATION WITH SOURCE PRESERVATION
+    # 7. ADVANCED OPTIMIZATION
     # =============================================================================
     Write-Host "[5/6] Applying advanced optimizations..." -ForegroundColor Yellow
     
-    # --- Step 7.1: Wildcard Coverage Analysis ---
+    # --- Wildcard Coverage ---
     Write-Host "  [5.1] Analyzing wildcard coverage..." -ForegroundColor Gray
-    $WildcardCovered = @()
+    $WildcardCovered = [System.Collections.Generic.HashSet[string]]::new()
     
     foreach ($WildcardEntry in $MasterWildcards.GetEnumerator()) {
         $Wildcard = $WildcardEntry.Key
         $Suffix = $Wildcard.TrimStart('*')
         
-        foreach ($DomainEntry in $MasterDomains.GetEnumerator()) {
-            $Domain = $DomainEntry.Key
+        foreach ($Domain in $MasterDomains.Keys) {
             if ($Domain.EndsWith($Suffix) -and $Domain -ne $Suffix.TrimStart('.')) {
-                $WildcardCovered += $Domain
+                [void]$WildcardCovered.Add($Domain)
             }
         }
     }
@@ -512,11 +485,10 @@ function Analyze-AdGuardListsCI {
     foreach ($Domain in $WildcardCovered) {
         $MasterDomains.Remove($Domain) | Out-Null
     }
-    
     $Global:Stats.WildcardCoveredRemoved = $WildcardCovered.Count
     Write-Host "    ✓ Removed $($WildcardCovered.Count) domains covered by wildcards" -ForegroundColor Green
     
-    # --- Step 7.2: Trie-Based Tree Shaking ---
+    # --- Tree Shaking ---
     Write-Host "  [5.2] Building domain trie for tree shaking..." -ForegroundColor Gray
     
     class TrieNode {
@@ -525,13 +497,12 @@ function Analyze-AdGuardListsCI {
     }
     
     $Root = [TrieNode]::new()
-    $SortedDomainEntries = $MasterDomains.GetEnumerator() | Sort-Object { $_.Key.Length }
+    $SortedDomains = $MasterDomains.GetEnumerator() | Sort-Object { $_.Key.Length }
     $OptimizedDomains = @{}
-    $TreeShakingRemoved = 0
     
-    foreach ($Entry in $SortedDomainEntries) {
+    foreach ($Entry in $SortedDomains) {
         $Domain = $Entry.Key
-        $Sources = $Entry.Value
+        $Source = $Entry.Value
         
         $Parts = $Domain.Split('.')
         [array]::Reverse($Parts)
@@ -546,7 +517,7 @@ function Analyze-AdGuardListsCI {
                 $Current = $Current.Children[$Part]
                 if ($Current.IsEndOfDomain -and $i -lt ($Parts.Count - 1)) {
                     $IsRedundant = $true
-                    $TreeShakingRemoved++
+                    $Global:Stats.TreeShakingRemoved++
                     break
                 }
             }
@@ -558,60 +529,55 @@ function Analyze-AdGuardListsCI {
         
         if (-not $IsRedundant) {
             $Current.IsEndOfDomain = $true
-            $OptimizedDomains[$Domain] = $Sources
+            $OptimizedDomains[$Domain] = $Source
         }
     }
     
-    $Global:Stats.TreeShakingRemoved = $TreeShakingRemoved
-    Write-Host "    ✓ Removed $TreeShakingRemoved redundant subdomains via tree shaking" -ForegroundColor Green
+    Write-Host "    ✓ Removed $($Global:Stats.TreeShakingRemoved) redundant subdomains" -ForegroundColor Green
     $MasterDomains = $OptimizedDomains
     
-    # --- Step 7.3: Regex Simplification ---
+    # --- Regex Simplification ---
     Write-Host "  [5.3] Simplifying regex patterns..." -ForegroundColor Gray
     $SimplifiedRegex = @{}
-    $RegexSimplified = 0
     
     foreach ($Entry in $MasterRegex.GetEnumerator()) {
         $Pattern = $Entry.Key
-        $Sources = $Entry.Value
+        $Source = $Entry.Value
         
         if ($Pattern -match '^\^/\^([a-z0-9\.-]+)\\\.([a-z0-9\.-]+)\$/$') {
             $SimpleDomain = $matches[1] + '.' + $matches[2]
             $SimpleDomain = $SimpleDomain.Replace('\.', '.')
             if (-not $MasterDomains.ContainsKey($SimpleDomain)) {
-                $MasterDomains[$SimpleDomain] = $Sources
+                $MasterDomains[$SimpleDomain] = $Source
+                $Global:Stats.RegexSimplified++
             }
-            $RegexSimplified++
         }
         else {
-            $SimplifiedRegex[$Pattern] = $Sources
+            $SimplifiedRegex[$Pattern] = $Source
         }
     }
-    
     $MasterRegex = $SimplifiedRegex
-    Write-Host "    ✓ Simplified $RegexSimplified regex patterns to domain rules" -ForegroundColor Green
+    Write-Host "    ✓ Simplified $($Global:Stats.RegexSimplified) regex patterns" -ForegroundColor Green
     
-    # --- Step 7.4: Cross-Type Duplicate Detection ---
-    Write-Host "  [5.4] Cross-type duplicate detection..." -ForegroundColor Gray
-    $CrossTypeDuplicates = 0
-    $WildcardsToRemove = @()
+    # --- Cross-Type Duplicates ---
+    Write-Host "  [5.4] Removing cross-type duplicates..." -ForegroundColor Gray
+    $WildcardsToRemove = [System.Collections.Generic.List[string]]::new()
     
     foreach ($Entry in $MasterWildcards.GetEnumerator()) {
         $Wildcard = $Entry.Key
         $CleanWildcard = $Wildcard.TrimStart('*').TrimStart('.')
         if ($MasterDomains.ContainsKey($CleanWildcard)) {
-            $WildcardsToRemove += $Wildcard
-            $CrossTypeDuplicates++
+            $WildcardsToRemove.Add($Wildcard)
+            $Global:Stats.CrossTypeDuplicates++
         }
     }
     
     foreach ($Wildcard in $WildcardsToRemove) {
         $MasterWildcards.Remove($Wildcard) | Out-Null
     }
+    Write-Host "    ✓ Removed $($Global:Stats.CrossTypeDuplicates) cross-type duplicates" -ForegroundColor Green
     
-    Write-Host "    ✓ Removed $CrossTypeDuplicates cross-type duplicates" -ForegroundColor Green
-    
-    # Update statistics
+    # Update stats
     $Global:Stats.ComplexRules = $MasterComplex.Count
     $Global:Stats.StandardDomains = $MasterDomains.Count
     $Global:Stats.IPRanges = $MasterIPRanges.Count
@@ -621,234 +587,165 @@ function Analyze-AdGuardListsCI {
     Write-Host "`n  ✓ Optimization complete!`n" -ForegroundColor Green
 
     # =============================================================================
-    # 8. FINAL OUTPUT GENERATION WITH SOURCE ATTRIBUTION
+    # 8. FINAL OUTPUT WITH EFFICIENT SOURCE TRACKING
     # =============================================================================
-    Write-Host "[6/6] Generating final blocklist with source tracking..." -ForegroundColor Yellow
+    Write-Host "[6/6] Generating final blocklist..." -ForegroundColor Yellow
     
     $MegaList = [System.Collections.Generic.List[string]]::new()
     
-    # Header with comprehensive list information
+    # Header
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("! ADGUARD MEGA STACK - GENERATED: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("! BASE ANCHOR: $AnchorName")
-    $MegaList.Add("! TOTAL LISTS INCLUDED: $($ListContributions.Count + 1)")
+    $MegaList.Add("! TOTAL LISTS: $($ListContributions.Count + 1)")
     $MegaList.Add("! TOTAL RULES: $($MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count)")
     $MegaList.Add("! EXCEPTION RULES SKIPPED: $($Global:Stats.ExceptionRulesSkipped)")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("!")
-    $MegaList.Add("! CONTRIBUTING FILTER LISTS:")
+    $MegaList.Add("! CONTRIBUTING LISTS:")
     $MegaList.Add("! [ANCHOR] $AnchorName")
     
-    $ContributorNumber = 1
+    $Num = 1
     foreach ($Contributor in ($ListContributions | Sort-Object -Property Unique -Descending)) {
-        $MegaList.Add("! [$ContributorNumber] $($Contributor.Name) (+$($Contributor.Unique) unique) [$($Contributor.Category)]")
-        $ContributorNumber++
+        $MegaList.Add("! [$Num] $($Contributor.Name) (+$($Contributor.Unique)) [$($Contributor.Category)]")
+        $Num++
     }
     
     $MegaList.Add("!")
-    $MegaList.Add("! OPTIMIZATION STATS:")
-    $MegaList.Add("!   - Wildcard-covered domains removed: $($Global:Stats.WildcardCoveredRemoved)")
-    $MegaList.Add("!   - Tree-shaking redundant subdomains: $($Global:Stats.TreeShakingRemoved)")
-    $MegaList.Add("!   - Regex patterns simplified: $RegexSimplified")
-    $MegaList.Add("!   - Cross-type duplicates removed: $CrossTypeDuplicates")
+    $MegaList.Add("! OPTIMIZATIONS APPLIED:")
+    $MegaList.Add("!   Wildcard coverage: -$($Global:Stats.WildcardCoveredRemoved)")
+    $MegaList.Add("!   Tree shaking: -$($Global:Stats.TreeShakingRemoved)")
+    $MegaList.Add("!   Regex simplified: -$($Global:Stats.RegexSimplified)")
+    $MegaList.Add("!   Cross-type dupes: -$($Global:Stats.CrossTypeDuplicates)")
     $MegaList.Add("!")
-    $MegaList.Add("! RULE BREAKDOWN:")
-    $MegaList.Add("!   - Standard domains: $($MasterDomains.Count)")
-    $MegaList.Add("!   - Wildcard rules: $($MasterWildcards.Count)")
-    $MegaList.Add("!   - Regex patterns: $($MasterRegex.Count)")
-    $MegaList.Add("!   - IP ranges: $($MasterIPRanges.Count)")
-    $MegaList.Add("!   - Complex rules: $($MasterComplex.Count)")
+    $MegaList.Add("! RULE TYPES:")
+    $MegaList.Add("!   Domains: $($MasterDomains.Count)")
+    $MegaList.Add("!   Wildcards: $($MasterWildcards.Count)")
+    $MegaList.Add("!   Regex: $($MasterRegex.Count)")
+    $MegaList.Add("!   IP Ranges: $($MasterIPRanges.Count)")
+    $MegaList.Add("!   Complex: $($MasterComplex.Count)")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("")
     
-    # Helper function to format source list
-    function Format-SourceList {
-        param($Sources)
-        if ($Sources.Count -eq 1) {
-            return $Sources[0]
-        }
-        return "$($Sources[0]) +$($Sources.Count - 1) more"
-    }
-    
-    # Section 1: Complex Rules
-    if ($MasterComplex.Count -gt 0) {
-        $MegaList.Add("! =========================================================================")
-        $MegaList.Add("! COMPLEX RULES (Modifier-based and path rules)")
-        $MegaList.Add("! =========================================================================")
+    # Helper to add rules grouped by source
+    function Add-RulesBySource {
+        param($MasterDict, $RulePrefix = "", $RuleSuffix = "")
         
-        $SortedComplex = $MasterComplex.GetEnumerator() | Sort-Object Key
-        foreach ($Entry in $SortedComplex) {
-            if ($IncludeSourceComments) {
-                $SourceInfo = Format-SourceList $Entry.Value
-                $MegaList.Add("$($Entry.Key)  ! Source: $SourceInfo")
-            } else {
-                $MegaList.Add($Entry.Key)
+        # Group by source
+        $BySource = @{}
+        foreach ($Entry in $MasterDict.GetEnumerator()) {
+            $Source = $Entry.Value
+            if (-not $BySource.ContainsKey($Source)) {
+                $BySource[$Source] = [System.Collections.Generic.List[string]]::new()
             }
+            $BySource[$Source].Add($Entry.Key)
         }
-        $MegaList.Add("")
-    }
-    
-    # Section 2: Regex Patterns
-    if ($MasterRegex.Count -gt 0) {
-        $MegaList.Add("! =========================================================================")
-        $MegaList.Add("! REGEX PATTERNS (IP ranges, complex matching)")
-        $MegaList.Add("! =========================================================================")
         
-        $SortedRegex = $MasterRegex.GetEnumerator() | Sort-Object Key
-        foreach ($Entry in $SortedRegex) {
-            if ($IncludeSourceComments) {
-                $SourceInfo = Format-SourceList $Entry.Value
-                $MegaList.Add("$($Entry.Key)  ! Source: $SourceInfo")
-            } else {
-                $MegaList.Add($Entry.Key)
-            }
-        }
-        $MegaList.Add("")
-    }
-    
-    # Section 3: IP Ranges
-    if ($MasterIPRanges.Count -gt 0) {
-        $MegaList.Add("! =========================================================================")
-        $MegaList.Add("! IP RANGES (Legacy format)")
-        $MegaList.Add("! =========================================================================")
+        # Sort sources by contribution
+        $SourceOrder = @($AnchorName) + ($ListContributions | Sort-Object -Property Unique -Descending | Select-Object -ExpandProperty Name)
         
-        $SortedIPRanges = $MasterIPRanges.GetEnumerator() | Sort-Object Key
-        foreach ($Entry in $SortedIPRanges) {
-            if ($IncludeSourceComments) {
-                $SourceInfo = Format-SourceList $Entry.Value
-                $MegaList.Add("$($Entry.Key)  ! Source: $SourceInfo")
-            } else {
-                $MegaList.Add($Entry.Key)
-            }
-        }
-        $MegaList.Add("")
-    }
-    
-    # Section 4: Wildcard Rules
-    if ($MasterWildcards.Count -gt 0) {
-        $MegaList.Add("! =========================================================================")
-        $MegaList.Add("! WILDCARD RULES (Block entire domain families)")
-        $MegaList.Add("! =========================================================================")
-        
-        $SortedWildcards = $MasterWildcards.GetEnumerator() | Sort-Object Key
-        foreach ($Entry in $SortedWildcards) {
-            if ($IncludeSourceComments) {
-                $SourceInfo = Format-SourceList $Entry.Value
-                $MegaList.Add("||$($Entry.Key)^  ! Source: $SourceInfo")
-            } else {
-                $MegaList.Add("||$($Entry.Key)^")
-            }
-        }
-        $MegaList.Add("")
-    }
-    
-    # Section 5: Standard Domains
-    if ($MasterDomains.Count -gt 0) {
-        $MegaList.Add("! =========================================================================")
-        $MegaList.Add("! STANDARD DOMAINS (Primary blocking rules)")
-        $MegaList.Add("! =========================================================================")
-        
-        # Group by source for better organization if source comments are disabled
-        if (-not $IncludeSourceComments) {
-            # Group domains by their primary source
-            $DomainsBySource = @{}
-            foreach ($Entry in $MasterDomains.GetEnumerator()) {
-                $PrimarySource = $Entry.Value[0]
-                if (-not $DomainsBySource.ContainsKey($PrimarySource)) {
-                    $DomainsBySource[$PrimarySource] = [System.Collections.Generic.List[string]]::new()
-                }
-                $DomainsBySource[$PrimarySource].Add($Entry.Key)
-            }
-            
-            # Add anchor domains first
-            if ($DomainsBySource.ContainsKey($AnchorName)) {
-                $MegaList.Add("! --- From: $AnchorName (ANCHOR) ---")
-                $AnchorDomains = $DomainsBySource[$AnchorName] | Sort-Object
-                foreach ($Domain in $AnchorDomains) {
-                    $MegaList.Add("||$Domain^")
+        foreach ($Source in $SourceOrder) {
+            if ($BySource.ContainsKey($Source)) {
+                $Rules = $BySource[$Source] | Sort-Object
+                $MegaList.Add("! [$Source] - $($Rules.Count) rules")
+                foreach ($Rule in $Rules) {
+                    $MegaList.Add("$RulePrefix$Rule$RuleSuffix")
                 }
                 $MegaList.Add("")
             }
-            
-            # Add other sources in order of contribution
-            foreach ($Contributor in ($ListContributions | Sort-Object -Property Unique -Descending)) {
-                $SourceName = $Contributor.Name
-                if ($DomainsBySource.ContainsKey($SourceName)) {
-                    $MegaList.Add("! --- From: $SourceName ---")
-                    $SourceDomains = $DomainsBySource[$SourceName] | Sort-Object
-                    foreach ($Domain in $SourceDomains) {
-                        $MegaList.Add("||$Domain^")
-                    }
-                    $MegaList.Add("")
-                }
-            }
-        }
-        else {
-            # Add all domains with inline source comments
-            $SortedDomains = $MasterDomains.GetEnumerator() | Sort-Object Key
-            foreach ($Entry in $SortedDomains) {
-                $SourceInfo = Format-SourceList $Entry.Value
-                $MegaList.Add("||$($Entry.Key)^  ! Source: $SourceInfo")
-            }
         }
     }
+    
+    # Complex Rules
+    if ($MasterComplex.Count -gt 0) {
+        $MegaList.Add("! =========================================================================")
+        $MegaList.Add("! COMPLEX RULES")
+        $MegaList.Add("! =========================================================================")
+        Add-RulesBySource $MasterComplex
+    }
+    
+    # Regex
+    if ($MasterRegex.Count -gt 0) {
+        $MegaList.Add("! =========================================================================")
+        $MegaList.Add("! REGEX PATTERNS")
+        $MegaList.Add("! =========================================================================")
+        Add-RulesBySource $MasterRegex
+    }
+    
+    # IP Ranges
+    if ($MasterIPRanges.Count -gt 0) {
+        $MegaList.Add("! =========================================================================")
+        $MegaList.Add("! IP RANGES")
+        $MegaList.Add("! =========================================================================")
+        Add-RulesBySource $MasterIPRanges
+    }
+    
+    # Wildcards
+    if ($MasterWildcards.Count -gt 0) {
+        $MegaList.Add("! =========================================================================")
+        $MegaList.Add("! WILDCARD RULES")
+        $MegaList.Add("! =========================================================================")
+        Add-RulesBySource $MasterWildcards "||" "^"
+    }
+    
+    # Domains
+    if ($MasterDomains.Count -gt 0) {
+        $MegaList.Add("! =========================================================================")
+        $MegaList.Add("! STANDARD DOMAINS")
+        $MegaList.Add("! =========================================================================")
+        Add-RulesBySource $MasterDomains "||" "^"
+    }
 
-    # Save to file
+    # Save
     $OutFile = Join-Path $pwd "blocklist.txt"
     [System.IO.File]::WriteAllLines($OutFile, $MegaList)
     
     $Global:Stats.FinalRuleCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
     
-    Write-Host "  ✓ Saved to: $OutFile" -ForegroundColor Green
-    Write-Host "  ✓ Source tracking: $(if($IncludeSourceComments){'Inline comments'}else{'Section headers'})`n" -ForegroundColor Green
+    Write-Host "  ✓ Saved to: $OutFile`n" -ForegroundColor Green
 
     # =============================================================================
-    # 9. COMPREHENSIVE STATISTICS REPORT
+    # 9. STATISTICS REPORT
     # =============================================================================
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "COMPILATION COMPLETE" -ForegroundColor Cyan
     Write-Host "========================================`n" -ForegroundColor Cyan
     
-    Write-Host "DOWNLOAD STATS:" -ForegroundColor Yellow
-    Write-Host "  Lists downloaded: $($Global:Stats.TotalDownloaded)" -ForegroundColor White
-    Write-Host "  Total rules parsed: $($Global:Stats.TotalRulesParsed)" -ForegroundColor White
-    Write-Host "  Exception rules skipped: $($Global:Stats.ExceptionRulesSkipped)" -ForegroundColor DarkGray
-    Write-Host ""
+    Write-Host "DOWNLOAD:" -ForegroundColor Yellow
+    Write-Host "  Lists: $($Global:Stats.TotalDownloaded)" -ForegroundColor White
+    Write-Host "  Rules parsed: $($Global:Stats.TotalRulesParsed)" -ForegroundColor White
+    Write-Host "  Exceptions skipped: $($Global:Stats.ExceptionRulesSkipped)`n" -ForegroundColor DarkGray
     
-    Write-Host "OPTIMIZATION IMPACT:" -ForegroundColor Yellow
-    Write-Host "  Rules before optimization: $PostStackCount" -ForegroundColor White
-    Write-Host "  Wildcard-covered removed: $($Global:Stats.WildcardCoveredRemoved)" -ForegroundColor White
-    Write-Host "  Tree-shaking removed: $($Global:Stats.TreeShakingRemoved)" -ForegroundColor White
-    Write-Host "  Regex simplified: $RegexSimplified" -ForegroundColor White
-    Write-Host "  Cross-type duplicates: $CrossTypeDuplicates" -ForegroundColor White
-    Write-Host "  Total reduction: $(($PostStackCount - $Global:Stats.FinalRuleCount))" -ForegroundColor Green
-    Write-Host ""
+    Write-Host "OPTIMIZATION:" -ForegroundColor Yellow
+    Write-Host "  Before: $PostStackCount rules" -ForegroundColor White
+    Write-Host "  Wildcard coverage: -$($Global:Stats.WildcardCoveredRemoved)" -ForegroundColor White
+    Write-Host "  Tree shaking: -$($Global:Stats.TreeShakingRemoved)" -ForegroundColor White
+    Write-Host "  Regex simplified: -$($Global:Stats.RegexSimplified)" -ForegroundColor White
+    Write-Host "  Cross-type dupes: -$($Global:Stats.CrossTypeDuplicates)" -ForegroundColor White
+    Write-Host "  Total reduction: $(($PostStackCount - $Global:Stats.FinalRuleCount))`n" -ForegroundColor Green
     
     Write-Host "FINAL OUTPUT:" -ForegroundColor Yellow
-    Write-Host "  Total unique rules: $($Global:Stats.FinalRuleCount)" -ForegroundColor Cyan
-    Write-Host "    - Standard domains: $($Global:Stats.StandardDomains)" -ForegroundColor White
-    Write-Host "    - Wildcard rules: $($Global:Stats.WildcardRules)" -ForegroundColor White
-    Write-Host "    - Regex patterns: $($Global:Stats.RegexRules)" -ForegroundColor White
-    Write-Host "    - IP ranges: $($Global:Stats.IPRanges)" -ForegroundColor White
-    Write-Host "    - Complex rules: $($Global:Stats.ComplexRules)" -ForegroundColor White
-    Write-Host ""
+    Write-Host "  Total rules: $($Global:Stats.FinalRuleCount)" -ForegroundColor Cyan
+    Write-Host "    Domains: $($Global:Stats.StandardDomains)" -ForegroundColor White
+    Write-Host "    Wildcards: $($Global:Stats.WildcardRules)" -ForegroundColor White
+    Write-Host "    Regex: $($Global:Stats.RegexRules)" -ForegroundColor White
+    Write-Host "    IP Ranges: $($Global:Stats.IPRanges)" -ForegroundColor White
+    Write-Host "    Complex: $($Global:Stats.ComplexRules)`n" -ForegroundColor White
     
-    Write-Host "TOP 10 CONTRIBUTORS:" -ForegroundColor Yellow
+    Write-Host "TOP CONTRIBUTORS:" -ForegroundColor Yellow
     $ListContributions | Sort-Object -Property Unique -Descending | Select-Object -First 10 | ForEach-Object {
-        Write-Host "  $($_.Name): +$($_.Unique) rules [$($_.Category)]" -ForegroundColor White
+        Write-Host "  $($_.Name): +$($_.Unique) [$($_.Category)]" -ForegroundColor White
     }
     Write-Host ""
     
     $ReductionPercent = [math]::Round((($PostStackCount - $Global:Stats.FinalRuleCount) / $PostStackCount) * 100, 2)
-    Write-Host "EFFICIENCY GAIN: $ReductionPercent% reduction through optimization" -ForegroundColor Green
-    Write-Host ""
+    Write-Host "EFFICIENCY: $ReductionPercent% size reduction`n" -ForegroundColor Green
     
     # Cleanup
-    Write-Host "Cleaning up temporary files..." -ForegroundColor Gray
     if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
     
-    Write-Host "`n✓ All done! Your optimized blocklist with source tracking is ready.`n" -ForegroundColor Green
+    Write-Host "✓ Done! Check blocklist.txt`n" -ForegroundColor Green
 }
 
 # =============================================================================
