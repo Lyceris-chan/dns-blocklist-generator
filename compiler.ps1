@@ -90,7 +90,7 @@ function Analyze-AdGuardListsCI {
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
 
-    Write-Host "Running CI Compiler (Polyglot v13.0 - Type Safe)" -ForegroundColor Cyan
+    Write-Host "Running CI Compiler (Polyglot v14.0 - Wildcard Safe)" -ForegroundColor Cyan
     
     # Setup temp dirs
     $TempDir = Join-Path $pwd "temp_downloads"
@@ -173,7 +173,11 @@ function Analyze-AdGuardListsCI {
                     
                     if ($Rule) {
                         $Rule = $Rule.TrimEnd('.')
-                        if ($IsExplicit -or ($Rule.Length -gt 3 -and $Rule.Contains(".") -and -not $Rule.Contains("*") -and -not $Rule.Contains(" "))) {
+                        
+                        # --- FIX: ALLOW WILDCARDS (*) ---
+                        # Previously, we rejected rules with '*', which deleted valid AdGuard rules.
+                        # Now, we simply check length, dots, and no spaces.
+                        if ($IsExplicit -or ($Rule.Length -gt 3 -and $Rule.Contains(".") -and -not $Rule.Contains(" "))) {
                             [void]$DomainSet.Add($Rule.ToLowerInvariant())
                         }
                     }
@@ -212,8 +216,6 @@ function Analyze-AdGuardListsCI {
     $AccumulatedSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$AnchorName])
     $MegaList.Add("! --- SOURCE: $AnchorName ---"); $MegaList.AddRange($AccumulatedSet)
 
-    # --- FIX: STRICTLY TYPED ARRAY CREATION ---
-    # Force the filtering result into a string array [string[]] before passing to List constructor
     $CandidateArray = @($ParsedLists.Keys | Where { $_ -ne $AnchorName -and $Global:CategoryMap[$_] -ne 'Regional' })
     $Candidates = [System.Collections.Generic.List[string]]::new([string[]]$CandidateArray)
     
