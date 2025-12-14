@@ -1,8 +1,7 @@
 # --- CONFIGURATION: MANUAL EXCLUSIONS ---
 # Add the RefIDs of lists you want to permanently skip.
 $ExcludedRefIds = @(
-    37, 57, 53
-)
+    37, 57, 53)
 
 function Analyze-AdGuardListsCI {
     param (
@@ -87,12 +86,11 @@ function Analyze-AdGuardListsCI {
         @{ RefId=42; Id="filter_42.txt"; Name="ShadowWhisperer's Malware List"; Category="Security" },
         @{ RefId=31; Id="filter_31.txt"; Name="Stalkerware Indicators List"; Category="Security" },
         @{ RefId=9;  Id="filter_9.txt";  Name="The Big List of Hacked Malware Web Sites"; Category="Security" },
-        # --- FIXED ASCII NAME BELOW (No special characters) ---
         @{ RefId=50; Id="filter_50.txt"; Name="uBlock filters - Badware risks"; Category="Security" },
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
 
-    Write-Host "Running CI Compiler (Polyglot v12.1 - ASCII Safe)" -ForegroundColor Cyan
+    Write-Host "Running CI Compiler (Polyglot v13.0 - Type Safe)" -ForegroundColor Cyan
     
     # Setup temp dirs
     $TempDir = Join-Path $pwd "temp_downloads"
@@ -121,7 +119,6 @@ function Analyze-AdGuardListsCI {
 
     # --- DOWNLOAD (Uses system aria2c) ---
     Write-Host "Starting Aria2 Download..."
-    # Ensure aria2c is reachable or fail early
     try {
         $Aria2Args = @("-i", $InputFile, "--max-concurrent-downloads=16", "--quiet=true")
         $Process = Start-Process -FilePath "aria2c" -ArgumentList $Aria2Args -NoNewWindow -Wait -PassThru
@@ -139,11 +136,10 @@ function Analyze-AdGuardListsCI {
     # --- PARSE ---
     Write-Host "Parsing Lists..."
     $ParsedLists = [System.Collections.Concurrent.ConcurrentDictionary[string, object]]::new()
-    $RunspacePool = [runspacefactory]::CreateRunspacePool(1, 4) # GitHub runners handle 4 threads better
+    $RunspacePool = [runspacefactory]::CreateRunspacePool(1, 4) 
     $RunspacePool.Open()
     $Jobs = @()
     
-    # --- SCRIPTBLOCK ISOLATED AND SAFE ---
     $ScriptBlock = {
         param($FileName, $Name, $FilePath)
         $Result = @{ Name = $Name; FileName = $FileName; Domains = $null }
@@ -216,7 +212,10 @@ function Analyze-AdGuardListsCI {
     $AccumulatedSet = [System.Collections.Generic.HashSet[string]]::new([string[]]$ParsedLists[$AnchorName])
     $MegaList.Add("! --- SOURCE: $AnchorName ---"); $MegaList.AddRange($AccumulatedSet)
 
-    $Candidates = [System.Collections.Generic.List[string]]::new(@($ParsedLists.Keys | Where { $_ -ne $AnchorName -and $Global:CategoryMap[$_] -ne 'Regional' }))
+    # --- FIX: STRICTLY TYPED ARRAY CREATION ---
+    # Force the filtering result into a string array [string[]] before passing to List constructor
+    $CandidateArray = @($ParsedLists.Keys | Where { $_ -ne $AnchorName -and $Global:CategoryMap[$_] -ne 'Regional' })
+    $Candidates = [System.Collections.Generic.List[string]]::new([string[]]$CandidateArray)
     
     # Culls
     if ($ParsedLists.ContainsKey("1Hosts (Xtra)") -and $Candidates.Contains("1Hosts (Lite)")) { $Candidates.Remove("1Hosts (Lite)") }
