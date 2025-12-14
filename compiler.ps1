@@ -2,7 +2,7 @@
 # Add the RefIDs of lists you want to permanently skip.
 # (e.g. 34 = HaGeZi Normal, 24 = 1Hosts Lite)
 $ExcludedRefIds = @(
-    # Add IDs here, e.g.: 24, 34
+    # Add IDs here, e.g.: 37, 57, 53
 )
 
 function Analyze-AdGuardListsCI {
