@@ -119,10 +119,12 @@ function Analyze-AdGuardListsCI {
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
 
-    Write-Host "`n========================================" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "AdGuard Mega Stack Compiler v19.0" -ForegroundColor Cyan
     Write-Host "Optimized Source Tracking Edition" -ForegroundColor Cyan
-    Write-Host "========================================`n" -ForegroundColor Cyan
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host ""
     
     # =============================================================================
     # 2. SETUP TEMPORARY DIRECTORIES
@@ -160,7 +162,9 @@ function Analyze-AdGuardListsCI {
         [void]$Global:ListStatus.TryAdd($FileName, $StatusObj)
         Add-Content -Path $InputFile -Value "$Url`n  out=$FileName`n  dir=$ListsDir"
     }
-    Write-Host "  ✓ Prepared $($Global:ListStatus.Count) lists for download`n" -ForegroundColor Green
+    $PreparedCount = $Global:ListStatus.Count
+    Write-Host "  [OK] Prepared $PreparedCount lists for download" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 4. DOWNLOAD LISTS WITH ARIA2
@@ -186,7 +190,9 @@ function Analyze-AdGuardListsCI {
             $Global:Stats.TotalDownloaded++
         } 
     }
-    Write-Host "  ✓ Successfully downloaded $($Global:Stats.TotalDownloaded) lists`n" -ForegroundColor Green
+    $DownloadedCount = $Global:Stats.TotalDownloaded
+    Write-Host "  [OK] Successfully downloaded $DownloadedCount lists" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 5. PARSE LISTS WITH ENHANCED NORMALIZATION
@@ -341,11 +347,16 @@ function Analyze-AdGuardListsCI {
             $Global:Stats.ExceptionRulesSkipped += $Res.Stats.ExceptionRulesSkipped
             
             $ProgressPercent = [math]::Round(($CompletedJobs / $JobCount) * 100)
-            Write-Host "  ✓ [$ProgressPercent%] $($Res.Name): $($Res.Stats.ParsedRules) rules" -ForegroundColor Gray
+            $ParsedRuleCount = $Res.Stats.ParsedRules
+            Write-Host "  [OK] [$ProgressPercent%] $($Res.Name): $ParsedRuleCount rules" -ForegroundColor Gray
         }
     }
     $RunspacePool.Dispose()
-    Write-Host "`n  ✓ Parsed $($Global:Stats.TotalRulesParsed) rules from $($ParsedLists.Count) lists`n" -ForegroundColor Green
+    $TotalParsed = $Global:Stats.TotalRulesParsed
+    $ListCount = $ParsedLists.Count
+    Write-Host ""
+    Write-Host "  [OK] Parsed $TotalParsed rules from $ListCount lists" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 6. INTELLIGENT LIST STACKING (PRIMARY SOURCE ONLY)
@@ -386,7 +397,9 @@ function Analyze-AdGuardListsCI {
     Add-RulePrimarySource $MasterComplex $Anchor.Rules.Complex $AnchorName | Out-Null
     
     $InitialCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
-    Write-Host "  ✓ Anchor: $AnchorName ($InitialCount rules)`n" -ForegroundColor Cyan
+    Write-Host "  [OK] Anchor: $AnchorName" -ForegroundColor Cyan -NoNewline
+    Write-Host " ($InitialCount rules)" -ForegroundColor Cyan
+    Write-Host ""
 
     # Prepare candidate lists
     $CandidateArray = @($ParsedLists.Keys | Where-Object { 
@@ -455,12 +468,14 @@ function Analyze-AdGuardListsCI {
         }
         
         Write-Host "  + $BestName" -ForegroundColor Green -NoNewline
-        Write-Host " (+$TotalAdded unique)" -ForegroundColor Yellow
+        Write-Host " (+$TotalAdded)" -ForegroundColor Yellow
         
     } Until ($Candidates.Count -eq 0)
 
     $PostStackCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
-    Write-Host "`n  ✓ Stacking complete: $PostStackCount rules before optimization`n" -ForegroundColor Green
+    Write-Host ""
+    Write-Host "  [OK] Stacking complete: $PostStackCount rules before optimization" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 7. ADVANCED OPTIMIZATION
@@ -486,7 +501,8 @@ function Analyze-AdGuardListsCI {
         $MasterDomains.Remove($Domain) | Out-Null
     }
     $Global:Stats.WildcardCoveredRemoved = $WildcardCovered.Count
-    Write-Host "    ✓ Removed $($WildcardCovered.Count) domains covered by wildcards" -ForegroundColor Green
+    $RemovedWildcard = $WildcardCovered.Count
+    Write-Host "    [OK] Removed $RemovedWildcard domains covered by wildcards" -ForegroundColor Green
     
     # --- Tree Shaking ---
     Write-Host "  [5.2] Building domain trie for tree shaking..." -ForegroundColor Gray
@@ -533,7 +549,8 @@ function Analyze-AdGuardListsCI {
         }
     }
     
-    Write-Host "    ✓ Removed $($Global:Stats.TreeShakingRemoved) redundant subdomains" -ForegroundColor Green
+    $RemovedTree = $Global:Stats.TreeShakingRemoved
+    Write-Host "    [OK] Removed $RemovedTree redundant subdomains" -ForegroundColor Green
     $MasterDomains = $OptimizedDomains
     
     # --- Regex Simplification ---
@@ -557,7 +574,8 @@ function Analyze-AdGuardListsCI {
         }
     }
     $MasterRegex = $SimplifiedRegex
-    Write-Host "    ✓ Simplified $($Global:Stats.RegexSimplified) regex patterns" -ForegroundColor Green
+    $SimplifiedRegexCount = $Global:Stats.RegexSimplified
+    Write-Host "    [OK] Simplified $SimplifiedRegexCount regex patterns" -ForegroundColor Green
     
     # --- Cross-Type Duplicates ---
     Write-Host "  [5.4] Removing cross-type duplicates..." -ForegroundColor Gray
@@ -575,7 +593,8 @@ function Analyze-AdGuardListsCI {
     foreach ($Wildcard in $WildcardsToRemove) {
         $MasterWildcards.Remove($Wildcard) | Out-Null
     }
-    Write-Host "    ✓ Removed $($Global:Stats.CrossTypeDuplicates) cross-type duplicates" -ForegroundColor Green
+    $CrossTypeCount = $Global:Stats.CrossTypeDuplicates
+    Write-Host "    [OK] Removed $CrossTypeCount cross-type duplicates" -ForegroundColor Green
     
     # Update stats
     $Global:Stats.ComplexRules = $MasterComplex.Count
@@ -584,7 +603,9 @@ function Analyze-AdGuardListsCI {
     $Global:Stats.WildcardRules = $MasterWildcards.Count
     $Global:Stats.RegexRules = $MasterRegex.Count
     
-    Write-Host "`n  ✓ Optimization complete!`n" -ForegroundColor Green
+    Write-Host ""
+    Write-Host "  [OK] Optimization complete!" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 8. FINAL OUTPUT WITH EFFICIENT SOURCE TRACKING
@@ -598,9 +619,12 @@ function Analyze-AdGuardListsCI {
     $MegaList.Add("! ADGUARD MEGA STACK - GENERATED: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("! BASE ANCHOR: $AnchorName")
-    $MegaList.Add("! TOTAL LISTS: $($ListContributions.Count + 1)")
-    $MegaList.Add("! TOTAL RULES: $($MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count)")
-    $MegaList.Add("! EXCEPTION RULES SKIPPED: $($Global:Stats.ExceptionRulesSkipped)")
+    $ContribCount = $ListContributions.Count + 1
+    $MegaList.Add("! TOTAL LISTS: $ContribCount")
+    $TotalRulesCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
+    $MegaList.Add("! TOTAL RULES: $TotalRulesCount")
+    $ExceptionsSkipped = $Global:Stats.ExceptionRulesSkipped
+    $MegaList.Add("! EXCEPTION RULES SKIPPED: $ExceptionsSkipped")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("!")
     $MegaList.Add("! CONTRIBUTING LISTS:")
@@ -608,23 +632,35 @@ function Analyze-AdGuardListsCI {
     
     $Num = 1
     foreach ($Contributor in ($ListContributions | Sort-Object -Property Unique -Descending)) {
-        $MegaList.Add("! [$Num] $($Contributor.Name) (+$($Contributor.Unique)) [$($Contributor.Category)]")
+        $ContribName = $Contributor.Name
+        $ContribUnique = $Contributor.Unique
+        $ContribCat = $Contributor.Category
+        $MegaList.Add("! [$Num] $ContribName (+$ContribUnique) [$ContribCat]")
         $Num++
     }
     
     $MegaList.Add("!")
     $MegaList.Add("! OPTIMIZATIONS APPLIED:")
-    $MegaList.Add("!   Wildcard coverage: -$($Global:Stats.WildcardCoveredRemoved)")
-    $MegaList.Add("!   Tree shaking: -$($Global:Stats.TreeShakingRemoved)")
-    $MegaList.Add("!   Regex simplified: -$($Global:Stats.RegexSimplified)")
-    $MegaList.Add("!   Cross-type dupes: -$($Global:Stats.CrossTypeDuplicates)")
+    $OptWildcard = $Global:Stats.WildcardCoveredRemoved
+    $MegaList.Add("!   Wildcard coverage: -$OptWildcard")
+    $OptTree = $Global:Stats.TreeShakingRemoved
+    $MegaList.Add("!   Tree shaking: -$OptTree")
+    $OptRegex = $Global:Stats.RegexSimplified
+    $MegaList.Add("!   Regex simplified: -$OptRegex")
+    $OptCross = $Global:Stats.CrossTypeDuplicates
+    $MegaList.Add("!   Cross-type dupes: -$OptCross")
     $MegaList.Add("!")
     $MegaList.Add("! RULE TYPES:")
-    $MegaList.Add("!   Domains: $($MasterDomains.Count)")
-    $MegaList.Add("!   Wildcards: $($MasterWildcards.Count)")
-    $MegaList.Add("!   Regex: $($MasterRegex.Count)")
-    $MegaList.Add("!   IP Ranges: $($MasterIPRanges.Count)")
-    $MegaList.Add("!   Complex: $($MasterComplex.Count)")
+    $DomainCount = $MasterDomains.Count
+    $MegaList.Add("!   Domains: $DomainCount")
+    $WildcardCount = $MasterWildcards.Count
+    $MegaList.Add("!   Wildcards: $WildcardCount")
+    $RegexCount = $MasterRegex.Count
+    $MegaList.Add("!   Regex: $RegexCount")
+    $IPCount = $MasterIPRanges.Count
+    $MegaList.Add("!   IP Ranges: $IPCount")
+    $ComplexCount = $MasterComplex.Count
+    $MegaList.Add("!   Complex: $ComplexCount")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("")
     
@@ -648,7 +684,8 @@ function Analyze-AdGuardListsCI {
         foreach ($Source in $SourceOrder) {
             if ($BySource.ContainsKey($Source)) {
                 $Rules = $BySource[$Source] | Sort-Object
-                $MegaList.Add("! [$Source] - $($Rules.Count) rules")
+                $RuleCount = $Rules.Count
+                $MegaList.Add("! [$Source] - $RuleCount rules")
                 foreach ($Rule in $Rules) {
                     $MegaList.Add("$RulePrefix$Rule$RuleSuffix")
                 }
@@ -703,49 +740,74 @@ function Analyze-AdGuardListsCI {
     
     $Global:Stats.FinalRuleCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
     
-    Write-Host "  ✓ Saved to: $OutFile`n" -ForegroundColor Green
+    $FinalCount = $Global:Stats.FinalRuleCount
+    Write-Host "  [OK] Saved to: $OutFile" -ForegroundColor Green
+    Write-Host ""
 
     # =============================================================================
     # 9. STATISTICS REPORT
     # =============================================================================
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "COMPILATION COMPLETE" -ForegroundColor Cyan
-    Write-Host "========================================`n" -ForegroundColor Cyan
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host ""
     
     Write-Host "DOWNLOAD:" -ForegroundColor Yellow
-    Write-Host "  Lists: $($Global:Stats.TotalDownloaded)" -ForegroundColor White
-    Write-Host "  Rules parsed: $($Global:Stats.TotalRulesParsed)" -ForegroundColor White
-    Write-Host "  Exceptions skipped: $($Global:Stats.ExceptionRulesSkipped)`n" -ForegroundColor DarkGray
+    $StatsDownloaded = $Global:Stats.TotalDownloaded
+    Write-Host "  Lists: $StatsDownloaded" -ForegroundColor White
+    $StatsParsed = $Global:Stats.TotalRulesParsed
+    Write-Host "  Rules parsed: $StatsParsed" -ForegroundColor White
+    $StatsExceptions = $Global:Stats.ExceptionRulesSkipped
+    Write-Host "  Exceptions skipped: $StatsExceptions" -ForegroundColor DarkGray
+    Write-Host ""
     
     Write-Host "OPTIMIZATION:" -ForegroundColor Yellow
     Write-Host "  Before: $PostStackCount rules" -ForegroundColor White
-    Write-Host "  Wildcard coverage: -$($Global:Stats.WildcardCoveredRemoved)" -ForegroundColor White
-    Write-Host "  Tree shaking: -$($Global:Stats.TreeShakingRemoved)" -ForegroundColor White
-    Write-Host "  Regex simplified: -$($Global:Stats.RegexSimplified)" -ForegroundColor White
-    Write-Host "  Cross-type dupes: -$($Global:Stats.CrossTypeDuplicates)" -ForegroundColor White
-    Write-Host "  Total reduction: $(($PostStackCount - $Global:Stats.FinalRuleCount))`n" -ForegroundColor Green
+    $StatsWildcardRemoved = $Global:Stats.WildcardCoveredRemoved
+    Write-Host "  Wildcard coverage: -$StatsWildcardRemoved" -ForegroundColor White
+    $StatsTreeRemoved = $Global:Stats.TreeShakingRemoved
+    Write-Host "  Tree shaking: -$StatsTreeRemoved" -ForegroundColor White
+    $StatsRegexSimp = $Global:Stats.RegexSimplified
+    Write-Host "  Regex simplified: -$StatsRegexSimp" -ForegroundColor White
+    $StatsCrossType = $Global:Stats.CrossTypeDuplicates
+    Write-Host "  Cross-type dupes: -$StatsCrossType" -ForegroundColor White
+    $TotalReduction = $PostStackCount - $Global:Stats.FinalRuleCount
+    Write-Host "  Total reduction: $TotalReduction" -ForegroundColor Green
+    Write-Host ""
     
     Write-Host "FINAL OUTPUT:" -ForegroundColor Yellow
-    Write-Host "  Total rules: $($Global:Stats.FinalRuleCount)" -ForegroundColor Cyan
-    Write-Host "    Domains: $($Global:Stats.StandardDomains)" -ForegroundColor White
-    Write-Host "    Wildcards: $($Global:Stats.WildcardRules)" -ForegroundColor White
-    Write-Host "    Regex: $($Global:Stats.RegexRules)" -ForegroundColor White
-    Write-Host "    IP Ranges: $($Global:Stats.IPRanges)" -ForegroundColor White
-    Write-Host "    Complex: $($Global:Stats.ComplexRules)`n" -ForegroundColor White
+    $StatsFinalCount = $Global:Stats.FinalRuleCount
+    Write-Host "  Total rules: $StatsFinalCount" -ForegroundColor Cyan
+    $StatsDomains = $Global:Stats.StandardDomains
+    Write-Host "    Domains: $StatsDomains" -ForegroundColor White
+    $StatsWildcards = $Global:Stats.WildcardRules
+    Write-Host "    Wildcards: $StatsWildcards" -ForegroundColor White
+    $StatsRegex = $Global:Stats.RegexRules
+    Write-Host "    Regex: $StatsRegex" -ForegroundColor White
+    $StatsIPRanges = $Global:Stats.IPRanges
+    Write-Host "    IP Ranges: $StatsIPRanges" -ForegroundColor White
+    $StatsComplex = $Global:Stats.ComplexRules
+    Write-Host "    Complex: $StatsComplex" -ForegroundColor White
+    Write-Host ""
     
     Write-Host "TOP CONTRIBUTORS:" -ForegroundColor Yellow
     $ListContributions | Sort-Object -Property Unique -Descending | Select-Object -First 10 | ForEach-Object {
-        Write-Host "  $($_.Name): +$($_.Unique) [$($_.Category)]" -ForegroundColor White
+        $TopName = $_.Name
+        $TopUnique = $_.Unique
+        $TopCategory = $_.Category
+        Write-Host "  $TopName : +$TopUnique [$TopCategory]" -ForegroundColor White
     }
     Write-Host ""
     
     $ReductionPercent = [math]::Round((($PostStackCount - $Global:Stats.FinalRuleCount) / $PostStackCount) * 100, 2)
-    Write-Host "EFFICIENCY: $ReductionPercent% size reduction`n" -ForegroundColor Green
+    Write-Host "EFFICIENCY: $ReductionPercent% size reduction" -ForegroundColor Green
+    Write-Host ""
     
     # Cleanup
     if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
     
-    Write-Host "✓ Done! Check blocklist.txt`n" -ForegroundColor Green
+    Write-Host "[OK] Done! Check blocklist.txt" -ForegroundColor Green
+    Write-Host ""
 }
 
 # =============================================================================
