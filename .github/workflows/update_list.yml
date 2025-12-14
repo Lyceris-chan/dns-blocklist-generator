@@ -17,9 +17,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Install Aria2
-        run: choco install aria2 --no-progress
-
       - name: Run Compiler Script
         run: .\compiler.ps1
         shell: powershell
