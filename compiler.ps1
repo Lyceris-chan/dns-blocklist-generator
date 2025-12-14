@@ -1,8 +1,7 @@
 # --- CONFIGURATION: MANUAL EXCLUSIONS ---
 # Add the RefIDs of lists you want to permanently skip.
-# (e.g. 34 = HaGeZi Normal, 24 = 1Hosts Lite)
 $ExcludedRefIds = @(
-    # Add IDs here, e.g.: 37, 57, 53
+    37, 57, 53
 )
 
 function Analyze-AdGuardListsCI {
@@ -88,13 +87,14 @@ function Analyze-AdGuardListsCI {
         @{ RefId=42; Id="filter_42.txt"; Name="ShadowWhisperer's Malware List"; Category="Security" },
         @{ RefId=31; Id="filter_31.txt"; Name="Stalkerware Indicators List"; Category="Security" },
         @{ RefId=9;  Id="filter_9.txt";  Name="The Big List of Hacked Malware Web Sites"; Category="Security" },
-        @{ RefId=50; Id="filter_50.txt"; Name="uBlock₀ filters – Badware risks"; Category="Security" },
+        # --- FIXED ASCII NAME BELOW (No special characters) ---
+        @{ RefId=50; Id="filter_50.txt"; Name="uBlock filters - Badware risks"; Category="Security" },
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
 
-    Write-Host "Running CI Compiler (Polyglot v12.0)" -ForegroundColor Cyan
+    Write-Host "Running CI Compiler (Polyglot v12.1 - ASCII Safe)" -ForegroundColor Cyan
     
-    # Setup temp dirs (Uses local workspace in GitHub Actions)
+    # Setup temp dirs
     $TempDir = Join-Path $pwd "temp_downloads"
     $ListsDir = Join-Path $TempDir "lists"
     if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
@@ -121,8 +121,16 @@ function Analyze-AdGuardListsCI {
 
     # --- DOWNLOAD (Uses system aria2c) ---
     Write-Host "Starting Aria2 Download..."
-    $Aria2Args = @("-i", $InputFile, "--max-concurrent-downloads=16", "--quiet=true")
-    Start-Process -FilePath "aria2c" -ArgumentList $Aria2Args -NoNewWindow -Wait
+    # Ensure aria2c is reachable or fail early
+    try {
+        $Aria2Args = @("-i", $InputFile, "--max-concurrent-downloads=16", "--quiet=true")
+        $Process = Start-Process -FilePath "aria2c" -ArgumentList $Aria2Args -NoNewWindow -Wait -PassThru
+        if ($Process.ExitCode -ne 0) { Write-Error "Aria2 exited with error code $($Process.ExitCode)" }
+    }
+    catch {
+        Write-Error "Failed to start aria2c. Is it installed and in PATH?"
+        return
+    }
     
     foreach ($Key in $Global:ListStatus.Keys) {
         if (Test-Path (Join-Path $ListsDir $Global:ListStatus[$Key].FileName)) { $Global:ListStatus[$Key].Downloaded = $true } 
@@ -131,11 +139,11 @@ function Analyze-AdGuardListsCI {
     # --- PARSE ---
     Write-Host "Parsing Lists..."
     $ParsedLists = [System.Collections.Concurrent.ConcurrentDictionary[string, object]]::new()
-    # Note: GitHub runners have 2-4 cores usually, 10 threads is fine for IO
-    $RunspacePool = [runspacefactory]::CreateRunspacePool(1, 10) 
+    $RunspacePool = [runspacefactory]::CreateRunspacePool(1, 4) # GitHub runners handle 4 threads better
     $RunspacePool.Open()
     $Jobs = @()
     
+    # --- SCRIPTBLOCK ISOLATED AND SAFE ---
     $ScriptBlock = {
         param($FileName, $Name, $FilePath)
         $Result = @{ Name = $Name; FileName = $FileName; Domains = $null }
@@ -143,16 +151,26 @@ function Analyze-AdGuardListsCI {
             try {
                 $Lines = [System.IO.File]::ReadAllLines($FilePath)
                 $DomainSet = [System.Collections.Generic.HashSet[string]]::new()
+                
                 foreach ($Line in $Lines) {
                     if ([string]::IsNullOrWhiteSpace($Line) -or $Line[0] -eq '!' -or $Line[0] -eq '#') { continue }
                     $Clean = $Line.Trim(); $Rule = $null; $IsExplicit = $false
                     
-                    if ($Clean.StartsWith("/") -and $Clean.EndsWith("/")) { $Rule = $Clean; $IsExplicit = $true }
-                    elseif ($Clean.StartsWith("||")) { $Rule = $Clean.Substring(2).Split('^$')[0]; $IsExplicit = $true }
-                    elseif ($Clean -match '^(https?://|www\.)') { 
-                         try { if($Clean -notmatch '^http') { $Clean="http://$Clean"}; $Rule = ([uri]$Clean).Host } catch {} 
+                    if ($Clean.StartsWith("/") -and $Clean.EndsWith("/")) { 
+                        $Rule = $Clean; $IsExplicit = $true 
                     }
-                    elseif ($Clean -match '^(0\.0\.0\.0|127\.0\.0\.1)\s+(.+)') { $Rule = $matches[2].Split('#')[0].Trim() }
+                    elseif ($Clean.StartsWith("||")) { 
+                        $Rule = $Clean.Substring(2).Split('^$')[0]; $IsExplicit = $true 
+                    }
+                    elseif ($Clean -match '^(https?://|www\.)') { 
+                         try { 
+                            if ($Clean -notmatch '^http') { $Clean="http://$Clean" }
+                            $Rule = ([uri]$Clean).Host 
+                         } catch {} 
+                    }
+                    elseif ($Clean -match '^(0\.0\.0\.0|127\.0\.0\.1)\s+(.+)') { 
+                        $Rule = $matches[2].Split('#')[0].Trim() 
+                    }
                     elseif ($Clean -match '([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]') {
                          if ($Clean -notmatch '[#\$\^]') { $Rule = $matches[0] }
                     }
@@ -229,10 +247,9 @@ function Analyze-AdGuardListsCI {
     } Until ($Candidates.Count -eq 0)
 
     # --- SAVE ---
-    # Save to current workspace root as 'blocklist.txt'
     $OutFile = Join-Path $pwd "blocklist.txt"
     [System.IO.File]::WriteAllLines($OutFile, $MegaList)
     Write-Host "Done! Saved to $OutFile"
 }
 
-Analyze-AdGuardListsCI 
+Analyze-AdGuardListsCI
