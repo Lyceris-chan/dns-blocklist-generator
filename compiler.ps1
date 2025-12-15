@@ -1,15 +1,10 @@
 # =============================================================================
-# ADGUARD MEGA STACK COMPILER - v19.0 (Optimized Source Tracking)
+# ADGUARD MEGA STACK COMPILER - v21.0 (Source-Aware Diff & Full Stats)
 # =============================================================================
-# CHANGELOG v19.0:
-# - BREAKING: Removed wasteful inline source comments
-# - Source tracking now uses efficient section headers: "! [Source Name] - X rules"
-# - Optimized memory usage: tracks only primary source per rule (not all sources)
-# - Improved final output organization with clear source sections
-# - Fixed duplicate removal logic
-# - Enhanced validation and error handling
-# - Better progress reporting during parsing
-# - Cleaner statistics output
+# CHANGELOG v21.0:
+# - NEW: Source-Aware Diffing (Tracks exactly which list added/removed a rule)
+# - REF: Restored full detailed headers, optimization stats, and contributor logs
+# - REF: Full rebuild strategy maintained to prevent "Zombie Rule" false positives
 # =============================================================================
 
 # --- CONFIGURATION: MANUAL EXCLUSIONS ---
@@ -19,6 +14,51 @@ function Analyze-AdGuardListsCI {
     param (
         [int[]]$ExcludeIds = $ExcludedRefIds
     )
+
+    # =============================================================================
+    # 0. LOAD PREVIOUS STATE (Source-Aware)
+    # =============================================================================
+    $ExistingBlocklistPath = Join-Path $pwd "blocklist.txt"
+    # Map: Rule -> SourceName
+    $PreviousRulesMap = @{}
+    $DiffMode = $false
+
+    if (Test-Path $ExistingBlocklistPath) {
+        Write-Host "[0/7] Loading existing blocklist for smart comparison..." -ForegroundColor Yellow
+        try {
+            $CurrentReadSource = "Unknown"
+            # Read lines, skipping empty ones
+            $Lines = [System.IO.File]::ReadAllLines($ExistingBlocklistPath)
+            
+            foreach ($Line in $Lines) {
+                if ([string]::IsNullOrWhiteSpace($Line)) { continue }
+                
+                # Detect Source Header: "! [Source Name] - X rules"
+                if ($Line -match '^! \[(.+?)\] - \d+ rules') {
+                    $CurrentReadSource = $matches[1]
+                    continue
+                }
+                
+                # Skip other comments/metadata
+                if ($Line.StartsWith('!')) { continue }
+                
+                # Store Rule + Source
+                $CleanRule = $Line.Trim()
+                if (-not $PreviousRulesMap.ContainsKey($CleanRule)) {
+                    $PreviousRulesMap[$CleanRule] = $CurrentReadSource
+                }
+            }
+            $PrevCount = $PreviousRulesMap.Count
+            Write-Host "  [OK] Indexed $PrevCount rules from previous build." -ForegroundColor Green
+            $DiffMode = $true
+        }
+        catch {
+            Write-Host "  [!] Error reading existing file. Diff skipped. $_" -ForegroundColor Red
+        }
+    } else {
+        Write-Host "[0/7] No existing blocklist found. First run?" -ForegroundColor DarkGray
+    }
+    Write-Host ""
 
     # =============================================================================
     # 1. DATA DEFINITION
@@ -121,8 +161,8 @@ function Analyze-AdGuardListsCI {
 
     Write-Host ""
     Write-Host "========================================" -ForegroundColor Cyan
-    Write-Host "AdGuard Mega Stack Compiler v19.0" -ForegroundColor Cyan
-    Write-Host "Optimized Source Tracking Edition" -ForegroundColor Cyan
+    Write-Host "AdGuard Mega Stack Compiler v21.0" -ForegroundColor Cyan
+    Write-Host "Source-Aware Diff Edition" -ForegroundColor Cyan
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host ""
     
@@ -140,7 +180,7 @@ function Analyze-AdGuardListsCI {
     # =============================================================================
     # 3. PREPARE DOWNLOAD LIST
     # =============================================================================
-    Write-Host "[1/6] Preparing download list..." -ForegroundColor Yellow
+    Write-Host "[1/7] Preparing download list..." -ForegroundColor Yellow
     foreach ($Entry in $AdGuardData) {
         if ($ExcludeIds -contains $Entry.RefId) { 
             Write-Host "  - Skipping: $($Entry.Name) (manually excluded)" -ForegroundColor DarkGray
@@ -169,7 +209,7 @@ function Analyze-AdGuardListsCI {
     # =============================================================================
     # 4. DOWNLOAD LISTS WITH ARIA2
     # =============================================================================
-    Write-Host "[2/6] Downloading lists with Aria2..." -ForegroundColor Yellow
+    Write-Host "[2/7] Downloading lists with Aria2..." -ForegroundColor Yellow
     try {
         $Aria2Args = @("-i", $InputFile, "--max-concurrent-downloads=16", "--quiet=true", "--console-log-level=error")
         $Process = Start-Process -FilePath "aria2c" -ArgumentList $Aria2Args -NoNewWindow -Wait -PassThru
@@ -197,7 +237,7 @@ function Analyze-AdGuardListsCI {
     # =============================================================================
     # 5. PARSE LISTS WITH ENHANCED NORMALIZATION
     # =============================================================================
-    Write-Host "[3/6] Parsing and normalizing rules..." -ForegroundColor Yellow
+    Write-Host "[3/7] Parsing and normalizing rules..." -ForegroundColor Yellow
     $ParsedLists = [System.Collections.Concurrent.ConcurrentDictionary[string, object]]::new()
     $RunspacePool = [runspacefactory]::CreateRunspacePool(1, 8) 
     $RunspacePool.Open()
@@ -333,7 +373,7 @@ function Analyze-AdGuardListsCI {
         }
     }
     
-    # Collect parsing results with progress
+    # Collect parsing results
     $CompletedJobs = 0
     foreach ($Job in $Jobs) {
         $Res = $Job.Pipe.EndInvoke($Job.Result)
@@ -359,9 +399,9 @@ function Analyze-AdGuardListsCI {
     Write-Host ""
 
     # =============================================================================
-    # 6. INTELLIGENT LIST STACKING (PRIMARY SOURCE ONLY)
+    # 6. INTELLIGENT LIST STACKING
     # =============================================================================
-    Write-Host "[4/6] Stacking lists (tracking primary source)..." -ForegroundColor Yellow
+    Write-Host "[4/7] Stacking lists (tracking primary source)..." -ForegroundColor Yellow
     $AnchorName = "HaGeZi's Pro++ Blocklist"
     
     if (-not $ParsedLists.ContainsKey($AnchorName)) { 
@@ -369,7 +409,6 @@ function Analyze-AdGuardListsCI {
         return 
     }
 
-    # Optimized: Track only PRIMARY source (first list that added the rule)
     $MasterDomains = @{}
     $MasterWildcards = @{}
     $MasterRegex = @{}
@@ -381,7 +420,7 @@ function Analyze-AdGuardListsCI {
         $NewRules = 0
         foreach ($Rule in $Rules) {
             if (-not $MasterDict.ContainsKey($Rule)) {
-                $MasterDict[$Rule] = $SourceName  # Store only primary source
+                $MasterDict[$Rule] = $SourceName
                 $NewRules++
             }
         }
@@ -478,57 +517,38 @@ function Analyze-AdGuardListsCI {
     Write-Host ""
 
     # =============================================================================
-    # 7. ADVANCED OPTIMIZATION
+    # 7. OPTIMIZATION
     # =============================================================================
-    Write-Host "[5/6] Applying advanced optimizations..." -ForegroundColor Yellow
+    Write-Host "[5/7] Applying optimizations..." -ForegroundColor Yellow
     
-    # --- Wildcard Coverage ---
-    Write-Host "  [5.1] Analyzing wildcard coverage..." -ForegroundColor Gray
+    # 7.1 Wildcard Coverage
     $WildcardCovered = [System.Collections.Generic.HashSet[string]]::new()
-    
     foreach ($WildcardEntry in $MasterWildcards.GetEnumerator()) {
-        $Wildcard = $WildcardEntry.Key
-        $Suffix = $Wildcard.TrimStart('*')
-        
+        $Suffix = $WildcardEntry.Key.TrimStart('*')
         foreach ($Domain in $MasterDomains.Keys) {
             if ($Domain.EndsWith($Suffix) -and $Domain -ne $Suffix.TrimStart('.')) {
                 [void]$WildcardCovered.Add($Domain)
             }
         }
     }
-    
-    foreach ($Domain in $WildcardCovered) {
-        $MasterDomains.Remove($Domain) | Out-Null
-    }
+    foreach ($Domain in $WildcardCovered) { [void]$MasterDomains.Remove($Domain) }
     $Global:Stats.WildcardCoveredRemoved = $WildcardCovered.Count
-    $RemovedWildcard = $WildcardCovered.Count
-    Write-Host "    [OK] Removed $RemovedWildcard domains covered by wildcards" -ForegroundColor Green
+    Write-Host "  [OK] Removed $($WildcardCovered.Count) covered by wildcards" -ForegroundColor Green
     
-    # --- Tree Shaking ---
-    Write-Host "  [5.2] Building domain trie for tree shaking..." -ForegroundColor Gray
-    
-    class TrieNode {
-        [hashtable]$Children = @{}
-        [bool]$IsEndOfDomain = $false
-    }
-    
+    # 7.2 Tree Shaking
+    class TrieNode { [hashtable]$Children = @{}; [bool]$IsEndOfDomain = $false }
     $Root = [TrieNode]::new()
     $SortedDomains = $MasterDomains.GetEnumerator() | Sort-Object { $_.Key.Length }
     $OptimizedDomains = @{}
     
     foreach ($Entry in $SortedDomains) {
-        $Domain = $Entry.Key
-        $Source = $Entry.Value
-        
-        $Parts = $Domain.Split('.')
+        $Parts = $Entry.Key.Split('.')
         [array]::Reverse($Parts)
-        
         $Current = $Root
         $IsRedundant = $false
         
         for ($i = 0; $i -lt $Parts.Count; $i++) {
             $Part = $Parts[$i]
-            
             if ($Current.Children.ContainsKey($Part)) {
                 $Current = $Current.Children[$Part]
                 if ($Current.IsEndOfDomain -and $i -lt ($Parts.Count - 1)) {
@@ -536,81 +556,120 @@ function Analyze-AdGuardListsCI {
                     $Global:Stats.TreeShakingRemoved++
                     break
                 }
-            }
-            else {
+            } else {
                 $Current.Children[$Part] = [TrieNode]::new()
                 $Current = $Current.Children[$Part]
             }
         }
-        
         if (-not $IsRedundant) {
             $Current.IsEndOfDomain = $true
-            $OptimizedDomains[$Domain] = $Source
+            $OptimizedDomains[$Entry.Key] = $Entry.Value
         }
     }
-    
-    $RemovedTree = $Global:Stats.TreeShakingRemoved
-    Write-Host "    [OK] Removed $RemovedTree redundant subdomains" -ForegroundColor Green
     $MasterDomains = $OptimizedDomains
-    
-    # --- Regex Simplification ---
-    Write-Host "  [5.3] Simplifying regex patterns..." -ForegroundColor Gray
+    Write-Host "  [OK] Tree shaking removed $($Global:Stats.TreeShakingRemoved) redundant subdomains" -ForegroundColor Green
+
+    # 7.3 Regex Simplification
     $SimplifiedRegex = @{}
-    
     foreach ($Entry in $MasterRegex.GetEnumerator()) {
-        $Pattern = $Entry.Key
-        $Source = $Entry.Value
-        
-        if ($Pattern -match '^\^/\^([a-z0-9\.-]+)\\\.([a-z0-9\.-]+)\$/$') {
-            $SimpleDomain = $matches[1] + '.' + $matches[2]
-            $SimpleDomain = $SimpleDomain.Replace('\.', '.')
-            if (-not $MasterDomains.ContainsKey($SimpleDomain)) {
-                $MasterDomains[$SimpleDomain] = $Source
+        if ($Entry.Key -match '^\^/\^([a-z0-9\.-]+)\\\.([a-z0-9\.-]+)\$/$') {
+            $Simple = ($matches[1] + '.' + $matches[2]).Replace('\.', '.')
+            if (-not $MasterDomains.ContainsKey($Simple)) {
+                $MasterDomains[$Simple] = $Entry.Value
                 $Global:Stats.RegexSimplified++
             }
-        }
-        else {
-            $SimplifiedRegex[$Pattern] = $Source
-        }
+        } else { $SimplifiedRegex[$Entry.Key] = $Entry.Value }
     }
     $MasterRegex = $SimplifiedRegex
-    $SimplifiedRegexCount = $Global:Stats.RegexSimplified
-    Write-Host "    [OK] Simplified $SimplifiedRegexCount regex patterns" -ForegroundColor Green
+    Write-Host "  [OK] Simplified $($Global:Stats.RegexSimplified) regex patterns" -ForegroundColor Green
     
-    # --- Cross-Type Duplicates ---
-    Write-Host "  [5.4] Removing cross-type duplicates..." -ForegroundColor Gray
+    # 7.4 Cross-Type Dupes
     $WildcardsToRemove = [System.Collections.Generic.List[string]]::new()
-    
     foreach ($Entry in $MasterWildcards.GetEnumerator()) {
-        $Wildcard = $Entry.Key
-        $CleanWildcard = $Wildcard.TrimStart('*').TrimStart('.')
-        if ($MasterDomains.ContainsKey($CleanWildcard)) {
-            $WildcardsToRemove.Add($Wildcard)
+        if ($MasterDomains.ContainsKey($Entry.Key.TrimStart('*').TrimStart('.'))) {
+            $WildcardsToRemove.Add($Entry.Key)
             $Global:Stats.CrossTypeDuplicates++
         }
     }
+    foreach ($W in $WildcardsToRemove) { [void]$MasterWildcards.Remove($W) }
+    Write-Host "  [OK] Removed $($Global:Stats.CrossTypeDuplicates) cross-type duplicates" -ForegroundColor Green
+    Write-Host ""
+
+    # =============================================================================
+    # 8. GENERATE SOURCE-AWARE DIFF REPORT
+    # =============================================================================
+    Write-Host "[6/7] Generating SOURCE-AWARE diff report..." -ForegroundColor Yellow
+    $DiffFile = Join-Path $pwd "diffs.txt"
+    $DiffOutput = [System.Collections.Generic.List[string]]::new()
     
-    foreach ($Wildcard in $WildcardsToRemove) {
-        $MasterWildcards.Remove($Wildcard) | Out-Null
-    }
-    $CrossTypeCount = $Global:Stats.CrossTypeDuplicates
-    Write-Host "    [OK] Removed $CrossTypeCount cross-type duplicates" -ForegroundColor Green
-    
-    # Update stats
+    # Update Stats for final output
     $Global:Stats.ComplexRules = $MasterComplex.Count
     $Global:Stats.StandardDomains = $MasterDomains.Count
     $Global:Stats.IPRanges = $MasterIPRanges.Count
     $Global:Stats.WildcardRules = $MasterWildcards.Count
     $Global:Stats.RegexRules = $MasterRegex.Count
-    
-    Write-Host ""
-    Write-Host "  [OK] Optimization complete!" -ForegroundColor Green
+    $Global:Stats.FinalRuleCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
+
+    if ($DiffMode) {
+        # Construct Current Map for comparison: Rule -> Source
+        $NewRulesMap = @{}
+        
+        # Format rules exactly as they appear in the file for accurate string comparison
+        $MasterDomains.GetEnumerator() | ForEach-Object { $NewRulesMap["||$($_.Key)^"] = $_.Value }
+        $MasterWildcards.GetEnumerator() | ForEach-Object { $NewRulesMap["||$($_.Key)^"] = $_.Value }
+        $MasterRegex.GetEnumerator() | ForEach-Object { $NewRulesMap[$_.Key] = $_.Value }
+        $MasterIPRanges.GetEnumerator() | ForEach-Object { $NewRulesMap[$_.Key] = $_.Value }
+        $MasterComplex.GetEnumerator() | ForEach-Object { $NewRulesMap[$_.Key] = $_.Value }
+
+        $Added = 0
+        $Removed = 0
+        $Transferred = 0
+
+        $DiffOutput.Add("! =========================================================================")
+        $DiffOutput.Add("! DIFF REPORT: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+        $DiffOutput.Add("! =========================================================================")
+        $DiffOutput.Add("")
+        
+        $DiffOutput.Add("! --- REMOVED RULES ---")
+        foreach ($Key in $PreviousRulesMap.Keys) {
+            if (-not $NewRulesMap.ContainsKey($Key)) {
+                $OldSource = $PreviousRulesMap[$Key]
+                $DiffOutput.Add("- $Key [Was: $OldSource]")
+                $Removed++
+            }
+        }
+        
+        $DiffOutput.Add("")
+        $DiffOutput.Add("! --- ADDED RULES ---")
+        foreach ($Key in $NewRulesMap.Keys) {
+            if (-not $PreviousRulesMap.ContainsKey($Key)) {
+                $NewSource = $NewRulesMap[$Key]
+                $DiffOutput.Add("+ $Key [Source: $NewSource]")
+                $Added++
+            }
+            elseif ($PreviousRulesMap[$Key] -ne $NewRulesMap[$Key]) {
+                # Ownership transfer (same rule, new primary source)
+                $Old = $PreviousRulesMap[$Key]
+                $New = $NewRulesMap[$Key]
+                $DiffOutput.Add("~ $Key [Moved: $Old -> $New]")
+                $Transferred++
+            }
+        }
+        
+        Write-Host "  [DIFF] Added: $Added | Removed: $Removed | Moved: $Transferred" -ForegroundColor Cyan
+        [System.IO.File]::WriteAllLines($DiffFile, $DiffOutput)
+        Write-Host "  [OK] Saved Source-Aware diffs to: $DiffFile" -ForegroundColor Green
+
+    } else {
+        Set-Content -Path $DiffFile -Value "! No previous blocklist found to compare against."
+        Write-Host "  [!] Skipped diff generation (no previous file)" -ForegroundColor DarkGray
+    }
     Write-Host ""
 
     # =============================================================================
-    # 8. FINAL OUTPUT WITH EFFICIENT SOURCE TRACKING
+    # 9. FINAL OUTPUT (FULL STATS RESTORED)
     # =============================================================================
-    Write-Host "[6/6] Generating final blocklist..." -ForegroundColor Yellow
+    Write-Host "[7/7] Generating final blocklist..." -ForegroundColor Yellow
     
     $MegaList = [System.Collections.Generic.List[string]]::new()
     
@@ -621,7 +680,7 @@ function Analyze-AdGuardListsCI {
     $MegaList.Add("! BASE ANCHOR: $AnchorName")
     $ContribCount = $ListContributions.Count + 1
     $MegaList.Add("! TOTAL LISTS: $ContribCount")
-    $TotalRulesCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
+    $TotalRulesCount = $Global:Stats.FinalRuleCount
     $MegaList.Add("! TOTAL RULES: $TotalRulesCount")
     $ExceptionsSkipped = $Global:Stats.ExceptionRulesSkipped
     $MegaList.Add("! EXCEPTION RULES SKIPPED: $ExceptionsSkipped")
@@ -642,25 +701,25 @@ function Analyze-AdGuardListsCI {
     $MegaList.Add("!")
     $MegaList.Add("! OPTIMIZATIONS APPLIED:")
     $OptWildcard = $Global:Stats.WildcardCoveredRemoved
-    $MegaList.Add("!   Wildcard coverage: -$OptWildcard")
+    $MegaList.Add("!    Wildcard coverage: -$OptWildcard")
     $OptTree = $Global:Stats.TreeShakingRemoved
-    $MegaList.Add("!   Tree shaking: -$OptTree")
+    $MegaList.Add("!    Tree shaking: -$OptTree")
     $OptRegex = $Global:Stats.RegexSimplified
-    $MegaList.Add("!   Regex simplified: -$OptRegex")
+    $MegaList.Add("!    Regex simplified: -$OptRegex")
     $OptCross = $Global:Stats.CrossTypeDuplicates
-    $MegaList.Add("!   Cross-type dupes: -$OptCross")
+    $MegaList.Add("!    Cross-type dupes: -$OptCross")
     $MegaList.Add("!")
     $MegaList.Add("! RULE TYPES:")
     $DomainCount = $MasterDomains.Count
-    $MegaList.Add("!   Domains: $DomainCount")
+    $MegaList.Add("!    Domains: $DomainCount")
     $WildcardCount = $MasterWildcards.Count
-    $MegaList.Add("!   Wildcards: $WildcardCount")
+    $MegaList.Add("!    Wildcards: $WildcardCount")
     $RegexCount = $MasterRegex.Count
-    $MegaList.Add("!   Regex: $RegexCount")
+    $MegaList.Add("!    Regex: $RegexCount")
     $IPCount = $MasterIPRanges.Count
-    $MegaList.Add("!   IP Ranges: $IPCount")
+    $MegaList.Add("!    IP Ranges: $IPCount")
     $ComplexCount = $MasterComplex.Count
-    $MegaList.Add("!   Complex: $ComplexCount")
+    $MegaList.Add("!    Complex: $ComplexCount")
     $MegaList.Add("! =========================================================================")
     $MegaList.Add("")
     
@@ -738,14 +797,11 @@ function Analyze-AdGuardListsCI {
     $OutFile = Join-Path $pwd "blocklist.txt"
     [System.IO.File]::WriteAllLines($OutFile, $MegaList)
     
-    $Global:Stats.FinalRuleCount = $MasterDomains.Count + $MasterWildcards.Count + $MasterRegex.Count + $MasterIPRanges.Count + $MasterComplex.Count
-    
-    $FinalCount = $Global:Stats.FinalRuleCount
     Write-Host "  [OK] Saved to: $OutFile" -ForegroundColor Green
     Write-Host ""
 
     # =============================================================================
-    # 9. STATISTICS REPORT
+    # 10. STATISTICS REPORT
     # =============================================================================
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "COMPILATION COMPLETE" -ForegroundColor Cyan
@@ -806,7 +862,7 @@ function Analyze-AdGuardListsCI {
     # Cleanup
     if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
     
-    Write-Host "[OK] Done! Check blocklist.txt" -ForegroundColor Green
+    Write-Host "[OK] Done! Check blocklist.txt and diffs.txt" -ForegroundColor Green
     Write-Host ""
 }
 
