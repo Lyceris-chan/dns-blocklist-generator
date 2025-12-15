@@ -13,7 +13,7 @@
 # =============================================================================
 
 # --- CONFIGURATION: MANUAL EXCLUSIONS ---
-$ExcludedRefIds = @(37, 57, 53)
+$ExcludedRefIds = @(37, 57, 53, 46)
 
 function Analyze-AdGuardListsCI {
     param (
