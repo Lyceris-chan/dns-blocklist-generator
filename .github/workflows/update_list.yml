@@ -29,6 +29,7 @@ jobs:
           # Check if there are changes
           if (git status --porcelain) {
             git add blocklist.txt
+            git add diffs.txt
             git commit -m "Auto-update blocklist $(Get-Date -Format 'yyyy-MM-dd')"
             git push
           } else {
