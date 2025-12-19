@@ -1,5 +1,5 @@
 # =============================================================================
-# ADGUARD MEGA STACK COMPILER - v21.0 (Source-Aware Diff & Full Stats)
+# sleepy list compiler - v21.0 (Source-Aware Diff & Full Stats)
 # =============================================================================
 # CHANGELOG v21.0:
 # - NEW: Source-Aware Diffing (Tracks exactly which list added/removed a rule)
@@ -21,6 +21,7 @@ function Analyze-AdGuardListsCI {
     $ExistingBlocklistPath = Join-Path $pwd "blocklist.txt"
     # Map: Rule -> SourceName
     $PreviousRulesMap = @{}
+    $PreviousSourceOrder = [System.Collections.Generic.List[string]]::new()
     $DiffMode = $false
 
     if (Test-Path $ExistingBlocklistPath) {
@@ -36,6 +37,9 @@ function Analyze-AdGuardListsCI {
                 # Detect Source Header: "! [Source Name] - X rules"
                 if ($Line -match '^! \[(.+?)\] - \d+ rules') {
                     $CurrentReadSource = $matches[1]
+                    if (-not $PreviousSourceOrder.Contains($CurrentReadSource)) {
+                        $PreviousSourceOrder.Add($CurrentReadSource)
+                    }
                     continue
                 }
                 
@@ -83,7 +87,7 @@ function Analyze-AdGuardListsCI {
 
     $AdGuardData = @(
         # --- EXCEPTION: EASYLIST DUTCH ---
-        @{ RefId=999; Id="easylistdutch.txt"; Name="EasyList Dutch"; Category="Specific"; ExternalUrl="https://easylist-downloads.adblockplus.org/easylistdutch.txt" },
+        @{ RefId=999; Id="easylistdutch.txt"; Name="EasyList Dutch"; Category="Specific"; ExternalUrl="https://easylist-downloads.adblockplus.org/easylistdutch.txt"; Homepage="https://easylist.to/" },
         
         # --- STANDARD LISTS ---
         @{ RefId=24; Id="filter_24.txt"; Name="1Hosts (Lite)"; Category="General" },
@@ -158,10 +162,20 @@ function Analyze-AdGuardListsCI {
         @{ RefId=50; Id="filter_50.txt"; Name="uBlock filters - Badware risks"; Category="Security" },
         @{ RefId=11; Id="filter_11.txt"; Name="Malicious URL Blocklist (URLHaus)"; Category="Security" }
     )
+    
+    $ListMetaByName = @{}
+    foreach ($Entry in $AdGuardData) {
+        $DownloadUrl = if ($Entry.ExternalUrl) { $Entry.ExternalUrl } else { "$BaseUrl/$($Entry.Id)" }
+        $ListMetaByName[$Entry.Name] = @{
+            RefId = $Entry.RefId
+            DownloadUrl = $DownloadUrl
+            Homepage = $Entry.Homepage
+        }
+    }
 
     Write-Host ""
     Write-Host "========================================" -ForegroundColor Cyan
-    Write-Host "AdGuard Mega Stack Compiler v21.0" -ForegroundColor Cyan
+    Write-Host "sleepy list compiler v21.0" -ForegroundColor Cyan
     Write-Host "Source-Aware Diff Edition" -ForegroundColor Cyan
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host ""
@@ -626,34 +640,92 @@ function Analyze-AdGuardListsCI {
         $Transferred = 0
 
         $DiffOutput.Add("! =========================================================================")
-        $DiffOutput.Add("! DIFF REPORT: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+        $DiffOutput.Add("! sleepy list diff report: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
         $DiffOutput.Add("! =========================================================================")
         $DiffOutput.Add("")
-        
-        $DiffOutput.Add("! --- REMOVED RULES ---")
+        $RemovedBySource = @{}
+        $MovedBySource = @{}
+        $AddedBySource = @{}
+
+        function Add-RuleToBucket {
+            param(
+                [hashtable]$Bucket,
+                [string]$Source,
+                [string]$Value
+            )
+            if (-not $Bucket.ContainsKey($Source)) {
+                $Bucket[$Source] = [System.Collections.Generic.List[string]]::new()
+            }
+            $Bucket[$Source].Add($Value)
+        }
+
         foreach ($Key in $PreviousRulesMap.Keys) {
             if (-not $NewRulesMap.ContainsKey($Key)) {
                 $OldSource = $PreviousRulesMap[$Key]
-                $DiffOutput.Add("- $Key [Was: $OldSource]")
+                Add-RuleToBucket $RemovedBySource $OldSource $Key
                 $Removed++
             }
         }
-        
-        $DiffOutput.Add("")
-        $DiffOutput.Add("! --- ADDED RULES ---")
+
         foreach ($Key in $NewRulesMap.Keys) {
             if (-not $PreviousRulesMap.ContainsKey($Key)) {
                 $NewSource = $NewRulesMap[$Key]
-                $DiffOutput.Add("+ $Key [Source: $NewSource]")
+                Add-RuleToBucket $AddedBySource $NewSource $Key
                 $Added++
             }
             elseif ($PreviousRulesMap[$Key] -ne $NewRulesMap[$Key]) {
                 # Ownership transfer (same rule, new primary source)
                 $Old = $PreviousRulesMap[$Key]
                 $New = $NewRulesMap[$Key]
-                $DiffOutput.Add("~ $Key [Moved: $Old -> $New]")
+                Add-RuleToBucket $MovedBySource $Old "$Key [Moved: $Old -> $New]"
                 $Transferred++
             }
+        }
+
+        $DiffOutput.Add("! SUMMARY: Added $Added | Removed $Removed | Moved $Transferred")
+        $DiffOutput.Add("! ORDER: Anchor + contributors, then legacy-only lists")
+        $DiffOutput.Add("")
+        $DiffOutput.Add("! --- CHANGES BY LIST (ORDERED) ---")
+
+        $SourceOrder = @($AnchorName) + ($ListContributions | Sort-Object -Property Unique -Descending | Select-Object -ExpandProperty Name)
+        $OrderedSources = [System.Collections.Generic.List[string]]::new()
+        foreach ($Source in $SourceOrder) {
+            if (-not [string]::IsNullOrWhiteSpace($Source) -and -not $OrderedSources.Contains($Source)) {
+                $OrderedSources.Add($Source)
+            }
+        }
+        foreach ($Source in $PreviousSourceOrder) {
+            if (-not $OrderedSources.Contains($Source)) {
+                $OrderedSources.Add($Source)
+            }
+        }
+        $AllChangeSources = @($RemovedBySource.Keys) + @($MovedBySource.Keys) + @($AddedBySource.Keys)
+        foreach ($Source in ($AllChangeSources | Sort-Object -Unique)) {
+            if (-not $OrderedSources.Contains($Source)) {
+                $OrderedSources.Add($Source)
+            }
+        }
+
+        foreach ($Source in $OrderedSources) {
+            $RemovedItems = if ($RemovedBySource.ContainsKey($Source)) { $RemovedBySource[$Source] } else { @() }
+            $MovedItems = if ($MovedBySource.ContainsKey($Source)) { $MovedBySource[$Source] } else { @() }
+            $AddedItems = if ($AddedBySource.ContainsKey($Source)) { $AddedBySource[$Source] } else { @() }
+
+            if ($RemovedItems.Count -eq 0 -and $MovedItems.Count -eq 0 -and $AddedItems.Count -eq 0) {
+                continue
+            }
+
+            $DiffOutput.Add("! [$Source] Removed: $($RemovedItems.Count) | Moved: $($MovedItems.Count) | Added: $($AddedItems.Count)")
+            foreach ($Item in ($RemovedItems | Sort-Object)) {
+                $DiffOutput.Add("- $Item")
+            }
+            foreach ($Item in ($MovedItems | Sort-Object)) {
+                $DiffOutput.Add("~ $Item")
+            }
+            foreach ($Item in ($AddedItems | Sort-Object)) {
+                $DiffOutput.Add("+ $Item")
+            }
+            $DiffOutput.Add("")
         }
         
         Write-Host "  [DIFF] Added: $Added | Removed: $Removed | Moved: $Transferred" -ForegroundColor Cyan
@@ -673,83 +745,134 @@ function Analyze-AdGuardListsCI {
     
     $MegaList = [System.Collections.Generic.List[string]]::new()
     
-    # Header
-    $MegaList.Add("! =========================================================================")
-    $MegaList.Add("! ADGUARD MEGA STACK - GENERATED: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
-    $MegaList.Add("! =========================================================================")
-    $MegaList.Add("! BASE ANCHOR: $AnchorName")
-    $ContribCount = $ListContributions.Count + 1
-    $MegaList.Add("! TOTAL LISTS: $ContribCount")
-    $TotalRulesCount = $Global:Stats.FinalRuleCount
-    $MegaList.Add("! TOTAL RULES: $TotalRulesCount")
-    $ExceptionsSkipped = $Global:Stats.ExceptionRulesSkipped
-    $MegaList.Add("! EXCEPTION RULES SKIPPED: $ExceptionsSkipped")
-    $MegaList.Add("! =========================================================================")
-    $MegaList.Add("!")
-    $MegaList.Add("! CONTRIBUTING LISTS:")
-    $MegaList.Add("! [ANCHOR] $AnchorName")
+    # Header (minimal)
+    $MegaList.Add("! sleepy list - generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+    $MegaList.Add("! tag: compiled from the sources below so i can be sound asleep knowing this protects me, and it's great when i'm tired of ads and tracking.")
     
-    $Num = 1
-    foreach ($Contributor in ($ListContributions | Sort-Object -Property Unique -Descending)) {
-        $ContribName = $Contributor.Name
-        $ContribUnique = $Contributor.Unique
-        $ContribCat = $Contributor.Category
-        $MegaList.Add("! [$Num] $ContribName (+$ContribUnique) [$ContribCat]")
-        $Num++
-    }
-    
-    $MegaList.Add("!")
-    $MegaList.Add("! OPTIMIZATIONS APPLIED:")
-    $OptWildcard = $Global:Stats.WildcardCoveredRemoved
-    $MegaList.Add("!    Wildcard coverage: -$OptWildcard")
-    $OptTree = $Global:Stats.TreeShakingRemoved
-    $MegaList.Add("!    Tree shaking: -$OptTree")
-    $OptRegex = $Global:Stats.RegexSimplified
-    $MegaList.Add("!    Regex simplified: -$OptRegex")
-    $OptCross = $Global:Stats.CrossTypeDuplicates
-    $MegaList.Add("!    Cross-type dupes: -$OptCross")
-    $MegaList.Add("!")
-    $MegaList.Add("! RULE TYPES:")
-    $DomainCount = $MasterDomains.Count
-    $MegaList.Add("!    Domains: $DomainCount")
-    $WildcardCount = $MasterWildcards.Count
-    $MegaList.Add("!    Wildcards: $WildcardCount")
-    $RegexCount = $MasterRegex.Count
-    $MegaList.Add("!    Regex: $RegexCount")
-    $IPCount = $MasterIPRanges.Count
-    $MegaList.Add("!    IP Ranges: $IPCount")
-    $ComplexCount = $MasterComplex.Count
-    $MegaList.Add("!    Complex: $ComplexCount")
-    $MegaList.Add("! =========================================================================")
-    $MegaList.Add("")
-    
-    # Helper to add rules grouped by source
-    function Add-RulesBySource {
+    # Build one source block to keep output minimal
+    $RulesBySource = @{}
+    function Add-RulesToBuckets {
         param($MasterDict, $RulePrefix = "", $RuleSuffix = "")
         
-        # Group by source
-        $BySource = @{}
         foreach ($Entry in $MasterDict.GetEnumerator()) {
             $Source = $Entry.Value
-            if (-not $BySource.ContainsKey($Source)) {
-                $BySource[$Source] = [System.Collections.Generic.List[string]]::new()
+            if (-not $RulesBySource.ContainsKey($Source)) {
+                $RulesBySource[$Source] = [System.Collections.Generic.List[string]]::new()
             }
-            $BySource[$Source].Add($Entry.Key)
+            $RulesBySource[$Source].Add("$RulePrefix$($Entry.Key)$RuleSuffix")
         }
-        
-        # Sort sources by contribution
-        $SourceOrder = @($AnchorName) + ($ListContributions | Sort-Object -Property Unique -Descending | Select-Object -ExpandProperty Name)
-        
-        foreach ($Source in $SourceOrder) {
-            if ($BySource.ContainsKey($Source)) {
-                $Rules = $BySource[$Source] | Sort-Object
-                $RuleCount = $Rules.Count
-                $MegaList.Add("! [$Source] - $RuleCount rules")
-                foreach ($Rule in $Rules) {
-                    $MegaList.Add("$RulePrefix$Rule$RuleSuffix")
+    }
+    
+    Add-RulesToBuckets $MasterComplex
+    Add-RulesToBuckets $MasterRegex
+    Add-RulesToBuckets $MasterIPRanges
+    Add-RulesToBuckets $MasterWildcards "||" "^"
+    Add-RulesToBuckets $MasterDomains "||" "^"
+    
+    $SourceOrder = @($AnchorName) + ($ListContributions | Sort-Object -Property Unique -Descending | Select-Object -ExpandProperty Name)
+    $OrderedSources = [System.Collections.Generic.List[string]]::new()
+    foreach ($Source in $SourceOrder) {
+        if (-not [string]::IsNullOrWhiteSpace($Source) -and -not $OrderedSources.Contains($Source)) {
+            $OrderedSources.Add($Source)
+        }
+    }
+    foreach ($Source in ($RulesBySource.Keys | Sort-Object)) {
+        if (-not $OrderedSources.Contains($Source)) { $OrderedSources.Add($Source) }
+    }
+    
+    foreach ($Source in $OrderedSources) {
+        if (-not $RulesBySource.ContainsKey($Source)) { continue }
+        $Rules = $RulesBySource[$Source] | Sort-Object
+        $MegaList.Add("! [$Source] - $($Rules.Count) rules")
+        foreach ($Rule in $Rules) { $MegaList.Add($Rule) }
+    }
+
+    function Update-ReadmeCredits {
+        param(
+            [string]$ReadmePath,
+            [string[]]$CreditOrder,
+            [string]$Anchor,
+            [hashtable]$ListMetaByName
+        )
+
+        if (-not (Test-Path $ReadmePath)) { return }
+
+        $RegistryMeta = @{}
+        try {
+            $Registry = Invoke-RestMethod -Uri "https://adguardteam.github.io/HostlistsRegistry/assets/filters.json"
+            foreach ($Filter in $Registry.filters) {
+                $RegistryMeta[[int]$Filter.filterId] = @{
+                    DownloadUrl = $Filter.downloadUrl
+                    Homepage = $Filter.homepage
                 }
-                $MegaList.Add("")
             }
+        } catch {
+            Write-Host "  [!] Failed to load registry metadata; using local URLs." -ForegroundColor DarkGray
+        }
+
+        $StartMarker = "<!-- sleepy-list:credits:start -->"
+        $EndMarker = "<!-- sleepy-list:credits:end -->"
+        $Lines = [System.IO.File]::ReadAllLines($ReadmePath)
+        $StartIndex = [Array]::IndexOf($Lines, $StartMarker)
+        $EndIndex = [Array]::IndexOf($Lines, $EndMarker)
+
+        if ($StartIndex -lt 0 -or $EndIndex -lt 0 -or $EndIndex -le $StartIndex) {
+            Write-Host "  [!] README credits markers not found; skipping update." -ForegroundColor DarkGray
+            return
+        }
+
+        $NewBlock = [System.Collections.Generic.List[string]]::new()
+        $NewBlock.Add($StartMarker)
+        $AnchorMeta = $ListMetaByName[$Anchor]
+        if ($AnchorMeta -eq $null) { $AnchorMeta = @{} }
+        $AnchorRefId = $AnchorMeta.RefId
+        if ($AnchorRefId -ne $null -and $RegistryMeta.ContainsKey([int]$AnchorRefId)) {
+            $AnchorMeta.DownloadUrl = $RegistryMeta[[int]$AnchorRefId].DownloadUrl
+            $AnchorMeta.Homepage = $RegistryMeta[[int]$AnchorRefId].Homepage
+        }
+        $AnchorListLink = if ($AnchorMeta.DownloadUrl) { "[list]($($AnchorMeta.DownloadUrl))" } else { "list" }
+        $AnchorCreatorLink = if ($AnchorMeta.Homepage) { "[creator]($($AnchorMeta.Homepage))" } else { "creator" }
+        $NewBlock.Add("- [anchor] $Anchor - $AnchorListLink - $AnchorCreatorLink")
+        $Num = 1
+        foreach ($Name in $CreditOrder) {
+            if ($Name -eq $Anchor) { continue }
+            $Meta = $ListMetaByName[$Name]
+            if ($Meta -eq $null) { $Meta = @{} }
+            $RefId = $Meta.RefId
+            if ($RefId -ne $null -and $RegistryMeta.ContainsKey([int]$RefId)) {
+                $Meta.DownloadUrl = $RegistryMeta[[int]$RefId].DownloadUrl
+                $Meta.Homepage = $RegistryMeta[[int]$RefId].Homepage
+            }
+            $ListLink = if ($Meta.DownloadUrl) { "[list]($($Meta.DownloadUrl))" } else { "list" }
+            $CreatorLink = if ($Meta.Homepage) { "[creator]($($Meta.Homepage))" } else { "creator" }
+            $NewBlock.Add("- [$Num] $Name - $ListLink - $CreatorLink")
+            $Num++
+        }
+        $NewBlock.Add($EndMarker)
+
+        $Before = @()
+        if ($StartIndex -gt 0) { $Before = $Lines[0..($StartIndex - 1)] }
+        $After = @()
+        if ($EndIndex -lt ($Lines.Length - 1)) { $After = $Lines[($EndIndex + 1)..($Lines.Length - 1)] }
+
+        $NewLines = @()
+        if ($Before.Count -gt 0) { $NewLines += $Before }
+        $NewLines += $NewBlock
+        if ($After.Count -gt 0) { $NewLines += $After }
+
+        $OldBlock = $Lines[$StartIndex..$EndIndex]
+        $BlockChanged = $OldBlock.Count -ne $NewBlock.Count
+        if (-not $BlockChanged) {
+            for ($i = 0; $i -lt $OldBlock.Count; $i++) {
+                if ($OldBlock[$i] -ne $NewBlock[$i]) { $BlockChanged = $true; break }
+            }
+        }
+
+        if ($BlockChanged) {
+            [System.IO.File]::WriteAllLines($ReadmePath, $NewLines)
+            Write-Host "  [OK] Updated README credits." -ForegroundColor Green
+        } else {
+            Write-Host "  [OK] README credits already up to date." -ForegroundColor DarkGray
         }
     }
     
@@ -858,7 +981,12 @@ function Analyze-AdGuardListsCI {
     $ReductionPercent = [math]::Round((($PostStackCount - $Global:Stats.FinalRuleCount) / $PostStackCount) * 100, 2)
     Write-Host "EFFICIENCY: $ReductionPercent% size reduction" -ForegroundColor Green
     Write-Host ""
-    
+
+    Write-Host "README:" -ForegroundColor Yellow
+    $CreditOrder = $ListContributions | Sort-Object -Property Unique -Descending | Select-Object -ExpandProperty Name
+    Update-ReadmeCredits -ReadmePath (Join-Path $pwd "README.md") -CreditOrder $CreditOrder -Anchor $AnchorName -ListMetaByName $ListMetaByName
+    Write-Host ""
+
     # Cleanup
     if (Test-Path $TempDir) { Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue }
     

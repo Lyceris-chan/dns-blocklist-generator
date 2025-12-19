@@ -11,15 +11,15 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Run Compiler Script
-        run: .\compiler.ps1
-        shell: powershell
+        run: ./compiler.sh
+        shell: bash
 
       - name: Commit and Push Changes
         run: |
@@ -27,11 +27,13 @@ jobs:
           git config --global user.email "action@github.com"
           
           # Check if there are changes
-          if (git status --porcelain) {
+          if [[ -n "$(git status --porcelain)" ]]; then
             git add blocklist.txt
             git add diffs.txt
-            git commit -m "Auto-update blocklist $(Get-Date -Format 'yyyy-MM-dd')"
+            git add README.md
+            git commit -m "Auto-update blocklist $(date -u +'%Y-%m-%d')"
             git push
-          } else {
-            Write-Host "No changes to commit."
-          }
+          else
+            echo "No changes to commit."
+          fi
+        shell: bash
