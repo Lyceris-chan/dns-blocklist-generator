@@ -14,6 +14,8 @@ Options (env vars):
 - `SLEEPY_LIST_CACHE_DIR`: override cache location (default: `.sleepy_list_cache`)
 - `SLEEPY_LIST_JOBS`: max parallel downloads/parses (default: `16`)
 - `SLEEPY_LIST_KEEP_LISTS`: set to `1` to keep raw list downloads (default: `0`, remove to save space)
+- `SLEEPY_LIST_ANCHOR`: override the anchor list name (default: `HaGeZi's Pro++ Blocklist`)
+- `SLEEPY_LIST_PARSE_MODE`: parse executor (`thread` default, `process`, or `auto`)
 
 Requirements:
 - bash
@@ -22,6 +24,11 @@ Requirements:
 Outputs:
 - `blocklist.txt` (rules grouped by source; header format: `! source count`)
 - `diffs.txt` (source-aware diff ordered by list)
+
+Manifest (auto-updated):
+<!-- sleepy-list:manifest:start -->
+- manifest hash: `f7e1fccfced2587a183111189bf9c1e769506e887f246fe081d85f9c9815ad05`
+<!-- sleepy-list:manifest:end -->
 
 Technical notes:
 - normalizes inputs into domains, wildcards, regex, IP ranges, and complex rules
@@ -33,6 +40,7 @@ Technical notes:
 
 Behavior:
 - aborts if any list fails to download (avoids stale outputs)
+- skips parsing/rebuild when all lists are cached and config unchanged (use `SLEEPY_LIST_NO_CACHE=1` to force a full rebuild)
 - keeps the final blocklist minimal; diffs carry per-list adds/removes/moves
 - credits include used, superseded, excluded, and unused lists with list/creator links
 

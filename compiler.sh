@@ -8,11 +8,21 @@ CACHE_DIR="${SLEEPY_LIST_CACHE_DIR:-$ROOT_DIR/.sleepy_list_cache}"
 LISTS_DIR="$CACHE_DIR/lists"
 LISTS_JSON="$TEMP_DIR/lists.json"
 MANIFEST="$TEMP_DIR/manifest.tsv"
-ANCHOR_NAME="HaGeZi's Pro++ Blocklist"
+DEFAULT_ANCHOR="HaGeZi's Pro++ Blocklist"
+ANCHOR_NAME="${SLEEPY_LIST_ANCHOR:-$DEFAULT_ANCHOR}"
 EXCLUDED_IDS="${SLEEPY_LIST_EXCLUDED_IDS:-37,57,53,46}"
 NO_CACHE="${SLEEPY_LIST_NO_CACHE:-0}"
 KEEP_LISTS="${SLEEPY_LIST_KEEP_LISTS:-0}"
-CONCURRENCY="${SLEEPY_LIST_JOBS:-16}"
+PARSE_MODE="${SLEEPY_LIST_PARSE_MODE:-thread}"
+CPU_COUNT="$(getconf _NPROCESSORS_ONLN 2>/dev/null || nproc 2>/dev/null || echo 4)"
+DEFAULT_JOBS="$CPU_COUNT"
+if [[ "$DEFAULT_JOBS" -lt 4 ]]; then
+  DEFAULT_JOBS=4
+fi
+if [[ "$DEFAULT_JOBS" -gt 16 ]]; then
+  DEFAULT_JOBS=16
+fi
+CONCURRENCY="${SLEEPY_LIST_JOBS:-$DEFAULT_JOBS}"
 
 rm -rf "$TEMP_DIR"
 mkdir -p "$TEMP_DIR"
@@ -103,6 +113,7 @@ python3 "$ROOT_DIR/compiler.py" \
   --anchor "$ANCHOR_NAME" \
   --excluded-ids "$EXCLUDED_IDS" \
   --concurrency "$CONCURRENCY" \
+  --parse-mode "$PARSE_MODE" \
   $( [[ "$NO_CACHE" == "1" ]] && echo "--no-cache" ) \
   $( [[ "$KEEP_LISTS" == "1" ]] && echo "--keep-lists" )
 

@@ -1,8 +1,191 @@
 ! =========================================================================
-! sleepy list diff report: 2025-12-19 22:40:32
+! sleepy list diff report: 2025-12-20 00:41:22
 ! =========================================================================
 
-! SUMMARY: Added 0 | Removed 0 | Moved 0
+! SUMMARY: Added 84 | Removed 86 | Moved 1
 ! ORDER: Anchor + contributors, then legacy-only lists
 
 ! --- CHANGES BY LIST (ORDERED) ---
+! [HaGeZi's Threat Intelligence Feeds] Removed: 2 | Moved: 0 | Added: 0
+- ||trdqhak.klrila.pl^
+- ||yakxlb.klrila.pl^
+
+! [Phishing Army] Removed: 49 | Moved: 1 | Added: 28
+- ||aetheron-edgegptapp.com^
+- ||algo-etricsy-ai.com^
+- ||allegrolokalnie.064060.shop^
+- ||allegrolokalnie.oferta-74962.cfd^
+- ||allegrolokalnie.pl-oferta7701050.cfd^
+- ||allegrolokalnie.ver10-id8207-cfi29u-cid79.sbs^
+- ||ams3.affordablevacationgoals.xyz^
+- ||ams3.allabouttraveljourneys.live^
+- ||azonnalisollaristraai.com^
+- ||bate-qyz-ai.com^
+- ||bestwalletsupport.com^
+- ||bitcoi360-ai.com^
+- ||capital-zevionisapp.com^
+- ||dahaci-yenica.site^
+- ||datocentro.com^
+- ||discountwave.sbs^
+- ||een2.com^
+- ||facpro.1metcan.com^
+- ||feedjoltjournal.com^
+- ||fiverr-to.setupfiv.com^
+- ||fondet-ykaro-app.com^
+- ||gikaju-lexamo.pics^
+- ||glumbicstackapp.com^
+- ||gpt500-app.com^
+- ||h.lyfvirmenxx.fr^
+- ||hydroporpo.com^
+- ||infochimechronicle.com^
+- ||juros-xyro-ai.com^
+- ||kgdtseubw.rnjbflvfhaf.top^
+- ||kriyon.cfd^
+- ||lieferungterminieren.info^
+- ||maserclisa.com^
+- ||nasrviolin.com^
+- ||parcel190241.wpdevcloud.com^
+- ||piroantie.com^
+- ||pl-oferta6071829.cfd^
+- ||pl-oferta937415.cfd^
+- ||redolmarte.com^
+- ||sagefoxcons.com^
+- ||spot11x-prolia.com^
+- ||spotadipex40004vapp.com^
+- ||success-ttl.com^
+- ||talvexortrader39-titan.com^
+- ||talvexortrader39titan.com^
+- ||taskrunz.top^
+- ||thevibevistanews.com^
+- ||token.zahlung5ccf6d59e3094b7b5c38384.com^
+- ||valeurximor.com^
+- ||valtiro.cfd^
+~ ||right-try-937338.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
++ ||allegro-lokalnie.pl73487683228.cfd^
++ ||allegrolokalnie.937016.click^
++ ||allegrolokalnie.pl-oferta53542.cfd^
++ ||app.bonuslivre.pro^
++ ||app.suasvantagens.info^
++ ||atendimentosprime.info^
++ ||bradesco.netatendimentopj.site^
++ ||codehaveneg.info^
++ ||conviteblackx.com^
++ ||crypticgateg.info^
++ ||cyberdreamextg.info^
++ ||empresaspjnet.cfd^
++ ||escremopin.pro^
++ ||evolves.cfd^
++ ||holder04-booking.com^
++ ||hydromenin.world^
++ ||inpost.shop-skrill1.cfd^
++ ||klrila.pl^
++ ||mailtrxdisneyplus.com^
++ ||metalburgl.world^
++ ||monitultra.world^
++ ||novonetempresaspj.digital^
++ ||plesmanga.world^
++ ||protosbrec.world^
++ ||resgatepremiox.online^
++ ||rorantrase.world^
++ ||sledzenie-przesylki.com^
++ ||verify8136.life^
+
+! [OISD Blocklist Big] Removed: 0 | Moved: 0 | Added: 2
++ ||4ih74ur.sbs^
++ ||melinest.pl^
+
+! [AdGuard DNS filter] Removed: 0 | Moved: 0 | Added: 23
++ ||00427011ae.com^
++ ||5vtgc1lp1tl63foi3bu2p.rest^
++ ||7c1569a605.com^
++ ||8k9ynfczfd.com^
++ ||8pi57n9qrrh28my.cfd^
++ ||9j9gc694o4.com^
++ ||ayqwjhh4cn.com^
++ ||bbtvpnqyvdzmq.website^
++ ||cemepbqw.com^
++ ||ggai12200cp.com^
++ ||highwayfk.com^
++ ||hurdmycipa.com^
++ ||lwioqdkruqwo.com^
++ ||qykezpy.xyz^
++ ||trmtpequpdtuge.com^
++ ||tvexnrsvytbeq.space^
++ ||uizhndydahcum.online^
++ ||whairsaunumee.com^
++ ||wvqrvjvi.com^
++ ||xyefaumnllhxc.online^
++ ||yczl5qg8jr.com^
++ ||zkyboxukmxmwc.website^
++ ||zuidpnenuegax.site^
+
+! [Malicious URL Blocklist (URLHaus)] Removed: 29 | Moved: 0 | Added: 16
+- ||a2.6b96.ru^
+- ||bo.k25q.ru^
+- ||d.9n75.ru^
+- ||er.k25q.ru^
+- ||fl.h73n.ru^
+- ||h.2p62.ru^
+- ||hp.f42s.ru^
+- ||hq.m33h.ru^
+- ||iu.g69p.ru^
+- ||jb.k25q.ru^
+- ||lq.k25q.ru^
+- ||m9.1v47.ru^
+- ||ne.h73n.ru^
+- ||oj.f05t.ru^
+- ||pz8.9n75.ru^
+- ||rg.m33h.ru^
+- ||rk1.6b96.ru^
+- ||rm.h73n.ru^
+- ||st.h73n.ru^
+- ||t.6b96.ru^
+- ||tb.f42s.ru^
+- ||u1.2p62.ru^
+- ||u1.333-f.ru^
+- ||w4.9n75.ru^
+- ||wg.f42s.ru^
+- ||wz8.212-q.ru^
+- ||xq7.1v47.ru^
+- ||y.333-f.ru^
+- ||z.g69p.ru^
++ ||bixfoy.pa5spra8mat.ru^
++ ||dafpex.cr1pptit2n.ru^
++ ||fiplar.c0lombve8et.ru^
++ ||gumral.pa5spra8mat.ru^
++ ||hastev.c0lombve8et.ru^
++ ||hod3an.ban9noti0n.ru^
++ ||kartel.ban9noti0n.ru^
++ ||kys.li^
++ ||lorqes.pa5spra8mat.ru^
++ ||pilzur.c0lombve8et.ru^
++ ||sen4ik.pa5spra8mat.ru^
++ ||tidvop.pa5spra8mat.ru^
++ ||vokner.c0lombve8et.ru^
++ ||yubnix.ban9noti0n.ru^
++ ||zolrin.cr1pptit2n.ru^
++ ||zudm1q.c0lombve8et.ru^
+
+! [Phishing URL Blocklist (PhishTank and OpenPhish)] Removed: 6 | Moved: 0 | Added: 15
+- ||allegrolokalnie.kategorie-promowane-391.shop^
+- ||cg.idbt12269.icu^
+- ||idcnwn85.icu^
+- ||idf-mobilites-fr.com^
+- ||qsruxyum.top^
+- ||savann.shop^
++ ||8fdcea0b.simplew.pages.dev^
++ ||allegrolokalnie.pl-smart463522.sbs^
++ ||app.trocadeponts.digital^
++ ||continuarbpro.vercel.app^
++ ||exodeuwebwat.gitbook.io^
++ ||gfiuwd2g.web.app^
++ ||helphome.ghost.io^
++ ||j3fyhnbe6qsf87.s3.ap-southeast-2.amazonaws.com^
++ ||portal-atualizado.vercel.app^
++ ||portfolio-1.ghost.io^
++ ||premierwallet.ghost.io^
++ ||promerispot.help^
++ ||stakeverse.github.io^
++ ||supporthub.ghost.io^
++ ||webdropdigital.pages.dev^
+

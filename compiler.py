@@ -11,7 +11,7 @@ import urllib.request
 import urllib.error
 import gzip
 import hashlib
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
 import shutil
 
 
@@ -40,6 +40,7 @@ def parse_args():
     parser.add_argument("--anchor", required=True)
     parser.add_argument("--excluded-ids", required=True)
     parser.add_argument("--concurrency", type=int, default=16)
+    parser.add_argument("--parse-mode", default="thread")
     return parser.parse_args()
 
 
@@ -103,6 +104,13 @@ def compute_sha256(path):
     return hasher.hexdigest()
 
 
+def safe_sha256(path):
+    try:
+        return compute_sha256(path)
+    except OSError:
+        return ""
+
+
 def load_parsed_cache(path):
     try:
         with gzip.open(path, "rt", encoding="utf-8") as handle:
@@ -118,6 +126,75 @@ def load_parsed_cache(path):
         }
     except (OSError, json.JSONDecodeError):
         return None
+
+
+def load_registry_cache(cache_path):
+    if not cache_path:
+        return {}, {}
+    payload = load_cache_meta(cache_path)
+    filters = payload.get("filters")
+    if not isinstance(filters, dict):
+        return {}, payload
+    return filters, payload
+
+
+def parse_task(entry, lists_dir, meta, cache_entry, parse_cache_dir):
+    filename = entry["filename"]
+    path = os.path.join(lists_dir, filename)
+    if parse_cache_dir and cache_entry:
+        if meta.get("etag") and cache_entry.get("etag") == meta.get("etag"):
+            cached = load_parsed_cache(cache_entry.get("path", ""))
+            if cached:
+                return cached, True, None
+        if meta.get("last_modified") and cache_entry.get("last_modified") == meta.get("last_modified"):
+            cached = load_parsed_cache(cache_entry.get("path", ""))
+            if cached:
+                return cached, True, None
+        if (
+            meta.get("status") == "downloaded"
+            and not meta.get("etag")
+            and not meta.get("last_modified")
+            and cache_entry.get("sha256")
+            and os.path.exists(path)
+        ):
+            sha256 = compute_sha256(path)
+            if sha256 == cache_entry.get("sha256"):
+                cached = load_parsed_cache(cache_entry.get("path", ""))
+                if cached:
+                    return cached, True, None
+        if meta.get("status") == "cached" and cache_entry.get("sha256") and os.path.exists(path):
+            sha256 = compute_sha256(path)
+            if sha256 == cache_entry.get("sha256"):
+                cached = load_parsed_cache(cache_entry.get("path", ""))
+                if cached:
+                    return cached, True, None
+
+    result, sha256 = parse_list(entry, lists_dir)
+    if not result:
+        return None, False, None
+
+    update = None
+    if parse_cache_dir and sha256:
+        cache_path = os.path.join(parse_cache_dir, f"{filename}-{sha256}.json.gz")
+        try:
+            save_parsed_cache(cache_path, result)
+            update = {
+                "sha256": sha256,
+                "path": cache_path,
+                "etag": meta.get("etag"),
+                "last_modified": meta.get("last_modified"),
+                "url": meta.get("url"),
+            }
+        except OSError:
+            update = None
+    return result, False, update
+
+
+def load_run_state(path):
+    state = load_cache_meta(path)
+    if isinstance(state, dict) and state.get("version") == 1:
+        return state
+    return {}
 
 
 def save_parsed_cache(path, result):
@@ -310,23 +387,67 @@ def update_readme_credits(
     all_list_names,
     excluded_names,
     superseded_map,
+    cache_dir=None,
+    no_cache=False,
 ):
     if not os.path.exists(readme_path):
         return
 
     registry_meta = {}
+    cache_path = None
+    cached_filters = {}
+    cached_payload = {}
+    if cache_dir and not no_cache:
+        cache_path = os.path.join(cache_dir, "registry_meta.json")
+        cached_filters, cached_payload = load_registry_cache(cache_path)
+    headers = {"User-Agent": "sleepy-list/1.0"}
+    if cached_payload.get("etag"):
+        headers["If-None-Match"] = cached_payload["etag"]
+    if cached_payload.get("last_modified"):
+        headers["If-Modified-Since"] = cached_payload["last_modified"]
+    request = urllib.request.Request(
+        "https://adguardteam.github.io/HostlistsRegistry/assets/filters.json",
+        headers=headers,
+    )
     try:
-        with urllib.request.urlopen(
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filters.json"
-        ) as response:
+        with urllib.request.urlopen(request, timeout=30) as response:
             data = json.load(response)
-        for filt in data.get("filters", []):
-            registry_meta[int(filt["filterId"])] = {
-                "download": filt.get("downloadUrl"),
-                "homepage": filt.get("homepage"),
+            for filt in data.get("filters", []):
+                registry_meta[int(filt["filterId"])] = {
+                    "download": filt.get("downloadUrl"),
+                    "homepage": filt.get("homepage"),
+                }
+            if cache_path:
+                payload = {
+                    "etag": response.headers.get("ETag"),
+                    "last_modified": response.headers.get("Last-Modified"),
+                    "filters": {str(k): v for k, v in registry_meta.items()},
+                }
+                save_cache_meta(cache_path, payload)
+    except urllib.error.HTTPError as err:
+        if err.code == 304 and cached_filters:
+            registry_meta = {
+                int(k): v
+                for k, v in cached_filters.items()
+                if isinstance(v, dict)
             }
+        elif cached_filters:
+            registry_meta = {
+                int(k): v
+                for k, v in cached_filters.items()
+                if isinstance(v, dict)
+            }
+        else:
+            print("  [!] Failed to load registry metadata; using local URLs.")
     except Exception:
-        print("  [!] Failed to load registry metadata; using local URLs.")
+        if cached_filters:
+            registry_meta = {
+                int(k): v
+                for k, v in cached_filters.items()
+                if isinstance(v, dict)
+            }
+        else:
+            print("  [!] Failed to load registry metadata; using local URLs.")
 
     start_marker = "<!-- sleepy-list:credits:start -->"
     end_marker = "<!-- sleepy-list:credits:end -->"
@@ -425,6 +546,34 @@ def update_readme_credits(
         print("  [OK] README credits already up to date.")
 
 
+def update_readme_manifest(readme_path, manifest_hash):
+    if not os.path.exists(readme_path):
+        return
+
+    start_marker = "<!-- sleepy-list:manifest:start -->"
+    end_marker = "<!-- sleepy-list:manifest:end -->"
+    with open(readme_path, "r", encoding="utf-8") as handle:
+        lines = [line.rstrip("\n") for line in handle]
+
+    try:
+        start_index = lines.index(start_marker)
+        end_index = lines.index(end_marker)
+    except ValueError:
+        print("  [!] README manifest markers not found; skipping update.")
+        return
+
+    if end_index <= start_index:
+        print("  [!] README manifest markers invalid; skipping update.")
+        return
+
+    block = [start_marker, f"- manifest hash: `{manifest_hash}`", end_marker]
+    new_lines = lines[:start_index] + block + lines[end_index + 1 :]
+    if new_lines != lines:
+        with open(readme_path, "w", encoding="utf-8") as handle:
+            handle.write("\n".join(new_lines) + "\n")
+        print("  [OK] Updated README manifest hash.")
+
+
 def main():
     args = parse_args()
     excluded_ids = {int(x) for x in args.excluded_ids.split(",") if x}
@@ -445,6 +594,7 @@ def main():
     all_entries = load_lists_config(args.lists_json, args.base_url)
     manifest_rows = build_manifest_rows(all_entries, excluded_ids)
     write_manifest(args.manifest, manifest_rows)
+    manifest_hash = safe_sha256(args.manifest)
 
     entries = load_manifest(args.manifest)
     category_map = {entry["name"]: entry["category"] for entry in entries}
@@ -460,6 +610,18 @@ def main():
     excluded_names = {
         entry["name"] for entry in all_entries if entry["ref_id"] in excluded_ids
     }
+
+    run_state_path = None
+    run_state = {}
+    lists_json_hash = ""
+    compiler_hash = ""
+    current_files = []
+    if cache_dir and not args.no_cache:
+        run_state_path = os.path.join(cache_dir, "run_state.json")
+        run_state = load_run_state(run_state_path)
+        lists_json_hash = safe_sha256(args.lists_json)
+        compiler_hash = safe_sha256(os.path.abspath(__file__))
+        current_files = sorted(entry["filename"] for entry in entries)
 
     print("[2/7] Downloading lists...")
 
@@ -525,6 +687,43 @@ def main():
         raise SystemExit(f"Failed to download {failed} lists; aborting to avoid stale output.")
     print(f"  [OK] Successfully downloaded {downloaded} lists ({cached} cached)")
 
+    if run_state_path and run_state and not args.no_cache:
+        outputs_exist = all(
+            os.path.exists(path)
+            for path in (args.blocklist, args.diffs, args.readme)
+        )
+        cached_only = True
+        if run_state.get("list_hashes"):
+            previous_hashes = run_state.get("list_hashes", {})
+            for entry in entries:
+                filename = entry["filename"]
+                status = download_status.get(filename)
+                if status == "cached":
+                    continue
+                path = os.path.join(args.lists_dir, filename)
+                if os.path.exists(path):
+                    current_hash = safe_sha256(path)
+                    if current_hash and current_hash == previous_hashes.get(filename):
+                        continue
+                cached_only = False
+                break
+        else:
+            cached_only = all(
+                download_status.get(entry["filename"]) == "cached" for entry in entries
+            )
+        same_state = (
+            run_state.get("lists_json_sha256") == lists_json_hash
+            and run_state.get("compiler_sha256") == compiler_hash
+            and run_state.get("anchor") == args.anchor
+            and run_state.get("excluded_ids") == args.excluded_ids
+            and run_state.get("files") == current_files
+        )
+        if outputs_exist and cached_only and same_state:
+            print("[3/7] Parsing lists...")
+            print("  [OK] No list or config changes detected; skipping parse/build.")
+            update_readme_manifest(args.readme, manifest_hash)
+            return
+
     print("[3/7] Parsing lists...")
     parsed_lists = {}
     total_parsed = 0
@@ -548,51 +747,30 @@ def main():
         os.makedirs(parse_cache_dir, exist_ok=True)
 
     workers = max(1, min(args.concurrency, 16))
+    parse_mode = args.parse_mode.lower()
+    if parse_mode == "auto":
+        parse_mode = "process" if workers > 1 else "thread"
+    if parse_mode == "process" and sys.platform == "win32":
+        parse_mode = "thread"
+    executor_cls = ProcessPoolExecutor if parse_mode == "process" else ThreadPoolExecutor
+
     cached_parses = 0
     parse_cache_updates = {}
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        def parse_task(entry):
+    with executor_cls(max_workers=workers) as executor:
+        futures = {}
+        for entry in parse_targets:
             filename = entry["filename"]
-            path = os.path.join(args.lists_dir, filename)
             meta = download_meta_by_filename.get(filename, {})
             cache_entry = parse_cache_index.get(filename)
-            if parse_cache_dir and cache_entry:
-                if meta.get("etag") and cache_entry.get("etag") == meta.get("etag"):
-                    cached = load_parsed_cache(cache_entry.get("path", ""))
-                    if cached:
-                        return cached, True, None
-                if meta.get("last_modified") and cache_entry.get("last_modified") == meta.get("last_modified"):
-                    cached = load_parsed_cache(cache_entry.get("path", ""))
-                    if cached:
-                        return cached, True, None
-                if meta.get("status") == "cached" and cache_entry.get("sha256") and os.path.exists(path):
-                    sha256 = compute_sha256(path)
-                    if sha256 == cache_entry.get("sha256"):
-                        cached = load_parsed_cache(cache_entry.get("path", ""))
-                        if cached:
-                            return cached, True, None
-
-            result, sha256 = parse_list(entry, args.lists_dir)
-            if not result:
-                return None, False, None
-
-            update = None
-            if parse_cache_dir and sha256:
-                cache_path = os.path.join(parse_cache_dir, f"{filename}-{sha256}.json.gz")
-                try:
-                    save_parsed_cache(cache_path, result)
-                    update = {
-                        "sha256": sha256,
-                        "path": cache_path,
-                        "etag": meta.get("etag"),
-                        "last_modified": meta.get("last_modified"),
-                        "url": meta.get("url"),
-                    }
-                except OSError:
-                    update = None
-            return result, False, update
-
-        futures = {executor.submit(parse_task, entry): entry for entry in parse_targets}
+            future = executor.submit(
+                parse_task,
+                entry,
+                args.lists_dir,
+                meta,
+                cache_entry,
+                parse_cache_dir,
+            )
+            futures[future] = entry
         completed = 0
         total_jobs = len(futures)
         for future in as_completed(futures):
@@ -876,9 +1054,12 @@ def main():
         diff_lines.append("")
 
     if previous_rules:
-        with open(args.diffs, "w", encoding="utf-8") as handle:
-            handle.write("\n".join(diff_lines) + "\n")
-        print(f"  [OK] Saved diffs to: {args.diffs}")
+        if added == 0 and removed == 0 and moved == 0 and os.path.exists(args.diffs):
+            print("  [OK] No changes detected; leaving diffs as-is.")
+        else:
+            with open(args.diffs, "w", encoding="utf-8") as handle:
+                handle.write("\n".join(diff_lines) + "\n")
+            print(f"  [OK] Saved diffs to: {args.diffs}")
     else:
         with open(args.diffs, "w", encoding="utf-8") as handle:
             handle.write("! No previous blocklist found to compare against.\n")
@@ -911,6 +1092,7 @@ def main():
     print(f"  [OK] Saved blocklist to: {args.blocklist}")
 
     print("README:")
+    update_readme_manifest(args.readme, manifest_hash)
     credit_order = [entry["name"] for entry in sorted(list_contributions, key=lambda item: item["unique"], reverse=True)]
     superseded_map = {}
     if "1Hosts (Xtra)" in all_list_names and "1Hosts (Lite)" in all_list_names:
@@ -934,7 +1116,31 @@ def main():
         all_list_names,
         excluded_names,
         superseded_map,
+        cache_dir=cache_dir,
+        no_cache=args.no_cache,
     )
+
+    if run_state_path and not args.no_cache:
+        if not lists_json_hash:
+            lists_json_hash = safe_sha256(args.lists_json)
+        if not compiler_hash:
+            compiler_hash = safe_sha256(os.path.abspath(__file__))
+        current_files = sorted(entry["filename"] for entry in entries)
+        list_hashes = {}
+        for entry in entries:
+            cache_entry = parse_cache_index.get(entry["filename"], {})
+            if isinstance(cache_entry, dict):
+                list_hashes[entry["filename"]] = cache_entry.get("sha256")
+        run_state = {
+            "version": 1,
+            "lists_json_sha256": lists_json_hash,
+            "compiler_sha256": compiler_hash,
+            "anchor": args.anchor,
+            "excluded_ids": args.excluded_ids,
+            "files": current_files,
+            "list_hashes": list_hashes,
+        }
+        save_cache_meta(run_state_path, run_state)
 
 
 if __name__ == "__main__":
