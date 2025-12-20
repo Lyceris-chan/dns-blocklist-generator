@@ -984,7 +984,8 @@ def main():
         new_rules[rule] = source
 
     removed_by_source = {}
-    moved_by_source = {}
+    # Changed: Track moves by (old_source, new_source) tuple
+    moved_by_transition = {}
     added_by_source = {}
     added = removed = moved = 0
 
@@ -1002,7 +1003,9 @@ def main():
             added += 1
         elif previous_rules[rule] != new_source:
             old_source = previous_rules[rule]
-            add_bucket(moved_by_source, old_source, f"{rule} [Moved: {old_source} -> {new_source}]")
+            # Changed: Use tuple key (old_source, new_source) instead of just old_source
+            transition_key = (old_source, new_source)
+            add_bucket(moved_by_transition, transition_key, rule)
             moved += 1
 
     diff_lines = [
@@ -1027,30 +1030,54 @@ def main():
     for source in previous_source_order:
         if source not in ordered_sources:
             ordered_sources.append(source)
-    all_change_sources = (
-        list(removed_by_source.keys())
-        + list(moved_by_source.keys())
-        + list(added_by_source.keys())
-    )
+    
+    # Changed: Collect all sources involved in any changes (including new_source from moves)
+    all_change_sources = list(removed_by_source.keys()) + list(added_by_source.keys())
+    for old_source, new_source in moved_by_transition.keys():
+        if old_source not in all_change_sources:
+            all_change_sources.append(old_source)
+        if new_source not in all_change_sources:
+            all_change_sources.append(new_source)
+    
     for source in sorted(set(all_change_sources)):
         if source not in ordered_sources:
             ordered_sources.append(source)
 
     for source in ordered_sources:
         removed_items = removed_by_source.get(source, [])
-        moved_items = moved_by_source.get(source, [])
+        
+        # Changed: Group moves by their destination
+        moved_groups = {}
+        for (old_src, new_src), rules in moved_by_transition.items():
+            if old_src == source:
+                moved_groups[new_src] = rules
+        
         added_items = added_by_source.get(source, [])
-        if not removed_items and not moved_items and not added_items:
+        
+        # Calculate total moved count
+        total_moved = sum(len(rules) for rules in moved_groups.values())
+        
+        if not removed_items and not moved_groups and not added_items:
             continue
+        
         diff_lines.append(
-            f"! [{source}] Removed: {len(removed_items)} | Moved: {len(moved_items)} | Added: {len(added_items)}"
+            f"! [{source}] Removed: {len(removed_items)} | Moved: {total_moved} | Added: {len(added_items)}"
         )
+        
         for item in sorted(removed_items):
             diff_lines.append(f"- {item}")
-        for item in sorted(moved_items):
-            diff_lines.append(f"~ {item}")
+        
+        # Changed: Display moves grouped by destination
+        for new_source in sorted(moved_groups.keys()):
+            rules = moved_groups[new_source]
+            if rules:
+                diff_lines.append(f"! Moved to {new_source}: {len(rules)} rules")
+                for rule in sorted(rules):
+                    diff_lines.append(f"~ {rule} [Moved: {source} -> {new_source}]")
+        
         for item in sorted(added_items):
             diff_lines.append(f"+ {item}")
+        
         diff_lines.append("")
 
     if previous_rules:
