@@ -1,2331 +1,2207 @@
 ! =========================================================================
-! sleepy list diff report: 2026-01-31 01:50:42
+! sleepy list diff report: 2026-01-31 06:37:37
 ! =========================================================================
 
-! SUMMARY: Added 1602 | Removed 396 | Moved 277
+! SUMMARY: Added 830 | Removed 574 | Moved 736
 ! ORDER: Anchor + contributors, then legacy-only lists
 
 ! --- CHANGES BY LIST (ORDERED) ---
-! [HaGeZi's Pro++ Blocklist] Removed: 65 | Moved: 13 | Added: 96
-- ||1048877cc998.xgoxwcldkz.top^
-- ||1337ul.8609.cc^
-- ||276eefe2165e.cmsdurbv.top^
-- ||2774c5d7b48b.zxmenhmo.top^
-- ||495.9415.cc^
-- ||526c5dc94e12.cndsdsva.top^
-- ||530076989109.cndsdsva.top^
-- ||59557com.yuhuan.cc^
-- ||5d58890195ae.cndsdsva.top^
-- ||680ad07504ce.xgoxwcldkz.top^
-- ||904.9415.cc^
-- ||908.8609.cc^
-- ||914.9415.cc^
-- ||926.9415.cc^
-- ||928.9415.cc^
-- ||985.8609.cc^
-- ||988.8609.cc^
-- ||a38f0f2b74c4.cmsdurbv.top^
-- ||b84c7e3bdff5.cmsdurbv.top^
-- ||bb6b7391a692.zxmenhmo.top^
-- ||bnrs.shemrec.cc^
-- ||cw32brt.vipspotflirts.life^
-- ||dciclc.bctnodv.top^
-- ||dciclc.cnwucnf.top^
-- ||dciclc.cvcnmtf.top^
-- ||dciclc.ectnodw.top^
-- ||dciclc.hvcnmtu.top^
-- ||dciclc.ivcnmto.top^
-- ||dciclc.jvcnmta.top^
-- ||dciclc.kvcnmtd.top^
-- ||dciclc.lctnodl.top^
-- ||dciclc.octnodk.top^
-- ||dciclc.qctnody.top^
-- ||dciclc.sctnodb.top^
-- ||dciclc.tctnodi.top^
-- ||dciclc.uctnodt.top^
-- ||dciclc.wctnode.top^
-- ||dcivlv.bctnodv.top^
-- ||dcivlv.cnwucnf.top^
-- ||dcivlv.cvcnmtf.top^
-- ||dcivlv.ectnodw.top^
-- ||dcivlv.hvcnmtu.top^
-- ||dcivlv.ivcnmto.top^
-- ||dcivlv.jvcnmta.top^
-- ||dcivlv.kvcnmtd.top^
-- ||dcivlv.lctnodl.top^
-- ||dcivlv.octnodk.top^
-- ||dcivlv.qctnody.top^
-- ||dcivlv.sctnodb.top^
-- ||dcivlv.tctnodi.top^
-- ||dcivlv.uctnodt.top^
-- ||dcivlv.wctnode.top^
-- ||e49e0b120ad5.cndsdsva.top^
-- ||europe-west4-usr01.analytics.controld.com^
-- ||f971bc9f9ae8.xgoxwcldkz.top^
-- ||fmapps.net^
-- ||gwqpmrg.vipspotflirts.life^
-- ||js.kcolb.site^
-- ||k8cpmrdll.vipspotflirts.life^
-- ||mngr.kcolb.site^
-- ||plys.pro^
-- ||proll.shemrec.cc^
-- ||pundr.shemrec.cc^
-- ||wwwtk1976com.yuhuan.cc^
-- ||yarachocolate.com^
-! Moved to HaGeZi's Threat Intelligence Feeds: 13 rules
-~ ||event-bp.fun^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||glowcore.world^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||glowspin.live^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||grivanto.world^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||jackstorm.world^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||jupiterchecker.us^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||krab5-kraken.ru^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||limxbet.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||loarex.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||moadax.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||phantomdesktop.app^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||trxa.org^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||xrp-era.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
-+ ||34-new-lambda.net^
-+ ||8609.cc^
-+ ||9415.cc^
-+ ||ad.sfhkjgd2.com^
-+ ||adguardclear.com^
-+ ||ads.ndevs.eu^
-+ ||alphabetcommiserateinto.com^
-+ ||analytics.isacloud.cc^
-+ ||asfln-toll.com^
-+ ||asitage.pro^
-+ ||avexiro.com^
-+ ||bagseek.top^
-+ ||bctnodv.top^
-+ ||biggerz-com.fr^
-+ ||btjfmwsexo.xyz^
-+ ||cfspart-idp-impotgouv.fr^
-+ ||chronoposet.fr^
-+ ||cmsdurbv.top^
-+ ||cndsdsva.top^
-+ ||cnwucnf.top^
-+ ||cvcnmtf.top^
-+ ||dewomlexpro.net^
-+ ||dljlwolqttjup.online^
-+ ||documentsecurise.fr^
-+ ||ecarte-renouveler.info^
-+ ||ectnodw.top^
-+ ||emporidraxa.net^
-+ ||espresso-tge.com^
-+ ||evoverdex-ia.net^
-+ ||ewdtcmdjelszk.online^
-+ ||fjmbxwrqivkkf.online^
-+ ||franceconcerts.fr^
-+ ||ghatjostler.cyou^
-+ ||goro-maniacy.pl^
-+ ||hvcnmtu.top^
-+ ||illudedatlanta.com^
-+ ||ivcnmto.top^
-+ ||izaptqdmagvsi.space^
-+ ||jvcnmta.top^
-+ ||kcolb.site^
-+ ||kienetiq.xyz^
-+ ||krakoventori.net^
-+ ||kvcnmtd.top^
-+ ||kznpccqejkuqj.site^
-+ ||lctnodl.top^
-+ ||lesbuavunezct.site^
-+ ||limecodesign.com^
-+ ||login-profitroom.com^
-+ ||lurokexan.net^
-+ ||matomo.finam.ru^
-+ ||metafrance.fr^
-+ ||monliensecurise.fr^
-+ ||mystakes-fr.fr^
-+ ||nexiobitc.com^
-+ ||notf-chouspro.fr^
-+ ||octnodk.top^
-+ ||plausible.yukka.nl^
-+ ||prime-nw.fr^
-+ ||prime-wn.fr^
-+ ||prod-public-crm-tracking-alb-1499219140.us-east-1.elb.amazonaws.com^
-+ ||qctnody.top^
-+ ||qmzwrpxa.com^
-+ ||qwantes.fr^
-+ ||qxwzpmrt.com^
-+ ||razekui.pro^
-+ ||redbull-france.fr^
-+ ||reducedcombat.com^
-+ ||rickscribner.com^
-+ ||rqxpmzwt.com^
-+ ||sapidalg.cyou^
-+ ||sctnodb.top^
-+ ||sentry.birdbirdfly.com^
-+ ||sentry.qwertee.com^
-+ ||sentry.y2mate.ch^
-+ ||shemrec.cc^
-+ ||tagging.couponplus.de^
-+ ||tagging.sunweb.nl^
-+ ||tctnodi.top^
-+ ||ticketsflash.fr^
-+ ||trim-tone.pro^
-+ ||ttrhqvgbzbezm.com^
-+ ||uctnodt.top^
-+ ||unfamiliardulygymnasium.com^
-+ ||vdcwhxdegztig.space^
-+ ||vip-ccc.shop^
-+ ||vipspotflirts.life^
-+ ||walletauthentication.com^
-+ ||wctnode.top^
-+ ||whesmart.com^
-+ ||wonderskinsfrance.fr^
-+ ||wrxmpzqt.com^
-+ ||xervato.com^
-+ ||xgoxwcldkz.top^
-+ ||yuhuan.cc^
-+ ||zqpmwrxt.com^
-+ ||zxmenhmo.top^
+! [HaGeZi's Pro++ Blocklist] Removed: 243 | Moved: 46 | Added: 313
+- ||8609.cc^
+- ||9415.cc^
+- ||aa-golgle.online^
+- ||absagroup.ltd^
+- ||acszmw.icu^
+- ||adverselymodelmonitor.shop^
+- ||ainlforme.click^
+- ||allegedlyrelaxingbream.shop^
+- ||allwannher.space^
+- ||almajdearupe.org^
+- ||almgdd.com^
+- ||alturacap.cyou^
+- ||amdc-defender.sbs^
+- ||analytics.onionmail.org^
+- ||apigateway.adx.ae^
+- ||app.seedapp.jp^
+- ||asdasb.icu^
+- ||asyl-alsham.online^
+- ||autodrivemax.site^
+- ||auygram.online^
+- ||aymenshop.online^
+- ||baseethcoin.fun^
+- ||bcloud-mining.store^
+- ||bctnodv.top^
+- ||beanonymousonline.com^
+- ||bellebyjama.store^
+- ||bemopal.xyz^
+- ||besecureconnected.com^
+- ||bhliuynadesmen.site^
+- ||bnnco1base.com^
+- ||boutiquenabil.store^
+- ||casperhsu-aws-project.site^
+- ||cassindrafashionsandbeautyshop.com^
+- ||cfspart-idp-impotgouv.fr^
+- ||chickenfunnygame.site^
+- ||citilivechat.com^
+- ||cjdropship.store^
+- ||ckuc-adguard.sbs^
+- ||cmsdurbv.top^
+- ||cndsdsva.top^
+- ||cnwucnf.top^
+- ||concouurs.store^
+- ||contatopj.chat^
+- ||cookingsmart.online^
+- ||cvcnmtf.top^
+- ||dagi-adguard.sbs^
+- ||dateinghub.com^
+- ||ddqy-defender.sbs^
+- ||desjerdins.com^
+- ||directlyequippedgoldfish.shop^
+- ||dongqiulix.top^
+- ||dongqiunex.top^
+- ||dongqiunor.top^
+- ||dongqiuprae.top^
+- ||dongqiutro.top^
+- ||dongqiuvra.top^
+- ||dulf-adguard.sbs^
+- ||dzairechrilina.store^
+- ||ebankingmeezan.digital^
+- ||ectnodw.top^
+- ||egydolphen.online^
+- ||egyptpaoosta.online^
+- ||elmjvr.exceptionaldates.net^
+- ||enouvoacademy.com^
+- ||etransfilesuae.sbs^
+- ||euhk-protect.sbs^
+- ||eventcp.top^
+- ||fashionpure.online^
+- ||figuresouts.com^
+- ||fnbiw.icu^
+- ||freecpgift.com^
+- ||gov-nkw.icu^
+- ||gowt.site^
+- ||graduallyfullchamois.shop^
+- ||gswx-adguard.sbs^
+- ||hanotidzz.store^
+- ||hashkeydigital.com^
+- ||heavilyrulingwolf.shop^
+- ||helpry.support^
+- ||hfnr-protect.sbs^
+- ||hougena.top^
+- ||houlanix.top^
+- ||houmexo.top^
+- ||houmora.top^
+- ||houventa.top^
+- ||houzeno.top^
+- ||hrmode.store^
+- ||hvcnmtu.top^
+- ||hvqv-protect.sbs^
+- ||idspid.online^
+- ||iifadk.help^
+- ||iifadk.homes^
+- ||ivcnmto.top^
+- ||jmediashop-platform.site^
+- ||jvcnmta.top^
+- ||jylfck.online^
+- ||kcolb.site^
+- ||kenlev.exceptionaldates.net^
+- ||kespark.store^
+- ||khachhanguutien.site^
+- ||khalij.cyou^
+- ||kvcnmtd.top^
+- ||l0g1nt0d.com^
+- ||labourkano.top^
+- ||labourmixa.top^
+- ||labourpixa.top^
+- ||labourvono.top^
+- ||labourxina.top^
+- ||labourzelo.top^
+- ||lalivaisselle.online^
+- ||lctnodl.top^
+- ||ldta-defender.sbs^
+- ||legaladvisor360.site^
+- ||littledancersvote.life^
+- ||llowvn.exceptionaldates.net^
+- ||lorealpremios.com^
+- ||mallonline-sg-watch.store^
+- ||mediasync.sbs^
+- ||medtown.cloud^
+- ||meetmonyra.site^
+- ||melsama.online^
+- ||metafrance.fr^
+- ||micorossoft.com^
+- ||minerf2poll.online^
+- ||monyra.store^
+- ||mryp-defender.sbs^
+- ||mysecureportal.online^
+- ||nakhwairaq.store^
+- ||nexorchain.com^
+- ||neystste3293.cyou^
+- ||novaatix.shop^
+- ||novalexa.top^
+- ||nqhu-defender.sbs^
+- ||octnodk.top^
+- ||oisy-protect.sbs^
+- ||onlystirredmonarch.shop^
+- ||opolud.sbs^
+- ||pagamentoseguroze.site^
+- ||parfumix.store^
+- ||parispalomaa.store^
+- ||pccaressecured.live^
+- ||pcnowrenewwebprotect.live^
+- ||pelletkira.top^
+- ||pelletmixo.top^
+- ||pelletnera.top^
+- ||pelletriva.top^
+- ||pelletvaro.top^
+- ||pelletxera.top^
+- ||pelletzino.top^
+- ||pelviro.top^
+- ||perks-robinhood.com^
+- ||pjemp12.digital^
+- ||pjexclusivo.com^
+- ||pjnetempresas.site^
+- ||plnv-adguard.sbs^
+- ||plus-shop.uno^
+- ||podarok-dly-vas24.site^
+- ||popuptravel.online^
+- ||possiblyallowingcod.shop^
+- ||primind.store^
+- ||promocaododia.xyz^
+- ||promocaosemana.site^
+- ||promocaosemana.xyz^
+- ||promptlymanysalmon.shop^
+- ||promptlyromanticmonitor.shop^
+- ||pura-invest.cyou^
+- ||qantiro.top^
+- ||qctnody.top^
+- ||qhcn-protect.sbs^
+- ||qwantes.fr^
+- ||rainbowfira.top^
+- ||rainbowlixa.top^
+- ||rainbowlora.top^
+- ||rainbowpira.top^
+- ||rarelymastermako.shop^
+- ||rctw-defender.sbs^
+- ||receive-d.work^
+- ||receivel.com^
+- ||rnwmjo.exceptionaldates.net^
+- ||roslisse.store^
+- ||saferwebdataconnect.pro^
+- ||sctnodb.top^
+- ||secretlysacredlionfish.shop^
+- ||secureonlineactivity.com^
+- ||semanadapromocao.site^
+- ||semanadapromocao.xyz^
+- ||seoa-agency.space^
+- ||servicessl-commerce.online^
+- ||sg-court.store^
+- ||sgcourt.shop^
+- ||sgtm.smartly.io^
+- ||shemrec.cc^
+- ||singps-us.click^
+- ||skymarttfee.cyou^
+- ||slaytravel.site^
+- ||ssd3-mob.italiaonline.it^
+- ||stats.tarad.com^
+- ||stoc.fun^
+- ||streamsync-verify-account.icu^
+- ||strowmanbaselingo.forum^
+- ||suitablycausalsculpin.shop^
+- ||suporte-antifraude.cloud^
+- ||syandteessuperstores.com^
+- ||taskrsg.cloud^
+- ||tctnodi.top^
+- ||termonseft.com^
+- ||the-resolutions.site^
+- ||thesk1-visibility.online^
+- ||ting-a.cyou^
+- ||tplatform-data.website^
+- ||trixano.top^
+- ||typingwala.online^
+- ||uctnodt.top^
+- ||userelvex.store^
+- ||usuallyfittingcoral.shop^
+- ||uyxc-protect.sbs^
+- ||v4-39.com^
+- ||velnixa.top^
+- ||vigilanthub.store^
+- ||vipspotflirts.life^
+- ||vodclip.online^
+- ||wadddl.justllovedate.com^
+- ||wafa4.store^
+- ||watch-tissot.site^
+- ||watches-tissot.site^
+- ||watches-tissot.store^
+- ||wclznx.online^
+- ||wctnode.top^
+- ||webportal.live^
+- ||wetransfich.online^
+- ||wildreelsnow.cyou^
+- ||www.ogqggn.justllovedate.com^
+- ||www.vnwodl.exceptionaldates.net^
+- ||xgdpfpro.top^
+- ||xgoxwcldkz.top^
+- ||xrp-lucky.com^
+- ||xrp-site.com^
+- ||xrpevent26.com^
+- ||yuhuan.cc^
+- ||zenpola.top^
+- ||zmjewellery.store^
+- ||zpxz-defender.sbs^
+- ||zxmenhmo.top^
+! Moved to 1Hosts (Xtra): 4 rules
+~ ||happy68yearshop.store^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
+~ ||mealroot.online^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
+~ ||r40z.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
+~ ||weeab0o.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
+! Moved to AdGuard DNS filter: 8 rules
+~ ||4gztojyx1ci3be.rest^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||5crgt3tno2ej3u.rest^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||btjfmwsexo.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||duikjnvsb.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||eoo4hjimvjnpty13cwn8lr7.rest^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||nejjlbjlfpt.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||vzrm9xyf9gplx8.rest^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+~ ||ymqsasdleirxhli.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
+! Moved to HaGeZi's Threat Intelligence Feeds: 18 rules
+~ ||90190.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||90205.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||90219.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||90253.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||arealpro.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||cuentas-netlfix.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||datagivers.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||emeklipromosyonkampayasi.click^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||influencerhacker.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||mt6x.vip^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||n8tm.vip^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||n9tm.vip^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||netflixhf.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||securipass5-agricole.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||serviciosybeneficios.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||shop1688.app^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||vanguardcontact.com^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+~ ||x7pql.vip^ [Moved: HaGeZi's Pro++ Blocklist -> HaGeZi's Threat Intelligence Feeds]
+! Moved to Phishing Army: 16 rules
+~ ||dongqiutix.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||hartisjames.ltd^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||houkrona.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||k9shift.pro^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||labournexo.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||labourtoro.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||m9bd7.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||metacontrol30120001.site^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||n6astra.vip^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||pelletluxa.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||rainbowvexa.top^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||s6glow.pro^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||sbiisec.net^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||scotishtrade.com^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||u7xm6.xyz^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
+~ ||z3mk.vip^ [Moved: HaGeZi's Pro++ Blocklist -> Phishing Army]
++ ||1048877cc998.xgoxwcldkz.top^
++ ||1337ul.8609.cc^
++ ||276eefe2165e.cmsdurbv.top^
++ ||2774c5d7b48b.zxmenhmo.top^
++ ||3rooodnews.net^
++ ||495.9415.cc^
++ ||526c5dc94e12.cndsdsva.top^
++ ||530076989109.cndsdsva.top^
++ ||59557com.yuhuan.cc^
++ ||5d58890195ae.cndsdsva.top^
++ ||680ad07504ce.xgoxwcldkz.top^
++ ||904.9415.cc^
++ ||908.8609.cc^
++ ||914.9415.cc^
++ ||926.9415.cc^
++ ||928.9415.cc^
++ ||985.8609.cc^
++ ||988.8609.cc^
++ ||a.9game.cn^
++ ||a38f0f2b74c4.cmsdurbv.top^
++ ||achhjnovliksu.website^
++ ||activbox.club^
++ ||ad.889club.net^
++ ||ad.adp.com^
++ ||ad.co.il^
++ ||ad.corerewards.com^
++ ||ad.foodlion.com^
++ ||ad.gov.ng^
++ ||ad.khff.or.kr^
++ ||ad.kuruma-terrace.com^
++ ||ad.lotteon.com^
++ ||ad.pointclick.co.kr^
++ ||ad.purplebook9.com^
++ ||ad.search.naver.com^
++ ||ad.vicinity.media^
++ ||ad1.11f9.com^
++ ||ad1.mawar800-80.site^
++ ||ad2.grupo-acerca.com^
++ ||ad2.orderandpay.net^
++ ||ad5.doctormethod.jp^
++ ||adpiler.com^
++ ||ads.alibaba.com^
++ ||ads.apple.com^
++ ||ads.backart.com.ua^
++ ||ads.bigo.sg^
++ ||ads.bsale.com.pe^
++ ||ads.cafebazaar.ir^
++ ||ads.formation-cpf.net^
++ ||ads.fzi.com.br^
++ ||ads.getyarn.io^
++ ||ads.kwai.com^
++ ||ads.panindai-ichilife.co.id^
++ ||ads.taobao.com^
++ ||ads.timesofindia.com^
++ ||ads.turanik.net^
++ ||ads04.cuanladang128.com^
++ ||ads1.ghltod.com^
++ ||adsly.me^
++ ||advert.com.bd^
++ ||adx.ae^
++ ||akifwyyjyulyj.site^
++ ||analytics.bmatrade.com^
++ ||analytics.tilby.com^
++ ||analytics.zeraki.app^
++ ||analytics.zuelligpharma.com^
++ ||app-mobile-solutions.com^
++ ||app-visor.com^
++ ||appstracker.org^
++ ||asmwall.com^
++ ||atlanticahotels.com^
++ ||atomicptc.com^
++ ||b84c7e3bdff5.cmsdurbv.top^
++ ||banner-public.nmsu.edu^
++ ||banner.banprod.scf.edu^
++ ||banner.ncc.edu^
++ ||banner.oci.yu.edu^
++ ||bb6b7391a692.zxmenhmo.top^
++ ||bd.diphasecosecs.com^
++ ||beacon.com.hk^
++ ||beacon.consumeridp.us-1.healtheintent.com^
++ ||bestpartner-sites.com^
++ ||binancegamesglobal.pro^
++ ||blog.fpmaragall.org^
++ ||bnrs.shemrec.cc^
++ ||brandreward.com^
++ ||btcvic.com^
++ ||caloriemania.com^
++ ||calregional.com^
++ ||catherineomega.com^
++ ||caturax.info^
++ ||chameleonglass.com^
++ ||cheshirehorse.com^
++ ||china-tube.site^
++ ||cinehi.com^
++ ||clarity.co.il^
++ ||cm.dearsfibered.com^
++ ||cocvey.help^
++ ||commissionfactory.com^
++ ||coolthewomanonlines.com^
++ ||corbinavedro.shop^
++ ||counter-side.fandom.com^
++ ||crash-predictor-aviator.en.softonic.com^
++ ||crossshafty.cyou^
++ ||curtainpatt.sbs^
++ ||cw32brt.vipspotflirts.life^
++ ||d37j8pfxu2iogi.cloudfront.net^
++ ||da.trunksnorts.com^
++ ||daisycon.com^
++ ||dciclc.bctnodv.top^
++ ||dciclc.cnwucnf.top^
++ ||dciclc.cvcnmtf.top^
++ ||dciclc.ectnodw.top^
++ ||dciclc.hvcnmtu.top^
++ ||dciclc.ivcnmto.top^
++ ||dciclc.jvcnmta.top^
++ ||dciclc.kvcnmtd.top^
++ ||dciclc.lctnodl.top^
++ ||dciclc.octnodk.top^
++ ||dciclc.qctnody.top^
++ ||dciclc.sctnodb.top^
++ ||dciclc.tctnodi.top^
++ ||dciclc.uctnodt.top^
++ ||dciclc.wctnode.top^
++ ||dcivlv.bctnodv.top^
++ ||dcivlv.cnwucnf.top^
++ ||dcivlv.cvcnmtf.top^
++ ||dcivlv.ectnodw.top^
++ ||dcivlv.hvcnmtu.top^
++ ||dcivlv.ivcnmto.top^
++ ||dcivlv.jvcnmta.top^
++ ||dcivlv.kvcnmtd.top^
++ ||dcivlv.lctnodl.top^
++ ||dcivlv.octnodk.top^
++ ||dcivlv.qctnody.top^
++ ||dcivlv.sctnodb.top^
++ ||dcivlv.tctnodi.top^
++ ||dcivlv.uctnodt.top^
++ ||dcivlv.wctnode.top^
++ ||de.cacciasgreasy.top^
++ ||dealeron.com^
++ ||dependence39.com^
++ ||dhagy.com^
++ ||diffusn.cyou^
++ ||discoveryfeed.org^
++ ||disgagedates.cyou^
++ ||doctormobile.lk^
++ ||domobile.com^
++ ||dsiofhdoj.com^
++ ||e49e0b120ad5.cndsdsva.top^
++ ||eb.lactamclaes.com^
++ ||ebdmw.matchloving.com^
++ ||ek21.com^
++ ||emptiedmocolignums.cyou^
++ ||ep.coolenwudge.com^
++ ||ergonomus.co^
++ ||erosads.com^
++ ||err.fandom.com^
++ ||error-daizenn.hatenablog.com^
++ ||error.item.taobao.com^
++ ||ess.com^
++ ||everymail.com^
++ ||everythingpolarisrzr.com^
++ ||exceptionaldates.net^
++ ||ez.sozolicrandle.com^
++ ||f971bc9f9ae8.xgoxwcldkz.top^
++ ||fbbazar.com^
++ ||fitodar.com.ua^
++ ||flyfuk.com^
++ ||freemusicdownloads.world^
++ ||fuckbook.com^
++ ||fuqpremium.com^
++ ||gayfusions.com^
++ ||gb.gnomonsgashly.com^
++ ||geniee.co.jp^
++ ||gravely.com^
++ ||gwqpmrg.vipspotflirts.life^
++ ||hearstmediact.com^
++ ||hfdmjtwxf.com^
++ ||hk.remetalgallous.com^
++ ||hubbtouch.sbs^
++ ||iabeurope.eu^
++ ||icolwfjtjlgvp.website^
++ ||ideatessnipy.cyou^
++ ||in.spicaematlow.com^
++ ||inopese.work^
++ ||installspal.com^
++ ||italiaonline.it^
++ ||jiayuan.com^
++ ||jp.trainzygnema.com^
++ ||js.kcolb.site^
++ ||justllovedate.com^
++ ||jzt.jd.com^
++ ||k8cpmrdll.vipspotflirts.life^
++ ||karthlipanung.shop^
++ ||ketatinrips.cyou^
++ ||kfarfnjomuxg.com^
++ ||kiafinance.ca^
++ ||kjpselecthardwoods.com^
++ ||lcvkuagxyctxr.website^
++ ||llkbxe.datlngplace.com^
++ ||log.amsat-id.org^
++ ||log.d-star.info^
++ ||log.ldd4ig.org^
++ ||log.polabet4d.it.com^
++ ||log.vivo500gacor.vip^
++ ||logs.answer800.com^
++ ||logs.clapslearn.com^
++ ||loosejump.club^
++ ||mail-analytics.plus.aok.de^
++ ||marketingoops.com^
++ ||matomo.galeriebernardjordan.com^
++ ||mb43.activate2.win^
++ ||mediaradar.com^
++ ||messagemedia.com^
++ ||metapropixel.com^
++ ||metrics.myer.com.au^
++ ||mh.albantepal.com^
++ ||mk.seepymannire.com^
++ ||mngr.kcolb.site^
++ ||mted5v4kiqe77p0.top^
++ ||mumara.com^
++ ||mybet.africa^
++ ||mystudyhub.shop^
++ ||naughtymag.com^
++ ||netwoplace.click^
++ ||nitrogencloudelevationsystems.com^
++ ||no.hucklelugging.com^
++ ||nrxqoe.lovedatinglive.net^
++ ||offdutd.cyou^
++ ||okendo.io^
++ ||omne.com^
++ ||opt-out-me.com^
++ ||outgrow.us^
++ ||pahujalawacademy.com^
++ ||pahungaw.tech^
++ ||papayahalt.cyou^
++ ||parts24.kiev.ua^
++ ||pixel.withgoogle.com^
++ ||plagscan.com^
++ ||portablemiss.club^
++ ||povaique.top^
++ ||pr.bromiseunnasal.com^
++ ||preventivevet.com^
++ ||proliant.com^
++ ||proll.shemrec.cc^
++ ||pujanpujari.com^
++ ||pundr.shemrec.cc^
++ ||purebulk.com^
++ ||qa.thriverzoistic.shop^
++ ||qneb.cn^
++ ||rabbitsreviews.com^
++ ||racecarrot.sbs^
++ ||recreationselement.best^
++ ||red-apple.in^
++ ||remitano.com^
++ ||rs.seismiccryosel.com^
++ ||runetki-online.net^
++ ||scaleai.app^
++ ||scout69.com^
++ ||seedapp.jp^
++ ||server-side-tagging-id5s3xr7da-uc.a.run.app^
++ ||shanfoods.com^
++ ||shopzalandodeals.com^
++ ||shorted.cyou^
++ ||simownersdetails.online^
++ ||sinarhimalaya.com^
++ ||siteripz.net^
++ ||skymil-informatique.com^
++ ||smartly.io^
++ ||softhandtech.com^
++ ||sparkonx.com^
++ ||speedtest.com^
++ ||squiffyboise.cyou^
++ ||stat.gov.rs^
++ ||stats.asianbookie.com^
++ ||stats.gov.my^
++ ||stats.gov.sa^
++ ||stats.oarc.ucla.edu^
++ ||stocktonusd.net^
++ ||sympatheticwriter.pro^
++ ||tagger.scryfall.com^
++ ||tarad.com^
++ ||tarifcheck-partnerprogramm.de^
++ ||tempted.com^
++ ||terrificsummit.cyou^
++ ||thotchat.ai^
++ ||toaadwh.icu^
++ ||ui-mixer.io^
++ ||utrka.com^
++ ||valeriegagnonlaniel.com^
++ ||velmion.com^
++ ||viabtc.net^
++ ||vipsrst.shop^
++ ||vipwomans-zone.org^
++ ||voileblanche.com^
++ ||voxco.com^
++ ||wabeeg.ffairyluv.com^
++ ||wanno.best^
++ ||wd.dagombaovally.top^
++ ||webwinkel.ad.nl^
++ ||wildtextures.com^
++ ||win64autoupdates.top^
++ ||wwwtk1976com.yuhuan.cc^
++ ||wy7btl038.com^
++ ||yelloww.cyou^
++ ||ykhwulgracfay.com^
++ ||ypwhtnnghvhmr.space^
++ ||yqihcqwammass.online^
++ ||yt.pecorauncured.com^
++ ||ytowuketepozj.website^
++ ||yw.conidiafoggara.com^
++ ||zbahisz.com^
++ ||zjeanifhgszfb.site^
 
-! [1Hosts (Xtra)] Removed: 2 | Moved: 24 | Added: 0
-- ||allegro.pay-shop-skrill.sbs^
-- ||mail.startmal.com^
-! Moved to HaGeZi's Pro++ Blocklist: 24 rules
-~ ||8bsl.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||adobedamfamilygolfcenter.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||adqacclltyvdv.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||consumertestconnect.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||deadpattern.pro^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||distrustuldistrustulproprietor.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||g2trck.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||grinfeldmet.online^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||hjcecssg.cc^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||jhfdofbk.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||ktutpciofndnhif.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||kwserving.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||leadinfo.eu^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||marparkreefs.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||mesallyrhumbs.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||metozemoon.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||notifly.tech^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||partsroll1.xyz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||rewardspark.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||riggurgle.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||riveldozens.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||rudwdngcw.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||sombernewspaper.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||zhongnanhaicn.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+! [1Hosts (Xtra)] Removed: 16 | Moved: 293 | Added: 13
+- ||addelivery.seedapp.jp^
+- ||env1.groupbuyservices.com^
+- ||surveys.okendo.io^
+- ||w.jiayuan.com^
+- ||www.3rooodnews.net^
+- ||www.atlanticahotels.com^
+- ||www.caloriemania.com^
+- ||www.domobile.com^
+- ||www.ek21.com^
+- ||www.jiayuan.com^
+- ||www.messagemedia.com^
+- ||www.naughtymag.com^
+- ||www.proliant.com^
+- ||www.purebulk.com^
+- ||www.rabbitsreviews.com^
+- ||www.scout69.com^
+! Moved to HaGeZi's Pro++ Blocklist: 293 rules
+~ ||100percentfedup.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||123.sogou.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||265.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||3txxx.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||7searchppc.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||accio.ai^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ad-personalize-center.yahoo.co.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||adexchanger.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||adlinktech.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||advertise.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||aimultiple.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||albertsonscompanies.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||allmath.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||allsquaregolf.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||amateurgolftour.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||amtrav.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||anywhere.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||aplu.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||app.getvero.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||app.naga.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||appinventiv.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||aristotleinsight.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ass4all.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||audi-club.ru^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||audience.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||autoleadstar.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||averitt.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||azandmeapp.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||azeronline.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||batterypower.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||best7kpromo.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||big-today.xyz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||bike.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||blueflowerfield.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||bobcatdealernet.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||bustedtees.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||buzzoid.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||canetads.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||carpro.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||cbicentral.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||cdn.nsuky.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||cea.lk^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||celebs.live^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||certpia.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||chatbeacon.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||chatroll.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||cheetah.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||chumsearch.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||circleboom.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||clicktech.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||clkmr.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||companeo.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||consortshaheen.shop^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||criedgreedilystark.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||csgotraders.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||d.bilibili.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dafapromo.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||daskarnevalkostuem.de^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||databridgemarketresearch.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dav.kz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dealcatcher.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||delve.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||detak.media^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dff.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||diarydirectory.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dirtyleague.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||docuware.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||dodge-forum.eu^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||eclerx.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||edu-kingdom.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||eftps.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||elliptic.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||eltbd.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||emojot.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||energy-torrent.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||etoh24.de^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||etrack1.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||eurotwinkmovies.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ex-pa.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||eye.swfchan.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ezglobalyazilim.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||famisafeapp.wondershare.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||fesoku.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||file-upload.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||finalforms.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||firstalert.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||flexoffers.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||flicksmore.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||foreplay.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||foryourparty.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||freesteamkeys.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||frogy.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||fromdoppler.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||frro.utn.edu.ar^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||futuremarketinsights.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||fxx5.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||glazierclinics.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||gogojungle.co.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||greenmill.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||gushi365.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||hccindia.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||heyloyalty.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||hilcovision.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||hogshaven.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||hoonuit.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||hornyvillasteam.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||imei-tracker.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||iqtest.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||irhythmtech.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ironsrc.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||irun.org^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||isize.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||iti.org^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||iynakvjmajx.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||jacquieetmichelstrip.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||jcvn.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||justcbdstore.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||kidshealthplay.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||korewaeroi.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||korku.tv^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||korrika.eus^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||kurganobl.ru^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ladipage.vn^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||laotiantimes.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||leaddocket.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||levelaccess.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||livingsimply.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||logon.salesnexus.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||lustcinema.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||maratonaclubedeportugal.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||marriottvacationclubs.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mdfinstruments.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mediaocean.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||meta.miraheze.org^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||metapic.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||metric.vn^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||metroscreenworks.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mixi.co.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mobidea.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mobiefun.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||monetizedeal.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||moneyfor.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||moneymagpie.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||multimoney.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||mundobytes.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myasian.live^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myda1.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myharavan.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myhoroscopepro.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myquadient.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||myvarsity.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||narakathegame.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||nootica.de^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||nowtheendbegins.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||offeradvi.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||oisservices.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||olydig.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||onclicka.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||online-topics.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||owhit.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||panelplace.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||partneradvantage.goog^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||pauglichaik.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||pdf2docs.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||pdr.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||philosophy.blogmura.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||piercemfg.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||planetpush.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||pmcruzeiro.geosiap.net.br^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||policies.warnerbros.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||porndeals.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||pornego.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||portal.fastfieldforms.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||privatefloor.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||privateiptvaccess.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||prizerebel.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||propolski.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||purlive.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||qanty.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||qm.qq.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||quinyx.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||quiz.tryinteract.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ranksitt.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||replevysquab.top^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||retro-stage.de^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||reunion.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||reviversoft.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||revolgc.pro^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||rewards1.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||rpggroup.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ruwya.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||searchfunder.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||secondnature.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||secure.aha.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||secure.trust-provider.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||seemygf.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sexedchat.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sexwife.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sexyfans.app^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||shpdata.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||shulex.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||siccasguitars.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sielsmaats.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sitesell.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||skplanet.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||smartbuyglasses.jp^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||smartdrive.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||snuggymom.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||socotec.fr^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||softwareworld.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||souvenirua.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||spicysparks.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||spookynooksports.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||stahuj.cz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||startface.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||startpage-home.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||startus-insights.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||stats.cc^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||stda.edu.mn^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||steamanalyst.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||stoletie.ru^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||strategic-culture.su^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sureman.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||surveysavvy.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||surveysonthego.net^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||surveysouthwest.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||survoxinc.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||swap.gg^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||sweetpacks-search.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||synctrack.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||taghribnews.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||teleame.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||teman.com.ua^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||terrarium.com.pl^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||theeverydaygame.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||theforge.ir^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||thetechylife.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||tigear.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||tinygrab.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||totalwebshield.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||trackershop-uk.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||trck.cc^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||triplewhale.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||tropheesdiffusion.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||trovigo.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||trustseal.enamad.ir^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||turtl.co^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||tutuapp.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||u-tk.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||ucam.xxx^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||uhchearingportal.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||unex.edu.br^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||unlock-content.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||updatesz.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||uraotome.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||usasenioraid.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||userpilot.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||v-count.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||valrek.lv^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||vdsteenxxl.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||vectormarketing.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||villagemedical.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||voetbaltrips.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||volcanoesandearthquakes.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||voyeurhouse.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||w0wtimelands.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||wavebrowserpro.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||wayback.archive-it.org^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||web.global-e.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||webramz.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||wellborn.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||wetracked.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||wholevideos.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||widgets.kinopoisk.ru^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||windowstechies.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||winehouseportugal.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||work5.ru^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||www.gold-traders.co.uk^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||x-lime.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||xflirt.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||xhdekqpbighkc.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||xxbritslive.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||yoc.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||yoojia.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||yourcx.io^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||yourlivingcost.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||yule.sohu.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zenloop.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zenqms.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zhcw.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zismo.biz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zoo.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
+~ ||zuhaowan.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
++ ||allegro.pay-shop-skrill.sbs^
++ ||att.fnbiw.icu^
++ ||bradesco.pjexclusivo.com^
++ ||gopay13.eqxd.top^
++ ||gopay16.vkgh.top^
++ ||gopay21.eqxd.top^
++ ||gopay4.eqxd.top^
++ ||gopay7.vkgh.top^
++ ||gopay8.vkgh.top^
++ ||www.eqxd.top^
++ ||www.reidospaes.com^
++ ||www.sisamed.com.br^
++ ||www.vkgh.top^
 
-! [HaGeZi's Threat Intelligence Feeds] Removed: 72 | Moved: 40 | Added: 1004
-- ||2234morosestreet.com^
-- ||amarleen.com^
-- ||andheriescort.com^
-- ||asian-sirens.com^
-- ||banglavideos.com^
-- ||beholder.top^
-- ||besexcited.com^
-- ||bflix.click^
-- ||bondagefuckbook.com^
-- ||bradfieldprop.com^
-- ||bubble-1760476712536.staticrun.app^
-- ||celebs100.com^
-- ||chaturbate.no^
-- ||cherry-1756068396446.staticrun.app^
-- ||cmtde-v3.org^
-- ||dating-free-personals.com^
-- ||defendingabuse.com^
-- ||diffideacc.pro^
-- ||dsoft.software^
-- ||education-trade.com^
-- ||fig-1758007986918.staticrun.app^
-- ||findedates.nl^
-- ||frisco.dozpl.help^
-- ||hlfexpress-1755646064738.staticrun.app^
-- ||hornymilfdates.com^
-- ||hotmailorderbride.com^
-- ||iblogs.com.br^
-- ||icloud-com.staticrun.app^
-- ||ieuxq29f.phyretools.ru^
-- ||iiak3udi.graptagreeve.ru^
-- ||inpost.pay-shop-skrill.sbs^
-- ||izmrizmrescxxx.escortroom.net^
-- ||katedouglas.com^
-- ||lavashinas.es^
-- ||leakedslut.com^
-- ||leger-abraham.com^
-- ||mediaexpert.dozpl.help^
-- ||meteor-1751328532995.staticrun.app^
-- ||murderarchives.com.au^
-- ||mvd0hzob.phyretools.ru^
-- ||mycss.zohobackstage.ca^
-- ||mygarta.cv^
-- ||mypalmoe.com^
-- ||myxstalk.sbs^
-- ||nearbypussy.com^
-- ||nikopas.com^
-- ||orbit-1752847580639.staticrun.app^
-- ||orbit-1760176834817.staticrun.app^
-- ||phone-sex-fetish.co.uk^
-- ||planetofbrides.com^
-- ||popupblockermax.pro^
-- ||pornforum.org^
-- ||porngen-art.com^
-- ||purivisit.com^
-- ||ramblas.sumer.gen.tr^
-- ||ruinedboudoir.com^
-- ||saasmentor.net^
-- ||saltcomunicacao.com.br^
-- ||smarzasburviba.lv^
-- ||statuslines.com^
-- ||statuslist.in^
-- ||streamtvpro.co^
-- ||sweet-holes.com^
-- ||syfs0mz4.graptagreeve.ru^
-- ||telegram-ai-girlfriend.com^
-- ||thedopespectrum.com^
-- ||theloveiskindnetwork.com^
-- ||thewomb.nfnto.com^
-- ||www-jcb-co.6868dc.com^
-- ||www.rajas.com.my^
-- ||www.sslogistics.com.mx^
-- ||youngnude.cc^
-! Moved to HaGeZi's Pro++ Blocklist: 39 rules
-~ ||areyourealhuman.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||aromaticaskinglow.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||asterscz-allocationed.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||b4spark.vip^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||bearableguyreward.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||bemopal.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||betterclaimsolana.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||claimwindows-asterdex.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||com-elon-musck.info^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||cryptrouter.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||eam-coinbase.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||explay.bet^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||flexworkhub.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||fzhyw.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||hartisjames.ltd^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||inclusivebets.fun^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||k9shift.pro^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||kbim.digital^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||keinetiq.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||metamaskwallet-restore.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||microsoftpoller20.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||mogulbet.vip^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||moonbirds.com.de^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||mystery-trustwallet.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||n6astra.vip^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||naturalhavenbening.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||neotrustledger.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||orchardsignal.cloud^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||ralebit.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||resource-coinbase.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||rocket-origindefi-premium.site^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||s6glow.pro^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||starsfreedom.vip^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||streamyards.org^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||ursotech.app^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||verifyuser.org^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||xwebet.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||z3mk.vip^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||zoominvitesmeetingsxy.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-! Moved to OISD Blocklist Big: 1 rules
-~ ||vinted.accept-here.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
-+ ||022994.com^
-+ ||03ssrd3334phd00p4sh0s33drcorequemenxxkjw3450w1jklsha.s3-ap-southeast-1.amazonaws.com^
-+ ||09uxy1.msxxxxx.cc^
-+ ||0witter.com^
-+ ||1024bt13.xyz^
-+ ||1843786414.xyz^
-+ ||1eosmfhg.s3.ap-northeast-2.amazonaws.com^
-+ ||1veurallinksexservers1.sbs^
-+ ||1win5522.ru^
-+ ||2183481234.lol^
-+ ||2403003a0648715a3b0675e3b2f033a3.myxstalk.sbs^
-+ ||24088e.cc^
-+ ||2dspoek.s3-ap-southeast-1.amazonaws.com^
-+ ||2netflix.com^
-+ ||333234.xyz^
-+ ||34465316.xyz^
-+ ||35484341894.lol^
-+ ||385498354.xyz^
-+ ||3d-game.com^
-+ ||3disee.com^
-+ ||44840151.xyz^
-+ ||4nmv.ru^
-+ ||5000yx.com^
-+ ||5szhan.cc^
-+ ||5utidbg.s3.eu-central-1.amazonaws.com^
-+ ||6868dc.com^
-+ ||6x69xxx.ru^
-+ ||7euny43.sbs^
-+ ||8u5a.zzppppp.cc^
-+ ||91se.org^
-+ ||9ayba1nzb99luroaadpx.s3.eu-central-1.amazonaws.com^
-+ ||9eisofmk.s3.eu-west-3.amazonaws.com^
-+ ||9hddformalds.s3.ca-central-1.amazonaws.com^
-+ ||a2zero.com^
-+ ||a2zpreowned.com^
-+ ||aadf2fabcec4b26e604038845f6e2889.myxstalk.sbs^
-+ ||aasilumin.rest^
-+ ||abaction.sbs^
-+ ||abc.jithwin.in^
-+ ||abvassociados.com.br^
-+ ||accessdomain.net^
-+ ||accoun.kboqxsu.cn^
-+ ||accoun.vnwemkh.cn^
-+ ||account.consumnesriverfarm.com^
-+ ||aceprintingmaui.com^
-+ ||acgsu1888.xyz^
-+ ||achit.ru^
-+ ||achota.com^
-+ ||acknowtech.in^
-+ ||activetxc.com^
-+ ||adc.ci^
-+ ||adcapitolusa.info^
-+ ||adsyssarl.com^
-+ ||adultsearching.com^
-+ ||adultsites.link^
-+ ||adwarespy.com^
-+ ||ae-sexy.vip^
-+ ||aescan.com^
-+ ||afr.magmademo.it^
-+ ||afrodite.cloud^
-+ ||after-school.org^
-+ ||agatsyaspermbank.in^
-+ ||agenciaprime.pt^
-+ ||agilecenter.com.br^
-+ ||agroframe.com^
-+ ||ahmed.4lima.de^
-+ ||aiency.com^
-+ ||aiserviceagency.com^
-+ ||ajilix.org^
-+ ||akureyri-hostel-2025.com^
-+ ||al-rehaili.net^
-+ ||albertosaccone.it^
-+ ||allegrolokalnie.pl-oferta738942.sbs^
-+ ||allstardeckcleaning.com^
-+ ||almeidavaz.com.br^
-+ ||alton.pl^
-+ ||altsax.net^
-+ ||alutube.by^
-+ ||amc-sonthofen.de^
-+ ||ams-shared-12.hostwindsdns.com^
-+ ||andotherlovelies.com^
-+ ||andrewberryjewellery.com^
-+ ||animesex.atw.hu^
-+ ||anitakaz.com^
-+ ||antaresns.com^
-+ ||antoniocarlon.com^
-+ ||anttere.com^
-+ ||apascoffee.com.br^
-+ ||apidesign.ca^
-+ ||appchrolista.s3.amazonaws.com^
-+ ||applerepairman.com^
-+ ||arabichereandnow.com^
-+ ||architecturalfiberglass.org^
-+ ||asfisroads.pro^
-+ ||ashfordformula.com.mx^
-+ ||assesraunc.rest^
-+ ||astrodeepakdubey.in^
-+ ||atlassiderurgica.com.br^
-+ ||atrevetesexx.cl^
-+ ||audiosext.sendunlock.us^
-+ ||aureofundoria-es.net^
-+ ||authreservation-confirm.world^
-+ ||autodownsystem.com^
-+ ||automaatbekers.nl^
-+ ||avtomat2000.com^
-+ ||azecra.com^
-+ ||b04iai9xmvjagipqm6fg.s3.eu-central-1.amazonaws.com^
-+ ||b24-uix8op.bitrix24.site^
-+ ||bank.216883.top^
-+ ||bargain-place.com^
-+ ||bcgt7hi4.yawwbb11.cc^
-+ ||bcnccustom.com^
-+ ||beau-peux.fr^
-+ ||belintego.pl^
-+ ||bemobile.com.au^
-+ ||beppo.com.br^
-+ ||best-forsale.com^
-+ ||bestwebpillplace.com^
-+ ||bestwesternamstrdam.world^
-+ ||bibo.myshoplaza.com^
-+ ||bigops.s3.us-east-2.amazonaws.com^
-+ ||biizz.ru^
-+ ||billard-spielen.net^
-+ ||billing-microsoft365sub.digital^
-+ ||binaliuksal.com^
-+ ||binarybenliveload.com^
-+ ||bioplastics.us.com^
-+ ||birbmeme.xyz^
-+ ||bitesbubblesandjazz.com^
-+ ||blockpartyserver.com^
-+ ||blogdacidadania.com^
-+ ||blood-sports.net^
-+ ||bluebirdsexpress.com^
-+ ||blueoceancarpetcleaning.com^
-+ ||bluevalleysurgical.com^
-+ ||blumnightclub.com^
-+ ||bodyfitfirm.com^
-+ ||bomberosmelipilla.cl^
-+ ||bordefinoble.net^
-+ ||bossbytexai.net^
-+ ||botmasterru.com^
-+ ||bouncingbunny.nl^
-+ ||bowmedi.cyou^
-+ ||bpo-elm.com^
-+ ||brainflux.live^
-+ ||brasuhd.com^
-+ ||braxxtazs.s3.eu-north-1.amazonaws.com^
-+ ||brd-stolpersteine.net^
-+ ||bright.su^
-+ ||brinadon.com^
-+ ||britishfetish.com^
-+ ||brokentulip.nl^
-+ ||bscontabilidade.pt^
-+ ||bsyejecxbc.function.microgen.id^
-+ ||btc-83-vellorix.net^
-+ ||bucetagostosa.top^
-+ ||bucketpostwp.s3.us-east-1.amazonaws.com^
-+ ||bupweokrsnuuufisr4.s3.pl-waw.scw.cloud^
-+ ||busybeesmyanmar.busybeesexpertservice.com^
-+ ||butterflycircus.com^
-+ ||buyonlinepar.us.com^
-+ ||buyoutsnoisy.click^
-+ ||bvlgariwallet.xyz^
-+ ||callgirls.atw.hu^
-+ ||campdatz.com^
-+ ||campisitalia.it^
-+ ||cannibal.com^
-+ ||cap.plt-cmc.com^
-+ ||capitaliterra.top^
-+ ||capojo.com^
-+ ||carbontradebanks.com^
-+ ||carhandy.co.uk^
-+ ||casablancaglassexpo.ma^
-+ ||cashierads.com^
-+ ||cathykeir.co.uk^
-+ ||ccwclass.net^
-+ ||celebjihad.net^
-+ ||centralbilling.phototours.com^
-+ ||centrale-services.com^
-+ ||centrolecampane.it^
-+ ||centrosmissextensions.com^
-+ ||cetucprotocol.com^
-+ ||cfd.maincp.proxy744.com^
-+ ||cfd.tradinglvls.link-33.com^
-+ ||chameleonclothing.in^
-+ ||chaopenxj.buzz^
-+ ||chatgptapp888.cn^
-+ ||chatparaguay.org.gay.easyencuentros.com^
-+ ||chauhanestate.com^
-+ ||checkout-national-static-sandbox.s3.amazonaws.com^
-+ ||chrischan.net^
-+ ||chrysalisc.com^
-+ ||cialiswa1mart.com^
-+ ||claim.solmobile.app^
-+ ||cleanplatefit.com^
-+ ||clickfirex.com^
-+ ||clothingsu.com^
-+ ||co88.win^
-+ ||codelta.es^
-+ ||coinlbasekr.app-lob.site^
-+ ||coinomize.top^
-+ ||coinpayments.s3.ca-central-1.amazonaws.com^
-+ ||colegioclaudiogay.cl^
-+ ||colina-de-pela.com^
-+ ||colina-village.com^
-+ ||colinedepela.com^
-+ ||comforthotel.co.ug^
-+ ||confirming-santander.com.mx^
-+ ||conquercovidtogether.com^
-+ ||consensuscapitalholdings.com^
-+ ||cooked.com^
-+ ||copasa.gob.pe^
-+ ||copypasteanywhere.app^
-+ ||coronavirus.uk^
-+ ||corrytjagfsexpert349area.online^
-+ ||covid19requirementrp4rhd50345h0pdr3prp0p50p.s3.eu-north-1.amazonaws.com^
-+ ||cpanel.monopolymarketing.pk^
-+ ||crawdaddyskitchen.com^
-+ ||crdh1.com^
-+ ||creativarc.com^
-+ ||credo-cosm.ru^
-+ ||crimsonqtwin.club^
-+ ||cryoutfornairobi.com^
-+ ||csexpress.co.za^
-+ ||cucinasostenibile.com^
-+ ||cuicpjinternacional.org^
-+ ||cumonprintedpictures.com^
-+ ||customweb.us^
-+ ||cv.habjobs.com^
-+ ||cypruswm.com^
-+ ||d.kstore.dev^
-+ ||d1c35e7258e44e1bad3b0762df16cdce.myxstalk.sbs^
-+ ||dailypussy.com^
-+ ||damianovic.cl^
-+ ||danzasexpress.com^
-+ ||dasexams.com^
-+ ||datahawkanalytics.com^
-+ ||dbs.tannerspharma.com^
-+ ||dctchiropractic.com.au^
-+ ||dealmy.sbs^
-+ ||declicgestion.fr^
-+ ||deesayuno.shop^
-+ ||dekma-gay.ru^
-+ ||demosite.dasdigital.com.au^
-+ ||denkos-infiniti.ru^
-+ ||design2.fwsexamples.com^
-+ ||destek-basvurun.com^
-+ ||deutlichbesser.de^
-+ ||dev.sexyyoudesigns.com^
-+ ||dev34.dioniqlabb.se^
-+ ||dev3code.com.br^
-+ ||devere-group-annualawards.com^
-+ ||dfgfcghuuu8800177gf.s3.ap-southeast-5.amazonaws.com^
-+ ||dgb.cl^
-+ ||dhjfgt4rzuu6tfdo85wfjj.followz.st^
-+ ||dialogue.mazda.hr^
-+ ||diamonddire.club^
-+ ||digitalfileconverter.com^
-+ ||directcapital.nl^
-+ ||dirty.love.texanscredit.com^
-+ ||dirtydiggers.net^
-+ ||disabilityinformer.com^
-+ ||dischner-kartsport.de^
-+ ||divorceddadbook.com^
-+ ||dolcemodz.bz^
-+ ||dollie.io^
-+ ||downeu.xyz^
-+ ||download.motoguard.pl^
-+ ||dozpl.help^
-+ ||dpcpl.com^
-+ ||drsgadiphotography.com^
-+ ||drsilva.com.br^
-+ ||dti.or.th^
-+ ||dublinportalhostregistryarriveschecks.com^
-+ ||durgsexperts.etoolabs.com^
-+ ||dz6-dnjhsbjhsk-jdskujbfhdfd.s3.amazonaws.com^
-+ ||e-ttuvturk.digital^
-+ ||e1c.curtisswrightds.com^
-+ ||e4gdb4pt.velostager.digital^
-+ ||eaqueiste.my.id^
-+ ||ear.at^
-+ ||ebreaxaq.s3.us-east-2.amazonaws.com^
-+ ||ebrys.com^
-+ ||eclassexperts.com^
-+ ||ecolecaritas.be^
-+ ||eddies-pizza-vreden.de^
-+ ||eduland.it^
-+ ||eecm.in^
-+ ||efficiency.nl.visma.com^
-+ ||ekwiteit.co.za^
-+ ||elangemasexp.com^
-+ ||electricgroups.co^
-+ ||elif.ba^
-+ ||elisasanz.net^
-+ ||eloqua.undergraduateexam.in^
-+ ||elq.artsfestival.org^
-+ ||emlink.me^
-+ ||energytechltd.com^
-+ ||eninfinitum.mx^
-+ ||enlacesexpress.com^
-+ ||epaperlineapress.world^
-+ ||erindalecarcare.com.au^
-+ ||erogif.ru^
-+ ||erotik-hotel.de^
-+ ||escort-deluxe.de^
-+ ||escortsservice24.com^
-+ ||essexgeneralsurgeon.co.uk^
-+ ||ethereum-qr-code-generator.com^
-+ ||euroimpiantiassistenza.it^
-+ ||evelynxxx.atw.hu^
-+ ||evergem.com.au^
-+ ||exodus-transactions.com^
-+ ||expedia-hotel.icu^
-+ ||extragenerators.xyz^
-+ ||f394f9i-02w4kfd0-w9ke0gfnjw-0rfjnmg-0rf-0ef.obs.la-south-2.myhuaweicloud.com^
-+ ||facebook-support.pages.mus.br^
-+ ||facebook.anasaounalsoud.eu^
-+ ||facebookofsex.yaforia.com^
-+ ||facebooks.me^
-+ ||facelook.no^
-+ ||fantas.me^
-+ ||faproulette.gg^
-+ ||farmingtondewdays.com^
-+ ||fastloanapproval.us.com^
-+ ||fastranserver.com^
-+ ||fastwhite.cyou^
-+ ||fathersmanifesto.net^
-+ ||febre.cl^
-+ ||feedcraft.space^
-+ ||feedmefile.top^
-+ ||feldmann.net.br^
-+ ||felicitastagaytay.hottels.top^
-+ ||fepuway.com^
-+ ||fernandadaniel.com.br^
-+ ||ferreti-it.com^
-+ ||fiasemanbank.com.gh^
-+ ||filmestorrent.top^
-+ ||firstblood.uk.com^
-+ ||fkt.us.com^
-+ ||fleshilghtsgoutlet.com^
-+ ||fllicapone.com^
-+ ||focus-flow-nl.com^
-+ ||foinimoori.rest^
-+ ||formushallow.club^
-+ ||fotoracconti.com^
-+ ||framezhouse.com^
-+ ||frationalityyf.ru^
-+ ||freeporn4you.download^
-+ ||freexxxvideos.shop^
-+ ||frekansgayrimenkul.com^
-+ ||frinter.co.uk^
-+ ||friys.com^
-+ ||fromwhereigo.com^
-+ ||ft-immoh.com^
-+ ||ftp.fpmaam.org^
-+ ||fundocaral.com^
-+ ||fungarbage.com^
-+ ||fync.digital^
-+ ||g3.rs^
-+ ||gadgetgist.com^
-+ ||gaiam.nl^
-+ ||galandskiyher5.com^
-+ ||gama-aa.ba^
-+ ||gassantos.com.br^
-+ ||gay-area-vancouver.xoilac-live.org^
-+ ||gayatrifinance.com^
-+ ||gayworld.at^
-+ ||getsporked.org^
-+ ||gettingstartedbcbsma.com^
-+ ||gftgrty56.obs.ap-southeast-1.myhuaweicloud.com^
-+ ||glidera.io^
-+ ||globalnewstracker.com^
-+ ||globalparcelsexpressdeliverycompany.com.logisticsinternationalexpress.com^
-+ ||gnmail.com^
-+ ||go-bruner-hotel.com^
-+ ||go88vip.cn.com^
-+ ||gogofreeporn.art^
-+ ||goldenmasala.com^
-+ ||golye-devushki-photo.ru^
-+ ||good-surprise.top^
-+ ||googledatastudio.net^
-+ ||gpt.biu.ltd^
-+ ||gradepool.sbs^
-+ ||graonline24.eu^
-+ ||graptagreeve.ru^
-+ ||grimyperf.click^
-+ ||groundly.com^
-+ ||groupeleclerc.fr^
-+ ||growrock.co.za^
-+ ||gtregalo.cc^
-+ ||gtregalo.ink^
-+ ||gtregalo.vip^
-+ ||guesteasyregistration.com^
-+ ||guestfriendlyregistration.com^
-+ ||guestmasteronline.com^
-+ ||gundeviren.com^
-+ ||gunqifei.shop^
-+ ||guruprasadpatwari-orqanicsonia.s3.eu-north-1.amazonaws.com^
-+ ||gutteranchorage.com^
-+ ||guttersinsummerville.com^
-+ ||haber-krizi.sbs^
-+ ||hacezaa.com^
-+ ||hacking-facebook.com^
-+ ||halimdoza.4lima.de^
-+ ||hefahei60.top^
-+ ||helenabertranpsicologa.com^
-+ ||help-parcel.info^
-+ ||herms.com^
-+ ||hindivikas.org^
-+ ||hitclub88.eu.com^
-+ ||hitclubapk.it.com^
-+ ||hitclubs.it.com^
-+ ||hiya.ma^
-+ ||hkdporn.hkd0.my.id^
-+ ||hollylake.net^
-+ ||homefindhub.com^
-+ ||homemadesex.yuotube.com^
-+ ||homeofsearching.com^
-+ ||honawey70.top^
-+ ||hopeforhealth.com.ph^
-+ ||horny.com^
-+ ||hostelworld.world^
-+ ||hot-accessories.top^
-+ ||hotel1302847538.com^
-+ ||hotelinfo-24.com^
-+ ||hotonlinegirls.com^
-+ ||hotpussy.com^
-+ ||hotrodsroasts.com^
-+ ||hqporner.ru^
-+ ||hrvatska.com^
-+ ||hsedepartment.com^
-+ ||huckleberrybd.com^
-+ ||huddle01.biz^
-+ ||huddle01.cash^
-+ ||huddle01.download^
-+ ||huddle01.finance^
-+ ||huddle01.studio^
-+ ||huddle01.vip^
-+ ||hugodelamorena.com^
-+ ||huidimian.com^
-+ ||hydelao.com^
-+ ||ibmjp54.s3.jp-tok.cloud-object-storage.appdomain.cloud^
-+ ||ichimanko.com^
-+ ||icins.com^
-+ ||idenlermon.com^
-+ ||iebyte.com^
-+ ||ifreecams.com^
-+ ||igenyesszex.atw.hu^
-+ ||imagnosis.net^
-+ ||impact3d.com.br^
-+ ||imprentasencordoba.com^
-+ ||incests.ru^
-+ ||indexxxx.com^
-+ ||individo.space^
-+ ||ingopa.com^
-+ ||initiativepropertiesltd.com^
-+ ||inmigracionamericana.net^
-+ ||installreports.com^
-+ ||intencam03bvabbu0187whnsl0.sfo3.digitaloceanspaces.com^
-+ ||intercont.eu^
-+ ||internationalshrimpsexport.com^
-+ ||inventohub.com^
-+ ||invotrax.com^
-+ ||ip777xxx.com^
-+ ||isiktechnet.digital^
-+ ||istanbulssalmasa.shop^
-+ ||itcam-solution.com^
-+ ||iut.ovh^
-+ ||iwv.uk.com^
-+ ||ixmusemedia.com^
-+ ||ixxx.date^
-+ ||jamtogel.live^
-+ ||jasonandclare.com^
-+ ||jbtcam.com^
-+ ||jcumbrella.com^
-+ ||jessica-chastain.com^
-+ ||jessikanelson.com^
-+ ||jetwp.com^
-+ ||jewellersnite.com^
-+ ||jlvvv.com^
-+ ||jne1.info^
-+ ||jodhpurcraftinc.com^
-+ ||joh-nrw.net^
-+ ||jonprescod.com^
-+ ||josten-boost.de^
-+ ||jrrmha.cc^
-+ ||jshmembersarea.org^
-+ ||jupiterfear.com^
-+ ||juse.jsgggtz1.top^
-+ ||just4u.co.il^
-+ ||justroll.ru^
-+ ||kahlunavpn.com^
-+ ||kailashhotel.com^
-+ ||kaiwin.cc^
-+ ||kamorafilms.com^
-+ ||kenz.ae^
-+ ||khaledsabra.com^
-+ ||kimlet.s3.fr-par.scw.cloud^
-+ ||kimwuinc.com^
-+ ||kitdigital.tecoinfor.com^
-+ ||kjzece1zkclepavhpt47dwq8.s3.eu-west-2.amazonaws.com^
-+ ||klara-kindredlabs.xyz^
-+ ||kleinanzeigen.150244.com^
-+ ||knownappleissues.com^
-+ ||koranixul.com^
-+ ||kosgebbasvuruu.online^
-+ ||kra47z.at^
-+ ||krab---3---cc.ru^
-+ ||krak3.ru^
-+ ||kro40.at^
-+ ||ksteens.top^
-+ ||kstore.space^
-+ ||kzenv.com^
-+ ||lafromagerie.co.il^
-+ ||lagera.com^
-+ ||laiaribasvalls.com^
-+ ||landed.site^
-+ ||langwieser.at^
-+ ||lapetitespanioengconfirmadosarriva.com^
-+ ||larrattlaw.co.za^
-+ ||laudisa.it^
-+ ||laufschuhe.de.com^
-+ ||lavagedevitresexterieur.com^
-+ ||lbbrahmans.co.zw^
-+ ||led-extreme.com^
-+ ||leser.no^
-+ ||leteandco.de.com^
-+ ||letniydozhd.ru^
-+ ||lexfacie.com^
-+ ||li-op.com^
-+ ||liceoadultos.juniorcollege.cl^
-+ ||likeavfby.cc^
-+ ||lilclits.gr^
-+ ||limbosemillas.com^
-+ ||linkbase.net^
-+ ||livemetaltrade.com^
-+ ||llaa11.xyz^
-+ ||lnkmeup.com^
-+ ||loadrix.com^
-+ ||loadtxc.com^
-+ ||localhost.run^
-+ ||localnet.srv.br^
-+ ||localwomensexdating.com^
-+ ||loginbank.consumnesriverfarm.com^
-+ ||logmaxquebec.ca^
-+ ||longchampmagyarorszag.eu^
-+ ||losangeles.com.ar^
-+ ||loveplanet.az^
-+ ||luvsexybabes.com^
-+ ||luxardgambling.com^
-+ ||macyy.cn^
-+ ||madou.wiki^
-+ ||maestrosexpress.cl.compc.pro^
-+ ||magyarszex.atw.hu^
-+ ||mail.trendset.com.ar.ci3.toservers.com^
-+ ||mairie-gruffy.fr^
-+ ||makemyyay.com^
-+ ||mangunministries.com^
-+ ||mansanz.es^
-+ ||marially-watears.icu^
-+ ||marike.biz^
-+ ||markusexner.de^
-+ ||marmantieral0672435544.usluga.me^
-+ ||marsden.nu^
-+ ||masseguidores.com^
-+ ||master-ms.com^
-+ ||mastermen.org^
-+ ||matinal-nominal.pt^
-+ ||maturesexylonna.com^
-+ ||maureenbreezedancetheater.org^
-+ ||maurobaiardo.it^
-+ ||max-solantesting-z1.com^
-+ ||maximafm.com.br^
-+ ||maximumsite.ru^
-+ ||mayak-lombard.ru^
-+ ||mdsdh.top^
-+ ||mebel-lass.ru^
-+ ||mediaequalizer.com^
-+ ||mediaexpert-sklep.shop^
-+ ||meinvorgestern.de^
-+ ||mensageirosdorei.com.br^
-+ ||meta.metro.ru^
-+ ||michelledare.com^
-+ ||microsoft-online-log.s3.amazonaws.com^
-+ ||midcoastexco.com.au^
-+ ||milf.bikini.texanscredit.com^
-+ ||mioritic-garden.com^
-+ ||misha.at^
-+ ||missed.sfo2.digitaloceanspaces.com^
-+ ||mixxx11.xyz^
-+ ||mixxx12.xyz^
-+ ||mixxx13.xyz^
-+ ||mixxx15.xyz^
-+ ||mixxx8.top^
-+ ||mixxx8.xyz^
-+ ||moasocialcoop.com^
-+ ||mobilecalvarychapel.com^
-+ ||modelsaround.info^
-+ ||modulech.com^
-+ ||mopdolls.bz^
-+ ||moreywillow.cyou^
-+ ||movexisprov-72.com^
-+ ||movinghousexpress.com^
-+ ||mpoacademy.com^
-+ ||mq-support.pages.mus.br^
-+ ||mra47.at^
-+ ||munimanantay.gob.pe^
-+ ||mux.uk.com^
-+ ||myboxsa.com^
-+ ||mycharmingkids.net^
-+ ||myroom-viewinfo.com^
-+ ||mysawit.web.id^
-+ ||mysteriouschats.co.uk^
-+ ||n4etflix.com^
-+ ||nanoagro.com.ar^
-+ ||naproadavida.com^
-+ ||natasa.atw.hu^
-+ ||nativeaol.com^
-+ ||navigayte.com^
-+ ||navorixem.com^
-+ ||nce.com^
-+ ||ne6tflix.com^
-+ ||neoar.tv^
-+ ||netfclix.com^
-+ ||netflixf.com^
-+ ||neurolinguistics.xyz^
-+ ||newrochellerent.com^
-+ ||nexusgoldbet.com^
-+ ||nikeduo14.xyz^
-+ ||nipausa.com^
-+ ||niwabbq.com^
-+ ||niz8256.webmo.fr^
-+ ||nlijla.rest^
-+ ||nobleio.s3.us-east-2.amazonaws.com^
-+ ||nomcziczi.myshoplaza.com^
-+ ||nopowerturns.com^
-+ ||notman.de^
-+ ||novatalent.agency^
-+ ||novolom.ru^
-+ ||nqht19l47as44kawccdvh089.s3.eu-north-1.amazonaws.com^
-+ ||nsaclaim.com^
-+ ||nsd4kt.co.za^
-+ ||nsfwork.net^
-+ ||nukumorinoie.com^
-+ ||nutriekspertpro.info^
-+ ||ny1ezpassexpress.com^
-+ ||o-f-f-c.s3.amazonaws.com^
-+ ||obion.live^
-+ ||ocontrato.com.br^
-+ ||octaitsolutions.com.br^
-+ ||office365onpvd0vvxl7hjrpnqlenb2pmj3g77t.s3-us-west-2.amazonaws.com^
-+ ||officnk9zp47bchlkerqg0wrbcuz9nk7pjwb5y37g2nhj.s3.us-east-2.amazonaws.com^
-+ ||oficialgovbr.com^
-+ ||oglwellness.club^
-+ ||ogretmencantasi.com^
-+ ||okansen.com^
-+ ||okmulgeewrestling.com^
-+ ||okusana.com^
-+ ||oldconf.afac.com.au^
-+ ||oldelisburn.com^
-+ ||omegaconsultoriacontabil.com.br^
-+ ||onderwegkerkblauwkapel.nl^
-+ ||opendirectory.10s.co.il^
-+ ||openseea.trade^
-+ ||operoseholdings.com^
-+ ||orpou.shop^
-+ ||otomagazasi.com^
-+ ||otterhelp.com^
-+ ||ourhouse.id.au^
-+ ||ouw-outlookwebaccess-live-microsoftonline-co-m8485-admin.s3-ap-southeast-2.amazonaws.com^
-+ ||ozka.ro^
-+ ||ozonizacija.ba^
-+ ||p2-app.com^
-+ ||pag.mobi^
-+ ||panatoverf.rest^
-+ ||parking1.samayiot.com^
-+ ||pasnyy.myshoplaza.com^
-+ ||paste.gd^
-+ ||pasteleriadonrafael.cl^
-+ ||pastellgruen.de^
-+ ||pastemytaste.com^
-+ ||pay-shop-skrill.sbs^
-+ ||paypal-accountredirect.onlyist.com^
-+ ||pdfound.com^
-+ ||pendlee.at^
-+ ||penzance.uk.com^
-+ ||per.by^
-+ ||perso.worldonline.fr^
-+ ||petersberger.de^
-+ ||pettyrosso.it^
-+ ||phone-books.s3.ap-northeast-2.amazonaws.com^
-+ ||phopasteurboston.net^
-+ ||phyretools.ru^
-+ ||picmir4.com^
-+ ||piedra.mex.com^
-+ ||piemontesasaffitti.e-bill.it^
-+ ||pimas.com.tr^
-+ ||pineyshoresresort.net^
-+ ||piscina.mex.com^
-+ ||pixelpromo.ru^
-+ ||platosdeducha.com^
-+ ||playvideocenter.com^
-+ ||pmp.ru^
-+ ||polanda.lima-city.ch^
-+ ||polenya.com^
-+ ||pool.gpuhot.com^
-+ ||poopthree.com^
-+ ||pop.tg^
-+ ||pornhub.com.br^
-+ ||pornhub.life^
-+ ||pornochachi.videosgratispornoxxx.com^
-+ ||pornokuni.ru^
-+ ||pornopersik.ru^
-+ ||pornoprofile.com^
-+ ||pornstars.atw.hu^
-+ ||pornxx.cc^
-+ ||portalconfirmadopostaandarriva.com^
-+ ||poshgaytube.com^
-+ ||pramukhfincorp.com^
-+ ||primtitle.com^
-+ ||prixmaven.com^
-+ ||prize-w0w-today.shop^
-+ ||pro-nas.ru^
-+ ||promotionalproducts.space^
-+ ||purohitbazzar.com^
-+ ||qemaxilur.com^
-+ ||r2rr3y5p.velostager.digital^
-+ ||rahmaspace.com^
-+ ||rajas.com.my^
-+ ||rapus.org^
-+ ||recuerdosfm.com^
-+ ||registration-usro.com^
-+ ||registros23-10-2023.s3.pl-waw.scw.cloud^
-+ ||remark-service.ru^
-+ ||remittancedata.usluga.me^
-+ ||repyouroots.net^
-+ ||requirementcoviddds5d0p4s4rppp5rpd0drhh0.s3-ap-northeast-1.amazonaws.com^
-+ ||reservetion-id45618.world^
-+ ||resioleo.com.br^
-+ ||rgahyd.com^
-+ ||richerfarminc.com^
-+ ||rinumritos.rest^
-+ ||riot.sv^
-+ ||riversidecorp.net^
-+ ||riversidecorp.org^
-+ ||robuxstar.com^
-+ ||rocguys.com^
-+ ||rodekruisboomrumst.be^
-+ ||romance101fm.com^
-+ ||roohaniinfra.com^
-+ ||rostitutki.to^
-+ ||rscfilms.in^
-+ ||russianwedding.eu^
-+ ||sahinbombe.com^
-+ ||salewashopiing.myshoplaza.com^
-+ ||salewashopping.myshoplaza.com^
-+ ||samoa.ws^
-+ ||sapp.top^
-+ ||saudicode.org^
-+ ||save-more-insider.com^
-+ ||sc-jellevanendert.com^
-+ ||scdg.net^
-+ ||schermtekoop.be^
-+ ||schottgun.com^
-+ ||scientificshooting.com^
-+ ||sdklnk.s3.fr-par.scw.cloud^
-+ ||sealsale.co.uk^
-+ ||search-inet.com^
-+ ||seasideresort.org^
-+ ||seekermobile.app^
-+ ||selar.pro^
-+ ||seniorcarecanada.com^
-+ ||serviceeletrica.com.br^
-+ ||sex.alang.vip^
-+ ||sex.web.texanscredit.com^
-+ ||sex291jiekedashan.wiki^
-+ ||sex291jinrikanliao.wiki^
-+ ||sex291meirichigua.wiki^
-+ ||sex291siwa.wiki^
-+ ||sex291wuma.wiki^
-+ ||sex291xingbashipin.wiki^
-+ ||sex2duoduoshipin.wiki^
-+ ||sex2mimei.wiki^
-+ ||sex2nannanshipin.wiki^
-+ ||sex2neishe.wiki^
-+ ||sex2renqi.wiki^
-+ ||sex2rihanshipin.wiki^
-+ ||sex2tanhua.wiki^
-+ ||sexccessories.co.ke^
-+ ||sexshopperu.com^
-+ ||sexta.cl^
-+ ||sexual.signups.online^
-+ ||sexxx.atw.hu^
-+ ||sexy-boobs.com^
-+ ||sexy.bikini.texanscredit.com^
-+ ||sexy.love.texanscredit.com^
-+ ||sexylu.fans^
-+ ||sgenergy.it^
-+ ||sherrykearney.shop^
-+ ||shreeradhetravels.com^
-+ ||sicat-portal.net^
-+ ||sirenasworld.com^
-+ ||sky.pbds.at^
-+ ||smartniwas.com^
-+ ||smarts-works.com^
-+ ||smartschools.co.zw^
-+ ||smiriframe.rest^
-+ ||smoothtalker.ca^
-+ ||sms4-cledigitale.com^
-+ ||sms5-cledigitale.com^
-+ ||sms6-cledigitale.com^
-+ ||socktailor.com^
-+ ||socylmediapc.es^
-+ ||solompc.com^
-+ ||spasapi.com^
-+ ||spybox.io^
-+ ||srcsrvdownloads.s3.amazonaws.com^
-+ ||srm24.cc^
-+ ||sslogistics.com.mx^
-+ ||stairtek.com.au^
-+ ||stanislausgrown.org^
-+ ||startgp.com^
-+ ||startmal.com^
-+ ||staticrun.app^
-+ ||stats404.info^
-+ ||statuskuo.org^
-+ ||stcroixlofts.com^
-+ ||stellar1.online^
-+ ||stephaneledro.com^
-+ ||sterling-surveying.com^
-+ ||steryl.pt^
-+ ||sticker-net.de^
-+ ||stivenfernando.com^
-+ ||stoopidthings.com^
-+ ||storageoffice2fparksidewebappforcemobileappbdc76a3694a7413fb95c.s3.eu-de.cloud-object-storage.appdomain.cloud^
-+ ||strangedelight.net^
-+ ||streamingnetfli.com^
-+ ||strusluteo.rest^
-+ ||subscribevideodisney.com^
-+ ||sujalappliances.co.in^
-+ ||suministros-gesa.es^
-+ ||sunwin8.it.com^
-+ ||sunwinapp.us.com^
-+ ||suonerie.us.com^
-+ ||support-duong.pages.mus.br^
-+ ||support-facebook.pages.pro.br^
-+ ||support-fbz.pages.pro.br^
-+ ||support.freshmilksoftware.com^
-+ ||surmountbookkeeping.ca^
-+ ||surveyessexhomes.co.uk^
-+ ||sussexweddingservices.co.uk^
-+ ||suttondentists.com^
-+ ||sweet-cutie.co.za^
-+ ||sylvester.ca^
-+ ||synctxc.com^
-+ ||t-mobile.timsp.cc^
-+ ||tactarrow.com^
-+ ||taihitclub.it.com^
-+ ||takshillaa.org^
-+ ||talentsmart.com.au^
-+ ||tam0-dayo.s3.pl-waw.scw.cloud^
-+ ||tansrimichelleyeoh.com^
-+ ||tanya-branko.10s.co.il^
-+ ||taqueriajessicawa.com^
-+ ||targuet.net^
-+ ||tasktech.com.br^
-+ ||tathangchen.gestionresultados.info^
-+ ||tddmall.com^
-+ ||tdesi.cyou^
-+ ||technic-tickets.ru^
-+ ||tecoodayy.myshoplaza.com^
-+ ||tekno-kredin.sbs^
-+ ||teknoloji-firsat.sbs^
-+ ||teleg.eu^
-+ ||temavirox.com^
-+ ||teneax.com^
-+ ||teophila.com^
-+ ||teraconsultant.com^
-+ ||tesla.bz^
-+ ||testcoreprohealthuk.com^
-+ ||theessentialluxury.net^
-+ ||thehangouttattoo.com^
-+ ||theofficialinvitation.com^
-+ ||thepromenadebolingbrook.com^
-+ ||thesmilingmonk.com^
-+ ||tierzahnarzt.at^
-+ ||tinunlomitedwastan.ru^
-+ ||tjbeats.com^
-+ ||tjwitter.com^
-+ ||tobewell.store^
-+ ||today.od.ua^
-+ ||todosaqui.com.br^
-+ ||tokoto.es^
-+ ||toll-asflde.com^
-+ ||tonyzone.com^
-+ ||tou3cd28a0.s3.us-east-2.amazonaws.com^
-+ ||touchmer.click^
-+ ||track36.com^
-+ ||trackadboost.com^
-+ ||tracking-dhl-id.com^
-+ ||trelionexai-it.net^
-+ ||trisoft.ca^
-+ ||tuneovd.s3.fr-par.scw.cloud^
-+ ||twidtter.com^
-+ ||twittekr.com^
-+ ||twitter7.com^
-+ ||twittjer.com^
-+ ||twoja-czestochowa.pl^
-+ ||twporno.com^
-+ ||txchelp.com^
-+ ||txcset.com^
-+ ||u888-co.com^
-+ ||ubanc.cyou^
-+ ||uberaba.cidadesbr.net.br^
-+ ||unblockit.lol^
-+ ||uniquewelds.com^
-+ ||unixxx.xyz^
-+ ||upthrust.com.sg^
-+ ||uq08webzoom.us^
-+ ||us04webs.us^
-+ ||usoil.trade^
-+ ||uzlogic.net^
-+ ||vadu.com^
-+ ||vaironex.live^
-+ ||vamosrealizar.com^
-+ ||vanessaxxx.atw.hu^
-+ ||vavadapwacom.com^
-+ ||vavano.net^
-+ ||velvetcascade.com^
-+ ||verificationcenter.top^
-+ ||verify-uniswap.com^
-+ ||vervetama.com^
-+ ||veslestua.no^
-+ ||vfnh3wo0i4er8gfv0-3ihbn4-0rgbfnh-03w4b.obs.la-south-2.myhuaweicloud.com^
-+ ||victorzamarripa.com^
-+ ||vidlii.top^
-+ ||viewmyplans.com^
-+ ||vindor.com.ua^
-+ ||vistula-times.live^
-+ ||vitoriavillasboas.com.br^
-+ ||vlogbroadcastingprocessverificationpiersmorganallyt.s3.us-east-2.amazonaws.com^
-+ ||voicemaile9hjr9h3cnmy040g3hrh.s3.us-east-2.amazonaws.com^
-+ ||vsplie.rqbbbbb.cc^
-+ ||w4.rs^
-+ ||wa8xfz0n82h2jvxvy3bd.s3.eu-central-1.amazonaws.com^
-+ ||wanal.sbs^
-+ ||watchmecams.com^
-+ ||webdisk.atsexport.com^
-+ ||webdisk.boatstorageessex.com^
-+ ||webdisk.busybeesexpertservice.com^
-+ ||webdisk.dbsexpressstore.com^
-+ ||webdisk.detallesexpresscr.com^
-+ ||webdisk.egitim.tugay.com.tr^
-+ ||webdisk.fashionbondageleather.com^
-+ ||webdisk.happysexclinic.com^
-+ ||webdisk.htransex.cl^
-+ ||webdisk.kylofrysexpressen.se^
-+ ||webdisk.medicalwitnessexpert.com^
-+ ||webdisk.picknmixxx.com^
-+ ||webdisk.pornthep5.com^
-+ ||webdisk.portal.tugay.com.tr^
-+ ||webdisk.sexyeuro.nl^
-+ ||webdisk.smartbusinessoperations.com.au^
-+ ||webdisk.sussex.delawareticker.com^
-+ ||webdisk.tugay.com.tr^
-+ ||webdisk.ultrapornlist.com^
-+ ||webdisk.waltermagaya.com^
-+ ||webdisk.zoodoxos.gr^
-+ ||webdisk.ztyle.eu^
-+ ||webmail.monopolymarketing.pk^
-+ ||webmailc9myvahktvcep9wzn7ae7yxlvf1leo.s3-us-west-2.amazonaws.com^
-+ ||webodpdofiugdbdbcccbdhdeu-ohombkp435.edgeone.app^
-+ ||wesecrets.ru^
-+ ||wesharedocx1b4aa1c0d4a.s3.us-east-1.amazonaws.com^
-+ ||wetransfer7yzg4r3qrpivuim6mwphbvcisz0r23lb5nft5vgn7f2923q9.s3.eu-central-1.amazonaws.com^
-+ ||wgo.uk.com^
-+ ||wgstatus.com^
-+ ||wickerwear.uk.com^
-+ ||wildlifecontrolrockford.com^
-+ ||willmeroth.org^
-+ ||winterriver.net^
-+ ||wirexen.com^
-+ ||wittyclothier.com^
-+ ||wondersom.com.br^
-+ ||woningstatus.nl^
-+ ||wpage.cc^
-+ ||xah8.com^
-+ ||xinhuangrl.com^
-+ ||xnudism.ru^
-+ ||xnxxx.de^
-+ ||xoutc.cyou^
-+ ||xss2csss15s.cc^
-+ ||xtremeforumz.com^
-+ ||xx777xxx.com^
-+ ||xxxvideos.com^
-+ ||xxxxxxxelarab.cyou^
-+ ||yener.sbs^
-+ ||youcansay.s3.us-east-2.amazonaws.com^
-+ ||young-dudes.com^
-+ ||zeusmix.to^
-+ ||zg7.com^
-+ ||zoominviteemeetings.help^
-+ ||zoommeetingsinvitees.com^
-+ ||zvgorod.ru^
+! [HaGeZi's Threat Intelligence Feeds] Removed: 299 | Moved: 57 | Added: 416
+- ||121525.sbs^
+- ||1drive.zip^
+- ||1kra-26-cc.ru^
+- ||1winbonus.icu^
+- ||1wirax.com^
+- ||1wjmxs.com^
+- ||1wnrpj.com^
+- ||1wpwa.top^
+- ||1wqcuk.com^
+- ||1wqzrh.xyz^
+- ||1wrmwg.com^
+- ||1wvteh.com^
+- ||2403003a0648715a3b0675e3b2f033a3.myxstalk.sbs^
+- ||3cldf-app.top^
+- ||583237coinbase.com^
+- ||6y.re^
+- ||818909.sbs^
+- ||952365.cc^
+- ||aadf2fabcec4b26e604038845f6e2889.myxstalk.sbs^
+- ||aapwa.cc^
+- ||abroaddisgraceful.com^
+- ||acclaimshop.com^
+- ||aethusavagnera.shop^
+- ||aj0453.top^
+- ||akhuqkj1296.vip^
+- ||albantepal.com^
+- ||allegrolokalnie.pl-firmowe-28424.sbs^
+- ||alphacur.click^
+- ||altadefinizionegratis.shop^
+- ||alterx.cc^
+- ||amazon.bepx.cc^
+- ||amldefy.pro^
+- ||app-w2.top^
+- ||appcenter.top^
+- ||approsophi.pro^
+- ||approve.invitation-hyena.trade^
+- ||asanabloom.online^
+- ||ativacaototal.site^
+- ||atlantisdex.info^
+- ||attributedbelieving.com^
+- ||aura-dev.xyz^
+- ||aviciwhale.com^
+- ||ays-tektek.com^
+- ||azxlml.com^
+- ||b9.pm^
+- ||bagwork-sol.com^
+- ||bancoprovinciapersonas.rafaelaveronezi.com.br^
+- ||bestdomlink.com^
+- ||bet394.cc^
+- ||beta.upholdf.com^
+- ||betll.cm^
+- ||betterclaimsolana.store^
+- ||binance-secure.app^
+- ||bit-wint-okoins.cc^
+- ||bitcowem.com^
+- ||blik-pl.info^
+- ||bnbcartel.io^
+- ||bobey.eu^
+- ||brandix-ict.site^
+- ||brekles23.outgrow.us^
+- ||brellia.cc^
+- ||brewingeveque.click^
+- ||bromiseunnasal.com^
+- ||browsshelveslength.com^
+- ||cacciasgreasy.top^
+- ||cagygauges.com^
+- ||calverio.com^
+- ||candidinvitingresemblance.com^
+- ||carrotanques.krakenapps.net^
+- ||cetucprotocol.com^
+- ||cfcommittee.com^
+- ||chatpye.com^
+- ||checkamlbot.net^
+- ||clbtdk238.vip^
+- ||clickwinorio.com^
+- ||clrkulilice.online^
+- ||club-american-bolivia.store^
+- ||co-user-connect.site^
+- ||coinlbasekr.app-lob.site^
+- ||colis-relay.com^
+- ||conidiafoggara.com^
+- ||coolenwudge.com^
+- ||coppersocks.click^
+- ||corrreo.netsons.org^
+- ||d1c35e7258e44e1bad3b0762df16cdce.myxstalk.sbs^
+- ||dagombaovally.top^
+- ||ddpwa.cc^
+- ||dearsfibered.com^
+- ||diphasecosecs.com^
+- ||dregu.club^
+- ||easydailysale.shop^
+- ||eligibility-spacecoin.org^
+- ||epibucketdata.s3.amazonaws.com^
+- ||eqxd.top^
+- ||etv.az^
+- ||exchanger-arbitrage.com^
+- ||exciting-newspaper.pro^
+- ||f248mnutdw.com^
+- ||fantasyicarus.com^
+- ||fawkesprotocol.app^
+- ||faylsklad.com^
+- ||fiedaunt.com^
+- ||filmyfiy.top^
+- ||foothubhd.info^
+- ||freegamesyo.com^
+- ||g088.ac^
+- ||ggepwa.cc^
+- ||giris-org.vip^
+- ||gleamrush.world^
+- ||gnomonsgashly.com^
+- ||go4jump.com^
+- ||gonzalezhomesofmi.com^
+- ||gripping-customer.pro^
+- ||hamouspritch.com^
+- ||hbszyjnpx.my^
+- ||heisee.com^
+- ||hellopandashop.online^
+- ||hesgoal.sbs^
+- ||hi.quangxuanne.id.vn^
+- ||homeoliq.vom^
+- ||honuti.top^
+- ||hotbbowewi.today^
+- ||hotbciduvo.today^
+- ||hotbcofaji.today^
+- ||hotbdeyaca.today^
+- ||hotbdeyura.today^
+- ||hotbdoyeto.cc^
+- ||hotbfigake.cc^
+- ||hotbhahoke.today^
+- ||hotbhoyuse.today^
+- ||hotbkadofe.today^
+- ||hotbkakato.today^
+- ||hotblegoki.today^
+- ||hotblehubu.today^
+- ||hotblicepu.cc^
+- ||hotbmetani.today^
+- ||hotbmiluwe.today^
+- ||hotbmimula.cc^
+- ||hotbnuhodo.today^
+- ||hotbpeneka.today^
+- ||hotbpetevu.cc^
+- ||hotbrigofo.today^
+- ||hotbsodesa.cc^
+- ||hotbsufove.today^
+- ||hotbtuyeto.today^
+- ||hotbvidawa.today^
+- ||hotbvimoca.today^
+- ||hotbvizeho.today^
+- ||hotbwilipe.today^
+- ||hotbwipagi.today^
+- ||hotbxenuvi.today^
+- ||hotbxigeku.today^
+- ||hotbxogaco.today^
+- ||hotbxoyasi.cc^
+- ||hotbxulobi.cc^
+- ||hotbxuyuso.today^
+- ||hotbyolahe.today^
+- ||hotbzapowu.today^
+- ||hotbzitelo.cc^
+- ||hucklelugging.com^
+- ||humanerorbited.com^
+- ||ibok.store^
+- ||ig.advisualagency.com^
+- ||inertsooths.top^
+- ||instagram.com.days-sa.com^
+- ||jaladi94.cc^
+- ||joporn.yaeby.top^
+- ||juntos-livelo.com^
+- ||juntosresgatando.xyz^
+- ||kiable2lateds.online^
+- ||kleinanzeigen.01284.icu^
+- ||kocaresteel.com^
+- ||kra-25-cc.com^
+- ||krab---3---cc.ru^
+- ||kuhlmann-rechtsanwaelte.com^
+- ||kuhlmann-rechtsanwaelte.net^
+- ||kyw9xpnz2rbmltfo3va7.com^
+- ||lactamclaes.com^
+- ||lgnsorigindefi.click^
+- ||licon66.com^
+- ||linkrdr.cc^
+- ||livesycronizationsapp.com^
+- ||login.gmjtor.com^
+- ||logs365net2binsec.xyz^
+- ||lone-opportunity.pro^
+- ||lunarleap.world^
+- ||lutyvyv.cc^
+- ||luxeprofit.pro^
+- ||malware.medcom.it.com^
+- ||mchotro247.online^
+- ||mell3981.live^
+- ||mesoptionsrelay.com^
+- ||mmgav.com^
+- ||mobiccoin.com^
+- ||moduloempresa.sbs^
+- ||moi-botiki.icu^
+- ||mondial-relay-horaires.com^
+- ||moneyhack.online^
+- ||motcrel.top^
+- ||motphimr.ac^
+- ||mp4porn-space.yaeby.top^
+- ||myauth.rocks^
+- ||navlogwaiting.s3.us-east-2.amazonaws.com^
+- ||ncsecus.com^
+- ||neighboring-opposite.pro^
+- ||novapulses.world^
+- ||omaomulier.help^
+- ||online-solution.store^
+- ||opinionlabs.app^
+- ||origindefi.click^
+- ||packersskinned.shop^
+- ||pangolin.bytebay.club^
+- ||pay-shop-skrill.sbs^
+- ||paypal-com-aspi-dll.us^
+- ||pecorauncured.com^
+- ||pendle.trade^
+- ||perexodnuk.luxteam.live^
+- ||phobos.observer^
+- ||phpetitlendingcorp.com^
+- ||pontostop.xyz^
+- ||porn-xp.eu^
+- ||porn.xhaster.com^
+- ||pornxp.gd^
+- ||premier-flagship-sg.store^
+- ||proxer.cc^
+- ||proxy-100.com^
+- ||proxy-92.com^
+- ||proxy743.com^
+- ||prsrv.zip^
+- ||qnb.45.154.98.208.nip.io^
+- ||r2-web3.top^
+- ||raphaelvpn.ru^
+- ||rare-requirement.pro^
+- ||regionalnitelevize.com^
+- ||register-zama.org^
+- ||reidospaes.com^
+- ||remetalgallous.com^
+- ||resolvenetworkchain.live^
+- ||rondialrelai.com^
+- ||roofrepairknox.com^
+- ||rootunvdwl.com^
+- ||rtbstat.com^
+- ||rvcanz.net^
+- ||sangsoft.net^
+- ||seepymannire.com^
+- ||seismiccryosel.com^
+- ||serviceycur.sbs^
+- ||shasliksuccory.top^
+- ||sisamed.com.br^
+- ||smartchaintoken.live^
+- ||snurik.top^
+- ||soft.mydiv.net^
+- ||sol-shelter.cc^
+- ||solscan.world^
+- ||somana.top^
+- ||sozolicrandle.com^
+- ||spb6472.vip^
+- ||spicaematlow.com^
+- ||startapp-ledgestrt.framer.ai^
+- ||startledge.ghost.io^
+- ||t-mobile.qzbng.cc^
+- ||taapwa.com^
+- ||taskloop.space^
+- ||techhelp.ghost.io^
+- ||tellyhd.chat^
+- ||tellyhd.info^
+- ||tellyhd.website^
+- ||tenny8a.site^
+- ||tetherqrgenerator.com^
+- ||thriverzoistic.shop^
+- ||tlcc.cc^
+- ||tokenflux.cc^
+- ||toll-asflde.com^
+- ||trainzygnema.com^
+- ||treffspot.com^
+- ||trunksnorts.com^
+- ||upscholarship.co.com^
+- ||uq08webzoom.us^
+- ||usdtmixer.app^
+- ||users-unlockmenu-live-nax.click^
+- ||usesduffy.top^
+- ||vaironex.io^
+- ||verify-account.rest^
+- ||vesapo.click^
+- ||vkgh.top^
+- ||vote.moonnshot.fi^
+- ||vote.moonnshots.click^
+- ||vpn-61.store^
+- ||vuutbfp.cn^
+- ||wingbet138.xyz^
+- ||wizierflche.top^
+- ||www.access.wolfsmetals.com^
+- ||xcandid.vip^
+- ||xoo-ios.s3.us-east-2.amazonaws.com^
+- ||yarnedsargus.rest^
+- ||yzymw.com^
+- ||zonabet138.com^
+- ||zonabet303-a1.shop^
+- ||zunepok-ex.win^
+! Moved to Dandelion Sprout's Anti-Malware List: 6 rules
+~ ||crclaim.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+~ ||downladshar.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+~ ||filsw.space^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+~ ||jotiretorns.space^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+~ ||rbxlane.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+~ ||terisoshar.space^ [Moved: HaGeZi's Threat Intelligence Feeds -> Dandelion Sprout's Anti-Malware List]
+! Moved to HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass: 1 rules
+~ ||hy5o5ua8gklpqjbqzjaaje8yy.online^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass]
+! Moved to HaGeZi's Gambling Blocklist: 2 rules
+~ ||3ss55.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Gambling Blocklist]
+~ ||pinbo69.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Gambling Blocklist]
+! Moved to HaGeZi's Pro++ Blocklist: 6 rules
+~ ||aureofundoria-es.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+~ ||bordefinoble.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+~ ||bossbytexai.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+~ ||btc-83-vellorix.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+~ ||coinomize.top^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+~ ||seniorcarecanada.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
+! Moved to HaGeZi's URL Shortener Blocklist: 2 rules
+~ ||cvfmiij.wiki^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's URL Shortener Blocklist]
+~ ||google-photo.live^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's URL Shortener Blocklist]
+! Moved to OISD Blocklist Big: 23 rules
+~ ||accesseem2ailkiwknr35ureajceajdasterferredintowebryt.framer.ai^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||advanced-resources-2020.s3.ap-southeast-2.amazonaws.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||aeon.vaertqw.cn^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||andystewartproperties.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||app.resgateonlinebrasil.top^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||bncmontepio24.shop^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||darb.qmobility2.cn^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||dev-authh--inf.tmpanelbeaters.co.za^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||greendotsacco.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||gregorioevalle-contabilidade.info^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||jszxmrrx.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||kaleydozier.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||lavozdelaranda.es^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||merceariapronta.com.br^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||ncdot.gov-stdm.cc^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||perfectpanesws.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||sinoroeal.de^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||sondloqs.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||standard-gazette.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||startledegrapp.ghost.io^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||t-mobile.uqhka.cc^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||verlzomear.digital^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+~ ||webmail.ip-45-56-71-250.cloudezapp.io^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
+! Moved to Phishing Army: 17 rules
+~ ||6rgyt4.sbs^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||7euny43.sbs^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||8rihuyg4.sbs^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||abaction.sbs^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||accept.id844-933.xyz^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||ah56mdg.icu^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||att.com-dbs.icu^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||bank.216883.top^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||dbs.tannerspharma.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||desjqrdins.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||dnareesmilyanid.vovol.biz.id^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||e-powiadomienie.pl^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||katzr.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||med-sys.pl^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||scotiabank.hyperedge-resolver.pro^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||skilltestonline.id^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
+~ ||zflyx.daylyx.biz.id^ [Moved: HaGeZi's Threat Intelligence Feeds -> Phishing Army]
++ ||121gh.proxer.cc^
++ ||122pro.brellia.cc^
++ ||1379733676.kocaresteel.com^
++ ||13papa.com^
++ ||4839926-coinbase.com^
++ ||4eomkeale.s3-ap-northeast-1.amazonaws.com^
++ ||51wh.top^
++ ||65464session.blik-pl.info^
++ ||78oceanfilms.com^
++ ||78se329.xyz^
++ ||858112.xyz^
++ ||8875209131.kocaresteel.com^
++ ||91hliao.com^
++ ||95olla.brellia.cc^
++ ||aad.m365.1drive.zip^
++ ||aadcdnn.m365.1drive.zip^
++ ||abakansm.com^
++ ||access.wolfsmetals.com^
++ ||accounts.m365.1drive.zip^
++ ||actualizacion-ledger-es.com^
++ ||adultainment.v6.army^
++ ||advath.logs365net2binsec.xyz^
++ ||adyeninternal.com^
++ ||adyensso.com^
++ ||amaminow.it^
++ ||anedapps.com^
++ ||ankaraparty.com^
++ ||anonymedates.com^
++ ||antrs.s3.eu-north-1.amazonaws.com^
++ ||anzsupportchat.com^
++ ||app.promocaododia.xyz^
++ ||app.promocaosemana.xyz^
++ ||app.semanadapromocao.xyz^
++ ||applovinsso.com^
++ ||arizodiffi.rest^
++ ||asesoresdeprestamos.com^
++ ||asian-sirens.com^
++ ||atakumescortgo.xyz^
++ ||auth.m365.1drive.zip^
++ ||authsharepoint0ndqnqdanesreoo0o0othdhn.s3-ap-northeast-1.amazonaws.com^
++ ||avalonbayinternal.com^
++ ||avroramodels.com^
++ ||awesomereaderapp.com^
++ ||azernews.az^
++ ||azure.m365.1drive.zip^
++ ||b24-q0ph2z.bitrix24.site^
++ ||baker90278.com^
++ ||baklanov-korpus.ru^
++ ||banglachotigolpo.online^
++ ||banglavideos.com^
++ ||baojinyueqi.com^
++ ||batvrms.net^
++ ||baylorscottandwhiteproviderportal.com^
++ ||bbwcamz.com^
++ ||benseletti.com^
++ ||betmatchcasino.co.hu^
++ ||bg662.com^
++ ||biavid.info^
++ ||binance-nf.com.cn^
++ ||binance-wv.com.cn^
++ ||blanbutton.com^
++ ||blokey.com^
++ ||boatravesti.com.br^
++ ||bombay.com.ar^
++ ||booty.com^
++ ||bradescopme.com.br^
++ ||brandtservicecenter.ru^
++ ||bvn.logs365net2binsec.xyz^
++ ||bwhr7refq1.s3-website-us-east-1.amazonaws.com^
++ ||bxavz.com^
++ ||canadiandays.ca^
++ ||candyxxxisland.top^
++ ||casinositeleri.co^
++ ||casinowild24.com^
++ ||castlete.com^
++ ||cdn.m365.1drive.zip^
++ ||cdxzsl.com^
++ ||cebra.fr^
++ ||cebuanas.com^
++ ||centerspacesso.com^
++ ||ceysa.com.ar^
++ ||cfd.kragex.proxy-92.com^
++ ||cfd.sparklx.proxy-100.com^
++ ||cfd.stockwise.proxy-92.com^
++ ||cfd.vinvestmans.proxy743.com^
++ ||channelmyanmar.to^
++ ||chaturbate.free^
++ ||chaturbate.no^
++ ||churchoftheuniversaltruth.org^
++ ||claim-moltbook.com^
++ ||club3.ru^
++ ||cmecbote.com^
++ ||cnainsurancesso.com^
++ ||compassmineralsinternal.com^
++ ||connect-watrust.com^
++ ||coorr.com^
++ ||croquantes.com^
++ ||cvresumer.com^
++ ||darkgate.com^
++ ||days-sa.com^
++ ||ddcabc.cc^
++ ||ddrmovies.casa^
++ ||defi-3-ledgers.live^
++ ||deportestvc.com^
++ ||desprpasti.rest^
++ ||dialogue.mazda.fr^
++ ||digimartglobal.com^
++ ||discreet-meets.com^
++ ||dnavasai.com^
++ ||doodsviral.link^
++ ||dotfoods.logs365net2binsec.xyz^
++ ||dr-ahmedadel.com^
++ ||draviet.vn^
++ ||driver-indir.com^
++ ||driverguide.com^
++ ||dsj039.com^
++ ||economicalk.com^
++ ||edensexshop.com.br^
++ ||eehelp.net^
++ ||electroniccigarettereviewblog.org^
++ ||emzasecurity.co.ke^
++ ||entity-ledger-landing.com^
++ ||eurofantasy.in^
++ ||europeinbaltimore.com^
++ ||event-boob.fun^
++ ||exmarkets.trade^
++ ||fafa100baba.com^
++ ||fantasy01.com^
++ ||fft-pes.ru^
++ ||files.sandtagency.org^
++ ||film1.nl^
++ ||findoaks.com^
++ ||finethech.com^
++ ||fixrizz.com^
++ ||flexivle.com^
++ ||friendsandfun.licon66.com^
++ ||friscco-pl.sbs^
++ ||frisco.dracik-cz.top^
++ ||friscoonline.shop^
++ ||gfgfg.logs365net2binsec.xyz^
++ ||ghambly.ac-page.com^
++ ||ghdtjddus1-mr.paypal-com-aspi-dll.us^
++ ||girlspying.com^
++ ||gladko.shop^
++ ||goalie.logs365net2binsec.xyz^
++ ||goodgoods-ledgers.online^
++ ||googleconnection.motphimr.ac^
++ ||gosearchvideo.ru^
++ ||goudsmarriagebureau.com^
++ ||gramadosflex.com.br^
++ ||groupbuyservices.com^
++ ||gsmusbdriver.com^
++ ||guildmortgageinternal.com^
++ ||hd7live.com^
++ ||hdmovie20.art^
++ ||hi1333.com^
++ ||hi1555.com^
++ ||hitechall.com^
++ ||holinesstothelord.in^
++ ||houseofcelebrations.com^
++ ||hsk-new.com^
++ ||hydro.vilcea.info^
++ ||iafflocal290.org^
++ ||img1.huorongsec.com^
++ ||imgwo.com^
++ ||incom-post.s3.amazonaws.com^
++ ||invisiblemachine.com^
++ ||italian-milfs.com^
++ ||ixunwen.com^
++ ||izmitescortgo.xyz^
++ ||jab1andco.com^
++ ||janalight.net^
++ ||jbstarzmu.top^
++ ||jenstrumental.com^
++ ||jibestar.com^
++ ||jowlol.org^
++ ||jvhbutor.hu^
++ ||karajmarket.com^
++ ||katedouglas.com^
++ ||kennedywilsonsso.com^
++ ||kernel.ws^
++ ||klar.gg^
++ ||kleinermatrose.de^
++ ||kobes.net^
++ ||kolotibablo.com^
++ ||krab5l.cc^
++ ||laburhisti.rest^
++ ||lahan.click^
++ ||lambwestonsso.com^
++ ||last-activate-step.com^
++ ||lavashinas.es^
++ ||ledgerqfsconnect.com^
++ ||ledgerscan-device.com^
++ ||leroy-pl.myshopify.com^
++ ||liminal.com.br^
++ ||linhkienmaymay.net^
++ ||lit-lighter.xyz^
++ ||live.m365.1drive.zip^
++ ||lixenover.org^
++ ||ln-secure.com^
++ ||localbdsmdating.com^
++ ||log-in-de-pos-tb-ankde-validation-de.nicolaubertran.com^
++ ||lojadaisdin.com^
++ ||ltoportal-ph.org^
++ ||lukoil-arena.com^
++ ||lustesthd.homes^
++ ||m.bdsmincontri.relazionibdsm.com^
++ ||mail-ledgerwallet.com^
++ ||maisonullens.com^
++ ||manavgatescortgo.xyz^
++ ||manhwatoons.com^
++ ||marika.com^
++ ||matchwithmaturemaples.com^
++ ||maxdegital.4lima.at^
++ ||maxuweb.ru^
++ ||mcgrafica.it^
++ ||medcom.it.com^
++ ||megaeth-testnet.com^
++ ||mercuryinsurancesso.com^
++ ||mersinescortok.com^
++ ||mikegagnon.com^
++ ||milftraum.com^
++ ||mimoss.com^
++ ||mingjidh.com^
++ ||moogvalvepro.com^
++ ||moonabirds.com^
++ ||msfed.logs365net2binsec.xyz^
++ ||mukhin.ru^
++ ||musiqhub-bop.co.nz^
++ ||mvstselect.com^
++ ||myadyensso.com^
++ ||mycanvainternal.com^
++ ||mycoldwellsso.com^
++ ||myfeelix.de^
++ ||myicons.net^
++ ||myplaidinternal.com^
++ ||myredfininternal.com^
++ ||mysonosinternal.com^
++ ||mysonossso.com^
++ ||myxstalk.sbs^
++ ||mzgold.ir^
++ ||nastylandd.top^
++ ||newsflashtoday.pro^
++ ||nexusexpedition.com^
++ ||nigol.logs365net2binsec.xyz^
++ ||nikkiodell.com^
++ ||nikopas.com^
++ ||niretit.com^
++ ||novaflix.net^
++ ||nsfwzone.net^
++ ||nyagayasafaris.com^
++ ||o.logs365net2binsec.xyz^
++ ||occupspulc.rest^
++ ||oceaneeringinternal.com^
++ ||office365.m365.1drive.zip^
++ ||okdk9su4.xyz^
++ ||olx.id332.pl^
++ ||onionmail.org^
++ ||onlinevedic.com^
++ ||orgcert.com^
++ ||ospir.click^
++ ||parikart.com^
++ ||paylivery.app^
++ ||peeca.site^
++ ||peitho6.com^
++ ||pg.prsrv.zip^
++ ||phlinks.com^
++ ||pirototo45870.xyz^
++ ||plantinghopeinternational.org^
++ ||polestarassets.com^
++ ||polikate.ru^
++ ||poolservice.software^
++ ||pornhour.com^
++ ||priegeltje.nl^
++ ||promokodybk.ru^
++ ||prostitutkigelendzhikaact.net^
++ ||prostitutkiyaltygid.com^
++ ||psihologer.ru^
++ ||psychologytest.tsu.ge^
++ ||publish.shageamoo.in.net^
++ ||qfs-quantum-ledger-security.com^
++ ||qfseot.top^
++ ||qmjkospn.xyz^
++ ||raydiumdex.cc^
++ ||rcoproperty.com.au^
++ ||realogysso.com^
++ ||recovery-device-ledgerlive.net^
++ ||rednacionaldecocineros.com^
++ ||reliancein.com^
++ ||revolving.ru^
++ ||rewardsol.live^
++ ||riabbinver.rest^
++ ||rincrstipo.rest^
++ ||robinhoodprotect.com^
++ ||robinmudge.com^
++ ||roots-project.de^
++ ||ruidosomalinois.com^
++ ||rush.ninja^
++ ||sadykids.ru^
++ ||safe-acces.com^
++ ||salt-ledger30a.com^
++ ||scasadisse.rest^
++ ||sci.logs365net2binsec.xyz^
++ ||screen-ledgerlive.com^
++ ||semanticidentity.com^
++ ||semenymeme.com^
++ ||sensual-cravings.com^
++ ||service.licon66.com^
++ ||services.runescape.com-as.cc^
++ ||sex1.prostitutkivoronezhastaart.net^
++ ||sex2.prostitutkikrasnodarasuck.com^
++ ||sex291gualaoshi.wiki^
++ ||sex2guochanchuanmei.wiki^
++ ||sexdatesonly.com^
++ ||sexies.homes^
++ ||sexvidxxx.quest^
++ ||sfracrisot.rest^
++ ||shell-ledger-framework.com^
++ ||shockmodels.today^
++ ||skkor.com^
++ ||slimnoweurope.com^
++ ||slnk.info^
++ ||smartinvestinit.net^
++ ||smusxath.logs365net2binsec.xyz^
++ ||sndkkaindrm.xyz^
++ ||snldndrn.com^
++ ||sochi-concert.com^
++ ||sol-mystery-box.net^
++ ||solaxnft.com^
++ ||sols-distribution.com^
++ ||sopechincha.com^
++ ||statuslines.com^
++ ||statuslist.in^
++ ||stmtabernacle.org^
++ ||store.ios-privacy.com^
++ ||streamtvpro.co^
++ ||stripchaqt.com^
++ ||sungln.com^
++ ||superfeoexpress.co.tz^
++ ||swefn.com^
++ ||sync.prsrv.zip^
++ ||sztrsumar.com^
++ ||tap4coin.com^
++ ||tehransms.online^
++ ||telecomtasks.com^
++ ||testbep20.online^
++ ||teutoflout.rest^
++ ||tg.nm48.com^
++ ||tg26part.cyou^
++ ||thelovecollective.org^
++ ||thepinkgalaxy.com^
++ ||thewgnews.com^
++ ||ticketscomedy.ru^
++ ||tjgfj1.520shi2s.cc^
++ ||to-claims.app^
++ ||toplessbailbonds.com^
++ ||training-iq.com^
++ ||trannysexpartner.com^
++ ||transportesexposito.es^
++ ||trinetinternal.com^
++ ||triologian.s3.eu-north-1.amazonaws.com^
++ ||troutmaninternal.com^
++ ||trustmyuser.com^
++ ||trustpayenergy.com^
++ ||uk-mums.com^
++ ||ultimaunderworld.com^
++ ||upme.cc^
++ ||usoronsolana.tech^
++ ||uuav7uuav8.top^
++ ||vermoote.de^
++ ||vgje4p095rtg-h43e-g9fhvnew-rp0hvg-e3hgrgrg.obs.sa-brazil-1.myhuaweicloud.com^
++ ||vhsd2025.org^
++ ||view.microsoftemails.com^
++ ||vinews.vn^
++ ||w-1.top^
++ ||webdisk.holdinggayi.com^
++ ||webdisk.singasia.com.sg^
++ ||webdisk.videosgratispornoxxx.com^
++ ||webmajic.org^
++ ||weworksso.com^
++ ||whatsapp2.dev.provide-support.com^
++ ||whitefeednewstophub.com^
++ ||wlocie.pl^
++ ||wokingham.cc^
++ ||works.if.ua^
++ ||worldviewreport.live^
++ ||wpguru.es^
++ ||wsolx.com^
++ ||www-ledgerwallet.live^
++ ||wwwxxoo.top^
++ ||x19xx.com^
++ ||xarix.sbs^
++ ||xkk222.com^
++ ||xmasti.net^
++ ||xn--kakenmarket-0dc.com^
++ ||xn--monshot-m0a.net^
++ ||xquirehdfh.logs365net2binsec.xyz^
++ ||xseptic.com^
++ ||xvp650-invergo.net^
++ ||xxnxxxxhd.sbs^
++ ||xxxxxxx.livenode.com^
++ ||yaojisp.com^
++ ||yed99.com^
++ ||yepbit.com^
++ ||yepbit5.com^
++ ||ykamt.com^
++ ||yogmantra.org^
++ ||yoncam.net^
++ ||you-nique-by-design.com^
++ ||yournearbyfling.com^
++ ||yukitostudio.com^
++ ||yutupic.vip^
++ ||zd-finanz.de^
++ ||zolucky.com^
++ ||zombieden.cn^
++ ||zydh1.vip^
 
-! [HaGeZi's Gambling Blocklist] Removed: 19 | Moved: 1 | Added: 11
-- ||22bets021.info^
-- ||7kcasino-wfr.top^
-- ||alt4betspin138.info^
-- ||arkada-casino-ppb.top^
-- ||azino777-casino-nm0.ru^
-- ||babacasinofreeslots.com^
-- ||barterbets.co^
-- ||bayconticasino399.com^
-- ||beef-casino-lenny3.top^
-- ||bestecasinos.org^
-- ||betsilin-resmigirisleri.com^
-- ||betsmove1128.com^
-- ||betsmove1373.com^
-- ||betsmove1616.com^
-- ||betsmove1862.com^
-- ||betsmovehemengiris.vip^
-- ||bettycasino24.net^
-- ||brabetsg.com^
-- ||c3t3-casino.com^
+! [HaGeZi's Gambling Blocklist] Removed: 11 | Moved: 1 | Added: 19
+- ||7kcasino-bek.top^
+- ||7slots-giris1.com^
+- ||actionjoyslots.com^
+- ||advisercasinospl.com^
+- ||allstarzcasino.xyz^
+- ||amazingalphabets.online^
+- ||aphrodite-casinoer.com^
+- ||apuesta24casino.com^
+- ||argentina-1xslots.online^
+- ||arkadacasino249.buzz^
+- ||atom-casino-amp484921.ru^
 ! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
-~ ||acezgay.life^ [Moved: HaGeZi's Gambling Blocklist -> HaGeZi's Threat Intelligence Feeds]
-+ ||7kcasino-bek.top^
-+ ||7slots-giris1.com^
-+ ||actionjoyslots.com^
-+ ||advisercasinospl.com^
-+ ||allstarzcasino.xyz^
-+ ||amazingalphabets.online^
-+ ||aphrodite-casinoer.com^
-+ ||apuesta24casino.com^
-+ ||argentina-1xslots.online^
-+ ||arkadacasino249.buzz^
-+ ||atom-casino-amp484921.ru^
+~ ||33win3.com^ [Moved: HaGeZi's Gambling Blocklist -> HaGeZi's Threat Intelligence Feeds]
++ ||22bets021.info^
++ ||7kcasino-wfr.top^
++ ||alt4betspin138.info^
++ ||arkada-casino-ppb.top^
++ ||azino777-casino-nm0.ru^
++ ||babacasinofreeslots.com^
++ ||barterbets.co^
++ ||bayconticasino399.com^
++ ||beef-casino-lenny3.top^
++ ||bestecasinos.org^
++ ||betsilin-resmigirisleri.com^
++ ||betsmove1128.com^
++ ||betsmove1373.com^
++ ||betsmove1616.com^
++ ||betsmove1862.com^
++ ||betsmovehemengiris.vip^
++ ||bettycasino24.net^
++ ||brabetsg.com^
++ ||c3t3-casino.com^
 
-! [Phishing Army] Removed: 117 | Moved: 35 | Added: 111
-- ||1tvjhs.sbs^
-- ||afas.demosites.dollie.io^
-- ||aitrade.pics^
-- ||alebilet.id5291.pl^
-- ||alebilet.pl-190291.icu^
-- ||alebilet.pl-6127457.icu^
-- ||alebilet.pl-oferta63648626.icu^
-- ||alebilet.pl-ogloszenie-029486921.icu^
-- ||alebilet.pl-ogloszenie-2013940923.icu^
-- ||allbeingwell.net^
-- ||allegro.pl-190291.icu^
-- ||allegro.pl-6127457.icu^
-- ||allegro.pl-oferta63648626.icu^
-- ||allegro.pl-ogloszenie-029486921.icu^
-- ||allegro.pl-ogloszenie-2013940923.icu^
-- ||allegrolokalne.pl-kategoria-elektronika.icu^
-- ||allegrolokalne.pl-oferta74326.icu^
-- ||allegrolokalnie.pl-190291.icu^
-- ||allegrolokalnie.pl-6127457.icu^
-- ||allegrolokalnie.pl-aukcja472835.sbs^
-- ||allegrolokalnie.pl-oferta63648626.icu^
-- ||allegrolokalnie.pl-ogloszenie-2013940923.icu^
-- ||aramcotrades.com^
-- ||artscircle.info^
-- ||aruba-id.online^
-- ||ativacao.planospagbank.com^
-- ||babig.icu^
-- ||biguh.pro^
-- ||bizumtradingbot.com^
-- ||booking.complaintapprove.com^
-- ||brilarexapp.com^
-- ||btc-trader-profit.com^
-- ||byinvw.kozsy.pl^
-- ||bytemediaplatform.space^
-- ||calmcentered.info^
-- ||cemikr.icu^
-- ||chevalier-yvan.rdv-dl6th.com^
-- ||chronexon.com^
-- ||cloud7enginesmart.space^
-- ||coincashearning.com^
-- ||coinviatrustapp.com^
-- ||coipyyy.net^
-- ||colorsdxb.com^
-- ||connectnet5prime.online^
-- ||coredentalsolution.net^
-- ||creategrid.info^
-- ||daddyandsonxxx.com^
-- ||dagoigu.top^
-- ||daveswebshop.net^
-- ||defeaterstudio.com^
-- ||dih.mfairqvssx.es^
-- ||domain-for-backup.site^
-- ||dominionpeakapp.com^
-- ||dropzio.top^
-- ||e6gfvx.cyou^
-- ||eidlnw.kozsy.pl^
-- ||eliakos.com^
-- ||engi60nepanellogic.space^
-- ||evadexter.net^
-- ||executiveteamhq.com^
-- ||filmbaker.net^
-- ||groupglobaldata.online^
-- ||gta-turk.com^
-- ||gujjustartup.com^
-- ||inner-code.info^
-- ||inner-peace.info^
-- ||inner-truth.info^
-- ||invests2earn.com^
-- ||koolkampus.net^
-- ||laun6ch-platform.space^
-- ||loadco06ntrollogic.store^
-- ||makefacebookmoney.com^
-- ||marketspass.xyz^
-- ||metro-zgloszenia24.pl^
-- ||nassab.appclients-expde.com^
-- ||noonearning.com^
-- ||nordiqo.net^
-- ||ocprintdirectory.com^
-- ||olnxpln.r4kwcf.cyou^
-- ||olx.pl-190291.icu^
-- ||olx.pl-6127457.icu^
-- ||olx.pl-oferta63648626.icu^
-- ||olx.pl-ogloszenie-029486921.icu^
-- ||olx.pl-ogloszenie-2013940923.icu^
-- ||panelg3roupdirect.online^
-- ||pay.fixacursos.store^
-- ||pewnyiphone.store^
-- ||pixmoon.online^
-- ||pkp-polska.pl^
-- ||pl-rezerwacja627854.sbs^
-- ||prattashabd.com^
-- ||privacyacoount2025.fun^
-- ||protecthelpage2025.xyz^
-- ||psychsciencetoday.com^
-- ||qnnzsk.shop^
-- ||quantum-assetledger.com^
-- ||quantum-powerapp.net^
-- ||r2zw2qi.biz^
-- ||recoverytrezor.com^
-- ||rumail.xyz^
-- ||sandrine-prigent.rdv-763nv.com^
-- ||seocupertino.com^
-- ||seomdone.com^
-- ||sketchfield.info^
-- ||sklepccc.shop^
-- ||tamradance.com^
-- ||telegsuaf.homes^
-- ||tellvalue.net^
-- ||theteraboxpro.com^
-- ||tldrsnaps.com^
-- ||turelex.top^
-- ||uwemzxpdg.kozsy.pl^
-- ||velonexx.com^
-- ||vurchio.transitclients-sms.com^
-- ||wealtigotrade.net^
-- ||wordpress.elzabete3.com^
-- ||youchoic.com^
-! Moved to OISD Blocklist Big: 35 rules
-~ ||7f4c273b-5d59-41fe-bd4f-9f7ea2009200-00-32nt1qkubfpo4.riker.replit.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||affectionate-europe-823314.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||allegrolokalnie.pl-ogloszenie-029486921.icu^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||azorilixuser.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||bunytr.top^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||calm-channels-533967.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||claim-land.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||concave-skills-747933.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||conceptstream.info^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||delicious-task-569299.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||eniacapital.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||f0c952df-f452-44c3-a287-e150d886d749-00-33r1bae2wum01.riker.replit.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||fantastic-opportunity-550318.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||foolish-leaders-804100.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||fulfilled-topic-162833.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||globalmediabyte.space^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||grounded-engineers-048621.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||hardouin.clientpickups-expd.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||heavenly-delivers-511906.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||inner-lightbeam.info^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||largest-convention-119904.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||lively-actions-760651.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||new-eyes-863405.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||new-strategy-042465.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||nothebrand.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||penandpaperpublishing.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||personal-strategists-941450.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pl-4563547435oferta.icu^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pl.pocztaskapol.sbs^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||predictable-click-436321.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||resilient-result-187926.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||simple-remember-317733.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||sweet-fabric-465897.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||tldrsnap.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trivexor.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-+ ||0fc7d15b-88e7-479b-aeae-7db44980865e-00-30hgetfq6r0qv.picard.replit.dev^
-+ ||471216c7-1078-4289-85c9-46af3510b3bb-00-3d27lakaqyayk.janeway.replit.dev^
-+ ||able-strategists-797999.framer.app^
-+ ||allegrolokalnie.kategorie-polecane-83927.sbs^
-+ ||allegrolokalnie.oferty-proponowane-dla-ciebie-136481.sbs^
-+ ||allegrolokalnie.pl-firmowe-98843.sbs^
-+ ||allegrolokalniepl.oferta9167.icu^
-+ ||amusing-community-348160.framer.app^
-+ ||app-fakturownia.01pl.ink^
-+ ||app.notifica-campanha.click^
-+ ||app.notifica-campanha.info^
-+ ||app.notifica-campanha.online^
-+ ||app.notifica-campanha.site^
-+ ||app.notifica-campanhax.com^
-+ ||app.notificacampanha.live^
-+ ||aqua-dance-325154.framer.app^
-+ ||asistenciacloud.com^
-+ ||atende.uniaoservicosltda.com.br^
-+ ||auth.asescu.com^
-+ ||beautiful-essentials-708099.framer.app^
-+ ||beige-leaders-567482.framer.app^
-+ ||best-evolution-427205.framer.app^
-+ ||blackfootkeystone.com^
-+ ||bradescco.mwstoreonline.com.br^
-+ ||bradesco.cadastroseguropj.com^
-+ ||c7e290af-1d66-4345-9591-ccb26ede9241-00-pi7wuy3xukeq.riker.replit.dev^
-+ ||caraccidentattorneydarlacunningham.com^
-+ ||careful-lots-461803.framer.app^
-+ ||caring-eyes-617663.framer.app^
-+ ||cheerful-reservation-948160.framer.app^
-+ ||chocolate-remember-410390.framer.app^
-+ ||cncinsure.com^
-+ ||coedesigning.com^
-+ ||conviteblackvipcenturion.com^
-+ ||cuatrocuadrados.com^
-+ ||daskannbonk-de.variama.life^
-+ ||devotionaldigest.org^
-+ ||dontnewyorkcity.com^
-+ ||driversdentalplan.com^
-+ ||driving-core-928452.framer.app^
-+ ||dynamic-learning-787928.framer.app^
-+ ||e7f0d392-1585-4a4c-a10e-306ddedec525-00-327ekvpgi6j47.kirk.replit.dev^
-+ ||easybuyproperty.com^
-+ ||ecomp.club^
-+ ||edergi.net^
-+ ||ekont-bg.com^
-+ ||energetic-changes-008456.framer.app^
-+ ||erpotenza.com^
-+ ||fleetseatcovers.com^
-+ ||ghnorth.com^
-+ ||glowing-places-071372.framer.app^
-+ ||grounded-nature-114597.framer.app^
-+ ||happebefore.cyou^
-+ ||harborviewfreight.com^
-+ ||hastiincot.rest^
-+ ||heartwarming-circumstances-912181.framer.app^
-+ ||hypnoporto.rest^
-+ ||interesting-company-199219.framer.app^
-+ ||jfxtras.com^
-+ ||lakeplacidlandconservancy.com^
-+ ||link.glazem.eu^
-+ ||lower-leaders-437076.framer.app^
-+ ||lumnexa.top^
-+ ||magnificent-performance-142663.framer.app^
-+ ||meineschufa.online^
-+ ||moccasin-contributors-482263.framer.app^
-+ ||morrisonprairie.com^
-+ ||mpzwrqxt.com^
-+ ||novo.portal-entrar.com^
-+ ||ntellectualfootprnt.com^
-+ ||orximo.top^
-+ ||peltrix.top^
-+ ||pelxino.top^
-+ ||plosotboxga.falki.pl^
-+ ||pojnts.com^
-+ ||portfolio.enable-2factor.com^
-+ ||practical-channel-060419.framer.app^
-+ ||prosperous-costs-021474.framer.app^
-+ ||qiwikarta.ru^
-+ ||secure.2h5frw.com^
-+ ||shaadibay.com^
-+ ||sherlineshop.com^
-+ ||sms11-cledigitale.com^
-+ ||sms12-cledigitale.com^
-+ ||sms13-cledigitale.com^
-+ ||sms14-cledigitale.com^
-+ ||sms15-cledigitale.com^
-+ ||sms16-cledigitale.com^
-+ ||sms17-cledigitale.com^
-+ ||sms21-cledigitale.com^
-+ ||sms22-cledigitale.com^
-+ ||sms23-cledigitale.com^
-+ ||sms24-cledigitale.com^
-+ ||sms25-cledigitale.com^
-+ ||sms26-cledigitale.com^
-+ ||sms27-cledigitale.com^
-+ ||sms31-cledigitale.com^
-+ ||spicyvoices.com^
-+ ||stanirealgreekyogurt.com^
-+ ||sunflowerbooksetc.com^
-+ ||teal-rectangle-023030.framer.app^
-+ ||treeremovalinlynchburg.com^
-+ ||uplifted-size-465738.framer.app^
-+ ||vexnaro.top^
-+ ||warm-combination-713312.framer.app^
-+ ||wellfaction.ekzhwp.cn^
-+ ||whole-talk-746390.framer.app^
-+ ||wn.avisos-clientes.app^
-+ ||xenodmusco.rest^
-+ ||yourmom.tourismkinqston.com^
-+ ||zormixa.top^
+! [Phishing Army] Removed: 0 | Moved: 66 | Added: 2
+! Moved to HaGeZi's Pro++ Blocklist: 10 rules
+~ ||conviteblackvipcenturion.com^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||edergi.net^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||ekont-bg.com^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||lumnexa.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||mpzwrqxt.com^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||orximo.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||peltrix.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||pelxino.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||vexnaro.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+~ ||zormixa.top^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
+! Moved to HaGeZi's Threat Intelligence Feeds: 56 rules
+~ ||allegrolokalnie.kategorie-polecane-83927.sbs^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||allegrolokalnie.oferty-proponowane-dla-ciebie-136481.sbs^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||allegrolokalnie.pl-firmowe-98843.sbs^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||allegrolokalniepl.oferta9167.icu^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app-fakturownia.01pl.ink^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notifica-campanha.click^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notifica-campanha.info^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notifica-campanha.online^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notifica-campanha.site^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notifica-campanhax.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||app.notificacampanha.live^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||atende.uniaoservicosltda.com.br^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||auth.asescu.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||bradescco.mwstoreonline.com.br^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||bradesco.cadastroseguropj.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||cncinsure.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||cuatrocuadrados.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||daskannbonk-de.variama.life^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||devotionaldigest.org^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||dontnewyorkcity.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||ecomp.club^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||erpotenza.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||ghnorth.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||happebefore.cyou^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||hastiincot.rest^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||hypnoporto.rest^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||link.glazem.eu^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||meineschufa.online^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||morrisonprairie.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||novo.portal-entrar.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||plosotboxga.falki.pl^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||portfolio.enable-2factor.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||qiwikarta.ru^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||secure.2h5frw.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||shaadibay.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms11-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms12-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms13-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms14-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms15-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms16-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms17-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms21-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms22-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms23-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms24-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms25-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms26-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms27-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms31-cledigitale.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||spicyvoices.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||treeremovalinlynchburg.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||wellfaction.ekzhwp.cn^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||wn.avisos-clientes.app^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||xenodmusco.rest^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
+~ ||yourmom.tourismkinqston.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
++ ||inpost.pay-shop-skrill.sbs^
++ ||session.blik-pl.info^
 
-! [ShadowWhisperer Tracking List] Removed: 1 | Moved: 2 | Added: 2
-- ||analytics.samoa.ws^
-! Moved to HaGeZi's Pro++ Blocklist: 1 rules
-~ ||matomo.one4-it.de^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
-~ ||info.roomsketcher.com^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Threat Intelligence Feeds]
-+ ||checkoutanalytics-live-us.adyen.com^
-+ ||safehub.ru^
-
-! [OISD Blocklist Big] Removed: 1 | Moved: 64 | Added: 3
-- ||p.wpage.cc^
-! Moved to HaGeZi's Pro++ Blocklist: 8 rules
-~ ||fourthfightergroup.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||heulxvmo.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||ikvqdukpfmhhg.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||iuqsxzjdrwvck.space^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||metacontrol30120001.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||xerinto.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||yanchtukpxojq.space^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||yenahcaizvlyd.online^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 50 rules
-~ ||agoh.4lima.de^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||allegro.78078k7k7.sbs^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||allegrolokalnie.30019.click^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ameliasullivan.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||bezpieczneprzelewy24.top^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||championthick.cyou^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||cifraclare.rest^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||deprirocol.rest^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||esplelucor.rest^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||farallon-capital.transcribed.com.de^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||gaslightinnredhook.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||gigarents.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||grownupplus.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||harmondocs.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||harryscorzo.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||hxgudzjsbkqhpiamv.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||jacquileclerc.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||jpkxfogzsdr.info^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||liftobronze.club^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||loopcanyon.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||mysubscribevideodisney.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||naturallyhim.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||newmarketdhaka.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||nsequ.click^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ofhbd.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||orsagpopol.rest^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||otptest.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||poinpulsa.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||r3church.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||raktachenate.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||respectprotectfulfil.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||rickenback.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ruggedmedicaltransport.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||sacheva.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||satishadhyapanmandir.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||saudi-iraq-council.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||sauvt.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||schenectadychristian.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||segalto.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||silkroadfinder.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||sportsrite.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||spotlightmedianews.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||srilanka-motherandchildseal.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||starlinq.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||stregtorce.rest^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||swhrhospitaljoc.info^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||theoriescopper.sbs^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||therapystroke.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||wildjourney612u.info^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||wombatseverywhere.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-! Moved to Phishing Army: 6 rules
-~ ||alphasandbetas.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||dieseltransferlogistics.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||friendsforfortune.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||nuraboard.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||orthomdurgentcare.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||secretchaperone.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-+ ||lsf-networks.com^
-+ ||puresmartslay.info^
-+ ||reimaonlinevip.com^
-
-! [AdGuard DNS filter] Removed: 0 | Moved: 41 | Added: 38
-! Moved to HaGeZi's Pro++ Blocklist: 25 rules
-~ ||5crgt3tno2ej3u.rest^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||abjunctmarkmen.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||anlarhqpezka.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||clastspoof.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||crippletouret.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||duikjnvsb.xyz^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||eoo4hjimvjnpty13cwn8lr7.rest^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||eucleidupboost.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||h-adashx4id.ut.taobao.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||hankiesborer.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||hdyxddvmo.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||hpxzpzdpwnhxj.online^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||jsgqwqdwsnoet.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||luffizarrf.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||mature-holiday.pro^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||mvjkyodpnm.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||natzoiufypcen.space^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||polackalien.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||preideatourism.shop^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||qdddeyojynnh.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||qeeeumtnwvizs.online^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||rbjbzldugzqns.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||rfaenzaahcspb.online^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||salivanudate.shop^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||swingelcoldish.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 16 rules
-~ ||dialogue.de.mazda.ch^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.fr.mazda.ch^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.at^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.es^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.it^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.no^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.ro^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||dialogue.mazda.se^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.certiport.com^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.moschampionship.com^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.pearsonvue.ae^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.pearsonvue.co.uk^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.pearsonvue.com.cn^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||eloqua.pointcode.fr^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||elq.keysight.com.cn^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-~ ||elqtracking.revenera.com^ [Moved: AdGuard DNS filter -> HaGeZi's Threat Intelligence Feeds]
-+ ||011qt7cln.com^
-+ ||3d721db5a7.com^
-+ ||8proe3xx6.com^
-+ ||arullelb.com^
-+ ||bwxgkgdbcryhas.xyz^
-+ ||cyeu12yr4gzcv34km.rest^
-+ ||fcnbkyzloyfgx.site^
-+ ||felor.xyz^
-+ ||fineaffluent.com^
-+ ||fqhueanslwpyi.site^
-+ ||gsk801310hh.com^
-+ ||hfuxjrrqdyh.xyz^
-+ ||hythroqu.com^
-+ ||jgo1pcbx9.com^
-+ ||jxfbxquqnlid.com^
-+ ||kedparisesscreeno.cyou^
-+ ||kmevidfaffu.com^
-+ ||korinbokhara.shop^
-+ ||livid-guest.pro^
-+ ||mcnlpmzrhpvcq.online^
-+ ||mcozumxpo.com^
-+ ||mnbseajydeszt.com^
-+ ||odyeocykadelh.website^
-+ ||ohomihlorwmjh.space^
-+ ||pacsglean.shop^
-+ ||pwgwyfnthoqqf.site^
-+ ||qbdlijgzxscfa.site^
-+ ||qqxitlxhswoy.com^
-+ ||saidimurchypeckier.cyou^
-+ ||sandbank68.com^
-+ ||t6hei8etknji3n9i.rest^
-+ ||toroidcatspaw.cyou^
-+ ||usybvizjdfyur.website^
-+ ||vgbxpcmjjr.com^
-+ ||wzwndbifflvvw.website^
-+ ||xdntimoypskgq.online^
-+ ||xgncgiophnipm.website^
-+ ||xguphkzaezpqr.site^
-
-! [HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass] Removed: 0 | Moved: 0 | Added: 77
-+ ||102-orp-diordna.b-cdn.net^
-+ ||8tiodxhk8a.execute-api.us-east-1.amazonaws.com^
-+ ||block-only-if-you-have-a-small-pee-pee.io^
-+ ||bookcar92.com^
-+ ||carbook92.com^
-+ ||carcar92.com^
-+ ||carchair92.com^
-+ ||cdn59994332.blazingcdn.net^
-+ ||cdn85227839.blazingcdn.net^
-+ ||chairbook92.com^
-+ ||chairkey82.com^
-+ ||cn-accelerator.site^
-+ ||cn-access.website^
-+ ||cn-nord.info^
-+ ||computercar92.com^
-+ ||d1vrczs2c19y8f.cloudfront.net^
-+ ||fastproxy-sj0.pages.dev^
-+ ||get-nord.org^
-+ ||getnord.org^
-+ ||keycar92.com^
-+ ||lynxvpn.com^
-+ ||nord-cn-wangluo.com^
-+ ||nord-cn.net^
-+ ||nord-email.com^
-+ ||nord-fanqiang.com^
-+ ||nord-for-apps.com^
-+ ||nord-help.com^
-+ ||nord-help.net^
-+ ||nord-tiaoqiang.com^
-+ ||nord-wangluo.com^
-+ ||nord-wangzhan.com^
-+ ||nordforapps.com^
-+ ||nordforme.net^
-+ ||nordforme.org^
-+ ||nordme.org^
-+ ||nordshangwang.com^
-+ ||nordtv.net^
-+ ||nordvpn.at^
-+ ||nordvpn.ch^
-+ ||nordvpn.co.il^
-+ ||nordvpn.co.uk^
-+ ||nordvpn.co.za^
-+ ||nordvpn.co^
-+ ||nordvpn.com.br^
-+ ||nordvpn.com.pl^
-+ ||nordvpn.cz^
-+ ||nordvpn.de^
-+ ||nordvpn.eu^
-+ ||nordvpn.fi^
-+ ||nordvpn.fr^
-+ ||nordvpn.ie^
-+ ||nordvpn.im^
-+ ||nordvpn.jp^
-+ ||nordvpn.kr^
-+ ||nordvpn.lt^
-+ ||nordvpn.lu^
-+ ||nordvpn.org^
-+ ||nordvpn.page^
-+ ||nordvpn.pl^
-+ ||nordvpn.pt^
-+ ||nordvpn.se^
-+ ||nordvpn.tv^
-+ ||nordvpn.uk^
-+ ||nordvpnmedia.com^
-+ ||nordwangluo.com^
-+ ||nordwangzhan.site^
-+ ||nordwebsite.net^
-+ ||nordzaixian.org^
-+ ||phonechair92.com^
-+ ||privacyproxy.xyz^
-+ ||proxybrowser.app^
-+ ||superconnect.dev^
-+ ||supervpn.cc^
-+ ||supervpn.dev^
-+ ||surfy-chiny.com^
-+ ||weather-doc.com^
-+ ||windowcar92.com^
-
-! [HaGeZi's URL Shortener Blocklist] Removed: 0 | Moved: 1 | Added: 0
-! Moved to Phishing Army: 1 rules
-~ ||inlnk.co^ [Moved: HaGeZi's URL Shortener Blocklist -> Phishing Army]
-
-! [ShadowWhisperer's Malware List] Removed: 0 | Moved: 0 | Added: 2
-+ ||homesearcherplace.com^
-+ ||isafe-net.com^
-
-! [Malicious URL Blocklist (URLHaus)] Removed: 118 | Moved: 0 | Added: 6
-- ||18.mi9q.ru^
-- ||1p2.re7x.ru^
-- ||2i.da6v.ru^
-- ||3z6.bo8y.ru^
-- ||4i.zo4n.ru^
-- ||4l.ve5l.ru^
-- ||4q.gi0x.ru^
-- ||5vt.lo2p.ru^
-- ||6d.m2jo.ru^
-- ||6r8.pe8d.ru^
-- ||7jp.fi0m.ru^
-- ||7v7.ha5r.ru^
-- ||8n.n6ri.ru^
-- ||954.da6v.ru^
-- ||976.n6ri.ru^
-- ||a.u-na5.ru^
-- ||a1.mi9q.ru^
-- ||a8t1.u-v9.online^
-- ||a9x7.crju.online^
-- ||ayx.wi7o.ru^
-- ||b5mx.33b2.online^
-- ||b6ru.e-dx.online^
-- ||b9h2x.71o9.online^
-- ||bs.zo4n.ru^
-- ||c0p3.18yk.online^
-- ||c1m8q.5x7u.online^
-- ||c7b2.1z57.online^
-- ||c8m2t.op76.online^
-- ||ch.bo8y.ru^
-- ||ck3.m2jo.ru^
-- ||d3tzn.yldv.online^
-- ||d3yl.crju.online^
-- ||dr5.ve5l.ru^
-- ||e1xb.e-dx.online^
-- ||e7v1.1r55.online^
-- ||ei.je9t.ru^
-- ||evo.va4n.ru^
-- ||f0k4.yldv.online^
-- ||f0x8.1z57.online^
-- ||f5e.qo1s.ru^
-- ||fc.qo1s.ru^
-- ||fjd.da6v.ru^
-- ||fr.t1va.ru^
-- ||g2t9w.5x7u.online^
-- ||g4zt.71o9.online^
-- ||g5133a.glosscreate.digital^
-- ||gas.cornedbath.digital^
-- ||gaz.headedshaky.digital^
-- ||gh.gi0x.ru^
-- ||gz.je9t.ru^
-- ||h2.kuq5g.ru^
-- ||h2q9m.1r55.online^
-- ||h2qm.18yk.online^
-- ||h6p4t.1z57.online^
-- ||hnz.x3le.ru^
-- ||hzr.va4n.ru^
-- ||ia.gi0x.ru^
-- ||j0xk.op76.online^
-- ||j4da.18yk.online^
-- ||jyn.va4n.ru^
-- ||k0wz.u-v-9.online^
-- ||k5h2.crju.online^
-- ||k7q3.71o9.online^
-- ||l0t8.1r55.online^
-- ||l2c7.5-rt.online^
-- ||l5tj.e-dx.online^
-- ||lc.ha5r.ru^
-- ||lou.pe8d.ru^
-- ||lr.yq2r.ru^
-- ||m9.u-na5.ru^
-- ||m9r2q.u-v9.online^
-- ||mnp.mi9q.ru^
-- ||n2v5m.71o9.online^
-- ||n5r3.5x7u.online^
-- ||n9k3.3-5y.online^
-- ||p1.qo1s.ru^
-- ||p1wy.71o9.online^
-- ||p6z3.mjg1.online^
-- ||q1v8.3-5y.online^
-- ||q2hzn.op76.online^
-- ||q7p0d.u-v9.online^
-- ||qa.wi7o.ru^
-- ||qqc.lo2p.ru^
-- ||r6mqa.yldv.online^
-- ||s.kuq5g.ru^
-- ||s2t4.33b2.online^
-- ||s4k1.5x7u.online^
-- ||s8j1.yldv.online^
-- ||s9n.zo8k.ru^
-- ||sp.t1va.ru^
-- ||sxw.lo2p.ru^
-- ||tikitok-playgoolge.sbs^
-- ||tz.yq2r.ru^
-- ||u0pw.e-dx.online^
-- ||u9ped.op76.online^
-- ||v3.kuq5g.ru^
-- ||v8jd.crju.online^
-- ||vkf.yq2r.ru^
-- ||vvx.re7x.ru^
-- ||w3d.33b2.online^
-- ||w7p2g.yldv.online^
-- ||w8nz.18yk.online^
-- ||wapibotix.shop^
-- ||wz.t1va.ru^
-- ||x.u-na5.ru^
-- ||x3b5n.1r55.online^
-- ||x5pw.5-rt.online^
-- ||x64.x3le.ru^
-- ||x9he.e-dx.online^
-- ||xue.re7x.ru^
-- ||y0p6.5x7u.online^
-- ||y1r5.u-v-9.online^
-- ||y4tn.3-5y.online^
-- ||y5rb.op76.online^
-- ||y7g.fi0m.ru^
-- ||y8h.bo8y.ru^
-- ||z6c4p.1r55.online^
-- ||zq3.1z57.online^
-+ ||29.rm16.workers.dev^
-+ ||bb.clsv.ru^
-+ ||hyperenergy.in^
-+ ||parmisbuilding.com^
-+ ||retrodayaengineering.icu^
-+ ||tmcksa.com^
-
-! [Dandelion Sprout's Anti-Malware List] Removed: 0 | Moved: 53 | Added: 0
-! Moved to HaGeZi's Pro++ Blocklist: 1 rules
-~ ||installchecker.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 52 rules
-~ ||1yeti.live^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||a9a.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||ac6pay.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||adbuho.shop^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||againstmor.store^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||americastandard-us.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||applocked.space^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||appregistration.net^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||appslocked.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||blxclaim.net^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||bux.guide^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||bxgg.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||cecalogistics.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||claimdice.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||compassassciate.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||crclaim.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||downladshar.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||downloadfile.cc^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||filsw.space^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||freeee.online^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||freeflix.click^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||freuderadar.de^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||gta5mobi.fun^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||hcoins.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||humanverification.online^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||huntingcoins.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||jetzt-dabei-sein.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||jotiretorns.space^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||klondikecoins.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||locked2.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||lockedapp.store^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||lockverify.net^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||magicautoshine2.833-website.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||mdeltwnq.it.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||mobileoasis.net^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||mypsswrd.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||perfectbuck.click^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||q2health.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||racodes.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||rbxguide.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||rbxlane.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||rdghu.ink^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||robloxbalance.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||scrollpay.live^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||snapflux25.org^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||snapvexa.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||spaabudhabi.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||terisoshar.space^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||trackmedia.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||trend.zauberportal.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||verifysquare.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-~ ||zensa.site^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Threat Intelligence Feeds]
-
-! [Phishing URL Blocklist (PhishTank and OpenPhish)] Removed: 1 | Moved: 3 | Added: 242
-- ||io--trrezo-learn.pages.dev^
+! [ShadowWhisperer Tracking List] Removed: 2 | Moved: 7 | Added: 0
+- ||kjhkt.parikart.com^
+- ||stats.ad.co.il^
+! Moved to HaGeZi's Pro++ Blocklist: 5 rules
+~ ||contify.com^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
+~ ||kepleranalytics.com^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
+~ ||kilkaya.com^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
+~ ||konnectinsights.com^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
+~ ||magellan.ai^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
 ! Moved to HaGeZi's Threat Intelligence Feeds: 2 rules
-~ ||akpp-volkswagen.ru^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
-~ ||sms3-cledigitale.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
-! Moved to Phishing Army: 1 rules
-~ ||irriscape.com.au^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> Phishing Army]
-+ ||34155dh8.org^
-+ ||4h0pbdpl.gfiwpu3459btgoeiprubnvoey458r.workers.dev^
-+ ||5ojy48u6n2c2.blob.core.windows.net^
-+ ||76162a08.83c9f95d057d19ffc0473645.workers.dev^
-+ ||adityaxd11-cell.github.io^
-+ ||ahmed-qureshi-dev.github.io^
-+ ||ai.xgboke.top^
-+ ||aide1-cledigitale.com^
-+ ||aktiffkan-paylater.fuxq.my.id^
-+ ||akucoinlogiin.gitbook.io^
-+ ||aman-techhub.github.io^
-+ ||amazon-clone-alpha-gilt-89.vercel.app^
-+ ||amazon-clone-taupe-xi.vercel.app^
-+ ||amsbs4.hostwindsdns.com^
-+ ||ashleybothello.github.io^
-+ ||atifleghari786.github.io^
-+ ||att.bnsie.cc^
-+ ||att.czkbh.cc^
-+ ||att.igrum.icu^
-+ ||att.jowve.cc^
-+ ||att.kvyts.icu^
-+ ||att.lbfuu.icu^
-+ ||att.lydsu.icu^
-+ ||att.pdjnt.icu^
-+ ||att.pfund.icu^
-+ ||att.qglri.cc^
-+ ||att.qjwar.cc^
-+ ||att.rgpxb.cc^
-+ ||att.rxclw.cc^
-+ ||att.xobdp.cc^
-+ ||att.ygjki.cc^
-+ ||aulas.cursodeatabaque.com.br^
-+ ||autoscout24-anfrage719861.colegiointeragirfsa.com^
-+ ||awakkul-shopbd.com^
-+ ||awal.biz.id^
-+ ||ayushsingh108.github.io^
-+ ||bafkreicevqjzr3trlifklqqll6zquvatyadher65ztham3mdbzz3kcae44.ipfs.dweb.link^
-+ ||bafkreidkpdx4pj3xzya63s7uxmnxl534u4n4pw5rapz5pb5fmlbd4sjm6m.ipfs.dweb.link^
-+ ||bet414.cc^
-+ ||bill-support.xcsknqw.com^
-+ ||blocakchain-login.gitbook.io^
-+ ||blockmydeviceweb.help^
-+ ||blockmydeviceweb.online^
-+ ||blueness2polyodontal.blob.core.windows.net^
-+ ||booking-clone-two.vercel.app^
-+ ||brargursimran678-jpg.github.io^
-+ ||brndnsia.com^
-+ ||buscando-miphone.us^
-+ ||caipf2026gemini.zeabur.app^
-+ ||century.com.ng^
-+ ||cipamazonas.org.pe^
-+ ||clecioautosocorro.com.br^
-+ ||cloud-us.support^
-+ ||cmonline-klantportaal.com^
-+ ||coinbccseprologm.gitbook.io^
-+ ||coinbcxeprolognm.gitbook.io^
-+ ||coixnbaseprolognin.gitbook.io^
-+ ||cyfree0.ggff.net^
-+ ||dana-indonesia.grelysuite.my.id^
-+ ||danpegado.github.io^
-+ ||darb.itc.gov.ae-area.com^
-+ ||darb.itc.gov.ae-docs.com^
-+ ||darb.qmobbilixolk.com^
-+ ||darb.qmobilitcmu.com^
-+ ||darb.qmobilitdke.com^
-+ ||darb.qmobilitdlo.com^
-+ ||darb.qmobilitmtv.com^
-+ ||darb.qmobilitok.com^
-+ ||darb.qmobilitpcm.com^
-+ ||darb.qmobilitpxc.com^
-+ ||darb.qmobilitrw.com^
-+ ||darb.qmobilitsao.com^
-+ ||darb.qmobilitscp.com^
-+ ||darb.qmobilitsmx.com^
-+ ||darb.qmobilitsrc.com^
-+ ||darb.qmobilitsui.com^
-+ ||darb.qmobilitswa.com^
-+ ||darb.qmobilitucp.com^
-+ ||darb.qmobilitvu.com^
-+ ||darb.qmobtrily.info^
-+ ||daskannbonk-de-1ca9a.web.app^
-+ ||data-collection-neon.vercel.app^
-+ ||dftrskrngbr2.com^
-+ ||dispositivo-lcloudd.us^
-+ ||dispositivo-soport.us^
-+ ||divorcemenadvice.highheelsplace.com^
-+ ||encotrar-idispositivo.us^
-+ ||extratudomeucar.com^
-+ ||familiabmpromericservicio2026.vercel.app^
-+ ||fidelitysafetya.one^
-+ ||fidelitysafetyb.one^
-+ ||fidelitysafetyd.one^
-+ ||fidelitysafetye.one^
-+ ||fidelitysafetyf.one^
-+ ||finca-pinos.vercel.app^
-+ ||findlostmy-mxn.us^
-+ ||findmy-mapas-soporte.com^
-+ ||findmy-support-location.com^
-+ ||findmyidevicego.help^
-+ ||finndmaps-onlcloud.us^
-+ ||foodlifedesign.store^
-+ ||futuerworld.com^
-+ ||g.150160.xyz^
-+ ||gaurav6teen.github.io^
-+ ||gem.kumac.top^
-+ ||gemini-balance-test.zeabur.app^
-+ ||gemini-balance.krismile.vip^
-+ ||gemini.199161.xyz^
-+ ||gemini.ayske.cn^
-+ ||gemini.gzcrtw.com^
-+ ||gemini.wenyuehui88.top^
-+ ||geminibalance.proai520.com^
-+ ||gm.zerooneinf.com^
-+ ||google.recover.cybersecure11.com^
-+ ||gsnyman09.github.io^
-+ ||gvgmall606.vip^
-+ ||haris-al-hanafi.github.io^
-+ ||homebanking-frontend.vercel.app^
-+ ||imapsweb-ext1007.help^
-+ ||imkey-app.com^
-+ ||independentns.com^
-+ ||instagram-dio-azure.vercel.app^
-+ ||ios18-soport.help^
-+ ||ip-located.help^
-+ ||jamescheng-gemini.zeabur.app^
-+ ||jnlsslc.com^
-+ ||jyothsnanagadurga123.github.io^
-+ ||kivcoinlogix.gitbook.io^
-+ ||kmw-883605406607.southamerica-east1.run.app^
-+ ||kucoinlogiu.gitbook.io^
-+ ||kuconlegen.gitbook.io^
-+ ||kuponundian2026.fectget.my.id^
-+ ||ldr-ec34-df3fd.fdg87fd.workers.dev^
-+ ||learn.smartstart.org.za^
-+ ||located-lphoness.help^
-+ ||location-fmi-iclo.us^
-+ ||logencoinbcsepro.gitbook.io^
-+ ||longmao.110407.xyz^
-+ ||m.imdowne.icu^
-+ ||maliciousnethunter.github.io^
-+ ||marshanaere.github.io^
-+ ||mdann4-pn.neessx.biz.id^
-+ ||meir123piskerov.github.io^
-+ ||members69.partner-invite-business.com^
-+ ||mikewoods2.github.io^
-+ ||miphone-buscar.us^
-+ ||mizoralul.z1.web.core.windows.net^
-+ ||mugisedi.z5.web.core.windows.net^
-+ ||muhammedsabith3940.github.io^
-+ ||myfind-1phone.help^
-+ ||myfind-phone.help^
-+ ||myfindnlocs-maps.us^
-+ ||mygeminibalance.zeabur.app^
-+ ||mytechtool.geminix.top^
-+ ||net1f1ix.com^
-+ ||netflix-clone-2r50aerpr-eliasvasquesalcantara.vercel.app^
-+ ||netflix-clone-9ncu0smoi-danish061296.vercel.app^
-+ ||next-rent-app.vercel.app^
-+ ||nexustocanada.com^
-+ ||niceformx-payylterindo.layanannetz.com^
-+ ||nicesome.cn^
-+ ||nidodevo.z5.web.core.windows.net^
-+ ||ns2.digitalservicesf3a.pro^
-+ ||office078.github.io^
-+ ||opensea-nftbox-wine.vercel.app^
-+ ||parttimewfhumkm.com^
-+ ||r3obinhldlogin.gitbook.io^
-+ ||rahulbansal024.github.io^
-+ ||reservatiostayverify.com^
-+ ||robinhoodbtbdd.com^
-+ ||robinhoodowb.com^
-+ ||robinhoodprobe.com^
-+ ||servicio-live-msn.replit.app^
-+ ||servicioenlinebmpromeric2026-974b8ef4b037.herokuapp.com^
-+ ||shaikayaz9.github.io^
-+ ||shivansh-singh1.github.io^
-+ ||sigin-imwomelt-dee.inom.ro^
-+ ||smartthingsfind-samsung.com^
-+ ||sms32-cledigitale.com^
-+ ||soliicitexjas.s3.us-east-005.backblazeb2.com^
-+ ||spectrumdatasolutions-54j.pages.dev^
-+ ||spectrumlogisticsinc-bt7.pages.dev^
-+ ||supicloud-buscar.us^
-+ ||suporttmlx-accesidl.us^
-+ ||supp-fmdevice.us^
-+ ||support-dispositivo.us^
-+ ||supportldtsm-inc.us^
-+ ||t-mobile.blhdm.cc^
-+ ||t-mobile.com-ofd.icu^
-+ ||t-mobile.gditj.cc^
-+ ||t-mobile.hpwkg.cc^
-+ ||t-mobile.icrpe.cc^
-+ ||t-mobile.imqyw.cc^
-+ ||t-mobile.kfysx.cc^
-+ ||t-mobile.kmaox.cc^
-+ ||t-mobile.mfdqk.cc^
-+ ||t-mobile.miqa.cc^
-+ ||t-mobile.miqe.cc^
-+ ||t-mobile.miqr.cc^
-+ ||t-mobile.miqt.cc^
-+ ||t-mobile.miqw.cc^
-+ ||t-mobile.miqy.cc^
-+ ||t-mobile.nhijm.cc^
-+ ||t-mobile.pxtiy.cc^
-+ ||t-mobile.qocmn.cc^
-+ ||t-mobile.tfpok.cc^
-+ ||t-mobile.tiakcnb.cc^
-+ ||t-mobile.tiakcnc.cc^
-+ ||t-mobile.tiakcnj.cc^
-+ ||t-mobile.tiakcnx.cc^
-+ ||t-mobile.tuogsjf.cc^
-+ ||t-mobile.tuogsjg.cc^
-+ ||t-mobile.tuogsjk.cc^
-+ ||t-mobile.tuogsjl.cc^
-+ ||t-mobile.tuogsjv.cc^
-+ ||t-mobile.tuogsjx.cc^
-+ ||t-mobile.tuogsjz.cc^
-+ ||t-mobile.vhue.cc^
-+ ||t-mobile.vhuq.cc^
-+ ||t-mobile.vhuw.cc^
-+ ||t-mobile.voirecq.cc^
-+ ||t-mobile.voirecsi.cc^
-+ ||t-mobile.voirecsu.cc^
-+ ||t-mobile.vuisjtax.cc^
-+ ||t-mobile.wjiua.cc^
-+ ||ticket.ihealthfc.com^
-+ ||toharcaahlon-alt.github.io^
-+ ||trezoreeiwnuallet.gitbook.io^
-+ ||tsor.info^
-+ ||ttbgb.zeabur.app^
-+ ||ubicar-iphonegps.us^
-+ ||ubicar-lphonc.help^
-+ ||ubicated-lphon.help^
-+ ||udtaparinda.github.io^
-+ ||vaibhavarora1205.github.io^
-+ ||vvetransferfile72836.blob.core.windows.net^
-+ ||wbmh55.top^
-+ ||westunity.github.io^
-+ ||wwvv-26osmapsmx.us^
-+ ||xiaomld-loclds.us^
-+ ||ytcs88.top^
-+ ||yuganshjoshi.github.io^
+~ ||counter.minpic.de^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Threat Intelligence Feeds]
+~ ||matomo.gayko.info^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Threat Intelligence Feeds]
 
-! [Dan Pollock's List] Removed: 0 | Moved: 0 | Added: 10
-+ 0.0.0.0 avatar.supearou.in
-+ 0.0.0.0 bulletwhiskey.sa.com
-+ 0.0.0.0 hlthiliv.shop
-+ 0.0.0.0 www.bvcnle.cfd
-+ 0.0.0.0 www.clearacreonline.com
-+ 0.0.0.0 www.cpatglobal.com
-+ 0.0.0.0 www.dartya.com
-+ 0.0.0.0 www.dorminvaders.com
-+ 0.0.0.0 www.edashealthcare.com
-+ 0.0.0.0 www.gekorn.com
+! [OISD Blocklist Big] Removed: 0 | Moved: 29 | Added: 39
+! Moved to HaGeZi's Pro++ Blocklist: 1 rules
+~ ||reimaonlinevip.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
+! Moved to HaGeZi's Threat Intelligence Feeds: 28 rules
+~ ||03c5157.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||5157014.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||9085.tanaragerlach.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||aiokraken.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||api.upnp.top^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||bet365kd.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.rtarm.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||deepminddynamic.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||edureach.co.za^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||excellentflooringllc.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||foradacaixa.top^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||hashxcapital.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||hyperlink.cl^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||jacornelius.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||jodee.net^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||luxcrimeofficialjob.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||m.515711111.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||mphengbona.co.za^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||mywellnessgenius.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||outlookowaappdropsmessagesharespacefolderfilesharngfolderl.bubbleapps.io^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||puresmartslay.info^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||ripple.gift^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||roofersincroydon.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||startwelcome.ghost.io^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.rutt.cc^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tkdeq.cc^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||tok.tkglgw.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
+~ ||ucb-cz.digital^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
++ ||ancragefinvexa.com^
++ ||anekkepolska-pl.com^
++ ||avalon-fincar-app.com^
++ ||bitnexv2gpt-app.com^
++ ||bitnikscristforte.com^
++ ||burlapilat.rest^
++ ||capovaultaris.com^
++ ||completepower.click^
++ ||dreamfitlife.com^
++ ||drivestep.cyou^
++ ||elsol-shopping.com^
++ ||euroburnfat.com^
++ ||exposesnow.club^
++ ||faywepukvaefbdd.com^
++ ||framixbitnova.com^
++ ||immediatebienestar.net^
++ ||jqnehbxaxshvr.info^
++ ||krakoventorix.com.pl^
++ ||lexofinpro-app.com^
++ ||nleakz.sbs^
++ ||ordexia.net^
++ ||pausedis.sbs^
++ ||profitexfinverio.net^
++ ||pulsarvexline.com^
++ ||quaniumai.com^
++ ||requatrott.rest^
++ ||risorsaportyrex.com^
++ ||softbchoose.club^
++ ||sonnevionex.com^
++ ||soviebanan.rest^
++ ||spellintools.com^
++ ||spike-erymax-opt.com^
++ ||stevegeffrard.com^
++ ||topgazeta24.eu^
++ ||uspec.casa^
++ ||velantispro72.com^
++ ||virexdalo.com^
++ ||whortintui.rest^
++ ||worshritogi.pro^
+
+! [AdGuard DNS filter] Removed: 2 | Moved: 37 | Added: 24
+- ||juemd.parikart.com^
+- ||rdtk.rabbitsreviews.com^
+! Moved to HaGeZi's Pro++ Blocklist: 37 rules
+~ ||011qt7cln.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||8proe3xx6.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||arullelb.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||bwxgkgdbcryhas.xyz^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||cyeu12yr4gzcv34km.rest^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||fcnbkyzloyfgx.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||felor.xyz^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||fineaffluent.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||fqhueanslwpyi.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||gsk801310hh.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||hfuxjrrqdyh.xyz^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||hythroqu.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||jgo1pcbx9.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||jxfbxquqnlid.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||kedparisesscreeno.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||kmevidfaffu.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||korinbokhara.shop^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||livid-guest.pro^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||mcnlpmzrhpvcq.online^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||mcozumxpo.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||mnbseajydeszt.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||odyeocykadelh.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||ohomihlorwmjh.space^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||pacsglean.shop^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||pwgwyfnthoqqf.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||qbdlijgzxscfa.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||qqxitlxhswoy.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||saidimurchypeckier.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||sandbank68.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||t6hei8etknji3n9i.rest^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||toroidcatspaw.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||usybvizjdfyur.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||vgbxpcmjjr.com^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||wzwndbifflvvw.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||xdntimoypskgq.online^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||xgncgiophnipm.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
+~ ||xguphkzaezpqr.site^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
++ ||8624k9fmrcjn9vvup3.rest^
++ ||abxokzmu.com^
++ ||acxcfztcvheoa.space^
++ ||atonersphobiesspruer.cyou^
++ ||buquoekeobcey.site^
++ ||dtvmlxoippfhm.site^
++ ||dygudhixkfwew.online^
++ ||gntimfquwypg.com^
++ ||gpxvhjxwncjte.website^
++ ||hmmjvyjyqvktni.xyz^
++ ||hypoedsnugly.cyou^
++ ||jtxvktxabvewp.site^
++ ||justlercastral.shop^
++ ||lufqtioslb.com^
++ ||mkemdlgjkagkq.com^
++ ||ntdieiitsgysb.space^
++ ||pukateadestrybiscuit.cyou^
++ ||puranaputlog.com^
++ ||qdhohxqtwspgm.com^
++ ||roepixxcfihef.online^
++ ||rrjtioyjzjweu.space^
++ ||scarierrenting.shop^
++ ||spsavcipgmucz.site^
++ ||xjacdnnw.com^
+
+! [ShadowWhisperer's Malware List] Removed: 0 | Moved: 4 | Added: 0
+! Moved to HaGeZi's Pro++ Blocklist: 1 rules
+~ ||erotic-flirt.ro^ [Moved: ShadowWhisperer's Malware List -> HaGeZi's Pro++ Blocklist]
+! Moved to HaGeZi's Threat Intelligence Feeds: 3 rules
+~ ||browserhome.net^ [Moved: ShadowWhisperer's Malware List -> HaGeZi's Threat Intelligence Feeds]
+~ ||homesearcherplace.com^ [Moved: ShadowWhisperer's Malware List -> HaGeZi's Threat Intelligence Feeds]
+~ ||isafe-net.com^ [Moved: ShadowWhisperer's Malware List -> HaGeZi's Threat Intelligence Feeds]
+
+! [Malicious URL Blocklist (URLHaus)] Removed: 0 | Moved: 4 | Added: 0
+! Moved to HaGeZi's Threat Intelligence Feeds: 4 rules
+~ ||bb.clsv.ru^ [Moved: Malicious URL Blocklist (URLHaus) -> HaGeZi's Threat Intelligence Feeds]
+~ ||hyperenergy.in^ [Moved: Malicious URL Blocklist (URLHaus) -> HaGeZi's Threat Intelligence Feeds]
+~ ||retrodayaengineering.icu^ [Moved: Malicious URL Blocklist (URLHaus) -> HaGeZi's Threat Intelligence Feeds]
+~ ||tmcksa.com^ [Moved: Malicious URL Blocklist (URLHaus) -> HaGeZi's Threat Intelligence Feeds]
+
+! [Dandelion Sprout's Anti-Malware List] Removed: 0 | Moved: 5 | Added: 0
+! Moved to HaGeZi's Pro++ Blocklist: 5 rules
+~ ||altgamesy.store^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
+~ ||contentlocked.net^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
+~ ||lockverify.org^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
+~ ||redirectapps.online^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
+~ ||verifysuper.com^ [Moved: Dandelion Sprout's Anti-Malware List -> HaGeZi's Pro++ Blocklist]
+
+! [HaGeZi's Badware Hoster Blocklist] Removed: 0 | Moved: 1 | Added: 0
+! Moved to HaGeZi's Pro++ Blocklist: 1 rules
+~ ||nethouse.ru^ [Moved: HaGeZi's Badware Hoster Blocklist -> HaGeZi's Pro++ Blocklist]
+
+! [Phishing URL Blocklist (PhishTank and OpenPhish)] Removed: 0 | Moved: 184 | Added: 0
+! Moved to HaGeZi's Pro++ Blocklist: 14 rules
+~ ||aide1-cledigitale.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||cmonline-klantportaal.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||futuerworld.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||imkey-app.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||located-lphoness.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||location-fmi-iclo.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||myfindnlocs-maps.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||reservatiostayverify.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||smartthingsfind-samsung.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||suporttmlx-accesidl.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||support-dispositivo.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||supportldtsm-inc.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||ubicar-iphonegps.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+~ ||ubicated-lphon.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Pro++ Blocklist]
+! Moved to HaGeZi's Threat Intelligence Feeds: 170 rules
+~ ||34155dh8.org^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ai.xgboke.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||aktiffkan-paylater.fuxq.my.id^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||amsbs4.hostwindsdns.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.bnsie.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.czkbh.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.igrum.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.jowve.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.kvyts.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.lbfuu.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.lydsu.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.pdjnt.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.pfund.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.qglri.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.qjwar.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.rgpxb.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.rxclw.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.xobdp.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||att.ygjki.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||aulas.cursodeatabaque.com.br^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||autoscout24-anfrage719861.colegiointeragirfsa.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||awakkul-shopbd.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||awal.biz.id^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||bet414.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||bienlinea.onlineaccount.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||bill-support.xcsknqw.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||blockmydeviceweb.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||blockmydeviceweb.online^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||brndnsia.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||buscando-miphone.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||caipf2026gemini.zeabur.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||century.com.ng^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||cipamazonas.org.pe^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||clecioautosocorro.com.br^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||cloud-us.support^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||cyfree0.ggff.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||dana-indonesia.grelysuite.my.id^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.itc.gov.ae-area.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.itc.gov.ae-docs.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobbilixolk.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitcmu.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitdke.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitdlo.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitmtv.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitok.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitpcm.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitpxc.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitrw.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitsao.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitscp.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitsmx.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitsrc.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitsui.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitswa.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitucp.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobilitvu.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||darb.qmobtrily.info^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||dftrskrngbr2.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||dispositivo-lcloudd.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||dispositivo-soport.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||divorcemenadvice.highheelsplace.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||dobasic.ghost.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||elitegaming.cl^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||encotrar-idispositivo.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||extratudomeucar.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||fidelitysafetya.one^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||fidelitysafetyb.one^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||fidelitysafetyd.one^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||fidelitysafetye.one^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||fidelitysafetyf.one^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||findlostmy-mxn.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||findmy-mapas-soporte.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||findmy-support-location.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||findmyidevicego.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||finndmaps-onlcloud.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||foodlifedesign.store^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||g.150160.xyz^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gem.kumac.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini-balance-test.zeabur.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini-balance.krismile.vip^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini.199161.xyz^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini.ayske.cn^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini.gzcrtw.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gemini.wenyuehui88.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||geminibalance.proai520.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gm.zerooneinf.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||google.recover.cybersecure11.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||gvgmall606.vip^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||imapsweb-ext1007.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||independentns.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ios18-soport.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ip-located.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||jamescheng-gemini.zeabur.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||jnlsslc.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||kamervankoophandel.webomgeving.de^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||kmw-883605406607.southamerica-east1.run.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||kuponundian2026.fectget.my.id^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||learn.smartstart.org.za^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||longmao.110407.xyz^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||m.imdowne.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||mdann4-pn.neessx.biz.id^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||members69.partner-invite-business.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||miphone-buscar.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||myfind-1phone.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||myfind-phone.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||mygeminibalance.zeabur.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||mytechtool.geminix.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||net1f1ix.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||nexustocanada.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||niceformx-payylterindo.layanannetz.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||nicesome.cn^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ns2.digitalservicesf3a.pro^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||parttimewfhumkm.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||robinhoodbtbdd.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||robinhoodowb.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||robinhoodprobe.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||sigin-imwomelt-dee.inom.ro^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||sms32-cledigitale.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||started-platforms.ghost.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||startrk.ghost.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||supicloud-buscar.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||supp-fmdevice.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.blhdm.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.com-ofd.icu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.gditj.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.hpwkg.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.icrpe.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.imqyw.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.kfysx.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.kmaox.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.mfdqk.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqa.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqe.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqr.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqt.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqw.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.miqy.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.nhijm.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.pxtiy.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.qocmn.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tfpok.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tiakcnb.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tiakcnc.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tiakcnj.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tiakcnx.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjf.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjg.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjk.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjl.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjv.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjx.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.tuogsjz.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.vhue.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.vhuq.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.vhuw.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.voirecq.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.voirecsi.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.voirecsu.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.vuisjtax.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||t-mobile.wjiua.cc^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ticket.ihealthfc.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||tsor.info^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ttbgb.zeabur.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ubicar-lphonc.help^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||wbmh55.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||webknow.ghost.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||wwvv-26osmapsmx.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||x55u1.mjt.lu^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||xiaomld-loclds.us^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+~ ||ytcs88.top^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> HaGeZi's Threat Intelligence Feeds]
+
+! [Stalkerware Indicators List] Removed: 0 | Moved: 1 | Added: 0
+! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
+~ ||pctattletalev2.s3.amazonaws.com^ [Moved: Stalkerware Indicators List -> HaGeZi's Threat Intelligence Feeds]
+
+! [Scam Blocklist by DurableNapkin] Removed: 1 | Moved: 1 | Added: 4
+- ||ios-privacy.com^
+! Moved to HaGeZi's Pro++ Blocklist: 1 rules
+~ ||withyotta.com^ [Moved: Scam Blocklist by DurableNapkin -> HaGeZi's Pro++ Blocklist]
++ ||deiongh.info^
++ ||krediteksklusif.com^
++ ||neozor.com^
++ ||onlyfanstake.pro^
 
