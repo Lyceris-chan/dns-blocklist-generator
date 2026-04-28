@@ -1,4458 +1,617 @@
 ! =========================================================================
-! sleepy list diff report: 2026-04-28 00:41:05
+! sleepy list diff report: 2026-04-28 06:59:24
 ! =========================================================================
 
-! SUMMARY: Added 3282 | Removed 565 | Moved 552
+! SUMMARY: Added 355 | Removed 207 | Moved 22
 ! ORDER: Anchor + contributors, then legacy-only lists
 
 ! --- CHANGES BY LIST (ORDERED) ---
-! [HaGeZi's Pro++ Blocklist] Removed: 47 | Moved: 6 | Added: 42
-- ||ai-hyec.com^
-- ||ai-hyee.com^
-- ||alahleicrop.com^
-- ||be-process.com^
-- ||betaalomgeving.online^
-- ||candletv.xyz^
-- ||cltiskeyzwzy.site^
-- ||clubedevantagens-nivel5.online^
-- ||cmail2.com.lookup.dkimwl.org^
-- ||completelypositivelion.website^
-- ||cryptobyte.online^
-- ||denviro.store^
-- ||dnwlqm.com^
-- ||esl-org-security-txt1.sbs^
-- ||goprograms.site^
-- ||gptplus.icu^
-- ||lesvillasedeniales.org^
-- ||nremgov.online^
-- ||onlineshop33.store^
-- ||onlineshop360.store^
-- ||onlineshop4.store^
-- ||onlineshop44.store^
-- ||onlineshop55.store^
-- ||onlineshop66.store^
-- ||onlineshop77.store^
-- ||onlineshop88.store^
-- ||onlineshop999.store^
-- ||oviunlock.store^
-- ||parknationalsecurebrowserhelp.com^
-- ||pensioncards.online^
-- ||program-bnbchain.xyz^
-- ||rikotake.art^
-- ||rikotake.cloud^
-- ||saudipanda.online^
-- ||security-txt-esl-org.sbs^
-- ||seolabnotion.top^
-- ||siterage.online^
-- ||starlinkchain.net^
-- ||tripskan.xyz^
-- ||trustconfirm-id7891.site^
-- ||unitednationsdeliveryexpress.online^
-- ||vantage-forecast.com^
-- ||whcacapp.com^
-- ||wotyb.online^
-- ||xn--10vr61a3xc5x3b.com^
-- ||xn--74qy8dk4drvg29x.com^
-- ||xrp-take.xyz^
-! Moved to 1Hosts (Xtra): 4 rules
-~ ||dsj625.icu^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
-~ ||k8jc6jomk86fji.rest^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
-~ ||na.telemetry.wolterskluwer.com^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
-~ ||us-east-1.prod.telemetry.toolbox.builder-tools.aws.dev^ [Moved: HaGeZi's Pro++ Blocklist -> 1Hosts (Xtra)]
-! Moved to AdGuard DNS filter: 1 rules
-~ ||fegg37mtpm6h55.rest^ [Moved: HaGeZi's Pro++ Blocklist -> AdGuard DNS filter]
-! Moved to OISD Blocklist Big: 1 rules
-~ ||freeflowccr.site^ [Moved: HaGeZi's Pro++ Blocklist -> OISD Blocklist Big]
-+ ||ads.netnews.com.mt^
-+ ||ads1.segredin.workers.dev^
-+ ||analytics.apiaberta.pt^
-+ ||analytics.internet1.cz^
-+ ||analytics.it-networks.de^
-+ ||analytics.nextweb.fi^
-+ ||analytics.queens.de^
-+ ||analytics.saatvesaat.com.tr^
-+ ||grs-iot.platform.dbankcloud.cn^
-+ ||gtrack.glacom.com^
-+ ||i.socdm.com.edgekey.net^
-+ ||ingest.chime.aws^
-+ ||livetech.shopee.com.ar^
-+ ||livetech.shopee.sg.cdn20.com^
-+ ||log-api.pangolin-sdk-toutiao-b.com.queniuyk.com^
-+ ||log.isnssdk.com.edgekey.net^
-+ ||matomo.regiothek.org^
-+ ||modobua.pro^
-+ ||msdk.shopee.com.co^
-+ ||myhostering.my^
-+ ||naviga-bi-v2-collector-lb-v2-1653659587.us-west-2.elb.amazonaws.com^
-+ ||neo-analytics.cartrawler.com^
-+ ||ru-pcdn.dengage.com^
-+ ||saxareu.com^
-+ ||sentry.ajomark.dev^
-+ ||sentry.altery.com^
-+ ||sentry.ohotaktiv.tech^
-+ ||server-side-tagging-3b3npf7ata-uc.a.run.app^
-+ ||server-side-tagging-5dmhru7sfa-uc.a.run.app^
-+ ||server-side-tagging-639769272032.us-central1.run.app^
-+ ||server-side-tagging-dqjj3b63fq-uc.a.run.app^
-+ ||server-side-tagging-mukmcyxfja-uc.a.run.app^
-+ ||server-side-tagging-ppvgvoblfq-uc.a.run.app^
-+ ||server-side-tagging-ssc6ux765q-uc.a.run.app^
-+ ||sgtm.icaniwill.fi^
-+ ||streamline-access-porta.help^
-+ ||thinkonforestline.com^
-+ ||tracking-1183106232.ap-southeast-1.elb.amazonaws.com^
-+ ||tudthrone.cn.com^
-+ ||ucdc2-upaas.uc.cn^
-+ ||umami.akams.cn^
-+ ||umami.vempus.com^
+! [HaGeZi's Threat Intelligence Feeds] Removed: 1 | Moved: 0 | Added: 3
+- ||store.watchseniorfit.com^
++ ||crv.airdrpsalerts.sbs^
++ ||mole.airdrpsalerts.sbs^
++ ||sophon.airdrpsalerts.sbs^
 
-! [HaGeZi's Threat Intelligence Feeds] Removed: 218 | Moved: 14 | Added: 1300
-- ||11.cryptowallet-web.vip^
-- ||17393sm.asso7tunexpl.in.net^
-- ||22.cryptowallet-web.vip^
-- ||23ofcfv.khudrukmumb1es.in.net^
-- ||2585gqld.incub-teahouse.in.net^
-- ||29hotproducts.com^
-- ||3.cryptowallet-web.vip^
-- ||33.cryptowallet-web.vip^
-- ||360safebrowser.com^
-- ||360securebrowser.com^
-- ||360securebrowser.net^
-- ||4wyk.incub-teahouse.in.net^
-- ||5urvey-spark.exhumat8urgle.in.net^
-- ||88-xx.cc^
-- ||93f5qz.khudrukmumb1es.in.net^
-- ||98521.app^
-- ||ablelesensations.com^
-- ||ad0871.com^
-- ||admin.dept-coinbase.com^
-- ||ai-cryptoo.com^
-- ||aisitaacxj.top^
-- ||allsp.org^
-- ||aq4saw1.khudrukmumb1es.in.net^
-- ||arkcoreix.judges-spire.in.net^
-- ||arodrombot.fun^
-- ||art-hu.com^
-- ||askuyumu.com^
-- ||asteroidsol.fun^
-- ||auth.mercadolivreshop.shop^
-- ||authenticate-outlook.com^
-- ||autoarm.click^
-- ||baoruan.org^
-- ||bbb.mercadolivreshop.shop^
-- ||bettywinerin.live^
-- ||bicaramedia.com^
-- ||biomecave.incub-teahouse.in.net^
-- ||blnance.run^
-- ||blushshade.com^
-- ||boblelo.live^
-- ||broadfilte.exhumat8urgle.in.net^
-- ||brunestavok.digital^
-- ||bulbuledgeplatform.com^
-- ||bullorilec.pro^
-- ||bytomsale.shop^
-- ||campaigndefen.eggman8eisha.in.net^
-- ||capniora.com^
-- ||capritempo.pro^
-- ||capviona.com^
-- ||caremonde.ae^
-- ||casahogarninocolimense.org^
-- ||cashinvenix-software.com^
-- ||cattishlysublime.com^
-- ||cdn.sys-update.online^
-- ||changecoconut.cpgdtc.com^
-- ||check.zip^
-- ||claim.polymarket.casa^
-- ||cledigital-web.com^
-- ||cloudnewsfeed.com^
-- ||columdee.judges-spire.in.net^
-- ||com-cloud.click^
-- ||conformation-1817.shop^
-- ||cosycorenh.pro^
-- ||crawlerstory.oasis-reimburse.in.net^
-- ||crv.airdrpsalerts.sbs^
-- ||culturebrook.incub-teahouse.in.net^
-- ||cyberlaunch.fun^
-- ||daemon-hill.khudrukmumb1es.in.net^
-- ||datenschutzupdaten.icu^
-- ||deifillaama.org^
-- ||digital-fidellogin.sbs^
-- ||dongreng.com^
-- ||dstat.one^
-- ||du5k-panel.exhumat8urgle.in.net^
-- ||dynvaleis.oasis-reimburse.in.net^
-- ||eclipse.shidesto.solutions^
-- ||ejge.eggman8eisha.in.net^
-- ||emologe.top^
-- ||emyjes04.com^
-- ||enter-soneium.com^
-- ||ependraxa-engine.com^
-- ||esmundotoday.news^
-- ||eswcaywn.judges-spire.in.net^
-- ||ethyh.com^
-- ||event-shop-official.com^
-- ||evex-1pro-soft.com^
-- ||exchangelink0065.ink^
-- ||f532v.oasis-reimburse.in.net^
-- ||finoviax.com^
-- ||fixedgearcapital.com^
-- ||flodfundline-soft.com^
-- ||fo4-couppon.com^
-- ||foldermana.scbyourbestjob.com^
-- ||fortuna-auroraplatform.com^
-- ||fortunavaltrion-engine.com^
-- ||frame-atarax-ai.com^
-- ||frwyaofu.eggman8eisha.in.net^
-- ||fuertion.com^
-- ||gainervo.com^
-- ||gamerbingo.com^
-- ||gathgolde.exhumat8urgle.in.net^
-- ||gbwin44.com^
-- ||genomeobserver.judges-spire.in.net^
-- ||gent1-lab.exhumat8urgle.in.net^
-- ||hanlinguandao.com^
-- ||icloud.es^
-- ||igotnofriendsonlineorirl-imgonnakmslmao.skyhanni.cloud^
-- ||illuminationes.com^
-- ||imtoken-frontpage.net^
-- ||internet-download-manager.org^
-- ||internetdownloadmanager.dev^
-- ||jasse-castel.com^
-- ||jellycatofficials.com^
-- ||jp4j.asso7tunexpl.in.net^
-- ||kel-coreex.asso7tunexpl.in.net^
-- ||kelforgeet4.khudrukmumb1es.in.net^
-- ||keltideal.asso7tunexpl.in.net^
-- ||keys.wf^
-- ||kidjo.oasis-reimburse.in.net^
-- ||l2dydx.xyz^
-- ||ladyamazing.club^
-- ||lapenisola.com^
-- ||ledgermobile.com^
-- ||letter.zip^
-- ||litelover.xyz^
-- ||login.actions-online.com^
-- ||loose-mount.eggman8eisha.in.net^
-- ||massivedisco.asso7tunexpl.in.net^
-- ||mbaprep.pro^
-- ||member01.agency-ad-center.com^
-- ||member12.agency-ad-center.com^
-- ||member17.agency-ad-center.com^
-- ||member34.agency-ad-center.com^
-- ||mercadoiibre.actions-online.com^
-- ||merseywaterfrontapartments.com^
-- ||mesdoconsumidor.online^
-- ||mivis-net.in.net^
-- ||mivon-data.in.net^
-- ||mole.airdrpsalerts.sbs^
-- ||mongolleather.pk^
-- ||morphonet.work^
-- ||new.sys-update.online^
-- ||nor-lithix.judges-spire.in.net^
-- ||nottiesbreakaways.co.za^
-- ||noven-hub.in.net^
-- ||opitrnism-brldge.cc^
-- ||pablomarcallcurssosoficial.online^
-- ||palbind.judges-spire.in.net^
-- ||passdigitale-co.com^
-- ||pb6cs.eggman8eisha.in.net^
-- ||pefectlensworld.com^
-- ||personendatensicher.icu^
-- ||piranhtech.online^
-- ||privatepower.edwinadmin.com^
-- ||qivor-web.in.net^
-- ||raxen-serv.in.net^
-- ||reed8-drive.pares-system.in.net^
-- ||reelfla.asso7tunexpl.in.net^
-- ||riolafayette.com^
-- ||rongchang.info^
-- ||service-verfahren.icu^
-- ||sicheredaten.icu^
-- ||sicheredaten.info^
-- ||sicherheitsupdate.icu^
-- ||slappie.com^
-- ||sophon.airdrpsalerts.sbs^
-- ||sterilebundle.khudrukmumb1es.in.net^
-- ||surve-chain.oasis-reimburse.in.net^
-- ||sx56boo.incub-teahouse.in.net^
-- ||sylor-plus.in.net^
-- ||tal-draet.khudrukmumb1es.in.net^
-- ||talnexal2.pares-system.in.net^
-- ||technoxpertsgroup.com^
-- ||telecom-exceed-aid-charts.trycloudflare.com^
-- ||tj0x.eggman8eisha.in.net^
-- ||tk-globestore-8.top^
-- ||tmqilcart.com^
-- ||tmzolcart.com^
-- ||traile-proc.oasis-reimburse.in.net^
-- ||trimeshum.exhumat8urgle.in.net^
-- ||ulotexu.top^
-- ||v0ya1-cast.pares-system.in.net^
-- ||v2.xoilaczzspz.tv^
-- ||v3.xoilaczzspz.tv^
-- ||vantarajamnagar.org^
-- ||vasx.carrd.co^
-- ||velcrestos8.pares-system.in.net^
-- ||voice-changer.dev^
-- ||voice-changer.pro^
-- ||voice-mod.net^
-- ||voice-mod.org^
-- ||voice-mod.pro^
-- ||watchrich.top^
-- ||wint3-array.exhumat8urgle.in.net^
-- ||www.api-empreeendefest.signo.dev.br^
-- ||www.api.opensea.ro^
-- ||www.bluetonstudio.com.au^
-- ||www.caaguazu.com.py^
-- ||www.careersineyecare.org.uk^
-- ||www.fresver.com.sg^
-- ||www.ftp.lucky31spin.com^
-- ||www.hna.com.tw^
-- ||www.homan.co.tz^
-- ||www.kuzniki.com.pl^
-- ||www.lavorwash.hu.technorollshop.hu^
-- ||www.maysnet.com.mx^
-- ||www.solenbahce.com.tr^
-- ||www.tafa.or.th^
-- ||www.tuply.co.za^
-- ||www.vivianerabelo.com.br^
-- ||wzxcrsv.cyou^
-- ||x444scan.com^
-- ||x9xus7.pares-system.in.net^
-- ||xelino.icu^
-- ||xrcbdu11.asso7tunexpl.in.net^
-- ||yaisxm.pares-system.in.net^
-- ||yg.zhijinren.com^
-- ||yj97hpfx.incub-teahouse.in.net^
-- ||zexis-host.in.net^
-! Moved to 1Hosts (Xtra): 3 rules
-~ ||drgenov.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> 1Hosts (Xtra)]
-~ ||mexicanculturalcenter.org^ [Moved: HaGeZi's Threat Intelligence Feeds -> 1Hosts (Xtra)]
-~ ||shengxudianqi.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> 1Hosts (Xtra)]
-! Moved to HaGeZi's Pro++ Blocklist: 8 rules
-~ ||1tamilblasters.net^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||gh.ddlc.top^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||incs-xa.online^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||llbean.co^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||loggingsucks.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||nodejav.com^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||start.learn-english.education^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-~ ||vidsrc.win^ [Moved: HaGeZi's Threat Intelligence Feeds -> HaGeZi's Pro++ Blocklist]
-! Moved to Malicious URL Blocklist (URLHaus): 1 rules
-~ ||carrefban.portailcnnt.sbs^ [Moved: HaGeZi's Threat Intelligence Feeds -> Malicious URL Blocklist (URLHaus)]
-! Moved to OISD Blocklist Big: 2 rules
-~ ||chekidasdnew24h.space^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
-~ ||security-bot.world^ [Moved: HaGeZi's Threat Intelligence Feeds -> OISD Blocklist Big]
-+ ||1r72in.sokla3ren.in.net^
-+ ||1tamilblasters.band^
-+ ||4-pfoten-freizeit.de^
-+ ||43fgge3.top^
-+ ||4hs7joli.sokla3ren.in.net^
-+ ||53tvf4ge.top^
-+ ||6lzo5xl.tov6larek.in.net^
-+ ||84hg5v.top^
-+ ||93jhyr4.top^
-+ ||acting-studio.de^
-+ ||actions-online.com^
-+ ||agency-ad-center.com^
-+ ||agjlskc.pax4moren.in.net^
-+ ||akbankinvest.com^
-+ ||alebilet.ofertaknxo2739563.shop^
-+ ||alt-enc0.sydo9marel.in.net^
-+ ||aluvea.de^
-+ ||amendes-justice-gov-ma.cc^
-+ ||amendes-justice-gov-ma.life^
-+ ||amendes-justice-gov.asia^
-+ ||amendes-justice-gov.bar^
-+ ||amendes-justice-gov.beer^
-+ ||amendes-justice-gov.best^
-+ ||amendes-justice-gov.buzz^
-+ ||amendes-justice-gov.casa^
-+ ||amendes-justice-gov.co^
-+ ||amendes-justice-gov.cyou^
-+ ||amendes-justice-gov.digital^
-+ ||amendes-justice-gov.fit^
-+ ||amendes-justice-gov.forum^
-+ ||amendes-justice-gov.fun^
-+ ||amendes-justice-gov.homes^
-+ ||amendes-justice-gov.ink^
-+ ||amendes-justice-gov.live^
-+ ||amendes-justice-gov.monster^
-+ ||amendes-justice-gov.one^
-+ ||amendes-justice-gov.onl^
-+ ||amendes-justice-gov.online^
-+ ||amendes-justice-gov.pics^
-+ ||amendes-justice-gov.pro^
-+ ||amendes-justice-gov.quest^
-+ ||amendes-justice-gov.reisen^
-+ ||amendes-justice-gov.rest^
-+ ||amendes-justice-gov.sbs^
-+ ||amendes-justice-gov.site^
-+ ||amendes-justice-gov.us^
-+ ||amendes-justice-gov.wiki^
-+ ||amendes-justice-gov.work^
-+ ||aof-gov.life^
-+ ||api.opensea.ro^
-+ ||apothekeohnerezept.de^
-+ ||arick.dev^
-+ ||arkmarkix.rax2liven.in.net^
-+ ||aroundying.de^
-+ ||asso7tunexpl.in.net^
-+ ||ato-gov-au-com.pics^
-+ ||axq-gov.life^
-+ ||babahtoto.vip^
-+ ||bakta8.myshopify.com^
-+ ||bawz.store^
-+ ||bay6-beam.kyr1vomen.in.net^
-+ ||bcfapelw.mer4talon.in.net^
-+ ||beambright.de^
-+ ||belieul-stammholz.com^
-+ ||berichtkfz.de^
-+ ||billions-claim.xyz^
-+ ||birchpayload.qim8vorel.in.net^
-+ ||bitloonx.de^
-+ ||bleu-3.mivis-net.in.net^
-+ ||bleu-4k.mivon-data.in.net^
-+ ||bleu-9.sylor-plus.in.net^
-+ ||blue-fire-3w.mivon-data.in.net^
-+ ||blue-mond-3k.raxen-serv.in.net^
-+ ||booey.rax2liven.in.net^
-+ ||boxloadpallet.com^
-+ ||bpbioheat.de^
-+ ||brand-vau.sydo9marel.in.net^
-+ ||breakingreport24a.top^
-+ ||brennholz-ws.de^
-+ ||brennholzrupp.de^
-+ ||brewheaven.shop^
-+ ||brinkmann-mode.de^
-+ ||brisk-flare.com^
-+ ||bz110bs.kyr1vomen.in.net^
-+ ||c3da-glow.pax4moren.in.net^
-+ ||carago.blog^
-+ ||cargozent.com^
-+ ||cedthe.qim8vorel.in.net^
-+ ||cfr-gov.life^
-+ ||charj7.myshopify.com^
-+ ||cin3m2-frame.vex7lurin.in.net^
-+ ||cine2-path.nol7sirex.in.net^
-+ ||cj06y9v4xab.com^
-+ ||clubeboss.de^
-+ ||coinflowexx.com^
-+ ||com-awjj.top^
-+ ||com-awzx.top^
-+ ||com-bincc.top^
-+ ||com-ddee.top^
-+ ||com-deka.top^
-+ ||com-dekb.top^
-+ ||com-dekd.top^
-+ ||com-dekf.top^
-+ ||com-deko.top^
-+ ||com-fofg.top^
-+ ||com-fyop.top^
-+ ||com-logg.top^
-+ ||com-lojj.top^
-+ ||com-lokk.top^
-+ ||com-lolo.top^
-+ ||com-qqas.top^
-+ ||com-qqbg.top^
-+ ||com-qqcd.top^
-+ ||com-qqvf.top^
-+ ||com-qqzx.top^
-+ ||com-sann.top^
-+ ||containerbox-gmbh.de^
-+ ||containergierichgmbh.de^
-+ ||cort4-node.kyr1vomen.in.net^
-+ ||cosanne-baumarkt.com^
-+ ||cour1e-core.kyr1vomen.in.net^
-+ ||cryptowallet-web.vip^
-+ ||cryzor.com^
-+ ||csschwindt.de^
-+ ||culqxa.nol7sirex.in.net^
-+ ||cultu3-array.rax2liven.in.net^
-+ ||cvn-gov.life^
-+ ||czx-gov.life^
-+ ||dailyinfodeska.pro^
-+ ||daniro.click^
-+ ||dark-berg-1.zexis-host.in.net^
-+ ||dark-land-8b.mivis-net.in.net^
-+ ||dark-wald-3.sylor-plus.in.net^
-+ ||ddl8.data.hu^
-+ ||devtourandtrevels.in.net^
-+ ||dfwf.io^
-+ ||djsnomibo.gay^
-+ ||dostaawa-do-skleppu.pl^
-+ ||dreamy-current.com^
-+ ||edelstil.shop^
-+ ||edwinadmin.com^
-+ ||efg-gov-sxc.capital^
-+ ||eggman8eisha.in.net^
-+ ||elbtal-kids.de^
-+ ||elegant-tide.com^
-+ ||elwenkoffer.de^
-+ ||elwenrimowa.de^
-+ ||elyvanedepot.com^
-+ ||emmakeller.de^
-+ ||energy-premium.de^
-+ ||erix9.myshopify.com^
-+ ||ethbot.trade^
-+ ||exhumat8urgle.in.net^
-+ ||exm-gov.life^
-+ ||ezyunbs.kyr1vomen.in.net^
-+ ||fast-7.mivon-data.in.net^
-+ ||fast-fire-9.raxen-serv.in.net^
-+ ||fhgcivkk.sydo9marel.in.net^
-+ ||fillamoda.com^
-+ ||finger.linked-on.com^
-+ ||firstcanadianpharm.com^
-+ ||fl-gov.one^
-+ ||gardensvergen30.myshopify.com^
-+ ||gardensvergen36.myshopify.com^
-+ ||gelonaviku.com^
-+ ||gerlinelshop.com^
-+ ||get-omnihear.com^
-+ ||gh.catmak.name^
-+ ||gh.llkk.cc^
-+ ||ghfile.geekertao.top^
-+ ||ghn6n53sa.top^
-+ ||ghproxy.cxkpro.top^
-+ ||github.dpik.top^
-+ ||github.tbedu.top^
-+ ||globalreporthubiq.info^
-+ ||gold-land-4m.raxen-serv.in.net^
-+ ||gold-star-2s.qivor-web.in.net^
-+ ||gov-a.fyi^
-+ ||gov-aba.one^
-+ ||gov-acxb.com^
-+ ||gov-afeh.biz^
-+ ||gov-aid.forum^
-+ ||gov-aotg.info^
-+ ||gov-avag.makeup^
-+ ||gov-aveb.biz^
-+ ||gov-avrh.makeup^
-+ ||gov-awbt.com^
-+ ||gov-awg.one^
-+ ||gov-awgr.makeup^
-+ ||gov-awrb.makeup^
-+ ||gov-axve.org^
-+ ||gov-b.fyi^
-+ ||gov-bbg.fit^
-+ ||gov-bbnc.biz^
-+ ||gov-beht.makeup^
-+ ||gov-bgt.fit^
-+ ||gov-bhea.makeup^
-+ ||gov-bhg.fit^
-+ ||gov-bkkli.top^
-+ ||gov-bkkly.top^
-+ ||gov-bnnke.top^
-+ ||gov-bnnkr.top^
-+ ||gov-bnnkt.top^
-+ ||gov-brsj.makeup^
-+ ||gov-bssle.top^
-+ ||gov-bsslq.top^
-+ ||gov-bsslw.top^
-+ ||gov-btjy.biz^
-+ ||gov-bvx.one^
-+ ||gov-bwht.biz^
-+ ||gov-bya.one^
-+ ||gov-c.fyi^
-+ ||gov-ca.one^
-+ ||gov-cab.fyi^
-+ ||gov-car.forum^
-+ ||gov-cbbka.top^
-+ ||gov-cbbke.top^
-+ ||gov-cbbkp.top^
-+ ||gov-cbbkq.top^
-+ ||gov-cbbkr.top^
-+ ||gov-cbbkt.top^
-+ ||gov-cbbku.top^
-+ ||gov-cbbkw.top^
-+ ||gov-cbbky.top^
-+ ||gov-ccf.fit^
-+ ||gov-cfd.fit^
-+ ||gov-cip.top^
-+ ||gov-cop.forum^
-+ ||gov-cxxle.top^
-+ ||gov-cxxlt.top^
-+ ||gov-czb.top^
-+ ||gov-czc.top^
-+ ||gov-czl.top^
-+ ||gov-czm.top^
-+ ||gov-czn.top^
-+ ||gov-czv.top^
-+ ||gov-d.fyi^
-+ ||gov-dbea.dev^
-+ ||gov-dci.org^
-+ ||gov-dcr.org^
-+ ||gov-dcu.org^
-+ ||gov-dcx.fit^
-+ ||gov-dde.fit^
-+ ||gov-ddf.fit^
-+ ||gov-ddq.fit^
-+ ||gov-ddt.fit^
-+ ||gov-drv.one^
-+ ||gov-drw.one^
-+ ||gov-dry.forum^
-+ ||gov-dsh.dev^
-+ ||gov-e.fyi^
-+ ||gov-edc.fit^
-+ ||gov-edx.fit^
-+ ||gov-ees.fit^
-+ ||gov-eqa.fit^
-+ ||gov-eqd.fit^
-+ ||gov-eqe.fit^
-+ ||gov-eqf.fit^
-+ ||gov-eqg.fit^
-+ ||gov-eqh.fit^
-+ ||gov-eqi.fit^
-+ ||gov-eqo.fit^
-+ ||gov-eqr.fit^
-+ ||gov-eqs.fit^
-+ ||gov-eqt.fit^
-+ ||gov-equ.fit^
-+ ||gov-eqy.fit^
-+ ||gov-exit.forum^
-+ ||gov-ffv.fit^
-+ ||gov-ffy.fit^
-+ ||gov-fidad.cc^
-+ ||gov-fidas.cc^
-+ ||gov-fiddn.cc^
-+ ||gov-fiddu.cc^
-+ ||gov-fidft.cc^
-+ ||gov-fidgv.cc^
-+ ||gov-fidoc.cc^
-+ ||gov-fidrm.cc^
-+ ||gov-fl.one^
-+ ||gov-flash.forum^
-+ ||gov-fog.forum^
-+ ||gov-fttq.one^
-+ ||gov-gas.forum^
-+ ||gov-gas.fyi^
-+ ||gov-gbh.fit^
-+ ||gov-gfi.fit^
-+ ||gov-ggy.fit^
-+ ||gov-gk.cc^
-+ ||gov-gkkme.top^
-+ ||gov-gkkmq.top^
-+ ||gov-gkkmr.top^
-+ ||gov-gkkmt.top^
-+ ||gov-gkkmw.top^
-+ ||gov-hja.help^
-+ ||gov-hjb.help^
-+ ||gov-hjc.help^
-+ ||gov-hjd.help^
-+ ||gov-hjd.life^
-+ ||gov-hje.help^
-+ ||gov-hjf.help^
-+ ||gov-hjg.help^
-+ ||gov-hjh.help^
-+ ||gov-hji.help^
-+ ||gov-hjk.help^
-+ ||gov-hjl.help^
-+ ||gov-hjm.help^
-+ ||gov-hjn.help^
-+ ||gov-hjo.help^
-+ ||gov-hjp.help^
-+ ||gov-hjq.help^
-+ ||gov-hjr.help^
-+ ||gov-hjs.help^
-+ ||gov-hjs.life^
-+ ||gov-hjt.help^
-+ ||gov-hju.help^
-+ ||gov-hjv.help^
-+ ||gov-hjw.help^
-+ ||gov-hjx.help^
-+ ||gov-hjy.help^
-+ ||gov-hjz.help^
-+ ||gov-hna.click^
-+ ||gov-hnb.fit^
-+ ||gov-hnd.click^
-+ ||gov-hne.click^
-+ ||gov-hnf.click^
-+ ||gov-hni.click^
-+ ||gov-hno.click^
-+ ||gov-hnp.click^
-+ ||gov-hnq.click^
-+ ||gov-hnr.click^
-+ ||gov-hns.click^
-+ ||gov-hnt.click^
-+ ||gov-hnu.click^
-+ ||gov-hnw.click^
-+ ||gov-hny.click^
-+ ||gov-hsc.top^
-+ ||gov-hsq.top^
-+ ||gov-hsr.top^
-+ ||gov-hst.top^
-+ ||gov-hsu.top^
-+ ||gov-hsw.top^
-+ ||gov-hsy.top^
-+ ||gov-hsz.top^
-+ ||gov-htf.one^
-+ ||gov-huj.fit^
-+ ||gov-hza.help^
-+ ||gov-hzd.help^
-+ ||gov-hze.help^
-+ ||gov-hzf.help^
-+ ||gov-hzg.help^
-+ ||gov-hzi.help^
-+ ||gov-hzo.help^
-+ ||gov-hzp.help^
-+ ||gov-hzq.help^
-+ ||gov-hzr.help^
-+ ||gov-hzs.help^
-+ ||gov-hzt.help^
-+ ||gov-hzu.help^
-+ ||gov-hzw.help^
-+ ||gov-hzy.help^
-+ ||gov-iij.fit^
-+ ||gov-iik.fit^
-+ ||gov-ikj.life^
-+ ||gov-ikl.fit^
-+ ||gov-iko.fit^
-+ ||gov-ikw.life^
-+ ||gov-iocs.life^
-+ ||gov-iocs.one^
-+ ||gov-iolc.one^
-+ ||gov-iolw.one^
-+ ||gov-iolz.life^
-+ ||gov-iolz.one^
-+ ||gov-iopa.one^
-+ ||gov-iord.one^
-+ ||gov-iorg.one^
-+ ||gov-ioxs.one^
-+ ||gov-jdkzf.top^
-+ ||gov-jdkzj.top^
-+ ||gov-jdkzr.top^
-+ ||gov-jdkzs.top^
-+ ||gov-jdkzv.top^
-+ ||gov-jdkzy.top^
-+ ||gov-jlxs.life^
-+ ||gov-kdjsc.top^
-+ ||gov-kdjse.top^
-+ ||gov-kdjwh.top^
-+ ||gov-kdjwm.top^
-+ ||gov-kkm.fit^
-+ ||gov-kmmle.top^
-+ ||gov-kmmlq.top^
-+ ||gov-kmmlr.top^
-+ ||gov-kmmlt.top^
-+ ||gov-kmmlw.top^
-+ ||gov-laa.help^
-+ ||gov-lab.help^
-+ ||gov-lac.help^
-+ ||gov-lae.help^
-+ ||gov-laf.help^
-+ ||gov-lag.help^
-+ ||gov-lah.help^
-+ ||gov-lai.help^
-+ ||gov-laj.help^
-+ ||gov-lak.help^
-+ ||gov-lal.help^
-+ ||gov-lam.help^
-+ ||gov-lan.help^
-+ ||gov-lao.help^
-+ ||gov-lap.help^
-+ ||gov-laq.help^
-+ ||gov-lar.help^
-+ ||gov-las.help^
-+ ||gov-lat.help^
-+ ||gov-lau.help^
-+ ||gov-lav.help^
-+ ||gov-law.forum^
-+ ||gov-law.help^
-+ ||gov-lax.help^
-+ ||gov-laz.help^
-+ ||gov-llm.fit^
-+ ||gov-lsa.help^
-+ ||gov-lsd.help^
-+ ||gov-lse.help^
-+ ||gov-lsf.help^
-+ ||gov-lsg.help^
-+ ||gov-lsi.help^
-+ ||gov-lso.help^
-+ ||gov-lsp.help^
-+ ||gov-lsq.help^
-+ ||gov-lsr.help^
-+ ||gov-lst.help^
-+ ||gov-lsu.help^
-+ ||gov-lsw.help^
-+ ||gov-lsy.help^
-+ ||gov-mak.com^
-+ ||gov-mba.click^
-+ ||gov-mbc.click^
-+ ||gov-mbc.org^
-+ ||gov-mbd.click^
-+ ||gov-mbd.org^
-+ ||gov-mbe.click^
-+ ||gov-mbe.org^
-+ ||gov-mbf.click^
-+ ||gov-mbg.click^
-+ ||gov-mbj.click^
-+ ||gov-mbk.click^
-+ ||gov-mbl.click^
-+ ||gov-mbn.click^
-+ ||gov-mbo.click^
-+ ||gov-mbp.click^
-+ ||gov-mbq.click^
-+ ||gov-mbq.org^
-+ ||gov-mbr.click^
-+ ||gov-mbs.click^
-+ ||gov-mbt.click^
-+ ||gov-mbu.click^
-+ ||gov-mbv.click^
-+ ||gov-mbw.click^
-+ ||gov-mbx.click^
-+ ||gov-mby.click^
-+ ||gov-mbz.click^
-+ ||gov-mcg.org^
-+ ||gov-mch.org^
-+ ||gov-mck.org^
-+ ||gov-mcq.org^
-+ ||gov-mcr.org^
-+ ||gov-mct.org^
-+ ||gov-mcu.org^
-+ ||gov-mcw.org^
-+ ||gov-mcx.org^
-+ ||gov-mcy.org^
-+ ||gov-mddse.top^
-+ ||gov-mddsq.top^
-+ ||gov-mddsr.top^
-+ ||gov-mddst.top^
-+ ||gov-mddsw.top^
-+ ||gov-mddsy.top^
-+ ||gov-mdocf.com^
-+ ||gov-mdv.org^
-+ ||gov-mgghe.top^
-+ ||gov-mgghq.top^
-+ ||gov-mgghr.top^
-+ ||gov-mgght.top^
-+ ||gov-mgghw.top^
-+ ||gov-mjjna.top^
-+ ||gov-mjjnd.top^
-+ ||gov-mjjnp.top^
-+ ||gov-mjjnr.top^
-+ ||gov-mjjns.top^
-+ ||gov-mjjnt.top^
-+ ||gov-mjjnu.top^
-+ ||gov-mju.fit^
-+ ||gov-mkj.fit^
-+ ||gov-mkkfe.top^
-+ ||gov-mkkfh.top^
-+ ||gov-mkkfo.top^
-+ ||gov-mkkfp.top^
-+ ||gov-mkkfq.top^
-+ ||gov-mkkfy.top^
-+ ||gov-mmj.fit^
-+ ||gov-mna.click^
-+ ||gov-mnb.click^
-+ ||gov-mnc.click^
-+ ||gov-mnc.org^
-+ ||gov-mnd.click^
-+ ||gov-mnd.org^
-+ ||gov-mne.click^
-+ ||gov-mnf.click^
-+ ||gov-mng.click^
-+ ||gov-mng.org^
-+ ||gov-mnh.click^
-+ ||gov-mnh.org^
-+ ||gov-mni.click^
-+ ||gov-mnk.click^
-+ ||gov-mnl.click^
-+ ||gov-mno.click^
-+ ||gov-mnp.click^
-+ ||gov-mnp.com^
-+ ||gov-mnp.org^
-+ ||gov-mnq.click^
-+ ||gov-mnr.click^
-+ ||gov-mns.click^
-+ ||gov-mnt.click^
-+ ||gov-mnu.click^
-+ ||gov-mnusnei.com^
-+ ||gov-mnv.click^
-+ ||gov-mnv.org^
-+ ||gov-mnw.click^
-+ ||gov-mny.click^
-+ ||gov-mnz.click^
-+ ||gov-mol.org^
-+ ||gov-mud.org^
-+ ||gov-muf.org^
-+ ||gov-mug.org^
-+ ||gov-muh.org^
-+ ||gov-mva.click^
-+ ||gov-mvb.com^
-+ ||gov-mvb.org^
-+ ||gov-mvd.click^
-+ ||gov-mvd.org^
-+ ||gov-mve.click^
-+ ||gov-mve.org^
-+ ||gov-mvf.click^
-+ ||gov-mvh.click^
-+ ||gov-mvj.click^
-+ ||gov-mvk.click^
-+ ||gov-mvp.click^
-+ ||gov-mvq.click^
-+ ||gov-mvr.click^
-+ ||gov-mvr.org^
-+ ||gov-mvs.click^
-+ ||gov-mvt.org^
-+ ||gov-mvu.click^
-+ ||gov-mvw.click^
-+ ||gov-mvw.org^
-+ ||gov-mvy.click^
-+ ||gov-mvy.org^
-+ ||gov-mxd.org^
-+ ||gov-nbe.link^
-+ ||gov-nhy.fit^
-+ ||gov-nnh.fit^
-+ ||gov-nnj.fit^
-+ ||gov-nymu.biz^
-+ ||gov-ona.click^
-+ ||gov-onb.click^
-+ ||gov-onc.click^
-+ ||gov-ond.click^
-+ ||gov-one.click^
-+ ||gov-onf.click^
-+ ||gov-ong.click^
-+ ||gov-onh.click^
-+ ||gov-oni.click^
-+ ||gov-onj.click^
-+ ||gov-onk.click^
-+ ||gov-onl.click^
-+ ||gov-onm.click^
-+ ||gov-onn.click^
-+ ||gov-ono.click^
-+ ||gov-onp.click^
-+ ||gov-onq.click^
-+ ||gov-onr.click^
-+ ||gov-ons.click^
-+ ||gov-ont.click^
-+ ||gov-onu.click^
-+ ||gov-onv.click^
-+ ||gov-onw.click^
-+ ||gov-onx.click^
-+ ||gov-ony.click^
-+ ||gov-onz.click^
-+ ||gov-ook.fit^
-+ ||gov-ool.fit^
-+ ||gov-opl.fit^
-+ ||gov-pass.fyi^
-+ ||gov-path.fyi^
-+ ||gov-paturnksc.com^
-+ ||gov-pave.rest^
-+ ||gov-pca.click^
-+ ||gov-pcd.click^
-+ ||gov-pce.click^
-+ ||gov-pcf.click^
-+ ||gov-pci.click^
-+ ||gov-pco.click^
-+ ||gov-pcp.click^
-+ ||gov-pcq.click^
-+ ||gov-pcr.click^
-+ ||gov-pcs.click^
-+ ||gov-pct.click^
-+ ||gov-pcu.click^
-+ ||gov-pcw.click^
-+ ||gov-pcy.click^
-+ ||gov-pjlw.life^
-+ ||gov-pjrd.life^
-+ ||gov-poa.click^
-+ ||gov-pob.click^
-+ ||gov-poc.click^
-+ ||gov-pod.click^
-+ ||gov-poe.click^
-+ ||gov-pof.click^
-+ ||gov-pog.click^
-+ ||gov-poh.click^
-+ ||gov-poi.click^
-+ ||gov-poj.click^
-+ ||gov-pok.click^
-+ ||gov-pol.click^
-+ ||gov-pom.click^
-+ ||gov-pon.click^
-+ ||gov-poo.click^
-+ ||gov-pop.click^
-+ ||gov-poq.click^
-+ ||gov-pos.click^
-+ ||gov-pot.click^
-+ ||gov-pou.click^
-+ ||gov-pov.click^
-+ ||gov-pow.click^
-+ ||gov-pox.click^
-+ ||gov-poy.click^
-+ ||gov-poz.click^
-+ ||gov-ppl.fit^
-+ ||gov-pppl.fit^
-+ ||gov-pssmf.top^
-+ ||gov-pssmg.top^
-+ ||gov-pssmj.top^
-+ ||gov-pssmw.top^
-+ ||gov-pxa.click^
-+ ||gov-pxb.click^
-+ ||gov-pxc.click^
-+ ||gov-pxd.click^
-+ ||gov-pxe.click^
-+ ||gov-pxf.click^
-+ ||gov-pxg.click^
-+ ||gov-pxh.click^
-+ ||gov-pxi.click^
-+ ||gov-pxj.click^
-+ ||gov-pxk.click^
-+ ||gov-pxl.click^
-+ ||gov-pxm.click^
-+ ||gov-pxn.click^
-+ ||gov-pxo.click^
-+ ||gov-pxp.click^
-+ ||gov-pxq.click^
-+ ||gov-pxr.click^
-+ ||gov-pxs.click^
-+ ||gov-pxt.click^
-+ ||gov-pxu.click^
-+ ||gov-pxv.click^
-+ ||gov-pxw.click^
-+ ||gov-pxx.click^
-+ ||gov-pxy.click^
-+ ||gov-pxz.click^
-+ ||gov-pza.click^
-+ ||gov-pzb.click^
-+ ||gov-pzc.click^
-+ ||gov-pzd.click^
-+ ||gov-pze.click^
-+ ||gov-pzf.click^
-+ ||gov-pzg.click^
-+ ||gov-pzh.click^
-+ ||gov-pzi.click^
-+ ||gov-pzj.click^
-+ ||gov-pzk.click^
-+ ||gov-pzl.click^
-+ ||gov-pzm.click^
-+ ||gov-pzn.click^
-+ ||gov-pzo.click^
-+ ||gov-pzp.click^
-+ ||gov-pzq.click^
-+ ||gov-pzr.click^
-+ ||gov-pzs.click^
-+ ||gov-pzt.click^
-+ ||gov-pzu.click^
-+ ||gov-pzv.click^
-+ ||gov-pzw.click^
-+ ||gov-pzx.click^
-+ ||gov-pzy.click^
-+ ||gov-pzz.click^
-+ ||gov-qaw.fit^
-+ ||gov-qaz.fit^
-+ ||gov-qqe.fit^
-+ ||gov-qqi.fit^
-+ ||gov-qqr.fit^
-+ ||gov-qqt.fit^
-+ ||gov-qqu.fit^
-+ ||gov-qqw.fit^
-+ ||gov-qqy.fit^
-+ ||gov-qsz.fit^
-+ ||gov-qzd.fit^
-+ ||gov-qzf.fit^
-+ ||gov-qzh.fit^
-+ ||gov-qzj.fit^
-+ ||gov-qzl.fit^
-+ ||gov-qzo.fit^
-+ ||gov-qzu.fit^
-+ ||gov-qzw.fit^
-+ ||gov-qzy.fit^
-+ ||gov-ramp.forum^
-+ ||gov-ramp.fyi^
-+ ||gov-rbv.one^
-+ ||gov-rfb.art^
-+ ||gov-rfgt.one^
-+ ||gov-rfv.fit^
-+ ||gov-rhfe.com^
-+ ||gov-rim.forum^
-+ ||gov-rnv.org^
-+ ||gov-road.forum^
-+ ||gov-rtyu.one^
-+ ||gov-rush.fyi^
-+ ||gov-rvvca.top^
-+ ||gov-rvvcd.top^
-+ ||gov-rvvce.top^
-+ ||gov-rvvcg.top^
-+ ||gov-rvvco.top^
-+ ||gov-rvvcp.top^
-+ ||gov-rvvcq.top^
-+ ||gov-rvvcs.top^
-+ ||gov-rvvct.top^
-+ ||gov-rvvcu.top^
-+ ||gov-sbfia.homes^
-+ ||gov-sbfib.homes^
-+ ||gov-sbfic.homes^
-+ ||gov-sbfid.homes^
-+ ||gov-sbfif.homes^
-+ ||gov-sbfig.homes^
-+ ||gov-sbfik.homes^
-+ ||gov-sbfim.homes^
-+ ||gov-sbfin.homes^
-+ ||gov-sbfiq.homes^
-+ ||gov-sbfis.homes^
-+ ||gov-sbfiv.homes^
-+ ||gov-sbfix.homes^
-+ ||gov-sbfiy.homes^
-+ ||gov-sbfiz.homes^
-+ ||gov-sdas.fit^
-+ ||gov-sdfg.fit^
-+ ||gov-sdgh.fit^
-+ ||gov-sdip.fit^
-+ ||gov-sdjk.fit^
-+ ||gov-sdop.fit^
-+ ||gov-sdqw.fit^
-+ ||gov-sdr.click^
-+ ||gov-sdrt.fit^
-+ ||gov-sdty.fit^
-+ ||gov-sdui.fit^
-+ ||gov-sdwe.fit^
-+ ||gov-sdyu.fit^
-+ ||gov-seb.org^
-+ ||gov-sec.org^
-+ ||gov-sen.org^
-+ ||gov-sev.org^
-+ ||gov-sex.org^
-+ ||gov-sez.org^
-+ ||gov-sgb.org^
-+ ||gov-sgc.org^
-+ ||gov-sgx.org^
-+ ||gov-sgz.org^
-+ ||gov-sha.org^
-+ ||gov-shb.org^
-+ ||gov-shc.org^
-+ ||gov-shg.org^
-+ ||gov-shj.org^
-+ ||gov-shk.org^
-+ ||gov-shm.org^
-+ ||gov-shn.org^
-+ ||gov-shv.org^
-+ ||gov-shx.org^
-+ ||gov-shz.org^
-+ ||gov-sia.org^
-+ ||gov-sid.org^
-+ ||gov-sie.org^
-+ ||gov-sif.org^
-+ ||gov-sih.org^
-+ ||gov-sij.org^
-+ ||gov-sik.org^
-+ ||gov-sil.org^
-+ ||gov-sio.org^
-+ ||gov-sip.org^
-+ ||gov-siq.org^
-+ ||gov-sir.org^
-+ ||gov-sis.org^
-+ ||gov-siu.org^
-+ ||gov-siw.org^
-+ ||gov-siy.org^
-+ ||gov-sja.org^
-+ ||gov-sjb.org^
-+ ||gov-sjc.org^
-+ ||gov-sjd.org^
-+ ||gov-sjf.org^
-+ ||gov-sjg.org^
-+ ||gov-sjm.org^
-+ ||gov-sjn.org^
-+ ||gov-sjs.org^
-+ ||gov-sjv.org^
-+ ||gov-sjx.org^
-+ ||gov-sjz.org^
-+ ||gov-ska.click^
-+ ||gov-skb.org^
-+ ||gov-skc.org^
-+ ||gov-skf.org^
-+ ||gov-skg.org^
-+ ||gov-skn.org^
-+ ||gov-sku.click^
-+ ||gov-skv.org^
-+ ||gov-skx.org^
-+ ||gov-skz.click^
-+ ||gov-skz.org^
-+ ||gov-spa.org^
-+ ||gov-spb.org^
-+ ||gov-spc.org^
-+ ||gov-spd.org^
-+ ||gov-spf.org^
-+ ||gov-spg.org^
-+ ||gov-sph.org^
-+ ||gov-spj.org^
-+ ||gov-spk.org^
-+ ||gov-spl.org^
-+ ||gov-spm.org^
-+ ||gov-spn.org^
-+ ||gov-spp.vip^
-+ ||gov-spq.org^
-+ ||gov-sps.org^
-+ ||gov-spv.org^
-+ ||gov-spw.org^
-+ ||gov-spx.org^
-+ ||gov-spz.org^
-+ ||gov-sqb.org^
-+ ||gov-sqc.org^
-+ ||gov-sqv.org^
-+ ||gov-sqx.org^
-+ ||gov-sra.org^
-+ ||gov-srb.org^
-+ ||gov-src.org^
-+ ||gov-srd.org^
-+ ||gov-srf.org^
-+ ||gov-srg.org^
-+ ||gov-srh.org^
-+ ||gov-srj.org^
-+ ||gov-srk.org^
-+ ||gov-srl.org^
-+ ||gov-srm.org^
-+ ||gov-srn.org^
-+ ||gov-srq.org^
-+ ||gov-srs.org^
-+ ||gov-srv.org^
-+ ||gov-srw.org^
-+ ||gov-srx.org^
-+ ||gov-srz.org^
-+ ||gov-sse.fit^
-+ ||gov-sta.org^
-+ ||gov-stb.org^
-+ ||gov-stc.org^
-+ ||gov-std.org^
-+ ||gov-stf.org^
-+ ||gov-stg.org^
-+ ||gov-sth.org^
-+ ||gov-stj.org^
-+ ||gov-stk.org^
-+ ||gov-stl.org^
-+ ||gov-stm.org^
-+ ||gov-stn.org^
-+ ||gov-stq.org^
-+ ||gov-sts.org^
-+ ||gov-stv.org^
-+ ||gov-stw.org^
-+ ||gov-stx.org^
-+ ||gov-stz.org^
-+ ||gov-sua.org^
-+ ||gov-sub.org^
-+ ||gov-suc.org^
-+ ||gov-sud.org^
-+ ||gov-sue.org^
-+ ||gov-suf.org^
-+ ||gov-sug.org^
-+ ||gov-suh.org^
-+ ||gov-suj.org^
-+ ||gov-suk.org^
-+ ||gov-sul.org^
-+ ||gov-sum.org^
-+ ||gov-sun.forum^
-+ ||gov-sun.org^
-+ ||gov-suq.org^
-+ ||gov-sur.org^
-+ ||gov-sus.org^
-+ ||gov-suv.org^
-+ ||gov-suw.org^
-+ ||gov-sux.org^
-+ ||gov-suz.org^
-+ ||gov-swa.org^
-+ ||gov-swb.org^
-+ ||gov-swc.org^
-+ ||gov-swd.org^
-+ ||gov-swf.org^
-+ ||gov-swg.org^
-+ ||gov-swm.org^
-+ ||gov-swn.org^
-+ ||gov-sws.org^
-+ ||gov-swv.org^
-+ ||gov-swx.org^
-+ ||gov-swz.org^
-+ ||gov-sxa.org^
-+ ||gov-sxb.org^
-+ ||gov-sxc.org^
-+ ||gov-sxd.org^
-+ ||gov-sxe.org^
-+ ||gov-sxf.org^
-+ ||gov-sxg.org^
-+ ||gov-sxh.org^
-+ ||gov-sxj.org^
-+ ||gov-sxk.org^
-+ ||gov-sxl.one^
-+ ||gov-sxl.xyz^
-+ ||gov-sxm.org^
-+ ||gov-sxn.org^
-+ ||gov-sxq.blog^
-+ ||gov-sxq.one^
-+ ||gov-sxq.org^
-+ ||gov-sxq.xyz^
-+ ||gov-sxr.org^
-+ ||gov-sxs.org^
-+ ||gov-sxt.org^
-+ ||gov-sxv.org^
-+ ||gov-sxw.org^
-+ ||gov-sxx.org^
-+ ||gov-sxz.org^
-+ ||gov-sya.org^
-+ ||gov-syb.org^
-+ ||gov-syc.org^
-+ ||gov-syd.org^
-+ ||gov-syf.org^
-+ ||gov-syg.org^
-+ ||gov-syh.org^
-+ ||gov-syj.org^
-+ ||gov-syk.org^
-+ ||gov-syl.org^
-+ ||gov-sym.org^
-+ ||gov-syn.org^
-+ ||gov-syq.org^
-+ ||gov-syv.org^
-+ ||gov-syw.org^
-+ ||gov-syx.org^
-+ ||gov-syz.org^
-+ ||gov-szb.org^
-+ ||gov-szc.org^
-+ ||gov-szd.org^
-+ ||gov-szf.org^
-+ ||gov-szg.org^
-+ ||gov-szh.org^
-+ ||gov-szj.org^
-+ ||gov-szk.org^
-+ ||gov-szl.org^
-+ ||gov-szn.org^
-+ ||gov-szq.org^
-+ ||gov-szs.org^
-+ ||gov-szv.org^
-+ ||gov-szw.org^
-+ ||gov-tar.forum^
-+ ||gov-te.one^
-+ ||gov-tff.org^
-+ ||gov-tgb.fit^
-+ ||gov-tow.fyi^
-+ ||gov-tr.one^
-+ ||gov-tra.one^
-+ ||gov-trc.one^
-+ ||gov-trd.one^
-+ ||gov-tre.one^
-+ ||gov-trf.one^
-+ ||gov-trg.one^
-+ ||gov-tru.one^
-+ ||gov-trz.one^
-+ ||gov-ttf.fit^
-+ ||gov-turn.fyi^
-+ ||gov-uiok.one^
-+ ||gov-ujm.fit^
-+ ||gov-uny.art^
-+ ||gov-uuh.fit^
-+ ||gov-vdnb.biz^
-+ ||gov-vfio.fit^
-+ ||gov-vfty.fit^
-+ ||gov-vfwe.fit^
-+ ||gov-vhtv.makeup^
-+ ||gov-vllde.top^
-+ ||gov-vlldq.top^
-+ ||gov-vlldr.top^
-+ ||gov-vlldt.top^
-+ ||gov-vlldw.top^
-+ ||gov-vrht.com^
-+ ||gov-vvg.fit^
-+ ||gov-wcc.fyi^
-+ ||gov-wce.fyi^
-+ ||gov-wet.forum^
-+ ||gov-wisndt.com^
-+ ||gov-woo.fyi^
-+ ||gov-wot.fyi^
-+ ||gov-wsx.fit^
-+ ||gov-wvn.one^
-+ ||gov-wvrh.makeup^
-+ ||gov-wwa.fit^
-+ ||gov-xsd.click^
-+ ||gov-yhb.fit^
-+ ||gov-yhn.fit^
-+ ||gov-yuij.one^
-+ ||gov-yyg.fit^
-+ ||gov-yyh.fit^
-+ ||gov-zca.info^
-+ ||gov-zcd.info^
-+ ||gov-zce.click^
-+ ||gov-zce.info^
-+ ||gov-zcf.info^
-+ ||gov-zcg.info^
-+ ||gov-zch.info^
-+ ||gov-zci.info^
-+ ||gov-zcj.info^
-+ ||gov-zck.info^
-+ ||gov-zcl.info^
-+ ||gov-zco.info^
-+ ||gov-zcp.info^
-+ ||gov-zcq.info^
-+ ||gov-zcr.info^
-+ ||gov-zcs.info^
-+ ||gov-zct.info^
-+ ||gov-zcu.info^
-+ ||gov-zcv.info^
-+ ||gov-zcw.info^
-+ ||gov-zcy.info^
-+ ||gov-zka.vip^
-+ ||gov-zkd.vip^
-+ ||gov-zkf.vip^
-+ ||gov-zkg.vip^
-+ ||gov-zkh.vip^
-+ ||gov-zkkma.top^
-+ ||gov-zkkmd.top^
-+ ||gov-zkkme.top^
-+ ||gov-zkkmg.top^
-+ ||gov-zkkmo.top^
-+ ||gov-zkkmq.top^
-+ ||gov-zkkmr.top^
-+ ||gov-zkkmt.top^
-+ ||gov-zkkmu.top^
-+ ||gov-zkkmw.top^
-+ ||gov-zkkmy.top^
-+ ||gov-zks.vip^
-+ ||gov-zsqe.fit^
-+ ||gov-zsqr.fit^
-+ ||gov-zsqw.fit^
-+ ||gov-zxc.click^
-+ ||gov-zxe.homes^
-+ ||gov-zxe.top^
-+ ||gov-zxi.info^
-+ ||gov-zxo.info^
-+ ||gov-zxp.info^
-+ ||gov-zxq.top^
-+ ||gov-zxqa.fit^
-+ ||gov-zxqd.fit^
-+ ||gov-zxqf.fit^
-+ ||gov-zxqi.fit^
-+ ||gov-zxql.fit^
-+ ||gov-zxqm.fit^
-+ ||gov-zxqn.fit^
-+ ||gov-zxqo.fit^
-+ ||gov-zxqp.fit^
-+ ||gov-zxqs.fit^
-+ ||gov-zxqt.fit^
-+ ||gov-zxqu.fit^
-+ ||gov-zxqv.fit^
-+ ||gov-zxqx.fit^
-+ ||gov-zxqy.fit^
-+ ||gov-zxqz.fit^
-+ ||gov-zxr.one^
-+ ||gov-zxr.top^
-+ ||gov-zxt.one^
-+ ||gov-zxt.top^
-+ ||gov-zxu.info^
-+ ||gov-zxw.homes^
-+ ||gov-zxwe.fit^
-+ ||gov-zxwq.fit^
-+ ||gov-zxwr.fit^
-+ ||gov-zxwt.fit^
-+ ||gov-zxwu.fit^
-+ ||gov-zxwy.fit^
-+ ||gov-zxxki.top^
-+ ||gov-zxxko.top^
-+ ||gov-zxxkp.top^
-+ ||gov-zxxku.top^
-+ ||gov-zxxky.top^
-+ ||gov-zxy.one^
-+ ||govcam.food^
-+ ||growthhubbusiness.xyz^
-+ ||gutmahroboter.myshopify.com^
-+ ||gwoksycx.shop^
-+ ||h4rbor-phase.rax2liven.in.net^
-+ ||halkbilgialani.com^
-+ ||handel57.de^
-+ ||haus-2x.sylor-plus.in.net^
-+ ||haus-6.mivon-data.in.net^
-+ ||haus-7v.zexis-host.in.net^
-+ ||headlinevoyage.com^
-+ ||hiddenbyt.vex7lurin.in.net^
-+ ||holz-berg-3.qivor-web.in.net^
-+ ||holz-berg-5.sylor-plus.in.net^
-+ ||hputcl37.pax4moren.in.net^
-+ ||htusgm8k.sydo9marel.in.net^
-+ ||ikl-gov-ikm.cafe^
-+ ||incub-teahouse.in.net^
-+ ||infocenterdaily24.com^
-+ ||infosube.com^
-+ ||instantnewsgridiq.com^
-+ ||ioszf.qim8vorel.in.net^
-+ ||iron-fire-6s.noven-hub.in.net^
-+ ||iron-land-9q.zexis-host.in.net^
-+ ||isebanke.com^
-+ ||istanbulportfoydanismanlik.com^
-+ ||iut-gov.life^
-+ ||iwokoty.site^
-+ ||ixxnfundibulum.life^
-+ ||jkl-gov-ygd.biz^
-+ ||judges-spire.in.net^
-+ ||justice-gov.one^
-+ ||kaercherde.shop^
-+ ||kalt-5.noven-hub.in.net^
-+ ||kalt-8.zexis-host.in.net^
-+ ||kaufdesch.myshoplaza.com^
-+ ||kel-fluxor.qim8vorel.in.net^
-+ ||kfc.i.illuminationes.com^
-+ ||khudrukmumb1es.in.net^
-+ ||kindredmeeting.com^
-+ ||kirschservices.de^
-+ ||kitchenfives.myshopify.com^
-+ ||kleinre.myshopify.com^
-+ ||kmanaliz.com^
-+ ||knyo.vex7lurin.in.net^
-+ ||lampr.party^
-+ ||lapoliterisfader.com^
-+ ||larc90.myshopify.com^
-+ ||legati-kanzlei.de^
-+ ||liveupdatehub365x.pro^
-+ ||lola58.myshopify.com^
-+ ||lumlithex.mer4talon.in.net^
-+ ||lumvaleum3.kyr1vomen.in.net^
-+ ||lunaxadv.myshopify.com^
-+ ||m35h1-loop.vex7lurin.in.net^
-+ ||manfred-schnell.shop^
-+ ||mercadolivreshop.shop^
-+ ||merpatikecil.xyz^
-+ ||meta-5umm.qim8vorel.in.net^
-+ ||mexce.site^
-+ ||mhsscfsrsa11.sbs^
-+ ||mhsscfsrsa12.sbs^
-+ ||mn.magazinmodern.de^
-+ ||moi-gov.life^
-+ ||n3zqarf.com^
-+ ||nji-gov-tgj.llc^
-+ ||noaanactorsenjambments.life^
-+ ||noi-gov.life^
-+ ||noir-2.raxen-serv.in.net^
-+ ||noir-6.qivor-web.in.net^
-+ ||nolimeo.fr^
-+ ||nomorefakenews.com^
-+ ||norcore2ix.tov6larek.in.net^
-+ ||norvexa.live^
-+ ||nubebdn.sokla3ren.in.net^
-+ ||nymexfc.com^
-+ ||oasis-reimburse.in.net^
-+ ||ol-xpaczka.zlotikhuetik24.cyou^
-+ ||open-1x.qivor-web.in.net^
-+ ||open-2p.mivis-net.in.net^
-+ ||open-3n.noven-hub.in.net^
-+ ||open-6.raxen-serv.in.net^
-+ ||openbaykar.info^
-+ ||pale-drizzle.com^
-+ ||pares-system.in.net^
-+ ||parfsdp.sydo9marel.in.net^
-+ ||particulier.passdigitale-co.com^
-+ ||particuliers.cledigital-web.com^
-+ ||petit-fire-5.mivis-net.in.net^
-+ ||petit-star-8z.sylor-plus.in.net^
-+ ||petit-zeit-4.qivor-web.in.net^
-+ ||pil0t1-mesh.nol7sirex.in.net^
-+ ||pk-visa.online^
-+ ||pl-dpdai.top^
-+ ||plannbronze.narmas.com^
-+ ||platform.exathomeswebuyarizona.com^
-+ ||plivnote.com^
-+ ||plregihiogorohonigi.com^
-+ ||plregihiogorohonigiri.com^
-+ ||plregihiogorohonigiribo.com^
-+ ||poly-morket.xyz^
-+ ||polycmarket.xyz^
-+ ||polymarket.casa^
-+ ||polymarketx.today^
-+ ||pql-gov.life^
-+ ||publshi.tov6larek.in.net^
-+ ||qncd.nol7sirex.in.net^
-+ ||qs12376.com^
-+ ||queuedirect.tov6larek.in.net^
-+ ||quor-meshis.vex7lurin.in.net^
-+ ||reportdaily365a.com^
-+ ||reprqqobatory.life^
-+ ||rew-gov.life^
-+ ||riotmm.com^
-+ ||rn3tric-grid.sokla3ren.in.net^
-+ ||rnmdvshuzbrusdds.store^
-+ ||roadrs.bar^
-+ ||rouge-4.noven-hub.in.net^
-+ ||rouge-5.zexis-host.in.net^
-+ ||rouge-6.mivis-net.in.net^
-+ ||routes.bar^
-+ ||rovlier.com^
-+ ||rpa.imoveisavendaemaraxa.com.br^
-+ ||rpa.vi-ler.dk^
-+ ||rydr.vex7lurin.in.net^
-+ ||salecraft.store^
-+ ||scansignatures.com^
-+ ||scbyourbestjob.com^
-+ ||sche9-track.mer4talon.in.net^
-+ ||sdw-gov.life^
-+ ||sellhub.sbs^
-+ ||ser.imoveisavendaemaraxa.com.br^
-+ ||ser.vi-ler.dk^
-+ ||sercresta4.rax2liven.in.net^
-+ ||sharemax.best^
-+ ||sharpbrief.world^
-+ ||shield-sile.sokla3ren.in.net^
-+ ||sigmatauethifarma.com^
-+ ||silent-flicker.com^
-+ ||skyhanni.cloud^
-+ ||slopee.bar^
-+ ||snet88.com^
-+ ||soft-berg-9.mivis-net.in.net^
-+ ||soft-land-1.noven-hub.in.net^
-+ ||soft-wald-2.zexis-host.in.net^
-+ ||soft-waves.com^
-+ ||stanleykepler.xyz^
-+ ||status.w6xiui.sbs^
-+ ||stream-baby1.top^
-+ ||stuckbinaztradhub.xyz^
-+ ||subtledust.mer4talon.in.net^
-+ ||syntarepo.qim8vorel.in.net^
-+ ||sys-update.online^
-+ ||szutm.com^
-+ ||t4erna.sbs^
-+ ||tag-gov.life^
-+ ||tal-lithix.tov6larek.in.net^
-+ ||teaword.club^
-+ ||tenzvct.com^
-+ ||tr-islemlerim.online^
-+ ||track.forcrownto.club^
-+ ||tradelio.gifts^
-+ ||turnss.blog^
-+ ||tystowing.com^
-+ ||unqloutlet.shop^
-+ ||urbanforge.vu^
-+ ||urhenwchmuckrosel.de^
-+ ||vbl60o.sydo9marel.in.net^
-+ ||vcx-gov.life^
-+ ||venora.click^
-+ ||vert-1.sylor-plus.in.net^
-+ ||vert-8.qivor-web.in.net^
-+ ||vitalpalette.mer4talon.in.net^
-+ ||vmbspptn.tov6larek.in.net^
-+ ||volkswagen-fahrzeuge.de^
-+ ||vorlith8on.sokla3ren.in.net^
-+ ||vortideum.rax2liven.in.net^
-+ ||wacoo.de^
-+ ||wai-gov.life^
-+ ||wakanda33.it.com^
-+ ||wald-baum-1.mivon-data.in.net^
-+ ||welttrikot.com^
-+ ||wilhelm-daume-gmbh.myshopify.com^
-+ ||worldofwineshop.de^
-+ ||www.nottiesbreakaways.co.za^
-+ ||wxn-gov.life^
-+ ||xasifop.site^
-+ ||xbkbest.shop^
-+ ||xka-gov.life^
-+ ||xoilaczzspz.tv^
-+ ||xrnxc.com^
-+ ||yhj-gov-tgv.biz^
-+ ||zaniro.shop^
-+ ||zeit-5.raxen-serv.in.net^
-+ ||zeit-berg-8.noven-hub.in.net^
-+ ||zeit-land-9.mivon-data.in.net^
-+ ||zyy-gov.life^
-+ ||zyy-gov.pics^
+! [OISD Blocklist Big] Removed: 64 | Moved: 15 | Added: 47
+- ||ad.distrigame.com^
+- ||ads.southbendtribune.com^
+- ||ads.sportsverige.com^
+- ||ads.sprotiv.org^
+- ||ads.squarecrop.net^
+- ||ads.starnews.com^
+- ||ads.start.no^
+- ||ads.stepstone.no^
+- ||ads.stockbanners.com^
+- ||ads.stratics.com^
+- ||ads.superwarehouse.com^
+- ||ads.svatbata.org^
+- ||ads.swirve.com^
+- ||ads.techeyenetwork.com^
+- ||ads.techguy.org^
+- ||ads.techmediapartners.co.uk^
+- ||ads.technologyguide.com^
+- ||ads.tentonhammer.com^
+- ||ads.the-bikini.com^
+- ||ads.thedeal.com^
+- ||ads.thenewpaperclip.com^
+- ||ads.tij-mobile.com^
+- ||ads.tm-research.com^
+- ||ads.tritonmedia.com^
+- ||ads.truongton.net^
+- ||ads.tweakxp.com^
+- ||ads.tweetmeme.com^
+- ||ads.ugo.com^
+- ||ads.uol.com.ar^
+- ||ads.uploading.com^
+- ||ads.urbanreach.net^
+- ||ads.usermedia.net^
+- ||ads.velcom.com^
+- ||ads.vertele.com^
+- ||ads.veryfunnyads.com^
+- ||ads.viewx.co.uk^
+- ||ads.viksaffiliates.com^
+- ||ads.virtualmalaysia.com^
+- ||ads.visitbritain.com^
+- ||ads.volenta.biz^
+- ||ads.wazooweb.com^
+- ||ads.weatherflow.com^
+- ||ads.web.nl^
+- ||ads.webccm.net^
+- ||ads.webnetad.com^
+- ||ads.whatsonstage.com^
+- ||ads.win.rs^
+- ||ads.worldemail.com^
+- ||airdrpsalerts.sbs^
+- ||bdl-covid.com^
+- ||coronaviral.fyi^
+- ||covid-19projections.com^
+- ||covid19testingonline.com^
+- ||covidfreeworkforce.com^
+- ||covidlabtests.com^
+- ||datapandemic.com^
+- ||e-covid19buy.com^
+- ||educationcovid19.com^
+- ||giveforcovid.org^
+- ||pandemic-times.com^
+- ||security-bot.world^
+- ||solvingcovid.com^
+- ||steamncommnunity.com^
+- ||wuhanlianhua.com^
+! Moved to AdGuard DNS filter: 3 rules
+~ ||doruckmangedreamed.cyou^ [Moved: OISD Blocklist Big -> AdGuard DNS filter]
+~ ||jr8kk9957u75e92i.rest^ [Moved: OISD Blocklist Big -> AdGuard DNS filter]
+~ ||rehoepinx.shop^ [Moved: OISD Blocklist Big -> AdGuard DNS filter]
+! Moved to Phishing Army: 10 rules
+~ ||bodrumtransferlux.com^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||guideinf.dejonge-trends.nl^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||idprofile.net^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||idstory.net^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||kleinanzelgen-id.shardvell.de^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||login.steamspowered.com.es^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||mountainviewnursery.online^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||neamart.net^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||neupolicykonto.click^ [Moved: OISD Blocklist Big -> Phishing Army]
+~ ||suivi-verification.site^ [Moved: OISD Blocklist Big -> Phishing Army]
+! Moved to Phishing URL Blocklist (PhishTank and OpenPhish): 2 rules
+~ ||chekidasdnew24h.space^ [Moved: OISD Blocklist Big -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||freeflowccr.site^ [Moved: OISD Blocklist Big -> Phishing URL Blocklist (PhishTank and OpenPhish)]
++ ||ashleysmith.shop^
++ ||azure-plant.com^
++ ||biketown24.shop^
++ ||blastodisup.info^
++ ||bnpparibas-secure.vercel.app^
++ ||boxdis.enfield4th.com^
++ ||brisa-clarity.com^
++ ||clariond.info^
++ ||claris-scrub.com^
++ ||cluqwefghcvnm.com^
++ ||dailyfreshless.info^
++ ||drivestraight.helphumanityorg.com^
++ ||floria-wash.com^
++ ||gleam-freshness.com^
++ ||granitefocused.enfield4th.com^
++ ||groundoutside.enfield4th.com^
++ ||headlinenews.pro^
++ ||highfieldx.work^
++ ||hotupdatety.pro^
++ ||infladfe.com^
++ ||infowaved.top^
++ ||juhogay.com^
++ ||latestnewsd.top^
++ ||lertvbnmopert.com^
++ ||luma-sweep.com^
++ ||lumina-sweep.com^
++ ||lwqfc.com^
++ ||nevo-dust.com^
++ ||newsflashdump.info^
++ ||newstrenddump.top^
++ ||nrlnzbeada.fit^
++ ||ogrodix.shop^
++ ||pale-ridge.com^
++ ||riseuphillside.com^
++ ||routesgooey.stateofes.com^
++ ||rrtdc.com^
++ ||sale-tatuum.com^
++ ||shlumpox.info^
++ ||soft-bastion.com^
++ ||sputnikrainwasheood.life^
++ ||svetlobnotelo.com^
++ ||timeline.fit^
++ ||tlkwc.com^
++ ||uropatagup.info^
++ ||vigorousimprove.soulthreshold.com^
++ ||windows10lisans.com^
++ ||zooooidalnoncomposer.life^
 
-! [1Hosts (Xtra)] Removed: 0 | Moved: 10 | Added: 1
-! Moved to HaGeZi's Pro++ Blocklist: 3 rules
-~ ||aslgbyuogn.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||ebwsjudngugt.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-~ ||wrlntwiam.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 7 rules
-~ ||1xlite-92152.pro^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||antespirit.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||betrugs-check.de^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||nlink.at^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||olxlprtp.info^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||sportguru.xyz^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-~ ||spranglacklesslackless.com^ [Moved: 1Hosts (Xtra) -> HaGeZi's Threat Intelligence Feeds]
-+ ||www.amazon-clone-jet-eight-44.vercel.app^
+! [Phishing Army] Removed: 136 | Moved: 6 | Added: 174
+- ||0lx.zam0wlenle73737.top^
+- ||7wuhgh.top^
+- ||adrianapiekarska.online^
+- ||aesthe-club.online^
+- ||aga-wawrzenczyk.online^
+- ||akatkirtasiye.com^
+- ||allegro-lokalnie.pl-oferta527121.icu^
+- ||allegrolokalne.v3456.click^
+- ||allegrolokalnie.oferta-3988563.click^
+- ||allegrolokalnie.oferta-5372787.click^
+- ||allegrolokalnie.oferta217845.icu^
+- ||allegrolokalnie.oferty-kategoria-proponowane-dla-ciebie-rozne-21.sbs^
+- ||allegrolokalnie.oferty-kategoria-proponowane-dla-ciebie-rozne-22.sbs^
+- ||allegrolokalnie.pl-23480012.icu^
+- ||allegrolokalnie.pl-687663.icu^
+- ||allegrolokalnie.pl-892940.icu^
+- ||allegrolokalnie.pl60312.icu^
+- ||anteppsikolog.com^
+- ||apptitudeapps.com^
+- ||atekgmbh.com^
+- ||audytio.online^
+- ||aydinoglumotor.com^
+- ||bebloom.online^
+- ||benimleoynarmisin.com^
+- ||bilikfurniture.online^
+- ||biotech-entrepreneurship.xyz^
+- ||bonusparaconsultar.digital^
+- ||carslease.online^
+- ||cartoonartcafe.com^
+- ||chillinn.online^
+- ||cookwarescan.com^
+- ||coolingtowers.online^
+- ||corvandilix.icu^
+- ||critercayyolu.com^
+- ||cryptexoflife.online^
+- ||deermateknikservis.com^
+- ||degirmendererestaurant.com^
+- ||depot-carton.pro^
+- ||deprojectstudio.online^
+- ||dexarionthes.icu^
+- ||digitalwaykibris.com^
+- ||diyetyemekpaketi.com^
+- ||dleavy.com^
+- ||dmyotomasyon.com^
+- ||doupodm1.com^
+- ||dufadesign.com^
+- ||e-paces.com^
+- ||emangir.com^
+- ||eminonutoptantuhafiye.com^
+- ||eskees02.com^
+- ||eu-sale.online^
+- ||geomuneris.com^
+- ||getcarecost.com^
+- ||gfxjcgb.cn^
+- ||greencountryistanbul.com^
+- ||ho.72design.nl^
+- ||hyphenelectrocycles.com^
+- ||ibestgold.com^
+- ||immediate-pro-capex-app.net^
+- ||insagentfinder.com^
+- ||inu-library.com^
+- ||jmkdlk11.com^
+- ||karyawan.ptkgi.com^
+- ||kimrbest.com^
+- ||klelnanzeigen-deutsch.id85301.click^
+- ||kukci-porec.online^
+- ||lclvideo.com^
+- ||learningpmp.com^
+- ||linesmagazinelaos.com^
+- ||liveyourhabitats.com^
+- ||loranthivesta.icu^
+- ||loreleaf.com^
+- ||lumitblockchain.com^
+- ||lushsites.com^
+- ||micabirnen.com^
+- ||moleno.info^
+- ||netbitry.digital^
+- ||obesitynearme.com^
+- ||olapmany.digital^
+- ||olx-pl.oylgoir12346.xyz^
+- ||olx.pl-42309i098349280.digital^
+- ||olxv2.pl-521897112.icu^
+- ||olympslots.bet^
+- ||oracle-ai-platform.com^
+- ||philipssuaritmakktc.com^
+- ||phishing.site^
+- ||pl-bilety373525.icu^
+- ||pl-elektronika-45879238472.icu^
+- ||pl-kategoria-917482.icu^
+- ||pl-kategoria-92748.sbs^
+- ||pl-oferta-1528352.icu^
+- ||pl-oferta-918472.sbs^
+- ||pl-oferta78524.rest^
+- ||pl-oferta816273828.sbs^
+- ||pl-oferta933467.rest^
+- ||pl-ogloszenie-21304.sbs^
+- ||pointbilgisayar.com^
+- ||pravenstoria.icu^
+- ||promo-da-semana.shop^
+- ||promocarte-avantages0.com^
+- ||promocarte-avantages15.com^
+- ||promowane-ogloszenie-4817262.icu^
+- ||purenessturkiye.com^
+- ||r9iygk.icu^
+- ||robotence.com^
+- ||saltatclinicinternational.com^
+- ||sineyaz.com^
+- ||sivasotelterligi.com^
+- ||slotingonline.com^
+- ||snowdreams.info^
+- ||snpmotor.com^
+- ||solmarionex.icu^
+- ||sorelkimya.com^
+- ||sorellidue.com^
+- ||tarionvelestra.icu^
+- ||tradingmoot.com^
+- ||trendalithis.icu^
+- ||trenujzemna.com^
+- ||turcopay.com^
+- ||turcoswim.com^
+- ||ucelfidan.com^
+- ||ugurhanatma.com^
+- ||ulakusa.com^
+- ||uniitiraf.com^
+- ||user.app-six-group.online^
+- ||uttseskisehir.com^
+- ||vertaarchitecture.com^
+- ||vimaoy.cyou^
+- ||voltanovatech.com^
+- ||workonoffice.com^
+- ||yeseyemek.com^
+- ||yigitbravecesur.com^
+- ||yontemtercume.com^
+- ||yuksekcozumler.com^
+- ||zenitholara.icu^
+- ||zondratexplatform.com^
+! Moved to Phishing URL Blocklist (PhishTank and OpenPhish): 6 rules
+~ ||allegrolokalnie.85153723015423.sbs^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||allegrolokalnie.pl-oferta5345383.click^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||app.cliente-resgate.site^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||fidelitysafetyby.one^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||upnextworld.com^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
+~ ||yassintap.journ-6262.pro^ [Moved: Phishing Army -> Phishing URL Blocklist (PhishTank and OpenPhish)]
++ ||121z2.seplak.icu^
++ ||4356etg.top^
++ ||5et643t.top^
++ ||5ge6t4.top^
++ ||6yet47.top^
++ ||74bgt45.top^
++ ||accounts.bmwweb.green^
++ ||aerodrome-distribution.com^
++ ||api.ohmybargains.com^
++ ||apple8e78f4d8a46b49b88729f17e73594cbd.gf324df.com^
++ ||apppage-startapp.wixstudio.com^
++ ||approbinhoodcdn.wixstudio.com^
++ ||appstart-dydxx.wixstudio.com^
++ ||appstart-ledgsr.wixstudio.com^
++ ||appstartes-ledgrs.wixstudio.com^
++ ||appvanta.wixstudio.com^
++ ||assistance-paribas.com^
++ ||assistwf.com^
++ ||atendimento.wrdesignergrafico.com^
++ ||azure-spot-495571.framer.app^
++ ||basic-desktop.wixstudio.com^
++ ||bradesco.assistenteoficial.com^
++ ||bradesco.atualizapjnet.digital^
++ ||bradesco.cadastroempresarialseguro.online^
++ ||bradesco.netempresarialapp.com^
++ ||bradesco.netempresarialonline.com^
++ ||bradescopj.atualizarmeucadastro.digital^
++ ||browser-exxods-web3.wixstudio.com^
++ ||businessrehab.theownerconsultant.com^
++ ||bvb.bet^
++ ||cdnledgerstart.wixstudio.com^
++ ||center-desktop.wixstudio.com^
++ ||ciniewski.com^
++ ||comnetcoins.wixstudio.com^
++ ||connectwithledger.wixstudio.com^
++ ||core-desktop.wixstudio.com^
++ ||cryopainmanagement.com^
++ ||dambilua.id.vn^
++ ||dc.crsorgi.gov.crsweb.xyz^
++ ||designbycodo.wixstudio.com^
++ ||desktop-suitps.wixstudio.com^
++ ||display-desktop.wixstudio.com^
++ ||dorlnewebidkonfimasih1odiahterpendinggg.kart4claim.biz.id^
++ ||download-com.wixstudio.com^
++ ||dpdlocagv.cyou^
++ ||dpdlocaha.cyou^
++ ||dpdlocahe.top^
++ ||dpdlocahf.shop^
++ ||dpdlocahi.cyou^
++ ||dpdlocahl.cyou^
++ ||dpdlocahl.top^
++ ||dpdlocaho.cyou^
++ ||dpdlocahp.shop^
++ ||dpdlocahp.top^
++ ||dpdlocahq.top^
++ ||dpdlocahs.top^
++ ||easier-video-999892.framer.app^
++ ||edge-liveapp.wixstudio.com^
++ ||edificiobordon.com.br^
++ ||egiosb.org.tr^
++ ||en-appstart.wixstudio.com^
++ ||en-cryto-com.wixstudio.com^
++ ||en-downloads.wixstudio.com^
++ ||en-dydx.wixstudio.com^
++ ||en-mtsmask.wixstudio.com^
++ ||eng-official-desktop.wixstudio.com^
++ ||entrypoint-desktop.wixstudio.com^
++ ||espace-demarche-envois.com^
++ ||ex-ouds-us.wixstudio.com^
++ ||expert-desktop.wixstudio.com^
++ ||explain-desktop.wixstudio.com^
++ ||exxdous-apps.wixstudio.com^
++ ||funlinkzone.com^
++ ||gahndbzlzo66a.kimi.show^
++ ||get-appsuite.wixstudio.com^
++ ||get-desktop-live.wixstudio.com^
++ ||get-ledglivedownld.wixstudio.com^
++ ||get-live-desktop.wixstudio.com^
++ ||get-live-global.wixstudio.com^
++ ||getdesktop-ledgr.framer.wiki^
++ ||global-ledgr-learn.wixstudio.com^
++ ||graceful-result-111979.framer.app^
++ ||guildguard3.xyz^
++ ||heavy-cube-435017.framer.app^
++ ||home-juppitter.wixstudio.com^
++ ||homecoinbase.wixstudio.com^
++ ||homeexoduss.wixstudio.com^
++ ||hubixo-en-leger.wixstudio.com^
++ ||hzclog.com^
++ ||icheai.com^
++ ||indiashoppy.in^
++ ||itrmi.cn^
++ ||ledegar-com.wixstudio.com^
++ ||ledergapp-us.wixstudio.com^
++ ||ledg-started.wixstudio.com^
++ ||ledge-begin.wixstudio.com^
++ ||ledgrcmstrt.wixstudio.com^
++ ||ledgrcmstt.wixstudio.com^
++ ||ledgre-en.wixstudio.com^
++ ||legescom.wixstudio.com^
++ ||legrcmstart.wixstudio.com^
++ ||list-drops.com^
++ ||live-downloads.wixstudio.com^
++ ||liveapp-ledge.wixstudio.com^
++ ||lourse-crm.omnioffice.pl^
++ ||macro-opdesktop.wixstudio.com^
++ ||member01.agency-ad-network.com^
++ ||member06.agency-ad-connect.com^
++ ||member21.agency-ad-portal.com^
++ ||micro-desktop.wixstudio.com^
++ ||my.7-11.com.tw-abar.top^
++ ||myledgstart.wixstudio.com^
++ ||mypage-startapp.wixstudio.com^
++ ||nav-cucoin.wixstudio.com^
++ ||nav-kucainai.wixstudio.com^
++ ||nav-ndxx-ca.wixstudio.com^
++ ||navfeedbacknfcu.wasmer.app^
++ ||ne12.pjnetempresax.digital^
++ ||netflix.surf^
++ ||odd-baguette-182659.framer.app^
++ ||official-desktop-en.wixstudio.com^
++ ||official-ledgcom.wixstudio.com^
++ ||open-ladgrlive.wixstudio.com^
++ ||partner-signup.program-accounts-agency.com^
++ ||pawsandclaws.ie^
++ ||popstesco.wasmer.app^
++ ||proxy-desktop.wixstudio.com^
++ ||purchase-desktop.wixstudio.com^
++ ||read-desktop.wixstudio.com^
++ ||recanto-cataratas-resortonline.site^
++ ||receptive-reason-657082.framer.app^
++ ||regularisation-routiere-particuliers.com^
++ ||rnondial-paketprelai.com^
++ ||s.teams-qo.com^
++ ||s.teamwg.world^
++ ||sante-reglement.com^
++ ||sapepdja.lol^
++ ||scroll-desktop.wixstudio.com^
++ ||seguridad.suscripcion.account.taxreprf.com^
++ ||signup2.agency-ad-hub.com^
++ ||simple-globaldesktop.wixstudio.com^
++ ||smbc-card.zhonghan-vip.com^
++ ||spapwjsa.lol^
++ ||spotless-diversity-032477.framer.app^
++ ||ssoholdapps.wixstudio.com^
++ ||ssoupldcdn.wixstudio.com^
++ ||startcomleadgr.wixstudio.com^
++ ||started-logonlive.wixstudio.com^
++ ||started-simpleswp.wixstudio.com^
++ ||startleadgercom.wixstudio.com^
++ ||startledgerlive.wixstudio.com^
++ ||store.communitysectionsusers.shop^
++ ||store.workshopcommunityrelease.com^
++ ||suscripcion-actualizacion-es.com^
++ ||swaesdr738-juisnsf784.drewmindcross.su^
++ ||swerxzone.com^
++ ||us-getdesktop.wixstudio.com^
++ ||us-ledgrdesktop-home.wixstudio.com^
++ ||username8424.invoice-ads-program.com^
++ ||username8427.invoice-ads-program.com^
++ ||username8431.invoice-ads-program.com^
++ ||username8434.invoice-ads-program.com^
++ ||username8435.invoice-ads-program.com^
++ ||username8436.invoice-ads-program.com^
++ ||username8437.invoice-ads-program.com^
++ ||username8438.invoice-ads-program.com^
++ ||visacrm.gu.cc^
++ ||visacrn.gu.cc^
++ ||visacro.gu.cc^
++ ||visacru.gu.cc^
++ ||wetransfer-download.com^
++ ||www-revisar-necesario-ahora-promerica.miland.com.mx^
++ ||xapres.lol^
++ ||yzi1s2.tgfinancialsltd.com^
 
-! [HaGeZi's Gambling Blocklist] Removed: 2 | Moved: 0 | Added: 0
-- ||56goldzino26.com^
-- ||betgcc2070.com^
+! [AdGuard DNS filter] Removed: 0 | Moved: 0 | Added: 62
++ ||25710b5d95.com^
++ ||99892220ca.com^
++ ||arrondihaycockdurity.cyou^
++ ||avourpimlicodoping.cyou^
++ ||boldinformation.pro^
++ ||bournesdelver.com^
++ ||brebrvjwlicmj.website^
++ ||callosity19.top^
++ ||ce16f0cf56.com^
++ ||cftiqxg3mp.com^
++ ||chlavvzilzmno.space^
++ ||ckeeqekazetgv.online^
++ ||comerglucase.cyou^
++ ||crnsddfswrqxz.website^
++ ||dnejpeqzwhepx.website^
++ ||ehjwsiwwhuyzt.online^
++ ||fhgn1ccweypng1.rest^
++ ||flsoegtdfkhdo.online^
++ ||foundmorn.cyou^
++ ||fxzykdvzbkryt.website^
++ ||gpxjusnktcjyb.online^
++ ||havhrywu.in^
++ ||iprkesoxo.com^
++ ||itxzlhijfcenxejclcaj.top^
++ ||j1bla75rck.com^
++ ||kafllipgvjtqw.site^
++ ||kdrwbvnzyvnwi.site^
++ ||lwdla7fjns.com^
++ ||lzrbw9i3859xjj2.rest^
++ ||miasmslaunces.shop^
++ ||mochuditrothed.com^
++ ||modeswinfree.cyou^
++ ||ngdrfbutynlnu.website^
++ ||njawz0tlek.com^
++ ||olarodwood.com^
++ ||oolzuqohpxqqg.site^
++ ||orsnxbeb.com^
++ ||phow238wzh.com^
++ ||pibpjoo0lm.com^
++ ||pkeccukhmksyo.site^
++ ||rapshiera.com^
++ ||rg338ne0rt.com^
++ ||ruuzqjaoattkl.site^
++ ||sanaijonda.com^
++ ||skezzrcswlajp.online^
++ ||slipwaypan.cyou^
++ ||studsbarters.com^
++ ||tsaor7o1e9.com^
++ ||tumwbvejcowvk.site^
++ ||udoxoemgrebck.space^
++ ||uroovwrouh.com^
++ ||uvmqjrpzbzhkp.website^
++ ||valiculpon.cyou^
++ ||vandjxyifonot.com^
++ ||vezjyiawdpwjq.online^
++ ||vpoxubzaloqm.in^
++ ||wfcexmwunmimo.site^
++ ||wmqmejnpkcaoc.com^
++ ||wwxogjrjpdehh.com^
++ ||xllkxiffgdidv.site^
++ ||yhoijlyrj.com^
++ ||zacxppiaefnun.site^
 
-! [OISD Blocklist Big] Removed: 296 | Moved: 194 | Added: 1924
-- ||1c478d32-ac5d-47cd-a587-fa69201ab955-00-2m2fhqxznwqgp.riker.replit.dev^
-- ||2fewg0ayvzx.webflow.io^
-- ||888.tv.sohu.com^
-- ||9026163741.github.io^
-- ||995gr.com^
-- ||acessoliberadoabril.s3.us-east-005.backblazeb2.com^
-- ||ai-support1-a1id.vercel.app^
-- ||alienderfai.top^
-- ||allegrolokalnie.pl-5275287278228832982349815-fast.click^
-- ||amazon-clone-amber-five.vercel.app^
-- ||amazon-clone-eta-one.vercel.app^
-- ||amazon-clone-jet-eight-44.vercel.app^
-- ||amazon-clone-silk-eight.vercel.app^
-- ||amazon-homepage-clone-beta.vercel.app^
-- ||arcabureau.com^
-- ||audioactbeats.com^
-- ||axiom-trading.app^
-- ||ayakmoda.com^
-- ||bafkreia3uxiluctemta2uvlizr5aplsvkqtu3s44vztvd6rxkqbse3xs4q.ipfs.dweb.link^
-- ||bafkreia4gwi65juhfno264zzcmomalln4ipqo25lmipuyw5rz52xjfxa24.ipfs.dweb.link^
-- ||bafkreia4qwp5xr65z4oo6f7monkibwykjecdhncrtci47mp52rhzdbphlm.ipfs.dweb.link^
-- ||bafkreia73vsep2iclhrdtmhqmjga6jvuhaeeg7swqw2tl7koqnk54mqcai.ipfs.dweb.link^
-- ||bafkreiacyfcvz5vacz5fafiwqnsc23hv2gxnrexjlbfdmcofhmleq6mxjq.ipfs.dweb.link^
-- ||bafkreiadzqck2lfgvfyf67l2yqxfdp6g2me6hm335nb5x22qw5rsht44hy.ipfs.dweb.link^
-- ||bafkreibgrgkp7amb2kfgfn52qqbydglxxqxt5dd5naqjxcdibwub37ylbi.ipfs.dweb.link^
-- ||bafkreic5uw3oab5jinlvplbkmngjvh7r3crjwznotl7jjgt7tkyzyvm75a.ipfs.dweb.link^
-- ||bafkreicvegnqs52xiz2kl3wd2tlorunujf5kpszeeijgbt4w36sp6zhtny.ipfs.dweb.link^
-- ||bafkreid3bqpd432q2ygogx5qvjma72w3p4e5hm3osxg242ecgrs7w6aaza.ipfs.dweb.link^
-- ||bafkreidkah5u3loryz2bzvfwqrp6y42ki4q4w7y7n6dz3vtp4prz66wtyi.ipfs.dweb.link^
-- ||bafkreie4vsokqh2x7kp7cx43xp4tkehjm7cfhc2nvhnur73q4ptepchhda.ipfs.dweb.link^
-- ||bafkreie6ut2rtqvod3u4ol7eqkw22o6dbgpb5ugqujmekixhgd4uulyhnq.ipfs.dweb.link^
-- ||bafkreie73naukae7z7dex2ermiyscnnfzmzp4afrtx2tv2kqzeitzvej7u.ipfs.dweb.link^
-- ||bafkreiev2xwzov65567o5mvynqhjenrrg57ml2zlxqznsx7e6residgaqm.ipfs.dweb.link^
-- ||bafkreiezyyuwkx6lx4ibhwdclgzdmqqi4o6lbn3h7hjc2mh3o3ms2zxb4q.ipfs.dweb.link^
-- ||bafkreifp4t2fj3f5nwszxnhxp2wlfh7ecm2v7n2ljhiwyx4s7hrrk3il3e.ipfs.dweb.link^
-- ||bafkreifqovm3zngywconbiptw7fhw54cinx6usdzmaljod7qomfaqpcbjq.ipfs.dweb.link^
-- ||bafkreigbsnpw6rhikom5o2sncytbr3tasoqvyj36t62zd7f2cut5aplkmi.ipfs.dweb.link^
-- ||bafkreih3eptu6xwmgwzjfhzqnxnn6rwbry2bghrzycrf763i3zfuzf7zya.ipfs.dweb.link^
-- ||bafkreih3wkaltmrq3b6pcvmzipkbuy4wenacqayqkpkh4iwaaknxhbfb24.ipfs.dweb.link^
-- ||bafkreih6pyu4m4rbzuwj6pqhuxd7rh4wrgpr5yrnwlraygd7d2a5lhrayy.ipfs.dweb.link^
-- ||bafkreih74qu2q3md5k2xyfdfsp34kqhy3cllyxevuhi2ea7wltnl5qcgcu.ipfs.dweb.link^
-- ||bafkreihadkrznu7jvvqxq7o54zadk54gtb22sy6mxcueelllxyd7uv3miq.ipfs.dweb.link^
-- ||bafkreihgpn6iqstuq5hfgqklmuurtzs4jkvziz2c3w3ozfozgrhohq24gi.ipfs.dweb.link^
-- ||bafkreihm3z3w3fm5cbxyrsc577dgyqe24phaporrc4akv75j4rjwtdnuxq.ipfs.dweb.link^
-- ||bafkreihrgrves6di5ectqr5w3amwdrygrcu467nt4pm3zdj7xemr2wmpsa.ipfs.dweb.link^
-- ||bafybeiaw6mkp2ysg63j5ny3jpzzvq24nasm2xnpzuj6eiqt5mt6b6vw2de.ipfs.dweb.link^
-- ||baharatkoy.com^
-- ||balcisolar.com^
-- ||bashful-satisfaction-361960.framer.app^
-- ||batikentankarakonutlari.com^
-- ||begin-suites.wixstudio.com^
-- ||bitcoinkurlari.com^
-- ||biteztransfer.com^
-- ||blisko-pracy.com^
-- ||bodenyaglama.com^
-- ||bodrumshuttles.com^
-- ||bodrumtransferrezervasyon.com^
-- ||borsaalgoritma.com^
-- ||bridge-manage.wixstudio.com^
-- ||bulletinbeat.scbyourbestjob.com^
-- ||burcugencevent.com^
-- ||campfirecooking.info^
-- ||centrefinrivo-engine.com^
-- ||cerebramaxplus.com^
-- ||ceylabodur.com^
-- ||check.t4erna.sbs^
-- ||cloud-liv-lezger-loggz.pages.dev^
-- ||clouddata.com.vc^
-- ||content2025uae.2ix.at^
-- ||declutterlife.info^
-- ||decocyprus.com^
-- ||deepakkk2003.github.io^
-- ||dermotheraphycosmetic.com^
-- ||dexnoderesolver.pages.dev^
-- ||disponibilidadeativa.s3.us-east-005.backblazeb2.com^
-- ||doadepozito.com^
-- ||dondurmahayati.com^
-- ||dusuncepazari.com^
-- ||e-eyfelparfum.com^
-- ||e-podpaleni.com^
-- ||earlier-interface-210916.framer.app^
-- ||ed4641ae-f961-4efe-9222-58e5ff4b50e9-00-12va56hpx7xwi.picard.replit.dev^
-- ||ejowho.live^
-- ||en-ecodus.wixstudio.com^
-- ||esentepegrup.com^
-- ||everix-edge.app^
-- ||exoduuswewallet.gitbook.io^
-- ||expanded-level-223420.framer.app^
-- ||ext-attomic-us.wixstudio.com^
-- ||fakoyapi.com^
-- ||fantomsombrix-software.com^
-- ||fatihvarol.com^
-- ||fenbeg.com^
-- ||finansvetarih.com^
-- ||fityer.framer.website^
-- ||flyhealinturkey.com^
-- ||fold-go.com^
-- ||folkartroyal.com^
-- ||fonksiyoneltipzirvesi.com^
-- ||fortunephantom.app^
-- ||friendly-community-993550.framer.app^
-- ||frontendmentor-easybank-chi.vercel.app^
-- ||frostconnectmobile.onrender.com^
-- ||fzyc2c.com^
-- ||gamerland.sbs^
-- ||garokalaycijewelry.com^
-- ||getbridgeapp.wixstudio.com^
-- ||getsor.my^
-- ||ghswatch.com^
-- ||gileko.com^
-- ||gminimilognix.gitbook.io^
-- ||gngvalf.com^
-- ||go.domino.com.cn^
-- ||gokhanokuyucu.com^
-- ||google-ticket.com^
-- ||gowarapex-tech.com^
-- ||gsol.edm.globalsources.com^
-- ||gugikia5.com^
-- ||guvenilirdepo.com^
-- ||guvenlidata.com^
-- ||guvenliokulprojesi.com^
-- ||gwalart.com^
-- ||happykidscocukkoleji.com^
-- ||hassansidiqui.github.io^
-- ||help-trezorhdwlare.gitbook.io^
-- ||helpinghealing.com^
-- ||het-ex.com^
-- ||hizlikalem.com^
-- ||home-mail-204609.webflow.io^
-- ||homelive-desktop.wixstudio.com^
-- ||homesuiteapp.wixstudio.com^
-- ||hopehomecaresolutions.com^
-- ||icsfocus.com^
-- ||immediate-matrix.com^
-- ||incigsm.com^
-- ||instytuthalal.online^
-- ||instytutrolny.com^
-- ||integratedsyncdevs.pages.dev^
-- ||ipbukenyalinliderlik.com^
-- ||ismailalkus.com^
-- ||istcasting.com^
-- ||izmirmalimuhur.com^
-- ||jip-3vn.pages.dev^
-- ||junglemodel.com^
-- ||kagitviyol.com^
-- ||kalekilisesi.com^
-- ||kalesuitesbungalov.com^
-- ||kamankaravan.com^
-- ||karabukgumusyurt.com^
-- ||karacasigla.com^
-- ||karahisarsucuklari.com^
-- ||karankumae.github.io^
-- ||karbo-tech.com^
-- ||kartepekayakmerkezi.com^
-- ||kartushane.com^
-- ||kasevin.com^
-- ||kashifqureshi20.github.io^
-- ||kasvatekstil.com^
-- ||katrett.com^
-- ||kelford.com^
-- ||kibrithaneistanbul.com^
-- ||kiziltopraksporkulubu.com^
-- ||konjactea.com^
-- ||koresanyedekparca.com^
-- ||korunt.com^
-- ||kutahyataksi.com^
-- ||kuuykoinlogin.webflow.io^
-- ||latmiozeytinyagi.com^
-- ||learnstart-ledgro.wixstudio.com^
-- ||leaseappofturkey.com^
-- ||ledgacom.wixstudio.com^
-- ||legerstart.wixstudio.com^
-- ||lesoratexappsolution.com^
-- ||leventkaradag.com^
-- ||limitesegurodisponivel.s3.us-east-005.backblazeb2.com^
-- ||links.t4erna.sbs^
-- ||liveintro.wixstudio.com^
-- ||lmoriw-iekascma-oqmmcq-213-cmakwe-fgacsax.pages.dev^
-- ||mailboxpasswordcentre.pythonanywhere.com^
-- ||markpaul1990usa-sketch.github.io^
-- ||metamaskk-io-ext.wixstudio.com^
-- ||metamaskloginw.webflow.io^
-- ||minakshivyavahare.github.io^
-- ||mlach.online^
-- ||mohdasad-dev.github.io^
-- ||naturaperfection.com^
-- ||nefrodoktor.com^
-- ||netflix-clone-beta-taupe.vercel.app^
-- ||ngmutfak.com^
-- ||nibuga.com^
-- ||notionmimarlik.com^
-- ||nowhairtimeclinic.com^
-- ||noyapark.com^
-- ||npuderfaier.info^
-- ||ofisinisec.com^
-- ||okx-web3-usdt-trc20-00000000005.pages.dev^
-- ||onyxeryaman.com^
-- ||open-legrrlives.wixstudio.com^
-- ||open-lgderlives.wixstudio.com^
-- ||optimaenerji.com^
-- ||other-pineapple-573798.framer.app^
-- ||outdoorsurvival.info^
-- ||oyacakasap.com^
-- ||ozbayotodoseme.com^
-- ||ozeldegerkolejiilkokul.com^
-- ||ozgurmotordenizli.com^
-- ||paddleparadise.info^
-- ||pagaplay.com^
-- ||page-itrustcapital-com-auth-t.webflow.io^
-- ||perfect-bridge.wixstudio.com^
-- ||perforelitorba.com^
-- ||persuadir.pe^
-- ||petces.com^
-- ||pethealty.com^
-- ||pirilbilici.com^
-- ||pixelyayincilik.com^
-- ||pl-42309i098349280.digital^
-- ||plaverton.top^
-- ||pocztaonetpl.wixsite.com^
-- ||poderdecompraabril.s3.us-east-005.backblazeb2.com^
-- ||postbariatrikcerrahi.com^
-- ||poyrazotelbozcaada.com^
-- ||practical-fade-014749.framer.app^
-- ||profdurmusoglu.com^
-- ||programmation-mondial.com^
-- ||projehazinesi.com^
-- ||pub-223719251411456dae7d3253c35184c9.r2.dev^
-- ||pub-f5e0fae1b6cf473a8e6368b315c600ea.r2.dev^
-- ||publicstart-trezux.wixstudio.com^
-- ||refundyoursol.sbs^
-- ||renjith-baby.github.io^
-- ||retailtr.com^
-- ||revew-azan.github.io^
-- ||roselojistik.com^
-- ||royyy33-e654df.pages.dev^
-- ||ruanoliviier761.wixstudio.com^
-- ||s4kj0dxrmdfybkpc46qcltq.pages.dev^
-- ||saglamlarentegre.com^
-- ||sahithikamma.github.io^
-- ||salmon-charts-455829.framer.app^
-- ||sammy-code04092006.github.io^
-- ||samsunhaberburda.com^
-- ||sarruma.com^
-- ||schlank-21.com^
-- ||score-for-more.com^
-- ||seraulv.com^
-- ||sevkisilan.com^
-- ||shukrohwillalwayscode.github.io^
-- ||slimneo.online^
-- ||smileycommunity.com^
-- ||sodabooster.com^
-- ||solidmax-system.com^
-- ||spenoctexappsolution.com^
-- ||sprinklerrepair-coralsprings.com^
-- ||stargazershub.info^
-- ||started-b--ridged.pages.dev^
-- ||started-dekstop.wixstudio.com^
-- ||startupwalks.com^
-- ||sumukha2121.github.io^
-- ||suppmarine.com^
-- ||suru123474.github.io^
-- ||sweet-charts-335878.framer.app^
-- ||take-the-quiz.store^
-- ||tcgazete.com^
-- ||teknobentelsiz.com^
-- ||thepraveen007.github.io^
-- ||ticizuy1.com^
-- ||tomfenso.com^
-- ||tr.metropolcasino-yeni.vip^
-- ||travelstorybsz.info^
-- ||trezeriostartfaq.wixstudio.com^
-- ||trezsuit-home.wixstudio.com^
-- ||tribqs.com^
-- ||trzkmdsf8.kjgt65yh.workers.dev^
-- ||ttmht.site^
-- ||turkolocalproducts.com^
-- ||tusharsharmats20074-art.github.io^
-- ||unogratex-app.com^
-- ||vhculcy.b-cdn.net^
-- ||visit.t4erna.sbs^
-- ||w5b-d4na.cqww-ofisiaall.biz.id^
-- ||weathered-frog-4ff5.tjptwiiheiqelnnbraaerwr.workers.dev^
-- ||webapp-getdocumentodwnload-pacapp.malik-jaani786.workers.dev^
-- ||werk24.shop^
-- ||wildernesssurvival.info^
-- ||writingmachines.net^
-- ||xdna-layananid.viewou.biz.id^
-- ||yahoojkj.github.io^
-- ||yenymed.com^
-- ||yg4973.top^
-- ||ynabioueconus-meriescs-experinces-t.vercel.app^
-- ||ytshop.pages.dev^
-- ||zazesue3.com^
-- ||zelvionxengine.com^
-- ||zoomeducationtr.com^
-- ||zsmopl.net^
-! Moved to HaGeZi's Pro++ Blocklist: 35 rules
-~ ||8iav2fuiy.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||beetoocoin-pl.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||dependable-party.pro^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||driftinestuary.digital^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||fcgqhovvcukpd.online^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||fggbuill.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||gbetiprklv.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||gnkmmzzfyjtaq.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||goodwomenproject.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||hifrqtlxje.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||ixhlcibheljfe.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||jcxnwlwjigrjr.online^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||kkkkkkkkkkplpllllpppllpppl.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||kojwkzka.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||kxsqiynefxgrx.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||kyjfhliwlnatp.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||lowpricefurniture.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||lpnjaktumhlbt.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||mpvblevopfdxo.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||ozrnsf3ta.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||revo-pl.xyz^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||rx1iwebx2.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||sbddnhvoxvilt.space^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||srajfeapp.in^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||stats.cinevibe.asia^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||stayinbeds.co.uk^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||swinktogate.cyou^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||trdgpt.online^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||veesformols.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||xrjlsqeewriut.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||xvhyfjblktelp.site^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||yalemor.com^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||yhiotiihvrrlg.space^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||zpzhldfmsmjar.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-~ ||zrrudcuoatnro.website^ [Moved: OISD Blocklist Big -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 103 rules
-~ ||01122255.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||789betpokar.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||94hggr4.top^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||9xcloud.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||acctz.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||aldi.morveto.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ammfo.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||anyma-poland.eu^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||apexbitlux-system.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||b326.buzz^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||beam-purse.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||bibliothequere-france.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||biketivo24.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||binsenusa.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||booking.com-approve-reservation.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||campudas.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||carolcornils.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||chattrgpt.cc^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||columbiarises.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||contabilidadedellaretti.com.br^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||coolbite.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||cwdrq.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||daube-alex.presentation-8102.pro^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||digitalpaper.info^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||dislocatedexperience.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||energieverde.site^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||epic-treasury.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||euchatbot.space^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||expert-flow.online^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||expert-tool.online^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ftheo.uservicepro.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||gemini.03vps.cn^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||guangzheno.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||hbslzc.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||hidroedge.space^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||home-income.ghost.io^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||hub.fileapi.cn^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||idembcv.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||jblclearancesale.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||jpe73ui.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||karolnawrockaa.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||katempl.cc^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||kicorid.site^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||kindaittc.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||l1mpost.se9wdy.sbs^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||leyger-live-org-en.framer.media^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||lidlca.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||lidlsx.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||login.tahoeheavenlyvacations.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||luminary-credits.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||luminous-ponder.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||meblepromo.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||member10.agency-partner-master.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||mobixstore.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||modestorabd.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||mout07aprmain.wasmer.app^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||myestabli.pro^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||mythic-earnings.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||olonixis-soft.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||olymhub.net^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||pathflare.click^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||patioking.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||patiopro.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||piaseckaaga.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||pl-dpda.cc^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||pl-dpdae.top^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||planosuper.uk^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||plregihiogorohoni.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||profitstrategy.blog^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||profitstrategy.ink^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||quantum-edex2.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||quarccteredinterrogatees.life^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||rust-vzletsolution.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||shoujunffm.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||soldesmartbit-pro.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||solemnesslibddelant.life^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||st5nru.casa^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||stredfinoria-soft.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||suivre-votre-colis-dhl.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||takasi4d-15.site^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||thecasinopokar.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||towietrycholog.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||tusaidiane.org^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||txdmv.govdfa.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||txdmv.govsoz.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||txdmv.govvso.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||tz.yuees.xyz^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||unaxxffiliated.life^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||unggionisetinfoils.life^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||vpass-login.eawfcz.cn^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||vxohgzen.shop^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||web.transport-whatsapp.com.cn^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||web.twice-whatsapp.com.cn^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||werner-ringle.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||wiwgd.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||ww2-swisspassen.onlinekv.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||xvz.monster^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||yabo9998.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||yiwake.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||zenith-cash.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||zh-an-caikewang.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||zhichenghui.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-~ ||zhun-sports-kaiyun.com^ [Moved: OISD Blocklist Big -> HaGeZi's Threat Intelligence Feeds]
-! Moved to Phishing Army: 56 rules
-~ ||akatkirtasiye.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||allegrolokalnie.oferta-3988563.click^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||allegrolokalnie.oferta-5372787.click^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||atekgmbh.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||aydinoglumotor.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||benimleoynarmisin.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||cartoonartcafe.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||critercayyolu.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||deermateknikservis.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||degirmendererestaurant.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||digitalwaykibris.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||diyetyemekpaketi.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||dmyotomasyon.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||doupodm1.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||e-paces.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||emangir.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||eminonutoptantuhafiye.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||getcarecost.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||greencountryistanbul.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||ibestgold.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||insagentfinder.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||kimrbest.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||learningpmp.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||linesmagazinelaos.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||liveyourhabitats.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||loreleaf.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||loyaling.org^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||lumitblockchain.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||lushsites.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||phishing.site^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||robotence.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||saltatclinicinternational.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||sineyaz.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||sivasotelterligi.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||snowdreams.info^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||sorelkimya.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||sorellidue.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||tradingmoot.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||trenujzemna.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||turcopay.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||turcoswim.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||ucelfidan.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||ugurhanatma.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||ulakusa.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||uniitiraf.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||uttseskisehir.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||vertaarchitecture.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||voltanovatech.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||workonoffice.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||yeseyemek.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||yigitbravecesur.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||yontemtercume.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||yuksekcozumler.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||zestfest2011.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||zondratexplatform.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-~ ||zugiwa.com^ [Moved: OISD Blocklist Big -> Phishing Army]
-+ ||1001coronado.net^
-+ ||123bharat.com^
-+ ||123coronafrei.com^
-+ ||123covidclean.com^
-+ ||1619pandemic.com^
-+ ||1800corona1.com^
-+ ||1ocaliser.fr^
-+ ||2022coronavirus.com^
-+ ||34h5er.top^
-+ ||387dfuf.top^
-+ ||43gt6ge.top^
-+ ||54yhhr3.top^
-+ ||6467ggf.top^
-+ ||73vgg33.top^
-+ ||832covidtest.com^
-+ ||837yetr3.top^
-+ ||911coronaoutbreak.com^
-+ ||911covid-19.com^
-+ ||934k7ry.top^
-+ ||93kiru7.top^
-+ ||9ek47hh.top^
-+ ||a4covidsupplies.com^
-+ ||abccoronatest.com^
-+ ||abccovidtest.com^
-+ ||abogadosdelcovid-19.com^
-+ ||ads.imaging-resource.com^
-+ ||ads.imguol.com^
-+ ||ads.incgamers.com^
-+ ||ads.inet.co.th^
-+ ||ads.inet1.com^
-+ ||ads.inetinteractive.com^
-+ ||ads.internova.de^
-+ ||ads.iwangmedia.com^
-+ ||ads.jacksonville.com^
-+ ||ads.jobclicks.net^
-+ ||ads.joj.sk^
-+ ||ads.jokaroo.com^
-+ ||ads.jt.org^
-+ ||ads.kartu.lt^
-+ ||ads.kepfeltoltes.hu^
-+ ||ads.klixxx.com^
-+ ||ads.lanetro.com^
-+ ||ads.lanistaads.com^
-+ ||ads.lifesport.bg^
-+ ||ads.list-universe.com^
-+ ||ads.livenews.bg^
-+ ||ads.local.ie^
-+ ||ads.localyokelmedia.com^
-+ ||ads.luno.net^
-+ ||ads.lycos.de^
-+ ||ads.lycos.fr^
-+ ||ads.mamma.com^
-+ ||ads.marketing-internet.com^
-+ ||ads.mbkwbar.com^
-+ ||ads.mediatwo.com^
-+ ||ads.meninpain.com^
-+ ||ads.metatron.co.il^
-+ ||ads.metromanager.com^
-+ ||ads.mezimedia.com^
-+ ||ads.mindviz.com^
-+ ||ads.mixbg.net^
-+ ||ads.mm.ap.org^
-+ ||ads.monetize-me.com^
-+ ||ads.money.bg^
-+ ||ads.mp3-online.com.ua^
-+ ||ads.mp3.com^
-+ ||ads.mrtones.com^
-+ ||ads.msn-ppe.com^
-+ ||ads.musicfans.com^
-+ ||ads.my3whost.com^
-+ ||ads.myx.net^
-+ ||ads.namiflow.com^
-+ ||ads.nandomedia.com^
-+ ||ads.nedmax.com^
-+ ||ads.networkhm.com^
-+ ||ads.networldmedia.net^
-+ ||ads.nichepass.com^
-+ ||ads.nit.firstream.net^
-+ ||ads.norindex.no^
-+ ||ads.nudereviews.com^
-+ ||ads.onecenter.com^
-+ ||ads.opera.com^
-+ ||ads.ozonemedia.co.in^
-+ ||ads.pandora.tv^
-+ ||ads.paxnet.com^
-+ ||ads.plantyours.com^
-+ ||ads.plevenlive.com^
-+ ||ads.pno.net^
-+ ||ads.po-zdravidnes.com^
-+ ||ads.popfolkstars.com^
-+ ||ads.ppvmedien.de^
-+ ||ads.premiership.bg^
-+ ||ads.radar.bg^
-+ ||ads.rkads.com^
-+ ||ads.rol.ro^
-+ ||ads.sapo.pt^
-+ ||ads.searchextreme.com^
-+ ||ads.sexforums.com^
-+ ||ads.sexspaces.com^
-+ ||ads.sexspaces.net^
-+ ||ads.sextip.de^
-+ ||ads.singlescash.com^
-+ ||ads.smartclicks.net^
-+ ||ads.smartolution.com^
-+ ||ads.smartpressgroup.com^
-+ ||ads.softure.com^
-+ ||ads.sooran.ir^
-+ ||ads.soush.com^
-+ ||ads.southbendtribune.com^
-+ ||ads.spaceports.com^
-+ ||ads.spaceports.net^
-+ ||ads.sportsverige.com^
-+ ||ads.sprotiv.org^
-+ ||ads.squarecrop.net^
-+ ||ads.starnews.com^
-+ ||ads.start.no^
-+ ||ads.startext.net^
-+ ||ads.stepstone.no^
-+ ||ads.stockbanners.com^
-+ ||ads.str8up.com^
-+ ||ads.stratics.com^
-+ ||ads.streetfire.net^
-+ ||ads.suchen.de^
-+ ||ads.superwarehouse.com^
-+ ||ads.suprnova.com^
-+ ||ads.svatbata.org^
-+ ||ads.swirve.com^
-+ ||ads.sysmesh.com^
-+ ||ads.tackyworld.com^
-+ ||ads.techeyenetwork.com^
-+ ||ads.techguy.org^
-+ ||ads.techmediapartners.co.uk^
-+ ||ads.technologyguide.com^
-+ ||ads.tentonhammer.com^
-+ ||ads.the-bikini.com^
-+ ||ads.thebulgarianpost.com^
-+ ||ads.thedeal.com^
-+ ||ads.thehour.com^
-+ ||ads.themes.org^
-+ ||ads.thenewpaperclip.com^
-+ ||ads.tianguxx.com^
-+ ||ads.tij-mobile.com^
-+ ||ads.timesdaily.com^
-+ ||ads.tinet.ie^
-+ ||ads.tm-research.com^
-+ ||ads.topcities.com^
-+ ||ads.trackentertainment.com^
-+ ||ads.travellogger.com^
-+ ||ads.tripican.com^
-+ ||ads.tritonmedia.com^
-+ ||ads.truongton.net^
-+ ||ads.tv7.bg^
-+ ||ads.tweakxp.com^
-+ ||ads.tweetmeme.com^
-+ ||ads.ugo.com^
-+ ||ads.uol.com.ar^
-+ ||ads.uploading.com^
-+ ||ads.urbanreach.net^
-+ ||ads.usermedia.net^
-+ ||ads.utopiad.com^
-+ ||ads.velcom.com^
-+ ||ads.vertele.com^
-+ ||ads.veryfunnyads.com^
-+ ||ads.videoaxs.com^
-+ ||ads.vidsense.com^
-+ ||ads.viewx.co.uk^
-+ ||ads.viksaffiliates.com^
-+ ||ads.vipcams.com^
-+ ||ads.virtualmalaysia.com^
-+ ||ads.visitbritain.com^
-+ ||ads.vitalix.net^
-+ ||ads.volenta.biz^
-+ ||ads.waxum.hu^
-+ ||ads.wazooweb.com^
-+ ||ads.weatherflow.com^
-+ ||ads.web.nl^
-+ ||ads.web21.de^
-+ ||ads.webccm.net^
-+ ||ads.webmasterprofitcenter.com^
-+ ||ads.webnetad.com^
-+ ||ads.webtools24.net^
-+ ||ads.webwosting.com^
-+ ||ads.whatsonstage.com^
-+ ||ads.win.rs^
-+ ||ads.worldemail.com^
-+ ||adventhealthcoronavirustesting.com^
-+ ||afectadoscoronaviruscovid-19.com^
-+ ||afectadoscoronaviruscovid19.com^
-+ ||affectedbycorona.com^
-+ ||africacovidchallengei4a.com^
-+ ||after-corona-world-vision.com^
-+ ||aftercovid.com^
-+ ||aftermarketcovid19.com^
-+ ||aftermathcovid19.com^
-+ ||afterthecoronavirus.com^
-+ ||against-covid19.com^
-+ ||againstcoronavirus.solutions^
-+ ||agrobotigacovides.com^
-+ ||aguardientecoronado.com^
-+ ||ahfcovid19.com^
-+ ||ai4covid.com^
-+ ||aiforcovid.com^
-+ ||aiqukklwjezvm.online^
-+ ||airdrpsalerts.sbs^
-+ ||akuloti.site^
-+ ||alabamacovidcleaning.com^
-+ ||aldocoronado.com^
-+ ||alleswaszaehltcorona.com^
-+ ||allicebooky.shop^
-+ ||americandreamepidemic.com^
-+ ||amertacorona.com^
-+ ||amycorona.com^
-+ ||anatrace-covid.com^
-+ ||andthencamecovid.com^
-+ ||anewpostcovidworld.com^
-+ ||anti-corona24.com^
-+ ||antibodycovidtesting.com^
-+ ||apacovid.com^
-+ ||api-empreeendefest.signo.dev.br^
-+ ||apoyocovid19.com^
-+ ||appcorona.com^
-+ ||archivocovid.com^
-+ ||archivocovid19.com^
-+ ||arcovid.com^
-+ ||ardodfrar.in^
-+ ||arhcovid19.com^
-+ ||arosycoronasfunebres.com^
-+ ||artistsagainstcorona.com^
-+ ||asacovid19.com^
-+ ||asdacoronavirus.com^
-+ ||askaboutcovid.com^
-+ ||asphesimopnso.site^
-+ ||aspire-covid19.com^
-+ ||atdobalybyxii.online^
-+ ||atlantacovidtesting.com^
-+ ||bafkreicyghdtqspqrperjhwyfum7blmddcsnbeegsm5n46dfjkgypjcste.ipfs.dweb.link^
-+ ||bakethepandemic.com^
-+ ||bandacoronacion.com^
-+ ||bankruptcyaftercorona.com^
-+ ||baridab.site^
-+ ||bascovidales.com^
-+ ||baseopenwald.qivorpaknode.garden^
-+ ||bcorona.com^
-+ ||bdl-covid.com^
-+ ||beasinc.com^
-+ ||beatingthecoronavirus.com^
-+ ||becoronavirussmart.com^
-+ ||behzqabhrwyil.website^
-+ ||bermudacovid.com^
-+ ||besafecovid.com^
-+ ||bestpandemiccookbook.com^
-+ ||beyondcorona.church^
-+ ||beyondpandemic.com^
-+ ||bharatstories.com^
-+ ||bikexa.shop^
-+ ||bitcoinpandemic.com^
-+ ||bleuzeit8zone.dexisnetflow.garden^
-+ ||blissful-mist.com^
-+ ||bluetonstudio.com.au^
-+ ||bmcovidscreen.com^
-+ ||boatstoragecoronado.com^
-+ ||booking.com-arrival-reservation.com^
-+ ||brasstapcoronaclub.com^
-+ ||breakpointeandcoronado.com^
-+ ||brg-coronavirus-covid.com^
-+ ||brhnedxrpvrzu.website^
-+ ||brisk-oasis.com^
-+ ||brooklyncovidresponse.com^
-+ ||bumpcovid-19.com^
-+ ||businessagainstcovid.com^
-+ ||businesscovid19.com^
-+ ||buycovid-19ppe.com^
-+ ||byebyecoronaparty.net^
-+ ||caaguazu.com.py^
-+ ||cacentralaff.com^
-+ ||cadeltaoff.com^
-+ ||cafe-corona.net^
-+ ||cainfiniteadd.com^
-+ ||calicovidshield.com^
-+ ||californiacovid19law.com^
-+ ||californiacovidcontrol.com^
-+ ||californiacovidlawyers.com^
-+ ||campo-corona.com^
-+ ||canadacovidresponse.com^
-+ ||candaonlineshop.top^
-+ ||canttouchthiscorona.com^
-+ ||cardsagainstcoronavirus.com^
-+ ||careersineyecare.org.uk^
-+ ||caringthroughcoronavirus.com^
-+ ||carlos-corona.com^
-+ ||carmencoronada.com^
-+ ||carolinacovidtesting.com^
-+ ||carpetcleaningincoronadelmar.com^
-+ ||cash4covid.com^
-+ ||casigmacrucial.com^
-+ ||casino-westace.fr^
-+ ||cavectorwett.com^
-+ ||ccovid.com^
-+ ||ceciliahenriquezcoronado.com^
-+ ||chargethroughcovid.com^
-+ ||check4corona.net^
-+ ||checkforcovid19.com^
-+ ||checkmatecoronavirus.com^
-+ ||checkmycovid19.com^
-+ ||chinacovid2019.com^
-+ ||chinawuhanvirus.com^
-+ ||chlorineprophylaxiscovid-19.com^
-+ ||chongcovid.com^
-+ ||cleanpandemicdata.com^
-+ ||climatepandemic.com^
-+ ||clinicalcovid.com^
-+ ||clobberthecorona.com^
-+ ||cloison-anticovid.com^
-+ ||clothesforcorona.com^
-+ ||cloudvscovid.com^
-+ ||cms-covid19.com^
-+ ||coffeeincovid.com^
-+ ||colcorona.net^
-+ ||combatcovid19.com^
-+ ||combatcovidhq.com^
-+ ||combatingcovid.com^
-+ ||comggmonaltyvibriosis.life^
-+ ||connectagainstcovid.com^
-+ ||connectingmomsamidcovid.com^
-+ ||connectionamongcovid.com^
-+ ||conqueringcovidchaos.com^
-+ ||constructoracoronacabrera.com^
-+ ||contipharma-covid19.com^
-+ ||contracovid.com^
-+ ||contractorsagainstcovid19.com^
-+ ||contribution4corona.com^
-+ ||copingwithcovid-19.net^
-+ ||corona-abstrich.com^
-+ ||corona-action.com^
-+ ||corona-candle.com^
-+ ||corona-cleaningpros.com^
-+ ||corona-cloth.com^
-+ ||corona-companies.com^
-+ ||corona-construction.com^
-+ ||corona-discount.com^
-+ ||corona-faq.info^
-+ ||corona-fight.com^
-+ ||corona-galerie.com^
-+ ||corona-game.com^
-+ ||corona-garden.com^
-+ ||corona-gebaeudereinigung-augsburg.net^
-+ ||corona-gedichte.com^
-+ ||corona-geschichten.com^
-+ ||corona-goods-gunma.com^
-+ ||corona-info-tour.com^
-+ ||corona-infos.com^
-+ ||corona-kinkyu-action.com^
-+ ||corona-mietrecht.com^
-+ ||corona-mit-adhs-kids.com^
-+ ||corona-no.net^
-+ ||corona-older.com^
-+ ||corona-punk.com^
-+ ||corona-rebound.com^
-+ ||corona-recoveryfund.com^
-+ ||corona-schadensersatz.net^
-+ ||corona-schnelltest.center^
-+ ||corona-seelsorge.net^
-+ ||corona-solution.com^
-+ ||corona-spuckschutz.com^
-+ ||corona-stats.mobi^
-+ ||corona-t.com^
-+ ||corona-tees.com^
-+ ||corona-tracking.info^
-+ ||corona-tuev.com^
-+ ||corona-virus-detection.com^
-+ ||corona-virus-hq.net^
-+ ||corona-virus-information.com^
-+ ||corona-viruses.net^
-+ ||corona-warn-app.com^
-+ ||corona-warnapp.com^
-+ ||corona.cat^
-+ ||corona.club^
-+ ||corona168.com^
-+ ||corona2426tks.com^
-+ ||coronaabgabe.com^
-+ ||coronaads.com^
-+ ||coronaaircleaner.com^
-+ ||coronaanalytics.com^
-+ ||coronaappeals.net^
-+ ||coronaappliances.com^
-+ ||coronaarab.com^
-+ ||coronaartist.com^
-+ ||coronaassay.com^
-+ ||coronabag.com^
-+ ||coronabankrupctylawyers.com^
-+ ||coronabear.club^
-+ ||coronabeschermingscherm.com^
-+ ||coronabest.net^
-+ ||coronabewegwijzering.com^
-+ ||coronabezos.com^
-+ ||coronabluesmovie.com^
-+ ||coronabogados.com^
-+ ||coronabond.com^
-+ ||coronabrand.com^
-+ ||coronabusinessattorney.com^
-+ ||coronabusinesshelp.com^
-+ ||coronabusinesslawyer.com^
-+ ||coronabuster.net^
-+ ||coronabuyback.com^
-+ ||coronacabin.com^
-+ ||coronacal.biz^
-+ ||coronacarry.com^
-+ ||coronacarsprogram.com^
-+ ||coronacat.com^
-+ ||coronacation.net^
-+ ||coronacationnation.com^
-+ ||coronacatures.com^
-+ ||coronacene.com^
-+ ||coronacheck.science^
-+ ||coronacheckr.com^
-+ ||coronachronic.com^
-+ ||coronaciondelaestrella.com^
-+ ||coronacircus.com^
-+ ||coronacleanair.com^
-+ ||coronacleanerco.com^
-+ ||coronacolorkits.com^
-+ ||coronacomedytour.com^
-+ ||coronacomments.com^
-+ ||coronacompare.com^
-+ ||coronacoord.com^
-+ ||coronacopingcourse.com^
-+ ||coronacopper.com^
-+ ||coronacopy.com^
-+ ||coronacord.com^
-+ ||coronacovid19testing.com^
-+ ||coronacrisisplanner.com^
-+ ||coronacrooks.com^
-+ ||coronacups.amsterdam^
-+ ||coronacurenews.com^
-+ ||coronadagboeken.com^
-+ ||coronadatencheck.com^
-+ ||coronadeal.com^
-+ ||coronadefenseguide.com^
-+ ||coronadelmarrealtors.com^
-+ ||coronadex.com^
-+ ||coronadivorcelawyernj.com^
-+ ||coronadns.com^
-+ ||coronado-global.com^
-+ ||coronado365.com^
-+ ||coronadoarbitration.com^
-+ ||coronadoase.com^
-+ ||coronadonoodle.com^
-+ ||coronadontpanic.com^
-+ ||coronadorealtyllc.com^
-+ ||coronadorent.com^
-+ ||coronadoshores-condos.com^
-+ ||coronadosupholstery.com^
-+ ||coronaengenharia.com^
-+ ||coronaersatz.schule^
-+ ||coronafacts.biz^
-+ ||coronafakten.com^
-+ ||coronafaqs.biz^
-+ ||coronafatalities.com^
-+ ||coronaforza.com^
-+ ||coronafraud.com^
-+ ||coronafreecamsex.com^
-+ ||coronafreeid.com^
-+ ||coronafriendlyevents.com^
-+ ||coronafter.com^
-+ ||coronafunds.com^
-+ ||coronafunds.net^
-+ ||coronagate.blog^
-+ ||coronagolfer.com^
-+ ||coronaguardhealth.com^
-+ ||coronaguideforbusiness.com^
-+ ||coronagurgeltest.com^
-+ ||coronahamm.com^
-+ ||coronahandcure.com^
-+ ||coronahazmatsuits.com^
-+ ||coronaheadsup.com^
-+ ||coronaheld.com^
-+ ||coronahelpsouthdakota.com^
-+ ||coronaheroesvictimfund.com^
-+ ||coronaheroesvictimsfund.com^
-+ ||coronaheroesvictmfund.com^
-+ ||coronaheros.com^
-+ ||coronahilfmittel.com^
-+ ||coronahilfspaket.com^
-+ ||coronaitaly.com^
-+ ||coronakidsathome.com^
-+ ||coronaklartext.com^
-+ ||coronakrank.com^
-+ ||coronakrise-europa.net^
-+ ||coronakrise.com^
-+ ||coronalegalservice.com^
-+ ||coronalevel.com^
-+ ||coronallc.com^
-+ ||coronaloops.com^
-+ ||coronamakeoverchallenge.com^
-+ ||coronamarkt.com^
-+ ||coronamaskcompany.com^
-+ ||coronamasken24.com^
-+ ||coronamaskenshop.com^
-+ ||coronamaskexpress.com^
-+ ||coronamatik.com^
-+ ||coronamobiledetailing.com^
-+ ||coronamoderna.com^
-+ ||coronamutation.com^
-+ ||coronapandamic.com^
-+ ||coronapartyrental.com^
-+ ||coronapassport.com^
-+ ||coronapercapita.com^
-+ ||coronapersona.com^
-+ ||coronapersonality.com^
-+ ||coronaplanners.com^
-+ ||coronapolis.com^
-+ ||coronapolocalypse.com^
-+ ||coronaportal.net^
-+ ||coronaprotocols.com^
-+ ||coronarenewal.com^
-+ ||coronarevalidatieoss.com^
-+ ||coronaripalace.com^
-+ ||coronarun.com^
-+ ||coronarush.com^
-+ ||coronasa.com^
-+ ||coronasadness.com^
-+ ||coronasafe.network^
-+ ||coronasafeliving.com^
-+ ||coronasafetyscreen.com^
-+ ||coronasanitizeclean.com^
-+ ||coronaschutz-online.com^
-+ ||coronaschutz-shop.com^
-+ ||coronaschutzbedarf.com^
-+ ||coronaschweiz.com^
-+ ||coronascreeningcenters.com^
-+ ||coronascreeningtest.com^
-+ ||coronasfunebresguadalajara.com^
-+ ||coronasfunerarias.madrid^
-+ ||coronashoponline.com^
-+ ||coronashutdown.com^
-+ ||coronaskid.com^
-+ ||coronaspiel.com^
-+ ||coronasplashguard.com^
-+ ||coronastatista.com^
-+ ||coronastresscounseling.com^
-+ ||coronastrike.net^
-+ ||coronasunnews.com^
-+ ||coronasupplyshop.com^
-+ ||coronasurveys.com^
-+ ||coronasweep.com^
-+ ||coronaterror.com^
-+ ||coronatest-hamburg.com^
-+ ||coronatest-zentrum.com^
-+ ||coronatestct.com^
-+ ||coronatestmixtape.com^
-+ ||coronatestnow.com^
-+ ||coronathenewnormal.com^
-+ ||coronathonturkiye.com^
-+ ||coronationregistrars.com^
-+ ||coronatko.com^
-+ ||coronatokens.com^
-+ ||coronatom.com^
-+ ||coronatunity.com^
-+ ||coronatutoring.com^
-+ ||coronatypewriters.com^
-+ ||coronaupdates-zum-hoeren.com^
-+ ||coronavate.com^
-+ ||coronavaxinfo.com^
-+ ||coronavfraud.com^
-+ ||coronavict.com^
-+ ||coronavictimcompensationfund.com^
-+ ||coronavictimes.net^
-+ ||coronavictimscompensationfund.com^
-+ ||coronaviral-times.today^
-+ ||coronaviral.fyi^
-+ ||coronavirus-apparel.com^
-+ ||coronavirus-archive.com^
-+ ||coronavirus-baseball.com^
-+ ||coronavirus-busters.com^
-+ ||coronavirus-clinic.com^
-+ ||coronavirus-cpas.com^
-+ ||coronavirus-infektionsschutz.com^
-+ ||coronavirus-smell-loss.com^
-+ ||coronavirus-statistiques.com^
-+ ||coronavirus2020s.com^
-+ ||coronavirus2020survey.com^
-+ ||coronavirus777.com^
-+ ||coronavirusaccountability.com^
-+ ||coronavirusaidresources.com^
-+ ||coronavirusalabama.com^
-+ ||coronavirusandthechurch.com^
-+ ||coronavirusasda.com^
-+ ||coronavirusbirmingham.com^
-+ ||coronavirusblast.com^
-+ ||coronaviruscalm.net^
-+ ||coronaviruscameras.com^
-+ ||coronaviruscarecubes.com^
-+ ||coronavirusconcert.com^
-+ ||coronavirusdamages.com^
-+ ||coronavirusdatadonation.com^
-+ ||coronavirusecuador.com^
-+ ||coronavirusfigures.com^
-+ ||coronavirusflutest.com^
-+ ||coronavirushealthchats.com^
-+ ||coronavirushealthgear.com^
-+ ||coronavirusheroes.com^
-+ ||coronavirushomekits.com^
-+ ||coronavirushotels.com^
-+ ||coronavirusinfolive.com^
-+ ||coronavirusinjuryfund.com^
-+ ||coronavirusinsuranceinfo.com^
-+ ||coronavirusisascam.com^
-+ ||coronavirusisbullshit.com^
-+ ||coronavirusisbullsht.com^
-+ ||coronavirusisover.com^
-+ ||coronavirusissues.com^
-+ ||coronaviruslawfirmnj.com^
-+ ||coronaviruslawfirmny.com^
-+ ||coronaviruslawsuitusa.com^
-+ ||coronaviruslawyernewjersey.com^
-+ ||coronaviruslegalinfo.com^
-+ ||coronaviruslegalinformation.com^
-+ ||coronaviruslegalupdate.com^
-+ ||coronaviruslifeinsurance.com^
-+ ||coronavirusmania.com^
-+ ||coronavirusmaui.com^
-+ ||coronavirusmediasources.com^
-+ ||coronavirusmedicare.com^
-+ ||coronavirusmiamiflorida.com^
-+ ||coronavirusminutes.com^
-+ ||coronavirusneworleans.com^
-+ ||coronavirusnewrochelle.net^
-+ ||coronavirusonlinemasks.com^
-+ ||coronavirusonlinememorial.com^
-+ ||coronavirusoracle.com^
-+ ||coronaviruspandemic.tips^
-+ ||coronavirusporn.net^
-+ ||coronaviruspositive.com^
-+ ||coronaviruspost.com^
-+ ||coronavirusquestioner.com^
-+ ||coronavirusreading.com^
-+ ||coronavirusrecoveryclaim.com^
-+ ||coronavirusrefi.com^
-+ ||coronavirusresearchdatacenter.org^
-+ ||coronavirusresearchteam.com^
-+ ||coronavirusresourcehub.com^
-+ ||coronavirusresourcesforprinters.com^
-+ ||coronavirusresults.com^
-+ ||coronavirussafetyadvice.com^
-+ ||coronavirussafetycleaning.com^
-+ ||coronavirussafr.com^
-+ ||coronavirusseminar.com^
-+ ||coronavirusshopstore.com^
-+ ||coronavirusshots.net^
-+ ||coronavirustennessee.com^
-+ ||coronavirustesters.com^
-+ ||coronavirustestfacility.com^
-+ ||coronavirustestla.com^
-+ ||coronavirustestutah.com^
-+ ||coronavirusthornwood.com^
-+ ||coronavirustimecapsule.com^
-+ ||coronavirusunchartedterritory.com^
-+ ||coronavirusuvlight.com^
-+ ||coronavirusvisit.com^
-+ ||coronavirusworldreport.com^
-+ ||coronavirusworldupdates.com^
-+ ||coronavision.net^
-+ ||coronawayoflife.com^
-+ ||coronawearusa.com^
-+ ||coronawebtools.com^
-+ ||coronaworldwide.com^
-+ ||coronawunderkind.com^
-+ ||corps.nuclear-linup.cyou^
-+ ||covid-19-graphs.net^
-+ ||covid-19-hrqol.com^
-+ ||covid-19-lawsuit.com^
-+ ||covid-19-takecarekit.com^
-+ ||covid-19-trials.com^
-+ ||covid-19.sarl^
-+ ||covid-19america.com^
-+ ||covid-19begone.com^
-+ ||covid-19canada.com^
-+ ||covid-19claims.com^
-+ ||covid-19cleanexperts.com^
-+ ||covid-19cleaningco.com^
-+ ||covid-19cleaningdisinfecting.com^
-+ ||covid-19consultation.com^
-+ ||covid-19creativity.com^
-+ ||covid-19disinfectant.com^
-+ ||covid-19gloves.com^
-+ ||covid-19grads.com^
-+ ||covid-19grief.com^
-+ ||covid-19heroescompensationfundinfo.com^
-+ ||covid-19hoax.com^
-+ ||covid-19inspection.com^
-+ ||covid-19insuranceattorney.com^
-+ ||covid-19journal.com^
-+ ||covid-19kidz.com^
-+ ||covid-19killer.com^
-+ ||covid-19learning.com^
-+ ||covid-19mailer.com^
-+ ||covid-19newsreport.com^
-+ ||covid-19projections.com^
-+ ||covid-19proof.com^
-+ ||covid-19sg.com^
-+ ||covid-19stx.com^
-+ ||covid-19testingtruck.com^
-+ ||covid-19vsflu.com^
-+ ||covid-25.com^
-+ ||covid-26.com^
-+ ||covid-27.com^
-+ ||covid-age.com^
-+ ||covid-companions.com^
-+ ||covid-critical.com^
-+ ||covid-debtrelief.com^
-+ ||covid-dr.com^
-+ ||covid-emergency.com^
-+ ||covid-end.com^
-+ ||covid-eo.com^
-+ ||covid-healthplans.com^
-+ ||covid-immemory.com^
-+ ||covid-immunity-test.com^
-+ ||covid-impfstelle.com^
-+ ||covid-it.com^
-+ ||covid-items.com^
-+ ||covid-kids.com^
-+ ||covid-killers.com^
-+ ||covid-kiosk.com^
-+ ||covid-kuban.info^
-+ ||covid-nma.com^
-+ ||covid-omics.app^
-+ ||covid-questionnaire.com^
-+ ||covid-response.com^
-+ ||covid-sanitized.com^
-+ ||covid-see.com^
-+ ||covid-shield.com^
-+ ||covid-shop24.com^
-+ ||covid-sim.com^
-+ ||covid-simulator.com^
-+ ||covid-ssa.com^
-+ ||covid-suits.com^
-+ ||covid-survey.com^
-+ ||covid-testcyprus.com^
-+ ||covid-theugly.com^
-+ ||covid-track.com^
-+ ||covid-web.com^
-+ ||covid.chat^
-+ ||covid.download^
-+ ||covid.gripe^
-+ ||covid.tips^
-+ ||covid19-coronavirus.biz^
-+ ||covid19-dashboard.com^
-+ ||covid19-help360.com^
-+ ||covid19-interventions.com^
-+ ||covid19-japan.com^
-+ ||covid19-journal.com^
-+ ||covid19-kid.com^
-+ ||covid19-linkhealth.com^
-+ ||covid19-masque.com^
-+ ||covid19-medicaments.com^
-+ ||covid19-ppesupplier.com^
-+ ||covid19-projections.com^
-+ ||covid19-ratten.net^
-+ ||covid19-review.com^
-+ ||covid19-trials.com^
-+ ||covid19-yamanaka.com^
-+ ||covid192022.com^
-+ ||covid19abogadas.com^
-+ ||covid19agp.com^
-+ ||covid19analytics.com^
-+ ||covid19api.com^
-+ ||covid19attorneys.com^
-+ ||covid19bakersfield.com^
-+ ||covid19basics.com^
-+ ||covid19bigdata.com^
-+ ||covid19bigquestions.com^
-+ ||covid19bizrelief.com^
-+ ||covid19bs.com^
-+ ||covid19businesscenter.com^
-+ ||covid19businessguidance.com^
-+ ||covid19buyerprotection.com^
-+ ||covid19buyerprotectionplan.com^
-+ ||covid19californiaattorneys.com^
-+ ||covid19californiaclassactionattorneys.com^
-+ ||covid19californiaclassactionlawyers.com^
-+ ||covid19californialawsuit.com^
-+ ||covid19carecubes.com^
-+ ||covid19caregiving.com^
-+ ||covid19cellatlas.com^
-+ ||covid19check-mg.com^
-+ ||covid19classactionsuit.com^
-+ ||covid19classof2020.com^
-+ ||covid19clinicaltrial.com^
-+ ||covid19communityresources.com^
-+ ||covid19companyreviews.com^
-+ ||covid19cookbook.com^
-+ ||covid19coronatest.com^
-+ ||covid19costume.com^
-+ ||covid19crawlz.com^
-+ ||covid19criticalcare.com^
-+ ||covid19crowd.com^
-+ ||covid19curfew.com^
-+ ||covid19cyberthreats.com^
-+ ||covid19data.zone^
-+ ||covid19datadonation.com^
-+ ||covid19debtassistance.com^
-+ ||covid19dental.com^
-+ ||covid19designtoolkit.com^
-+ ||covid19detectioncameras.com^
-+ ||covid19detectionsystems.com^
-+ ||covid19diploma.com^
-+ ||covid19disasterassistance.com^
-+ ||covid19econdatakenya.com^
-+ ||covid19economicimpact.com^
-+ ||covid19edtechguidance.com^
-+ ||covid19employmentlawsuits.com^
-+ ||covid19engr.com^
-+ ||covid19epi.com^
-+ ||covid19essentialworkersfund.com^
-+ ||covid19filters.com^
-+ ||covid19floridaattorney.com^
-+ ||covid19footage.com^
-+ ||covid19fundinfo.com^
-+ ||covid19fundlawfirm.com^
-+ ||covid19future.com^
-+ ||covid19graphs.net^
-+ ||covid19grip.com^
-+ ||covid19guards.com^
-+ ||covid19haitik2d.info^
-+ ||covid19hardships.com^
-+ ||covid19healthcarelawyers.com^
-+ ||covid19healthdiaries.com^
-+ ||covid19healthliteracyproject.com^
-+ ||covid19herovictimfund.com^
-+ ||covid19hg.com^
-+ ||covid19hoax.com^
-+ ||covid19homesellerplan.com^
-+ ||covid19hospitalstatus.com^
-+ ||covid19hotel.info^
-+ ||covid19independenceday.com^
-+ ||covid19infection2019.com^
-+ ||covid19insurancelies.com^
-+ ||covid19isover.com^
-+ ||covid19jogging.com^
-+ ||covid19lattorney.com^
-+ ||covid19lawlab.com^
-+ ||covid19legalny.com^
-+ ||covid19legends.com^
-+ ||covid19loan.com^
-+ ||covid19loanassist.com^
-+ ||covid19loanmod.com^
-+ ||covid19loveletters.net^
-+ ||covid19mab.com^
-+ ||covid19makerchallenge.com^
-+ ||covid19massacre.com^
-+ ||covid19memorial.com^
-+ ||covid19memorium.com^
-+ ||covid19messengers.com^
-+ ||covid19mrna.com^
-+ ||covid19myst.com^
-+ ||covid19nasalsprays.com^
-+ ||covid19nepal.com^
-+ ||covid19news-updates.com^
-+ ||covid19news.biz^
-+ ||covid19newyorkcity.com^
-+ ||covid19newyorklawyers.com^
-+ ||covid19notify.com^
-+ ||covid19novel.com^
-+ ||covid19nyctaskforce.com^
-+ ||covid19oshawa.com^
-+ ||covid19pandemicnews.com^
-+ ||covid19pfizervaccine.com^
-+ ||covid19policing.com^
-+ ||covid19policy.com^
-+ ||covid19pos.com^
-+ ||covid19prayerwall.com^
-+ ||covid19primer.com^
-+ ||covid19productions.com^
-+ ||covid19protectivekit.com^
-+ ||covid19ptsd.net^
-+ ||covid19publicadjuster.com^
-+ ||covid19quickresponsetest.com^
-+ ||covid19reaper.com^
-+ ||covid19recoveryadvice.com^
-+ ||covid19refusers.com^
-+ ||covid19rehberi.com^
-+ ||covid19relief.net^
-+ ||covid19reliefvoucher.com^
-+ ||covid19reporter.com^
-+ ||covid19resourcecenter.com^
-+ ||covid19resources4you.com^
-+ ||covid19safetyequipment.com^
-+ ||covid19safewear.com^
-+ ||covid19sci.com^
-+ ||covid19sellersplan.com^
-+ ||covid19sequential.com^
-+ ||covid19settlement.com^
-+ ||covid19settlementfund.com^
-+ ||covid19shelter.com^
-+ ||covid19shipt.com^
-+ ||covid19si.com^
-+ ||covid19sidejobs.com^
-+ ||covid19smelltaste.com^
-+ ||covid19staffing.com^
-+ ||covid19statlab.com^
-+ ||covid19stylemask.com^
-+ ||covid19surpport.com^
-+ ||covid19survey.net^
-+ ||covid19telemeddoctors.net^
-+ ||covid19telemedics.com^
-+ ||covid19terminated.com^
-+ ||covid19terminators.com^
-+ ||covid19testbrevard.com^
-+ ||covid19testingonline.com^
-+ ||covid19thepoliticalflu.com^
-+ ||covid19therapists.com^
-+ ||covid19tm.com^
-+ ||covid19toc.com^
-+ ||covid19travel.com^
-+ ||covid19trial.com^
-+ ||covid19tu.com^
-+ ||covid19unemployment.com^
-+ ||covid19untoldstories.com^
-+ ||covid19va.net^
-+ ||covid19vaccinelaw.com^
-+ ||covid19vaccinelawsuits.com^
-+ ||covid19vaccinelosangeles.com^
-+ ||covid19vaccinepatch.com^
-+ ||covid19vaccinesafe.com^
-+ ||covid19viralprecations.com^
-+ ||covid19viralprecaution.com^
-+ ||covid19virusdata.com^
-+ ||covid19viruslaw.com^
-+ ||covid19virusnearme.com^
-+ ||covid19virusnewsupdate.com^
-+ ||covid19virusregulations.com^
-+ ||covid19virussupplies.com^
-+ ||covid19virussymptoms.com^
-+ ||covid19visa.com^
-+ ||covid19visualiser.com^
-+ ||covid19vitamininfusion.com^
-+ ||covid19watcher.com^
-+ ||covid19webmeeting.com^
-+ ||covid19worldleaders.com^
-+ ||covid19zerotolerance.com^
-+ ||covid2019.biz^
-+ ||covid2door.com^
-+ ||covid2norm.com^
-+ ||covid365.com^
-+ ||covid404.com^
-+ ||covid66.com^
-+ ||covidaba.com^
-+ ||covidacrossamerica.com^
-+ ||covidadvocacyexchange.com^
-+ ||covidadvocacyexchange.net^
-+ ||covidadvocates.org^
-+ ||covidaftercare.com^
-+ ||covidandi.com^
-+ ||covidandyossarian.com^
-+ ||covidant.com^
-+ ||covidarms.com^
-+ ||covidastrazeneca.com^
-+ ||covidayacancer.com^
-+ ||covidbarriers.com^
-+ ||covidbeaters.com^
-+ ||covidbeer.com^
-+ ||covidbharat.com^
-+ ||covidbilling.com^
-+ ||covidblog.com^
-+ ||covidbooster.com^
-+ ||covidboy.com^
-+ ||covidbrain.com^
-+ ||covidbusinesscheck.com^
-+ ||covidbusinessinterruptionlawyer.com^
-+ ||covidbusinessinterruptionlawyers.com^
-+ ||covidcaddie.com^
-+ ||covidcanine.com^
-+ ||covidcanvas.com^
-+ ||covidcap.com^
-+ ||covidcapital.com^
-+ ||covidcareclinic.com^
-+ ||covidcarecube.com^
-+ ||covidcarega.com^
-+ ||covidcaregivers.com^
-+ ||covidcarekit.com^
-+ ||covidcast.com^
-+ ||covidcautious.com^
-+ ||covidchecker.com^
-+ ||covidchecklists.com^
-+ ||covidchecknow.com^
-+ ||covidciggies.com^
-+ ||covidclaims.com^
-+ ||covidcleaningcompany.com^
-+ ||covidcleaningcrew.com^
-+ ||covidcleanse.com^
-+ ||covidcleantech.com^
-+ ||covidclearppe.com^
-+ ||covidclinical.net^
-+ ||covidclutch.com^
-+ ||covidcme.com^
-+ ||covidcode.net^
-+ ||covidcollar.com^
-+ ||covidcomebackpgh.com^
-+ ||covidcomedy.com^
-+ ||covidcompliance.com^
-+ ||covidcompliancepro.com^
-+ ||covidcomply.com^
-+ ||covidcompute.com^
-+ ||covidconfidential.com^
-+ ||covidconsultantsgroup.com^
-+ ||covidcontrolled.com^
-+ ||covidconversations.com^
-+ ||covidcoughinc.com^
-+ ||covidcoverage.biz^
-+ ||covidcreds.com^
-+ ||covidcruise.com^
-+ ||covidcuffs.com^
-+ ||covidcybersecurity.com^
-+ ||coviddangers.com^
-+ ||coviddatadispatch.com^
-+ ||coviddatahub.com^
-+ ||coviddeep.com^
-+ ||coviddeep.net^
-+ ||coviddetect.com^
-+ ||coviddiary.com^
-+ ||coviddisabilityarchive.com^
-+ ||coviddonald.com^
-+ ||covidedmonton.com^
-+ ||covidedtesting.com^
-+ ||covidelderly.com^
-+ ||covidemence.com^
-+ ||covident.net^
-+ ||covideo19investing.com^
-+ ||covidetector.com^
-+ ||covideventriskmodel.com^
-+ ||covidfactfiction.com^
-+ ||covidfeelgood.com^
-+ ||covidfilmcertification.com^
-+ ||covidfinancialroadmap.com^
-+ ||covidfingerprint.com^
-+ ||covidfingerprinting.net^
-+ ||covidfirmresource.com^
-+ ||covidfirstlineworkers.com^
-+ ||covidfit.com^
-+ ||covidflag.net^
-+ ||covidfluvaccine.com^
-+ ||covidfoodbox.com^
-+ ||covidforum.net^
-+ ||covidfreedompass.com^
-+ ||covidfreeflorida.com^
-+ ||covidfreergv.com^
-+ ||covidfreetv.com^
-+ ||covidfreevegas.com^
-+ ||covidfreeworkforce.com^
-+ ||covidfreezove.com^
-+ ||covidfriday.com^
-+ ||covidfrontlinepro.com^
-+ ||covidfundinfo.net^
-+ ||covidgapyear.com^
-+ ||covidgear.net^
-+ ||covidgenetest.com^
-+ ||covidggn.com^
-+ ||covidglobalhackathon.com^
-+ ||covidgraph.com^
-+ ||covidguardus.com^
-+ ||covidheartclinic.com^
-+ ||covidheat.com^
-+ ||covidhelp.net^
-+ ||covidhge.com^
-+ ||covidhigh.com^
-+ ||covidhilfe24.com^
-+ ||covidhomeremedies.com^
-+ ||covidhometrial.com^
-+ ||covidhornets.com^
-+ ||covidhotline.com^
-+ ||covidhqafrica.com^
-+ ||covidial.com^
-+ ||covidillinoisnews.com^
-+ ||covidimunnity.net^
-+ ||covidinc.com^
-+ ||covidincare.net^
-+ ||covidindex.com^
-+ ||covidindiatracker.com^
-+ ||covidindore.com^
-+ ||covidinfos.net^
-+ ||covidinjuryusa.com^
-+ ||covidinnovations.com^
-+ ||covidinspire.com^
-+ ||covidiocracy.com^
-+ ||covidiotism.com^
-+ ||covidisascam.com^
-+ ||covidised.com^
-+ ||covidit.com^
-+ ||covidjustice.com^
-+ ||covidkid.biz^
-+ ||covidkid.com^
-+ ||covidkid.info^
-+ ||covidkiddies.com^
-+ ||covidkids.com^
-+ ||covidkidsapparel.com^
-+ ||covidkillas.com^
-+ ||covidlabtests.com^
-+ ||covidlawyers.com^
-+ ||covidlayoff.com^
-+ ||covidlegacy.com^
-+ ||covidlegalclaims.com^
-+ ||covidlessdubai.com^
-+ ||covidlinks.com^
-+ ||covidlitigation.com^
-+ ||covidloader.com^
-+ ||covidloansusa.com^
-+ ||covidlonghauler.info^
-+ ||covidlonghaulers.com^
-+ ||covidlounge.com^
-+ ||covidmailer.com^
-+ ||covidmapper.com^
-+ ||covidmarket.com^
-+ ||covidmaskssupply.com^
-+ ||covidmeetups.com^
-+ ||covidmobilize.com^
-+ ||covidmonday.com^
-+ ||covidmonologues.com^
-+ ||covidmontereycounty.com^
-+ ||covidmouth.com^
-+ ||covidmouthrinse.com^
-+ ||covidmsp.com^
-+ ||covidmurderhornets.com^
-+ ||covidmuseum.com^
-+ ||covidnasalsprays.com^
-+ ||covidnator19.com^
-+ ||covidnegatives.com^
-+ ||covidneutralize.com^
-+ ||covidnotify.com^
-+ ||covidnurses.com^
-+ ||covidnursingproviders.net^
-+ ||covidoffers.com^
-+ ||covidoggi.com^
-+ ||covidoneniner.com^
-+ ||covidonsetsafety.com^
-+ ||covidoperation.com^
-+ ||covidoutcome.com^
-+ ||covidoutlook.com^
-+ ||covidpapers.com^
-+ ||covidpark.com^
-+ ||covidparody.com^
-+ ||covidpatch.com^
-+ ||covidpathforward.com^
-+ ||covidpcsupport.net^
-+ ||covidpedialabs.com^
-+ ||covidpetcare.com^
-+ ||covidpets.com^
-+ ||covidpharmacology.com^
-+ ||covidplanetjournal.com^
-+ ||covidplanningtools.com^
-+ ||covidplanofaction.com^
-+ ||covidplasmasavealife.com^
-+ ||covidplasmastudy.com^
-+ ||covidplusmonitor.com^
-+ ||covidpodcast.com^
-+ ||covidpoetry.com^
-+ ||covidppemask.com^
-+ ||covidppesupply.com^
-+ ||covidpregnancyguide.com^
-+ ||covidpregstudy.com^
-+ ||covidprisondata.com^
-+ ||covidprisonproject.com^
-+ ||covidprivatenursing.net^
-+ ||covidproofing.com^
-+ ||covidquilt2020.com^
-+ ||covidradar.net^
-+ ||covidrdalliance.com^
-+ ||covidreceipts.com^
-+ ||covidrecord.com^
-+ ||covidreference.com^
-+ ||covidrefund.com^
-+ ||covidreliefhelp.com^
-+ ||covidrenthelp.com^
-+ ||covidreparations.com^
-+ ||covidreply.com^
-+ ||covidreportingservice.com^
-+ ||covidreports.com^
-+ ||covidresource.com^
-+ ||covidresponseng.com^
-+ ||covidresponsesupply.com^
-+ ||covidrestart.com^
-+ ||covidrestauranthelp.com^
-+ ||covidrestore.com^
-+ ||covidrevival.com^
-+ ||covidrisk.com^
-+ ||covidrobe.com^
-+ ||covidroundsca.biz^
-+ ||covidsa.com^
-+ ||covidsafe.services^
-+ ||covidsafemiddleeast.com^
-+ ||covidsafescreen.com^
-+ ||covidsafetygraphics.com^
-+ ||covidsafetypack.com^
-+ ||covidsaturday.com^
-+ ||covidsbahelp.com^
-+ ||covidscancode.com^
-+ ||covidscare.com^
-+ ||covidscreen.com^
-+ ||covidsecureapp.com^
-+ ||covidsentry.app^
-+ ||covidservingcovid.com^
-+ ||covidseverity.com^
-+ ||covidshield.app^
-+ ||covidshotathome.com^
-+ ||covidsignal.com^
-+ ||covidsignup.com^
-+ ||covidsites.com^
-+ ||covidsituation.com^
-+ ||covidsmelltherapy.com^
-+ ||covidsmostwanted.com^
-+ ||covidsocialets.com^
-+ ||covidsocialsecurity.com^
-+ ||covidsol.com^
-+ ||covidspeicheltest.com^
-+ ||covidspiracy.net^
-+ ||covidsransom.com^
-+ ||covidstem.com^
-+ ||covidstimuluswatch.net^
-+ ||covidsurvivorscoalition.com^
-+ ||covidswindle.com^
-+ ||covidtagscan.com^
-+ ||covidtaxadvise.com^
-+ ||covidtest-miami.com^
-+ ||covidtest.life^
-+ ||covidtestconnector.com^
-+ ||covidtestfortlauderdale.com^
-+ ||covidtestingca.com^
-+ ||covidtestingcenters.com^
-+ ||covidtestinghouston.com^
-+ ||covidtestingthailand.com^
-+ ||covidtestjax.com^
-+ ||covidtestlab.com^
-+ ||covidtestongsa.com^
-+ ||covidtestrapid15.com^
-+ ||covidticker.com^
-+ ||covidtigermasks.com^
-+ ||covidtimeout.com^
-+ ||covidtimes.net^
-+ ||covidtoc.com^
-+ ||covidtoolbox.com^
-+ ||covidtotals.com^
-+ ||covidtracker.cloud^
-+ ||covidtrackerct.com^
-+ ||covidtrackertracker.com^
-+ ||covidtracking.com^
-+ ||covidtrade.com^
-+ ||covidtrailer.com^
-+ ||covidtreatmentoptions.com^
-+ ||covidtrials.com^
-+ ||covidtruck.com^
-+ ||covidtuary.com^
-+ ||coviduvc.com^
-+ ||covidvaccinations.com^
-+ ||covidvaccinemedicine.com^
-+ ||covidvaccineproject.org^
-+ ||covidvaccinescheduling.com^
-+ ||covidvaxcenter.org^
-+ ||covidvaxinfo.com^
-+ ||covidvideo.com^
-+ ||covidview.com^
-+ ||covidvisualizer.com^
-+ ||covidwaco.com^
-+ ||covidwarzombies.com^
-+ ||covidweddings.com^
-+ ||covidwontbreakme.com^
-+ ||covidwords.com^
-+ ||cprcovid19.com^
-+ ||cqxllrpxcubqs.space^
-+ ||creativeepidemic.app^
-+ ||creativeinthetimeofcovid.com^
-+ ||creditpandemic.com^
-+ ||croatiacovid19.info^
-+ ||crstcoronavirusupdates.com^
-+ ||crushcovid.com^
-+ ||ctcovid19lawyers.com^
-+ ||culcovid19.com^
-+ ||culturecovid.com^
-+ ||cure2corona.com^
-+ ||curecovid19virus.com^
-+ ||curecovidconsortium.com^
-+ ||curecovidconsortium.info^
-+ ||curesforcovid.com^
-+ ||cyclingthroughapandemic.com^
-+ ||dadescovid.cat^
-+ ||darkstarcore.dexisnetflow.garden^
-+ ||datapandemic.com^
-+ ||dataversuscorona.com^
-+ ||datenschutz-corona.com^
-+ ||dc37covid19.net^
-+ ||dceocovid19resources.com^
-+ ||ddcoronavirus.com^
-+ ||definecovid19.com^
-+ ||dellcovid19.com^
-+ ||depository-trust-covid19.biz^
-+ ||depository-trust-covid19.com^
-+ ||designersagainstcoronavirus.com^
-+ ||designtocombatcovid19.com^
-+ ||digitalwellnesscovid.com^
-+ ||disinfezionecoronaviruspiemonte.com^
-+ ||ditestingmx-covid.com^
-+ ||dmapp.youku.com^
-+ ||dmdcorona.com^
-+ ||dnkncovid19.com^
-+ ||documentingcovid.com^
-+ ||doesuvkillcovid19.com^
-+ ||doineedacovid19test.com^
-+ ||donaldtrumpcorona.com^
-+ ||doruckmangedreamed.cyou^
-+ ||drugs4coronavirus.com^
-+ ||dsgvo-corona.com^
-+ ||dtaawuhancoronavirus.net^
-+ ||dtc-coronavirus.biz^
-+ ||dtcc-corona-prevention.net^
-+ ||dtcc-covid.biz^
-+ ||dtcc-covid19.biz^
-+ ||dtcccoronaprevention.biz^
-+ ||dtcccoronavirus.biz^
-+ ||dtcccovid-19prevention.biz^
-+ ||dtcccovid19.com^
-+ ||dtcccovid19prevention.biz^
-+ ||dtccovid.biz^
-+ ||dtmypozttguhc.site^
-+ ||duelocovid.com^
-+ ||duetocovid.com^
-+ ||duetocovid19.com^
-+ ||dusk-fen.com^
-+ ||e-covid19buy.com^
-+ ||ecoviddaily.com^
-+ ||ecovidian.com^
-+ ||educationcovid19.com^
-+ ||elbitvscovid19.com^
-+ ||eliminatecorona.com^
-+ ||endcovid19.world^
-+ ||epidemicapparel.com^
-+ ||epidemicforesight.com^
-+ ||epidemicglobal.net^
-+ ||epidemicpack.com^
-+ ||epidemicproof.com^
-+ ||epidemicxxx.com^
-+ ||ergocare-covid.com^
-+ ||estudiocovid.com^
-+ ||excellent-markets.shop^
-+ ||excelsoinscoronavirus.com^
-+ ||expectingcovid.com^
-+ ||ezcoronatests.com^
-+ ||fabricdepotaz.com.es^
-+ ||factsaboutcovid.com^
-+ ||factsaboutthepandemics.com^
-+ ||falsepandemics.com^
-+ ||fbwkcaopcebjc.space^
-+ ||fcjehvjxwblnp.website^
-+ ||fdbycovid.com^
-+ ||feministcovidresponse.com^
-+ ||ficc-coronavirus.net^
-+ ||ficccovid.net^
-+ ||fightcoronavirusnow.com^
-+ ||fightcovidcorps.net^
-+ ||findcovidtesting.com^
-+ ||findcovidtests.com^
-+ ||finishcovid.com^
-+ ||finracorona.com^
-+ ||fitsamongst.com^
-+ ||fkcorona.com^
-+ ||flatteningthepandemiccurve.com^
-+ ||flcoronaclaims.com^
-+ ||floridacoronadisease.com^
-+ ||floridacovidmasks.com^
-+ ||foro-covid19.com^
-+ ||freedomcovid19.com^
-+ ||fresnocovid411.com^
-+ ||fresnocovidaid.com^
-+ ||fresver.com.sg^
-+ ||fsxsc.com^
-+ ||ftp.lucky31spin.com^
-+ ||fuckcovid19shirt.com^
-+ ||fuckingcorona.com^
-+ ||fundcovid19vaccine.com^
-+ ||futureaftercovid.com^
-+ ||futureofcoronavirus.com^
-+ ||fxnhc.com^
-+ ||fzqigdcqugifd.site^
-+ ||gamersvscovid19.com^
-+ ||gardensinthetimesofcorona.com^
-+ ||gentle-threshold.com^
-+ ||getacovidtest.com^
-+ ||getcoronabuster.com^
-+ ||getcoronatest.com^
-+ ||getcovidgone.com^
-+ ||gettestedcovid.com^
-+ ||gifts-stean.shop^
-+ ||giveforcovid.org^
-+ ||globalpandemicstatus.com^
-+ ||gocovidresponse.com^
-+ ||goldstarport.qivorpaknode.garden^
-+ ||googlecoronavirus.net^
-+ ||govpandemic.com^
-+ ||gratiscovidtest.com^
-+ ||griefandcovid-19.com^
-+ ||grupocorona.biz^
-+ ||hcarddcovid.com^
-+ ||hcubecoyxgjce.online^
-+ ||healthandhealinginthetimeofcovidthebook.net^
-+ ||hellocoronaviruse.com^
-+ ||helpcurecovid.com^
-+ ||helpforcovid.com^
-+ ||helpuscorona.com^
-+ ||hidden-zenith.com^
-+ ||higienizacion-covid19.com^
-+ ||hlbcovid19.com^
-+ ||hna.com.tw^
-+ ||holdmycorona.com^
-+ ||homan.co.tz^
-+ ||homeclearance.shop^
-+ ||homesales-eu.shop^
-+ ||homeschooling-corona.com^
-+ ||horizonpeak.fit^
-+ ||hostfastland.dexisnetflow.garden^
-+ ||hotworkforce-covid19.com^
-+ ||houstoncovidhelp.com^
-+ ||houstonfightscovid.com^
-+ ||how2killcorona.com^
-+ ||howigotcovid19.com^
-+ ||howtocare4covid19.com^
-+ ||humancovid-19.com^
-+ ||hxsebysw.com^
-+ ||hydro4covid.com^
-+ ||iamcovidfree.com^
-+ ||icaughtcovid19.com^
-+ ||idreamofcovid.com^
-+ ||idrycorona.com^
-+ ||ikillcoronafast.com^
-+ ||ilcovid19info.com^
-+ ||ilstatecovid-19responsefund.net^
-+ ||immunoseqtmapcovid.com^
-+ ||impactcovid.com^
-+ ||incentivicoronavirus.com^
-+ ||incovid.com^
-+ ||indexcorona.com^
-+ ||insurancepandemic.com^
-+ ||iowacovid.com^
-+ ||ironhausflow2.dexisnetflow.garden^
-+ ||isocovid19.com^
-+ ||isurvivedcoronavirustshirt.com^
-+ ||isurvivedthecoronaviruspandemic.com^
-+ ||itcamefromwuhan.com^
-+ ||itracecovid.com^
-+ ||itrackcovid.com^
-+ ||jastro-covid19.net^
-+ ||jblharman.site^
-+ ||jennyscoronablog.com^
-+ ||jiltervolow.shop^
-+ ||jr8kk9957u75e92i.rest^
-+ ||jysk2026.pro^
-+ ||kaleidoscopetrust-covid19.com^
-+ ||kammerjaeger-corona.com^
-+ ||kammerjaeger-corona.net^
-+ ||kammerjaeger-covid19.com^
-+ ||kawalcorona.com^
-+ ||kcorona.com^
-+ ||keepupwithcovid.com^
-+ ||kennettcovidinfo.com^
-+ ||kentcovid.com^
-+ ||kidscorona.com^
-+ ||killercovid19.com^
-+ ||kills-corona.com^
-+ ||kleincoronadiary.com^
-+ ||kluobunxnwtaa.online^
-+ ||koalavscovid.com^
-+ ||konaicecoronado.com^
-+ ||ksjs37273.lol^
-+ ||kuzniki.com.pl^
-+ ||labcovid19.com^
-+ ||laboutiquedusupporter.fr^
-+ ||lacolombecovid19.com^
-+ ||lacorona.asia^
-+ ||latestcovid19news.net^
-+ ||latestpandemicnews.com^
-+ ||lavorwash.hu.technorollshop.hu^
-+ ||lawsuitcovid19.com^
-+ ||lawyercoronavirusnewyork.com^
-+ ||ldlonlinesale.co^
-+ ||leonmedicalcenters-coronavirus.com^
-+ ||lessonofcovid.org^
-+ ||letscurecovid19.com^
-+ ||letstalkcovid19.com^
-+ ||lh-covid19.com^
-+ ||lifeaftercovid19.com^
-+ ||linkhealth-covid19-andyou.com^
-+ ||lively-shimmer.com^
-+ ||localcoviddata.com^
-+ ||loveinthetimeofcorona.biz^
-+ ||loveinthetimeofcoronastories.com^
-+ ||luminous-canon.com^
-+ ||mail.ssadownload.top^
-+ ||makecoronavirusgreatagain.com^
-+ ||mapquestt.com^
-+ ||marrierzizany.cyou^
-+ ||marriottcovidclean.com^
-+ ||masksforcovid.com^
-+ ||masque-covid.com^
-+ ||masquecovid.net^
-+ ||masterstipsoncovid-19.com^
-+ ||matchedintoapandemic.com^
-+ ||maysnet.com.mx^
-+ ||medicalcoronavirussupplies.com^
-+ ||medicine4coronavirus.com^
-+ ||medicovid19.com^
-+ ||metabluefire.qivorpaknode.garden^
-+ ||mi-pandemic-story.blog^
-+ ||michaeldellcovid19.com^
-+ ||michoacancoronavirus.com^
-+ ||midascovid.com^
-+ ||mimcovid.com^
-+ ||mncovidresponse.com^
-+ ||modelcovid.com^
-+ ||moncovid.com^
-+ ||moncovid19.net^
-+ ||monostiddchs.life^
-+ ||multisyyport.life^
-+ ||mycorona-t.com^
-+ ||mycoronababyshop.info^
-+ ||mycoronacookbook.com^
-+ ||mycoronapatch.com^
-+ ||mycoronavirussite.com^
-+ ||mycovid19treatment.com^
-+ ||mycovidmask.net^
-+ ||mycovidrisk.com^
-+ ||mycovidstory.com^
-+ ||mycovidteam.com^
-+ ||mynovelcoronaviruses.com^
-+ ||mypandemicpivot.com^
-+ ||mypersonalpandemic.com^
-+ ||mytexascovidtest.com^
-+ ||myyzbvqmnedee.space^
-+ ||nahantcovid19.com^
-+ ||ncohonjzlyorv.site^
-+ ||ncovid19tester.com^
-+ ||ncovidtaskforce.com^
-+ ||nepalcovid19.com^
-+ ||networkpandemic.net^
-+ ||neworleanscovidmask.com^
-+ ||newpostcovidworld.com^
-+ ||news12coronavirus.com^
-+ ||newswirecentrala.top^
-+ ||newyorkcoronavirusdisinfection.com^
-+ ||ngtest-covid-19.com^
-+ ||niccovid.com^
-+ ||nietclix.4-148-16-239.cpanel.site^
-+ ||njcovidtests.com^
-+ ||nmzfdkjwktofb.site^
-+ ||nocovidhere.com^
-+ ||noirmondsite4.qivorpaknode.garden^
-+ ||nopandemics.com^
-+ ||northwellcovid.com^
-+ ||nscc-coronavirus.biz^
-+ ||nscc-coronavirus.net^
-+ ||nscc-covid.biz^
-+ ||nscccoronavirus.com^
-+ ||nscccovid.biz^
-+ ||nursecorona.com^
-+ ||nursinghomecovid19tips.com^
-+ ||obkquerawnkxr.site^
-+ ||odhhtzrgwqbnt.space^
-+ ||ogrodero.shop^
-+ ||ogrodify.shop^
-+ ||ogrodspot.shop^
-+ ||ogrodzik.shop^
-+ ||okbroadcasterscovid19.com^
-+ ||olvgcoronacheck.com^
-+ ||onceuponatimethecovid19.com^
-+ ||onlinecovid19test.com^
-+ ||onlinepandemicsupplies.com^
-+ ||ontariocovid19.com^
-+ ||operatingwithoutcorona.com^
-+ ||oqmacnov.in^
-+ ||orlandofightscovid.com^
-+ ||our-corona-chronicles.com^
-+ ||outlastcovid.net^
-+ ||outlastcovid.org^
-+ ||ozlgzgftjjgrr.site^
-+ ||ozonekillscorona.com^
-+ ||paczkapost.trustzlot24.cyou^
-+ ||paczkapost.zlotdanrt24.cyou^
-+ ||pandemic-box.com^
-+ ||pandemic-chic.com^
-+ ||pandemic-pizza.com^
-+ ||pandemic-response-research.net^
-+ ||pandemic-rock.com^
-+ ||pandemic-theater.com^
-+ ||pandemic-times.com^
-+ ||pandemicactionplan.com^
-+ ||pandemicandpractice.com^
-+ ||pandemicarchitecture.com^
-+ ||pandemicarmor.com^
-+ ||pandemicart.com^
-+ ||pandemicasa.com^
-+ ||pandemicbooths.com^
-+ ||pandemicbreakdown.com^
-+ ||pandemicbuddy.com^
-+ ||pandemiccalm.net^
-+ ||pandemiccareunit.com^
-+ ||pandemiccareunits.com^
-+ ||pandemiccentral.com^
-+ ||pandemiccoutureco.com^
-+ ||pandemiccoverage.com^
-+ ||pandemichelpline.com^
-+ ||pandemichistoricalsolutions.com^
-+ ||pandemichome.com^
-+ ||pandemicimmunedefence.com^
-+ ||pandemiclessons.com^
-+ ||pandemicloans.com^
-+ ||pandemicmutual.com^
-+ ||pandemicofgoodness.com^
-+ ||pandemicoflove.com^
-+ ||pandemicpanics.com^
-+ ||pandemicparadox.com^
-+ ||pandemicparent.com^
-+ ||pandemicparenting.com^
-+ ||pandemicpolice.com^
-+ ||pandemicpondering.com^
-+ ||pandemicpop.com^
-+ ||pandemicpostcardproject.com^
-+ ||pandemicpreparednesspods.com^
-+ ||pandemicpress.com^
-+ ||pandemicpussy.com^
-+ ||pandemicre.com^
-+ ||pandemicreadyeconomics.com^
-+ ||pandemicrealestate-investing.com^
-+ ||pandemicrealestateinvesting.com^
-+ ||pandemicresponsecommons.net^
-+ ||pandemicresponsetraining.biz^
-+ ||pandemicresponsetraining.com^
-+ ||pandemicriskinsuranceactof2020.com^
-+ ||pandemicrock.com^
-+ ||pandemics-insurance.com^
-+ ||pandemicsandthelaw.com^
-+ ||pandemicsbite.com^
-+ ||pandemicscreening.com^
-+ ||pandemicskit.com^
-+ ||pandemicsourdoughale.beer^
-+ ||pandemicstores.com^
-+ ||pandemicstrategies.com^
-+ ||pandemicstrategy.com^
-+ ||pandemicstrong.com^
-+ ||pandemicsuperworker.com^
-+ ||pandemicsupplyline.com^
-+ ||pandemictechexpo.com^
-+ ||pandemictechnews.com^
-+ ||pandemictrack.com^
-+ ||pandemictreatment.com^
-+ ||pandemicvent.com^
-+ ||pandemicvirusmask.com^
-+ ||pandemicxxx.com^
-+ ||parentingduringthepandemic.com^
-+ ||passcovid.com^
-+ ||peopleofthepandemicgame.com^
-+ ||petitwaldnet.dexisnetflow.garden^
-+ ||phantom-cascade.com^
-+ ||phlcovidsupply.com^
-+ ||photocovid19.com^
-+ ||pinpccricking.life^
-+ ||planforcovid.com^
-+ ||plterci.com^
-+ ||pointrougesoft.zexislinkhub.garden^
-+ ||porhub.fr^
-+ ||portraitsofapandemic.com^
-+ ||post-covid.world^
-+ ||postcorona.net^
-+ ||postcovid19care.com^
-+ ||postcovidcare.com^
-+ ||postcovidmindset.com^
-+ ||postpandemicszn.com^
-+ ||pray4corona.com^
-+ ||prayawaycovid.com^
-+ ||prepareforapandemic.com^
-+ ||printsforpandemicrelief.com^
-+ ||protect-covid-19.com^
-+ ||pspibwwzpxofu.website^
-+ ||ptauabqxmij.com^
-+ ||ptsdcovid19.com^
-+ ||ptsdcovid19.net^
-+ ||punch-out-corona.com^
-+ ||questioncovid19.com^
-+ ||quitforcovidnyc.com^
-+ ||qwaterindonesia.com^
-+ ||racessharp.helphumanityorg.com^
-+ ||rapidcovidkit.com^
-+ ||ratemycovid19haircut.com^
-+ ||recursoscoronavirus.com^
-+ ||redqqboneprisoners.life^
-+ ||referent-coronavirus.com^
-+ ||referent-covid-19.com^
-+ ||referent-securite-covid-19.com^
-+ ||referent-securite-covid19.com^
-+ ||rehoepinx.shop^
-+ ||reinigungcorona.com^
-+ ||rejectcovid19.com^
-+ ||renfort-covid.com^
-+ ||repelcovid-19.com^
-+ ||reportcovid19.com^
-+ ||reportcovidcase.com^
-+ ||reregulatecrowwoniest.life^
-+ ||revealcovid19.com^
-+ ||rgvcovid19cases.com^
-+ ||rgvcovid19info.com^
-+ ||rgwhyycjfgmob.website^
-+ ||rgzz3rs.icu^
-+ ||ribbonforcovid19.com^
-+ ||rickowensfr.fr^
-+ ||ricovidarchive.com^
-+ ||rip-covid19.com^
-+ ||roccovid19.com^
-+ ||rochestercoronavirus.com^
-+ ||roomingwithcovid19.com^
-+ ||rougesoft9app.dexisnetflow.garden^
-+ ||rowerino.shop^
-+ ||runacasinoenligne.fr^
-+ ||runacasinoonline.fr^
-+ ||rzsbgyyvcfonn.space^
-+ ||safefromcovid19.com^
-+ ||safepandemic.com^
-+ ||safrcoronavirusfundinfo.com^
-+ ||sars-cov-2-covid19.com^
-+ ||sbapandemicloans.com^
-+ ||schnelltestcorona.net^
-+ ||schutz-corona.com^
-+ ||schutzmittel-corona.com^
-+ ||scienceversuscorona.com^
-+ ||scientiacoronat.biz^
-+ ||sdworxcorona.com^
-+ ||securo.cc^
-+ ||segnaleticacovid.com^
-+ ||sgna-covid-response.com^
-+ ||shiptcoronavirus.com^
-+ ||shiptcovid-19.com^
-+ ||sickofcovid.com^
-+ ||silentpandemic.info^
-+ ||siparadigm-covid19.com^
-+ ||smallcoronation.com^
-+ ||smashcorona.com^
-+ ||solenbahce.com.tr^
-+ ||solutioncovid.com^
-+ ||solutions-covid19.com^
-+ ||solvingcovid.com^
-+ ||somalilandcovid19.com^
-+ ||soscovid19fight.com^
-+ ||spectrum-covid.com^
-+ ||spedaleniguarda-covid19.com^
-+ ||spyrounds.com^
-+ ||standuptocovid.net^
-+ ||stayhomestaysafecoronavirus.com^
-+ ||stlcorona.com^
-+ ||stop-covid.center^
-+ ||stopcoronashop.com^
-+ ||stoppingcovid.com^
-+ ||streetsforcovid.com^
-+ ||studentatheletesagainstcovid19.com^
-+ ||studentsagainstcorona.co.uk^
-+ ||stylishcooking.com^
-+ ||supplies-for-covid19.info^
-+ ||supportcovidfrontline.com^
-+ ||surviving2020pandemic.org^
-+ ||survivingcoronavirusfinancially.com^
-+ ||sysvert7holz.qivorpaknode.garden^
-+ ||taag-coronavirus.com^
-+ ||tafa.or.th^
-+ ||takecontrolovercorona.com^
-+ ||takeoutcovidbayarea.com^
-+ ||talesfromthepandemic.com^
-+ ||targetcovid20.com^
-+ ||targetcovidtest.com^
-+ ||targetpandemic.com^
-+ ||taskforcecorona.com^
-+ ||taskironland.zexislinkhub.garden^
-+ ||taxescovid.com^
-+ ||teredfgqaz.club^
-+ ||tessiespandemic.com^
-+ ||test-kit-covid19.com^
-+ ||testcovidonline.com^
-+ ||testforcoronaviruses.com^
-+ ||testingforcovid.com^
-+ ||testkitsforcoronavirus.com^
-+ ||texascovid19lawyers.com^
-+ ||the-corona-diaries.com^
-+ ||the-corona-effect.com^
-+ ||the-novel-corona-virus.com^
-+ ||theartofcovid.com^
-+ ||theboywhocriedcorona.com^
-+ ||thebronxcovid19oralhistoryproject.com^
-+ ||thechurchbeyondcorona.com^
-+ ||thecoronacrew.com^
-+ ||thecoronadestroyer.com^
-+ ||thecoronadiaries.com^
-+ ||thecoronadilemma.com^
-+ ||thecoronafree.com^
-+ ||thecoronaliving.com^
-+ ||thecoronanetwork.com^
-+ ||thecoronanetwork.net^
-+ ||thecoronanovel.com^
-+ ||thecoronaverse.com^
-+ ||thecoronavire.com^
-+ ||thecoronavirusband.com^
-+ ||thecoronavirusepidemicfilm.com^
-+ ||thecoronaviruswebsite.com^
-+ ||thecovid100.com^
-+ ||thecovid19closure.com^
-+ ||thecovid19dataproject.com^
-+ ||thecovid19games.com^
-+ ||thecovid19tracker.com^
-+ ||thecovidawards.com^
-+ ||thecovidbusters.com^
-+ ||thecovidessential.com^
-+ ||thecovidfacts.com^
-+ ||thecovidheroproject.com^
-+ ||thecovidimmunitytest.com^
-+ ||thecovidlockdown.com^
-+ ||thecovidnineteen.com^
-+ ||thecovidquiz.com^
-+ ||thecovidrapidtest.com^
-+ ||thecovidreports.com^
-+ ||thecovidresistance.com^
-+ ||thecovidtaskforce.com^
-+ ||thepandemicpro.com^
-+ ||thepandemicshow.com^
-+ ||thepandemicsolution.com^
-+ ||theprojectpandemic.com^
-+ ||theracovid.com^
-+ ||thereisnocoronavirusonthemoon.com^
-+ ||thetruthaboutcovid-19.com^
-+ ||think-corona.com^
-+ ||thisiscovid19.com^
-+ ||tigercovidtesting.com^
-+ ||tikitaka-bet.fr^
-+ ||tikitaka-online.fr^
-+ ||tikitakacasinoonline.fr^
-+ ||timid-gleam.com^
-+ ||tk-douglas.xyz^
-+ ||tooldiscountsupermarket.com^
-+ ||torontocoronavirus.com^
-+ ||torontocoronavirustherapy.com^
-+ ||tossingtankage.cyou^
-+ ||traccorona.net^
-+ ||tracecorona.com^
-+ ||tracecorona.net^
-+ ||travelaftercovid.com^
-+ ||travelcorona.com^
-+ ||treatcoronavirusdisease.com^
-+ ||truistbank-coronavirus.com^
-+ ||truistbank-covid-19.com^
-+ ||truistcovidinfolaw.com^
-+ ||tuply.co.za^
-+ ||turcovid19.com^
-+ ||tururutcovid.com^
-+ ||ucivize.site^
-+ ||uncoronavirusenlondres.com^
-+ ||unitkaltwind.qivorpaknode.garden^
-+ ||universidadpanamericanacovid19.com^
-+ ||unmaskedcovid19.com^
-+ ||upyourscorona.org^
-+ ||usacoronation.com^
-+ ||usacovidcases.com^
-+ ||usacovidmap.com^
-+ ||usacovidsupply.com^
-+ ||uscovidclaims.com^
-+ ||uspestcoronavirus.com^
-+ ||uvckillscovid19.com^
-+ ||vaccincorona.com^
-+ ||vague-lighthouse.com^
-+ ||vcacovid19.com^
-+ ||vectorcorona.com^
-+ ||vicorona.com^
-+ ||vicorona.net^
-+ ||virusmaskcovid19.com^
-+ ||vivianerabelo.com.br^
-+ ||vndbko.com^
-+ ||vtcovidresponse.net^
-+ ||wadkonhl.com^
-+ ||wanwuhang.com^
-+ ||warn-app-corona.com^
-+ ||warn-app-corona.info^
-+ ||warnapp-corona.com^
-+ ||waw-covid19.com^
-+ ||welcometothecoronaverse.com^
-+ ||willscovid19.com^
-+ ||windsorcovid19sellerplan.com^
-+ ||wistful-froth.com^
-+ ||with-corona.blog^
-+ ||withcorona.com^
-+ ||wonderskin.fr^
-+ ||work-remotely-covid19.com^
-+ ||workerscompcovid.com^
-+ ||workplacecovid.com^
-+ ||workplacelawcovid19.com^
-+ ||worldview-covid19.com^
-+ ||wuhanbegone.com^
-+ ||wuhancjz.com^
-+ ||wuhancoronatours.com^
-+ ||wuhancoverup.com^
-+ ||wuhanlianhua.com^
-+ ||wuhanmemory.net^
-+ ||wuhanweapon.com^
-+ ||xenophile.work^
-+ ||xjpogkwuhjczz.space^
-+ ||xn--corona-entschdigung-swb.net^
-+ ||xn--coronazn-6za.com^
-+ ||xn--coronazn-6za.net^
-+ ||xn--entschdigung-corona-lwb.net^
-+ ||xn--tgliches-corona-update-04b.com^
-+ ||xn--tglichescoronaupdate-bzb.com^
-+ ||y2corona.com^
-+ ||yilbkhadbihgl.website^
-+ ||youandcorona.com^
-+ ||yourcovid19attorneys.com^
-+ ||yourcovid19study.com^
-+ ||yourcovid19titer.com^
-+ ||yourcovid19titer.net^
-+ ||yourcovid19trial.com^
-+ ||youtubecoronavirus.com^
-+ ||youtubecoronavirus.net^
-+ ||youtubecovid19.net^
-+ ||yqndzrpujdskq.space^
-+ ||yqnlbkzpiazzs.space^
-+ ||zgarnijbon.com^
-+ ||ziomwtsqaimvv.online^
-+ ||zzusilkppjwcx.site^
+! [Malicious URL Blocklist (URLHaus)] Removed: 0 | Moved: 0 | Added: 45
++ ||bitbluemond.raxonviewunit.garden^
++ ||bleu-3.dexis-serv.in.net^
++ ||dark-land-8b.dexis-serv.in.net^
++ ||dark-wald-3.sylix-host.in.net^
++ ||fast-star-5x.mivon-tech.in.net^
++ ||fast-zeit-1.tal4miren.in.net^
++ ||gategoldberg3.raxonviewunit.garden^
++ ||globfastfire7.raxonviewunit.garden^
++ ||gold-land-3.tal4miren.in.net^
++ ||gold-land-4m.raxos-node.in.net^
++ ||gold-mond-2.mivon-tech.in.net^
++ ||haus-1.mivon-tech.in.net^
++ ||holz-baum-7k.mivon-tech.in.net^
++ ||holz-berg-5.sylix-host.in.net^
++ ||iron-fire-6s.novis-data.in.net^
++ ||kalt-5.novis-data.in.net^
++ ||kalt-berg-2.vok7laren.in.net^
++ ||loadpetitstar.zexislinkhub.garden^
++ ||noir-2.raxos-node.in.net^
++ ||noir-8.tal4miren.in.net^
++ ||noir-9.mivon-tech.in.net^
++ ||open-3n.novis-data.in.net^
++ ||open-6.raxos-node.in.net^
++ ||open-7.tal4miren.in.net^
++ ||packnoirland.raxonviewunit.garden^
++ ||pathnoirbaum1.zexislinkhub.garden^
++ ||petit-fire-5.dexis-serv.in.net^
++ ||petit-mond-1.vok7laren.in.net^
++ ||petit-star-8z.sylix-host.in.net^
++ ||rouge-4.novis-data.in.net^
++ ||rouge-9v.vok7laren.in.net^
++ ||scanvertzeit.raxonviewunit.garden^
++ ||soft-5.vok7laren.in.net^
++ ||soft-land-1.novis-data.in.net^
++ ||stagesteril.pax4moren.in.net^
++ ||userfastzeit.zexislinkhub.garden^
++ ||vert-1.sylix-host.in.net^
++ ||vert-2k.tal4miren.in.net^
++ ||vert-4.mivon-tech.in.net^
++ ||viewdarkberg9.zexislinkhub.garden^
++ ||vordraor5.nol7sirex.in.net^
++ ||wwj2alum.pax4moren.in.net^
++ ||zbh50.nol7sirex.in.net^
++ ||zeit-berg-8.novis-data.in.net^
++ ||zentideen.pax4moren.in.net^
 
-! [ShadowWhisperer Tracking List] Removed: 0 | Moved: 1 | Added: 0
-! Moved to HaGeZi's Pro++ Blocklist: 1 rules
-~ ||piwik.siegburg.eu^ [Moved: ShadowWhisperer Tracking List -> HaGeZi's Pro++ Blocklist]
+! [Phishing URL Blocklist (PhishTank and OpenPhish)] Removed: 6 | Moved: 0 | Added: 15
+- ||allegrolokalnie.pl-02910.lol^
+- ||cancelamento-cgd.com^
+- ||dstrb-trie2.com^
+- ||fidelitysafetyff.one^
+- ||fidelitysafetygs.one^
+- ||zh-an-anbo.com^
++ ||belezanawebb.vercel.app^
++ ||clic7654fill098765out76ui8765jhgfccvbjkjhgctly.square.site^
++ ||fampromios3ybeneficios.vercel.app^
++ ||lidoirstakiing.gitbook.io^
++ ||mail-univ-lyon1.framer.website^
++ ||mlyrm-pjyr-7w9s.jessmitt40.workers.dev^
++ ||shpee-br03.vercel.app^
++ ||shppe-brr.vercel.app^
++ ||uiva-sorte-maiss.vercel.app^
++ ||ultragaz-br.vercel.app^
++ ||uwmedupl.webflow.io^
++ ||v0-eudora-mother-s-day-e-commerce.vercel.app^
++ ||verificacion-de-office365-se.webflow.io^
++ ||verifyverifying-44024c.webflow.io^
++ ||webbmai.webflow.io^
 
-! [Phishing Army] Removed: 0 | Moved: 142 | Added: 1
-! Moved to HaGeZi's Pro++ Blocklist: 1 rules
-~ ||revvo-pl.space^ [Moved: Phishing Army -> HaGeZi's Pro++ Blocklist]
-! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
-~ ||tepuedeinteresar.com^ [Moved: Phishing Army -> HaGeZi's Threat Intelligence Feeds]
-! Moved to OISD Blocklist Big: 140 rules
-~ ||acc-binaes.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||annulations-prime.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||applive-logonr.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||apps-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||appsstart-ledgr.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||appstarttrzo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||appsuite-treizo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||appsuitt.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||assets-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atimoic-ex.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atiomc.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atiomiex.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomcextension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomcio-extension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomic-extensions.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomic-my.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomicc-ex.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomicc-extensions.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomicwallletio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomicwellat.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atomyc-extension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||atonicio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||attomyicwallet.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||begins-extension-io.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||bincane-cd.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||bridge-improve.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||browzer-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||connect-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||connect-homestart.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||connect-ledgrlivd.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||dossier-shipping.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||easygoing-pumpkin-960312.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||en-ex-odus.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||en-exods-web3.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||eng-atomic-ext.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||eng-io-gate.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||engine-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||engsuitesapp.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||engsuittrezo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||enus-exodsu.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||enus-exxudus.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||enwebexudus.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||ettorologin.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||exduos-connect.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||exdus-extension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||extension-atomec.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||extension-startio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||follow-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||getting-livedesktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||global-trezurio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||grow-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||guideinf.dejonge-trends.nl^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||helps-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||helptrezorcdn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-bybiit.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-coinextinsion.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-moonpay.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-pagedesktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-suiiteapp.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||home-suitapps.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||homepage-startedio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||homepage-suitps.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||host-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||hyperfollow.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||imitsart.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||inclusive-raccoon-088006.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||ineffable-cabbage-486878.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||intro-bridge-eng.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||introofficial.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||invest-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||iostarts-apps.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||ipbinance.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||jaxxliberty.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||just-suiteapp.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||karaken-logn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||kensouthail.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||kleinanzelgen-id.shardvell.de^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||ledgrlive-started.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||live-appsledge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||live-ledgr-apps.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||live-platform.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||liveapp-connect.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||liveintrox.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||logical-shape-102091.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||lumastudiocom.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||managesuites.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||metamak-extension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||metamaksio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||metamasextension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||metamuskio-extn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||minswapextension.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||mountainviewnursery.online^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||nav-exxodus.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||nav-io-gate.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||nav-ldgerdesktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||neupolicykonto.click^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||new-bridge-trezio.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||orangeassistance.tn^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||over-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||over-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||patient-homeowners-951769.framer.app^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||platform--live.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||platform-bridgehome.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pub-36f8b57ed6c84ca998a369b974646edc.r2.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pub-c62ceae5d4554ed4bbacea9f803000e3.r2.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pub-f1e213d7f7cb4ce7ba1028767eebb8db.r2.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||pub-f35cb54c258b44c1afe0c959ea4bb621.r2.dev^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||quick-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||react-exxodas.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||renouvellementinfo.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||serverbridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||set.page^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||shopholdapps.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||sspionexxcdn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||started-learn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||started-ndaax.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||started-trexer.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||startedledgrcem.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||store-bridge.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suitapps-trez.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suiteapps-trejo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suited-trazo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suitee-trezo.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suitesapp-trzre.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suitetrxor.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||suivi-verification.site^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||system-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||test-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trezo-suitesapp.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trezosuiteapp.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trezrsuite-trezr.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trezsuite-en-us.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trozor-log.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||trzor-io-eng.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||us-binance.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||us-homepage-desktop.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||us-trexorlogn.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||wa-atomic-eng.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||web3-exxodos.wixstudio.com^ [Moved: Phishing Army -> OISD Blocklist Big]
-~ ||whale.us.ci^ [Moved: Phishing Army -> OISD Blocklist Big]
-+ ||olx.pl-42309i098349280.digital^
+! [HaGeZi's Badware Hoster Blocklist] Removed: 0 | Moved: 1 | Added: 0
+! Moved to Phishing Army: 1 rules
+~ ||healthyemployee.me^ [Moved: HaGeZi's Badware Hoster Blocklist -> Phishing Army]
 
-! [AdGuard DNS filter] Removed: 0 | Moved: 11 | Added: 8
-! Moved to HaGeZi's Pro++ Blocklist: 6 rules
-~ ||6yfjlm4lcmvrxkrlux1p.rest^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||bursazincate.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||qpckkuujmwwmh.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||rgjkhlfcsntrw.website^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||rimousdozenedaxiom.cyou^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-~ ||yezrommgntgvk.space^ [Moved: AdGuard DNS filter -> HaGeZi's Pro++ Blocklist]
-! Moved to OISD Blocklist Big: 5 rules
-~ ||discover.absciex.com.cn^ [Moved: AdGuard DNS filter -> OISD Blocklist Big]
-~ ||images.newsletter.hach.com.cn^ [Moved: AdGuard DNS filter -> OISD Blocklist Big]
-~ ||sienokeeryirp.online^ [Moved: AdGuard DNS filter -> OISD Blocklist Big]
-~ ||svvjpsvmfgsull.com^ [Moved: AdGuard DNS filter -> OISD Blocklist Big]
-~ ||vsxfkhjvaufcb.space^ [Moved: AdGuard DNS filter -> OISD Blocklist Big]
-+ ||assethjardonideist.cyou^
-+ ||braconrebone.cyou^
-+ ||cogglyumbrose.com^
-+ ||durantesquiretcoaxer.cyou^
-+ ||elegistlockpinpoinded.cyou^
-+ ||needleenergy.cyou^
-+ ||sorancepwt.cyou^
-+ ||xwz4irtyorvyny1551y82wnt6yn7uyu3.rest^
+! [uBlock filters - Badware risks] Removed: 0 | Moved: 0 | Added: 1
++ ||linkbrawlstars.store^
 
-! [ShadowWhisperer's Malware List] Removed: 0 | Moved: 1 | Added: 0
-! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
-~ ||linkrex.net^ [Moved: ShadowWhisperer's Malware List -> HaGeZi's Threat Intelligence Feeds]
+! [Dan Pollock's List] Removed: 0 | Moved: 0 | Added: 1
++ 0.0.0.0 www.casinostarluck.net
 
-! [Malicious URL Blocklist (URLHaus)] Removed: 0 | Moved: 2 | Added: 0
-! Moved to HaGeZi's Threat Intelligence Feeds: 1 rules
-~ ||blit.co.za^ [Moved: Malicious URL Blocklist (URLHaus) -> HaGeZi's Threat Intelligence Feeds]
-! Moved to OISD Blocklist Big: 1 rules
-~ ||hot13oct.blogspot.com^ [Moved: Malicious URL Blocklist (URLHaus) -> OISD Blocklist Big]
-
-! [HaGeZi's URL Shortener Blocklist] Removed: 0 | Moved: 7 | Added: 0
-! Moved to HaGeZi's Threat Intelligence Feeds: 7 rules
-~ ||abroad-links.com^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||adslinks.site^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||ex-foary.com^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||fwb4me.us^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||lhb.pw^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||thryt.com^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-~ ||wavesnetwork.dev^ [Moved: HaGeZi's URL Shortener Blocklist -> HaGeZi's Threat Intelligence Feeds]
-
-! [Phishing URL Blocklist (PhishTank and OpenPhish)] Removed: 0 | Moved: 164 | Added: 0
-! Moved to OISD Blocklist Big: 164 rules
-~ ||546ghhdd-fff2-0044.nyc3.digitaloceanspaces.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||actualizacionean.z9.web.core.windows.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||agrrements-contract.onrender.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||airbnb-clone-2-sigma.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||airbnb-clone-pi-seven.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-alpha-gilt-89.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-alpha-nine.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-amber-nine.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-blue-nu.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-blue-ten.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-by-gaurav-chauhan.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-jade-ten.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-project-alpha.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-clone-taupe-ten.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-io.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazon-three-ecru.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazonbylio.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||amazonclone-nine-psi.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||app.cgd.pt^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||apple-responsive-frontend.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||artisteer.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||artoken556l-document-onedrive.clear90489058903-document.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||auth-sso-bitmart.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreia4ul6dp4zesdh2swp3gfxfmyfjn24ayrpytqjg64ypt7rj74gczy.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreiaj5sf5ndxlkivibjqdgumcapqxbgygeafiqs46xelonvddywwu2i.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreibbbbfhm75xzfqu2ssgb4zjam5dhkojktvjegtjnoftr3n67gzcna.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreibd4qpmg67t3bxwsrghnmnv5sojmtmfcbi6ylo65b4hkiwz24kxei.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreibl4x5xfafvwgt25syvoibbmu7wov5ojvacfcvd7hasfskqmca6dq.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreibuvppb4ax2vfwtsohotgrupedscgwoxhpvbjxxnfp5xalcjpfply.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreibwsnxxk4m4ekdloenmjbzyt2r6hj4hkkyt6qh2x4bvsjj4pbmlpe.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreicchcuhosjciwxiahj7g5yimw7fklwugexpyxkgmnfkkwfomn42vq.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreicqh5ym5wvmfmtqbhltcawz4soxzag5xxusf7rvbtwdz4lrnttrsi.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreiduborwhfnyfchc6jwfym7oxxg5caaitf4huzehktb5ht2ac5ooli.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreidzbzdofqwkvvynu4b4lnl4vxmflqsi5xskm4vmbv4u4wjsnmix3e.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreieqjaiwtgfwpwsi2b4rojxmxvrel5xicism3mcijogxj2n56wl7j4.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreif2yjyh5yyih2ro7yxmldilvu5wzejnagxchaphsl7u2qbc6jzrmm.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreif7nevocculfhiwaxojkqkkab5v5cjabdia4p2q57jeqvg4lk7teu.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreifeheeoxm4yhl7dgacsyobskswayxpoyhs36acuengqpygascw3qe.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreifk7w3bwagfu43sh4jogoq7s4lektyk7egq3yb54plstf74b4ycqm.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreifnj5hit2xykkxuyortz6r5t62umde5nooc6glmnq3oua3jszedam.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreig5enqqqyp6dsqxnigh24ohusgeuj6isoahjunig3qvoarcem5qeu.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreigitj7uo2ip62qmnl6n4tf4ammrx3kiqxl7zz7sdqy66pc7yemygi.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreigwhdpzpu6jgvlsugfyvt7m5anvphi3gepmop3vhbhiokkct74wqy.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreihfnmpzyjarz575szh32ovfmr4zk3xizdjf7ai7n5553hdz2zof5m.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafkreihhtolweydtxtls4iovdwmkchzndb7rpzut2a5kpehu2rykjcxk44.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafybeicjot6qnree3v5omzaqh7hwduaduhhdpcvhwsthbekeszmu6ad4du.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafybeiexzi23pmadezdhed67ssgomesyooyaq3fpabkzmynpj6h2c5g2te.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||bafybeifhkli7dfi6brfwr3637krztfkps6yf26wqe45ks7mq23jkrg5pzm.ipfs.dweb.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||base-note-bc65.p-qqvrc942.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||booking-clone-sigma.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||booking-com-teal.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||butterfly-squid-ckg9.squarespace.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||cache.nebula.phx3.secureserver.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||casaslotes07.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||cloneofair.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||clonix.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||cnsqarrlogxn.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||coeensquarelogin.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||connectingdapps-5z3.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||creativityblocksnodes.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||crypto-6zr.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||csgosmurfkings.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||dappsmainnetasset.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||dashboards-home.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||derviemprendeecuador.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easy-bank-landing-page-ecru.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easy-bank-landing-page-olive.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easy-bank-rho.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easy-banking-rho.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easybank-figma.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easybank-landing-page-fm.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easybank-landing-page.rabwinter.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||easybank-two.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||ebay-seller-center-managedpayments.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||facebook-clone-rho-two.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||facebook-password-reset.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||flow-share-qlpw.inbox-share.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||help--ledgerlivelad.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||hfjrk-jgcg-xrna.c-2xtasw30.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||home-rent-application.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||homepege--blackfi--login--auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||hyzpzhjp.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||iitssme1987-bit.github.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||insta-clone-application.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||insta-clone-inky.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||instagram-clone-nu-seven.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||instagram-clone-sabitalizade.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||instagram-clone-web.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||juno-com-webmail-012368.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kcoinlogin.github.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kioldresawxcvb.z9.web.core.windows.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||ku-coine--logiusa.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kucainluginc.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kucoinelogiean.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kucoinlogiean.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kucontnlggin.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||kukooinlogoni.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||learn-bridgedownld-home.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||linhabranca-oficial2.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||linhabranca-oficial9.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||logix-robnhood.square.site^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||malabs.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||metamask-wallet.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||microsoft-clone-five.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||monerotestsolved.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||mpl.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||ndax-xlogin.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-6.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-azure-seven.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-beta-sand.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-blue-nine.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-coral-eight.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-eight-khaki.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-five-sigma.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-gray-seven.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-iota-five.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-opal-nine.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-project-by-using-html-and-css.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-psi-two.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-red-seven.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-sigma-ashen.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-clone-taupe-ten.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netflix-landing-page-one-kohl.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||netiflix.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||next-ab-clone-apetta.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||nodeblockreset.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||nufesafew.z1.web.core.windows.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||ogagaisi.github.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||oiondsaw.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||ozona-north-1010-amazon.s3.us-east-1.amazonaws.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||pdf-salad-4eff.ehcswt3v.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||priyadarshii786.github.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||project-beta-topaz-83.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||public-trezo.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||qzzr.com^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||revsharedapptoken.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||saabeee-netflix.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||secure--en--netcoins-com--cdn-auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||secure--s-netcoins-com---auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||smartchainline.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||snp-technologies.lpages.co^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||solpump-rectifier.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||spotify-clone-player.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||spotify-theta-navy.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso---bitmart-docs-auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso---ca-netcoins-com-auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso--azure-netcoins-com-cdn-autths.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso--netcoins-com--cdn-oauth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso-blockfee.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sso-en-ca-netcoins-com-nav-azure.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||support-legar--help.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||sweet-truth-af82.igtyitifweh.workers.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||swissborrglogin.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||tiktoklog.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||tudasoge.z27.web.core.windows.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||url.emailprotection.link^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||v3ry-szkuriti-velifify-louis-w-si-k.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||validate-mainnet.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||wafaramuyi.z32.web.core.windows.net^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||wallet-landing-near.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||wauterszeefdruksignhulst.pages.dev^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||web-blockfi-auth.webflow.io^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||website-toko.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-~ ||whatsapp-clone-desktop.vercel.app^ [Moved: Phishing URL Blocklist (PhishTank and OpenPhish) -> OISD Blocklist Big]
-
-! [HaGeZi's The World's Most Abused TLDs] Removed: 2 | Moved: 0 | Added: 2
-- ||*.dad^$denyallow=daily.dad|dear.dad|gdflix.dad|rad.dad
-- ||*.work^$denyallow=doesmycode.work|elphago.work|frame.work|koding.work|mirror.work|schueller.work|spiegel.work|starlightnet.work
-+ ||*.dad^$denyallow=daily.dad|dear.dad|gdflix.dad|gdtot.dad|rad.dad
-+ ||*.work^$denyallow=doesmycode.work|dood.work|elphago.work|frame.work|koding.work|mirror.work|schueller.work|spiegel.work|starlightnet.work
-
-! [Dan Pollock's List] Removed: 0 | Moved: 0 | Added: 4
-+ 0.0.0.0 bsugars.sa.com
-+ 0.0.0.0 www.blueadvantagearkasas.com
-+ 0.0.0.0 www.puppywoodshihtzu.com
-+ 0.0.0.0 www.vnailssanclemente.com
+! [Scam Blocklist by DurableNapkin] Removed: 0 | Moved: 0 | Added: 7
++ ||adminicesm.life^
++ ||akulaku.me^
++ ||forksbike.com^
++ ||pay.www.mvideo.id19045617.info^
++ ||providedexcitingcritical.pro^
++ ||quitasueno.com^
++ ||watchseniorfit.com^
 
