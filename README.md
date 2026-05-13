@@ -47,7 +47,7 @@ Behavior:
 Credits (lists used, superseded, excluded, and unused; auto-updated by the compiler, with list and creator links):
 <!-- sleepy-list:credits:start -->
 Used lists (included in blocklist):
-- 1Hosts (Xtra) - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_70.txt) - [creator](https://badmojr.github.io/1Hosts/)
+- 1Hosts (Lite) - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt) - [creator](https://badmojr.github.io/1Hosts/)
 - AdGuard DNS filter - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt) - [creator](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - AdGuard DNS Popup Hosts filter - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt) - [creator](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - Dan Pollock's List - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt) - [creator](https://someonewhocares.org/)
@@ -99,6 +99,7 @@ Excluded lists (skipped via SLEEPY_LIST_EXCLUDED_IDS):
 - ShadowWhisperer's Dating List - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_57.txt) - [creator](https://github.com/ShadowWhisperer/BlockLists)
 
 Unused lists (available but not selected after stacking):
+- 1Hosts (Xtra) - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_70.txt) - [creator](https://badmojr.github.io/1Hosts/)
 - HaGeZi's Allowlist Referral - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_45.txt) - [creator](https://github.com/hagezi/dns-blocklists#referral)
 - Ukrainian Security Filter - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_62.txt) - [creator](https://github.com/braveinnovators/ukrainian-security-filter)
 - CHN: AdRules DNS List - [list](https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt) - [creator](https://github.com/Cats-Team/AdRules)
